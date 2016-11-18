@@ -1,0 +1,10 @@
+{
+  "navbar_items": [
+    {
+      "title": "front",
+      "className": "front",
+      "extra_classes" : ["front"],
+      "url": "/"
+    }
+  ]
+}
