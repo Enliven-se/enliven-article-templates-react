@@ -1,7 +1,7 @@
 // app.js
 const React = window.React = require('react'),
   ReactDOM = require('react-dom'),
-  TodoApp = require('../components/TodoApp'),
+  PageContainer = require('../containers/PageContainer'),
   mountNode = document.getElementById('app')
 
-ReactDOM.render(<TodoApp />, mountNode)
+ReactDOM.render(<PageContainer />, mountNode)
