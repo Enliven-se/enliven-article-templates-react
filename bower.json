@@ -11,6 +11,7 @@
   "devDependencies": {
     "enliven-bootswatch": "git@gitlab.com:enliven/enliven-bootswatch.git#^0.1.4",
     "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "bootstrap-sass": "^3.3.7"
   }
 }

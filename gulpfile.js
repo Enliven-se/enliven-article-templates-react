@@ -21,7 +21,7 @@ var browserSync = require('browser-sync')
 var reload = browserSync.reload
 
 // Styles
-gulp.task('styles', ['sass', 'moveCss'])
+//gulp.task('styles', ['sass', 'moveCss'])
 
 gulp.task('moveCss', ['clean'], function() {
   // the base option sets the relative root for the set of files,
@@ -32,16 +32,24 @@ gulp.task('moveCss', ['clean'], function() {
     .pipe(gulp.dest('dist/styles'))
 })
 
-gulp.task('sass', function() {
-  return $.rubySass('./app/styles', {
-    style: 'expanded',
-    precision: 10,
-    loadPath: ['app/bower_components']
-  })
-    .pipe($.autoprefixer('last 1 version'))
-    .pipe(gulp.dest('dist/styles'))
-    .pipe($.size())
-})
+gulp.task('styles', () => {
+  return gulp.src('app/styles/*.scss')
+    .pipe($.plumber())
+    .pipe($.sourcemaps.init())
+    .pipe($.sass.sync({
+      outputStyle: 'expanded',
+      precision: 10,
+      includePaths: ['.']
+    }).on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
+    }))
+    .pipe($.sourcemaps.write())
+    .pipe(gulp.dest('.tmp/styles'))
+    .pipe(reload({
+      stream: true
+    }));
+});
 
 var bundler = watchify(browserify({
   entries: [sourceFile],
