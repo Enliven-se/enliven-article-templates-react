@@ -1,4 +1,4 @@
-const React = window.React = require('react')
+import React from 'react';
 
 const HeaderDate = React.createClass({
   render: function() {

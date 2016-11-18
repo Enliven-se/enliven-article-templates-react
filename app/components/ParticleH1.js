@@ -1,8 +1,9 @@
-const React = window.React = require('react')
+import React from 'react'
+import { PageHeader } from 'react-bootstrap'
 
 const ParticleH1 = React.createClass({
   render: function() {
-    return <div className="">{this.props.particleName}</div>
+    return <PageHeader className=''>{this.props.particleName}</PageHeader>
   }
 })
 

@@ -1,8 +1,11 @@
-const React = window.React = require('react')
+import React from 'react'
+import { Image } from 'react-bootstrap'
 
 const ParticleImage = React.createClass({
   render: function() {
-    return <div className="">{this.props.particleName}</div>
+    return <div className='particle-image'>
+        <Image src={this.props.imageURL} responsive />
+    </div>
   }
 })
 

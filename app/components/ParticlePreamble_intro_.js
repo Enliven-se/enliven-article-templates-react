@@ -1,4 +1,4 @@
-const React = window.React = require('react')
+import React from 'react';
 
 const ParticlePreamble_intro_ = React.createClass({
   render: function() {

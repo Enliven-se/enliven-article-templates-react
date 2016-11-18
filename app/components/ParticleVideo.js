@@ -1,8 +1,8 @@
-const React = window.React = require('react')
+import React from 'react'
 
 const ParticleVideo = React.createClass({
   render: function() {
-    return <div className="">{this.props.particleName}</div>
+    return <div className='particle-video'>{this.props.particleName}</div>
   }
 })
 

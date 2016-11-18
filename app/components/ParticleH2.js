@@ -1,8 +1,8 @@
-const React = window.React = require('react')
+import React from 'react';
 
 const ParticleH2 = React.createClass({
   render: function() {
-    return <div className="">{this.props.particleName}</div>
+    return <h2 className=''>{this.props.particleName}</h2>
   }
 })
 

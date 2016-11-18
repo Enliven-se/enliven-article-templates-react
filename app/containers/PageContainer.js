@@ -15,6 +15,8 @@ const React = window.React = require('react'),
   ParticleText = require('../components/ParticleText'),
   ParticleVideo = require('../components/ParticleVideo')
 
+import { Grid, Row, Col } from 'react-bootstrap'
+
 /*
 <ParticleAttachment particleName='File Attachment' />
 <ParticleH1 particleName='h1' />
@@ -34,29 +36,29 @@ const React = window.React = require('react'),
 const PageContainer = React.createClass({
   render: function() {
     return (
-      <div className='container'>
-          <div className='row'>
-              <ParticleImage particleName='Image' />
-          </div>
-          <div className='row'>
-              <div className='col-sm-6'>
-                  <HeaderContributor particleName='HeaderContributor' componentClasses='text-bold' />
-              </div>
-              <div className='col-sm-6'>
-                  <HeaderDate particleName='HeaderDate' />
-              </div>
-          </div>
-          <div className='row'>
-              <div className='col-sm-6'>
-                  <ParticleText particleName='Text' />
-                  <ParticlePullquote particleName='Pull Quote' />
-                  <ParticleText particleName='Text' />
-              </div>
-              <div className='col-sm-6'>
-                  <ParticleText particleName='Text' />
-          </div>
-        </div>
-      </div>
+      <Grid>
+        <Row>
+          <ParticleImage particleName='Image' imageURL='/images/mock/Charlize-Theron--Capitol-Grand-Photoshoot-2015--05.jpg' />
+        </Row>
+        <Row>
+          <Col md={6}>
+            <HeaderContributor particleName='HeaderContributor' componentClasses='text-bold' />
+          </Col>
+          <Col md={6}>
+            <HeaderDate particleName='HeaderDate' />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6}>
+            <ParticleText particleName='Text' />
+            <ParticlePullquote particleName='Pull Quote' />
+            <ParticleText particleName='Text' />
+          </Col>
+          <Col md={6}>
+            <ParticleText particleName='Text' />
+          </Col>
+        </Row>
+      </Grid>
     )
   }
 })
