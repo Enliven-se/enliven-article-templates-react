@@ -21,18 +21,18 @@ var browserSync = require('browser-sync')
 var reload = browserSync.reload
 
 // Styles
-//gulp.task('styles', ['sass', 'moveCss'])
+gulp.task('styles', ['moveCss'])
 
-gulp.task('moveCss', ['clean'], function() {
+gulp.task('moveCss', ['sass'], function() {
   // the base option sets the relative root for the set of files,
   // preserving the folder structure
-  gulp.src(['./app/styles/**/*.css'], {
-    base: './app/styles/'
+  gulp.src(['.tmp/styles/**/*.css'], {
+    base: '.tmp/styles/'
   })
     .pipe(gulp.dest('dist/styles'))
 })
 
-gulp.task('styles', () => {
+gulp.task('sass', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
@@ -48,8 +48,8 @@ gulp.task('styles', () => {
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({
       stream: true
-    }));
-});
+    }))
+})
 
 var bundler = watchify(browserify({
   entries: [sourceFile],
