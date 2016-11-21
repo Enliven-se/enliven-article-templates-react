@@ -37,11 +37,11 @@ const MockShortInterview = {
     {
       Avatar: '/images/mock/avatar.png',
       ContributorCredit: 'Peter Larsen',
-      ContributorLink: ''
+      ContributorLink: '/people/peter-lars%C3%A9n'
     }, {
       Avatar: '/images/mock/avatar.png',
       ContributorCredit: 'Anna Sidorova',
-      ContributorLink: ''
+      ContributorLink: '/people/anna'
     }
   ],
   DatePublished: 'November 18, 2016'
