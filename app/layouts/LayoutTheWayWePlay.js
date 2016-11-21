@@ -45,7 +45,7 @@ const LayoutTheWayWePlay = React.createClass({
         <Grid fluid className='panel-1'>
           <ParticleHeroImage />
           <Row>
-            <Col sm={6} smOffset={8}>
+            <Col sm={6} smOffset={6}>
               <ArticleHeader>
                 <ArticleCategory />
                 <ArticleTitle />
