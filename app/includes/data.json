@@ -1,18 +1,18 @@
 {
     "navbar_items": [{
-        "title": "LookBook",
-        "className": "LookBook",
-        "extra_classes": ["LookBook"],
+        "title": "Short Interview",
+        "className": "short-interview",
+        "extra_classes": [""],
+        "url": "/?layout=ShortInterview"
+    }, {
+        "title": "Look Book",
+        "className": "look-book",
+        "extra_classes": [""],
         "url": "/?layout=LookBook"
     }, {
-        "title": "TheWayWePlay",
-        "className": "TheWayWePlay",
-        "extra_classes": ["TheWayWePlay"],
+        "title": "The Way We Play",
+        "className": "the-way-we-play",
+        "extra_classes": [""],
         "url": "/?layout=TheWayWePlay"
-    }, {
-        "title": "ShortInterview",
-        "className": "ShortInterview",
-        "extra_classes": ["ShortInterview"],
-        "url": "/?layout=ShortInterview"
     }]
 }

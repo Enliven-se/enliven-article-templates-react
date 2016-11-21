@@ -37,7 +37,7 @@ const React = window.React = require('react'),
 import { Grid, Row, Col } from 'react-bootstrap'
 
 const LayoutTheWayWePlay = React.createClass({
-  render: function () {
+  render: function() {
     return (
       <div>
         <Grid fluid className='panel-1'>
