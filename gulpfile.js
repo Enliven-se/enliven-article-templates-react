@@ -140,7 +140,7 @@ gulp.task('bundle', ['styles', 'scripts', 'bower'], function() {
     .pipe(gulp.dest('dist'))
 })
 
-gulp.task('buildBundle', ['styles', 'buildScripts', 'moveLibraries', 'bower'], function() {
+gulp.task('buildBundle', ['styles', 'buildScripts', 'moveLibraries', 'bower', 'jade'], function() {
   return gulp.src('./app/*.html')
     .pipe($.useref.assets())
     .pipe($.useref.restore())
