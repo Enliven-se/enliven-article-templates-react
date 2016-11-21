@@ -1,4 +1,5 @@
 const React = window.React = require('react'),
+  Container = require('../containers/Container'),
   ContributorContainer = require('../containers/ContributorContainer'),
   DateContainer = require('../containers/DateContainer'),
   HeaderContainer = require('../containers/HeaderContainer'),
@@ -31,9 +32,7 @@ const React = window.React = require('react'),
   ParticlePreamble_intro_ = require('../components/particles/ParticlePreamble_intro_'),
   ParticlePullquote = require('../components/particles/ParticlePullquote'),
   ParticleText = require('../components/particles/ParticleText'),
-  ParticleVideo = require('../components/particles/ParticleVideo'),
-
-  ParticleHeroImage = require('../components/particles/ParticleHeroImage')
+  ParticleVideo = require('../components/particles/ParticleVideo')
 
 import { Grid, Row, Col } from 'react-bootstrap'
 
@@ -41,49 +40,48 @@ const LayoutShortInterview = React.createClass({
   render: function() {
     return (
       <div>
-        <Grid fluid className='panel-1'>
-          <ParticleHeroImage imageURL={this.props.data.fields[0].content.url} componentClasses='' />
+        <Container componentClasses='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
           <Row>
             <Col sm={5} smOffset={1}>
               <ArticleHeader>
-                <ArticleCategory componentClasses='' />
-                <ArticleTitle componentClasses='' />
+                <ArticleCategory componentClasses='article-category' content={this.props.data.ArticleCategory.content.html} />
+                <ArticleTitle componentClasses='article-title' content={this.props.data.ArticleTitle.content.html} />
               </ArticleHeader>
               <ArticleIntro>
-                <HR componentClasses='' />
-                <ParticlePreamble_intro_ componentClasses='' />
-                <HR componentClasses='' />
+                <HR componentClasses='hr' />
+                <ParticlePreamble_intro_ componentClasses='particle-intro' content={this.props.data.fields[1].content.html} />
+                <HR componentClasses='hr' />
               </ArticleIntro>
             </Col>
           </Row>
-        </Grid>
+        </Container>
         <Grid>
           <ContributorList>
             <Contributor>
-              <Avatar componentClasses='' />
-              <ContributorCredit componentClasses='' />
-              <ContributorLink componentClasses='' />
+              <Avatar componentClasses='avatar' />
+              <ContributorCredit componentClasses='contributor-credit' />
+              <ContributorLink componentClasses='contributor-link' />
             </Contributor>
-            <Separator separatorType='comma' componentClasses='' />
+            <Separator separatorType='comma' componentClasses='text-separator text-separator-comma' />
             <Contributor>
-              <Avatar componentClasses='' />
-              <ContributorCredit componentClasses='' />
-              <ContributorLink componentClasses='' />
+              <Avatar componentClasses='avatar' />
+              <ContributorCredit componentClasses='contributor-credit' />
+              <ContributorLink componentClasses='contributor-link' />
             </Contributor>
           </ContributorList>
           <div className='pull-right'>
-            <DatePublished componentClasses='' />
+            <DatePublished componentClasses='date-published' />
           </div>
         </Grid>
         <Grid>
           <Row>
             <Col sm={6}>
-              <ParticleText componentClasses='' />
-              <ParticlePullquote componentClasses='' />
-              <ParticleText componentClasses='' />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[2].content.html} />
+              <ParticlePullquote componentClasses='particle-pullquote' content={this.props.data.fields[3].content.html} />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[4].content.html} />
             </Col>
             <Col sm={6}>
-              <ParticleText componentClasses='' />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[5].content.html} />
             </Col>
           </Row>
         </Grid>

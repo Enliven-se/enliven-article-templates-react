@@ -28,10 +28,23 @@ const MockShortInterview = {
       content: {
         html: ''
       }
+    }, {
+      type: 'text',
+      content: {
+        html: ''
+      }
     }
   ],
-  ArticleCategory: 'WOMEN’S HEALTH',
-  ArticleTitle: 'The Different Sides of Charlize',
+  ArticleCategory: {
+    content: {
+      html: 'WOMEN’S HEALTH'
+    }
+  },
+  ArticleTitle: {
+    content: {
+      html: 'The Different Sides of Charlize'
+    }
+  },
   Preamble_intro_: 'Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.',
   ContributorList: [
     {

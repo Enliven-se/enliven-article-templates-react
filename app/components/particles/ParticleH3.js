@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 const ParticleH3 = React.createClass({
   render: function() {
-    return <h3 className=''>{this.props.particleName}</h3>
+    return <h3 className=''>{this.props.content}</h3>
   }
 })
 
