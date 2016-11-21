@@ -1,9 +1,9 @@
 import React from 'react';
 
-const HeaderDate = React.createClass({
+const DateContainer = React.createClass({
   render: function() {
     return <div className=''>18th November 2016</div>
   }
 })
 
-module.exports = HeaderDate
+module.exports = DateContainer
