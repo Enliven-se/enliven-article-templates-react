@@ -149,7 +149,7 @@ const MockTheWayWePlay = {
      url: '/images/mock/twwp-11.jpg'
     }
   }
- ]
+ ],
  ArticleCategory: 'Women\'s Health',
  ArticleTitle: 'Small Talk - Emelie Torling',
  ContributorList: [
