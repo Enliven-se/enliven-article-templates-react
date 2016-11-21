@@ -11,22 +11,22 @@ const MockShortInterview = {
     }, {
       type: 'text',
       content: {
-        html: ''
+        html: 'If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally.'
       }
     }, {
       type: 'pullquote',
       content: {
-        html: ''
+        html: 'No one has completed all of their goals or, for that matter, no regrets.'
       }
     }, {
       type: 'text',
       content: {
-        html: ''
+        html: 'If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size.'
       }
     }, {
       type: 'text',
       content: {
-        html: ''
+        html: 'If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is /“packed/” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size.'
       }
     }
   ],
@@ -35,15 +35,15 @@ const MockShortInterview = {
   Preamble_intro_: 'Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.',
   ContributorList: [
     {
-      Avatar: '',
-      ContributorCredit: '',
+      Avatar: '/images/mock/avatar.png',
+      ContributorCredit: 'Peter Larsen',
       ContributorLink: ''
     }, {
-      Avatar: '',
-      ContributorCredit: '',
+      Avatar: '/images/mock/avatar.png',
+      ContributorCredit: 'Anna Sidorova',
       ContributorLink: ''
     }
   ],
-  DatePublished: ''
+  DatePublished: 'November 18, 2016'
 }
 module.exports = MockShortInterview
