@@ -3,7 +3,7 @@ import { PageHeader } from 'react-bootstrap'
 
 const ParticleH1 = React.createClass({
   render: function() {
-    return <PageHeader className=''>{this.props.particleName}</PageHeader>
+    return <PageHeader className=''>{this.props.content}</PageHeader>
   }
 })
 

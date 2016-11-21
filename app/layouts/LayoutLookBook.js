@@ -35,9 +35,7 @@ const React = window.React = require('react'),
   ParticlePreamble_intro_ = require('../components/particles/ParticlePreamble_intro_'),
   ParticlePullquote = require('../components/particles/ParticlePullquote'),
   ParticleText = require('../components/particles/ParticleText'),
-  ParticleVideo = require('../components/particles/ParticleVideo'),
-
-  ParticleHeroImage = require('../components/particles/ParticleHeroImage')
+  ParticleVideo = require('../components/particles/ParticleVideo')
 
 import { Grid, Row, Col } from 'react-bootstrap'
 
