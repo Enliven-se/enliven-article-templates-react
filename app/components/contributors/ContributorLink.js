@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContributorLink = React.createClass({
   render: function() {
-    return <div className={this.props.componentClasses}>{this.props.children}</div>
+    return <a href={this.props.url} className={this.props.componentClasses}>{this.props.children}</a>
   }
 })
 

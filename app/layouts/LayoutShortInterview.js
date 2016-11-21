@@ -18,6 +18,7 @@ const React = window.React = require('react'),
   ContributorList = require('../components/contributors/ContributorList'),
   Contributor = require('../components/contributors/Contributor'),
   ContributorCredit = require('../components/contributors/ContributorCredit'),
+  ContributorRole = require('../components/contributors/ContributorRole'),
   ContributorLink = require('../components/contributors/ContributorLink'),
 
   ParticleAttachment = require('../components/particles/ParticleAttachment'),
@@ -57,20 +58,12 @@ const LayoutShortInterview = React.createClass({
         </Container>
         <Grid>
           <ContributorList>
-            <Contributor>
-              <Avatar componentClasses='avatar' />
-              <ContributorCredit componentClasses='contributor-credit' />
-              <ContributorLink componentClasses='contributor-link' />
-            </Contributor>
+            <Contributor data={this.props.data.ContributorList[0]} />
             <Separator separatorType='comma' componentClasses='text-separator text-separator-comma' />
-            <Contributor>
-              <Avatar componentClasses='avatar' />
-              <ContributorCredit componentClasses='contributor-credit' />
-              <ContributorLink componentClasses='contributor-link' />
-            </Contributor>
+            <Contributor data={this.props.data.ContributorList[1]} />
           </ContributorList>
           <div className='pull-right'>
-            <DatePublished componentClasses='date-published' />
+            <DatePublished componentClasses='date-published' content={this.props.data.DatePublished} />
           </div>
         </Grid>
         <Grid>

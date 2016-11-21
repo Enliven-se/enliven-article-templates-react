@@ -3,8 +3,8 @@ import { Image } from 'react-bootstrap'
 
 const ParticleImage = React.createClass({
   render: function() {
-    return <div className='particle-image'>
-        <Image src={this.props.imageURL} responsive />
+    return <div className={this.props.componentClasses}>
+      <Image src={this.props.imageURL} responsive />
     </div>
   }
 })
