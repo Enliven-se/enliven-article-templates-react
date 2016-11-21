@@ -1,29 +1,23 @@
+/**
+ * PageContainer
+ */
 const React = window.React = require('react'),
-  LayoutShortInterview = require('../layouts/LayoutShortInterview'),
-  LayoutTheWayWePlay = require('../layouts/LayoutTheWayWePlay'),
-  LayoutLookBook = require('../layouts/LayoutLookBook'),
-  LayoutTestLayout = require('../layouts/LayoutTestLayout')
+
+  Layout = require('../layouts/LayoutShortInterview'),
+  // Layout = require('../layouts/LayoutTheWayWePlay'),
+  // Layout = require('../layouts/LayoutLookBook'),
+  // Layout = require('../layouts/LayoutTestLayout'),
+
+  mock = require('../data/MockShortInterview')
+  // mock = require('../data/MockTheWayWePlay')
+  // mock = require('../data/MockLookBook')
+  // mock = require('../data/MockTestLayout')
 
 const PageContainer = React.createClass({
   render: function() {
-    const mock = {
-      header: {
-        images: [
-          {
-            imageURL: '/images/mock/Charlize-Theron--Capitol-Grand-Photoshoot-2015--05.jpg'
-          }
-        ]
-      },
-      body: {
-
-      },
-      footer: {
-
-      }
-    }
     return (
       <div className='page'>
-          <LayoutTheWayWePlay data={mock} />
+        <Layout data={mock} />
       </div>
     )
   }

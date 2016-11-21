@@ -7,7 +7,6 @@ const React = window.React = require('react'),
   MetaContainer = require('../containers/MetaContainer'),
   PhotoCredits = require('../containers/PhotoCredits'),
 
-
   ArticleCategory = require('../components/base/ArticleCategory'),
   ArticleTitle = require('../components/base/ArticleTitle'),
   ArticleIntro = require('../components/base/ArticleIntro'),

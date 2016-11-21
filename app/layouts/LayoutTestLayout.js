@@ -37,8 +37,12 @@ const LayoutTestLayout = React.createClass({
             <Row>
               <Col md={6}>
                 <ContributorContainer particleName='ContributorContainer' componentClasses='text-bold'>
-                  <span>WRITTEN BY <a href='#'>PETER LARSEN</a></span>
-                  <span>PHOTOGRAPHER <a href='#'>ANNA SIDOROVA</a></span>
+                  <span>WRITTEN BY
+                    <a href='#'>PETER LARSEN</a>
+                  </span>
+                  <span>PHOTOGRAPHER
+                    <a href='#'>ANNA SIDOROVA</a>
+                  </span>
                 </ContributorContainer>
               </Col>
               <Col md={6}>

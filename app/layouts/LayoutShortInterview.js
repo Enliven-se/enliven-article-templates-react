@@ -42,17 +42,17 @@ const LayoutShortInterview = React.createClass({
     return (
       <div>
         <Grid fluid className='panel-1'>
-          <ParticleHeroImage />
+          <ParticleHeroImage imageURL={this.props.data.fields[0].content.url} componentClasses='' />
           <Row>
-            <Col sm={6}>
+            <Col sm={5} smOffset={1}>
               <ArticleHeader>
-                <ArticleCategory />
-                <ArticleTitle />
+                <ArticleCategory componentClasses='' />
+                <ArticleTitle componentClasses='' />
               </ArticleHeader>
               <ArticleIntro>
-                <HR />
-                <ParticlePreamble_intro_ />
-                <HR />
+                <HR componentClasses='' />
+                <ParticlePreamble_intro_ componentClasses='' />
+                <HR componentClasses='' />
               </ArticleIntro>
             </Col>
           </Row>
@@ -60,30 +60,30 @@ const LayoutShortInterview = React.createClass({
         <Grid>
           <ContributorList>
             <Contributor>
-              <Avatar />
-              <ContributorCredit />
-              <ContributorLink />
+              <Avatar componentClasses='' />
+              <ContributorCredit componentClasses='' />
+              <ContributorLink componentClasses='' />
             </Contributor>
-            <Separator separatorType='comma' />
+            <Separator separatorType='comma' componentClasses='' />
             <Contributor>
-              <Avatar />
-              <ContributorCredit />
-              <ContributorLink />
+              <Avatar componentClasses='' />
+              <ContributorCredit componentClasses='' />
+              <ContributorLink componentClasses='' />
             </Contributor>
           </ContributorList>
           <div className='pull-right'>
-            <DatePublished />
+            <DatePublished componentClasses='' />
           </div>
         </Grid>
         <Grid>
           <Row>
             <Col sm={6}>
-              <ParticleText />
-              <ParticlePullquote />
-              <ParticleText />
+              <ParticleText componentClasses='' />
+              <ParticlePullquote componentClasses='' />
+              <ParticleText componentClasses='' />
             </Col>
             <Col sm={6}>
-              <ParticleText />
+              <ParticleText componentClasses='' />
             </Col>
           </Row>
         </Grid>
