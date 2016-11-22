@@ -1,8 +1,10 @@
 import React from 'react'
 
+const ParticleText = require('../components/particles/ParticleText')
+
 const PhotoCredits = React.createClass({
   render: function() {
-    return <div className='{this.props.componentClasses}'>{this.props.children}</div>
+    return <ParticleText componentClasses={classes} content={this.props.content} />
   }
 })
 

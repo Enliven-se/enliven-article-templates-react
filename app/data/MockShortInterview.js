@@ -1,14 +1,18 @@
 // mock data
 const MockShortInterview = {
   ArticleCategory: {
+    type: 'text',
     content: {
       html: 'WOMEN’S HEALTH'
-    }
+    },
+    classes: 'text-color-white text-uppercase'
   },
   ArticleTitle: {
+    type: 'text',
     content: {
       html: 'The Different Sides of Charlize'
-    }
+    },
+    classes: 'text-color-white text-uppercase'
   },
   ContributorList: [
     {
@@ -23,7 +27,12 @@ const MockShortInterview = {
       ContributorLink: '//cms.enliven.co/en/people/anna'
     }
   ],
-  DatePublished: 'November 18, 2016',
+  DatePublished: {
+    type: 'text',
+    content: {
+      html: 'November 18, 2016'
+    }
+  },
   fields: [
     {
       type: 'image',
@@ -34,7 +43,8 @@ const MockShortInterview = {
       type: 'text',
       content: {
         html: 'Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.'
-      }
+      },
+      classes: 'text-color-white'
     }, {
       type: 'text',
       content: {

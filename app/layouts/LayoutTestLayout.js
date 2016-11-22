@@ -28,7 +28,7 @@ const LayoutTestLayout = React.createClass({
         <HeaderContainer>
           <Grid fluid>
             <Row>
-              <ParticleImage particleName='Image' imageURL={this.props.data.header.images[0].imageURL} />
+              <ParticleImage particleName='Image' url={this.props.data.header.images[0].url} />
             </Row>
           </Grid>
         </HeaderContainer>

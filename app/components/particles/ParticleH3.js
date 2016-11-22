@@ -2,7 +2,9 @@ import React from 'react'
 
 const ParticleH3 = React.createClass({
   render: function() {
-    return <h3 className={this.props.componentClasses}>{this.props.content}</h3>
+    return <h3 className={this.props.componentClasses} dangerouslySetInnerHTML={{
+        __html: this.props.content
+      }}></h3>
   }
 })
 

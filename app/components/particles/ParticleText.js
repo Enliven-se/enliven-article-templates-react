@@ -2,7 +2,9 @@ import React from 'react'
 
 const ParticleText = React.createClass({
   render: function() {
-    return <div className={this.props.componentClasses}>{this.props.content}</div>
+    return <div className={this.props.componentClasses} dangerouslySetInnerHTML={{
+        __html: this.props.content
+      }}></div>
   }
 })
 

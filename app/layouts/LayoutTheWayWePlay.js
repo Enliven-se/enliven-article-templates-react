@@ -1,129 +1,96 @@
-const React = window.React = require('react'),
-  ContributorContainer = require('../containers/ContributorContainer'),
-  DateContainer = require('../containers/DateContainer'),
-  HeaderContainer = require('../containers/HeaderContainer'),
-  ArticleHeader = require('../containers/ArticleHeader'),
-  BodyContainer = require('../containers/BodyContainer'),
-  MetaContainer = require('../containers/MetaContainer'),
-
-  ArticleCategory = require('../components/base/ArticleCategory'),
-  ArticleTitle = require('../components/base/ArticleTitle'),
-  ArticleIntro = require('../components/base/ArticleIntro'),
-  Avatar = require('../components/base/Avatar'),
-  HR = require('../components/base/HR'),
-  DatePublished = require('../components/base/DatePublished'),
-  Separator = require('../components/base/Separator'),
-
-  ContributorList = require('../components/contributors/ContributorList'),
-  Contributor = require('../components/contributors/Contributor'),
-  ContributorCredit = require('../components/contributors/ContributorCredit'),
-  ContributorLink = require('../components/contributors/ContributorLink'),
-  ContributorAssociation = require('../components/contributors/ContributorAssociation'),
-
-  ParticleAttachment = require('../components/particles/ParticleAttachment'),
-  ParticleH1 = require('../components/particles/ParticleH1'),
-  ParticleH2 = require('../components/particles/ParticleH2'),
-  ParticleH3 = require('../components/particles/ParticleH3'),
-  ParticleH4 = require('../components/particles/ParticleH4'),
-  ParticleH5 = require('../components/particles/ParticleH5'),
-  ParticleH6 = require('../components/particles/ParticleH6'),
-  ParticleImag = require('../components/particles/ParticleImag'),
-  ParticleImage = require('../components/particles/ParticleImage'),
-  ParticlePreamble_intro_ = require('../components/particles/ParticlePreamble_intro_'),
-  ParticlePullquote = require('../components/particles/ParticlePullquote'),
-  ParticleText = require('../components/particles/ParticleText'),
-  ParticleVideo = require('../components/particles/ParticleVideo')
-
+import React from 'react'
 import { Grid, Row, Col } from 'react-bootstrap'
+// window.React = React
+
+const Container = require('../containers/Container'),
+  ArticleHeader = require('../containers/ArticleHeader'),
+  ContributorList = require('../containers/ContributorList'),
+  HR = require('../components/base/HR'),
+  ParticleH2 = require('../components/particles/ParticleH2'),
+  ParticleImage = require('../components/particles/ParticleImage'),
+  ParticleText = require('../components/particles/ParticleText')
 
 const LayoutTheWayWePlay = React.createClass({
   render: function() {
     return (
-      <div>
-        <Grid fluid className='panel-1'>
+      <div className='layout'>
+        <Container fluid componentClasses='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
           <Row>
             <Col sm={6} smOffset={6}>
-              <ArticleHeader>
-                <ArticleCategory componentClasses='article-category' content={this.props.data.ArticleCategory.content.html} />
-                <ArticleTitle componentClasses='article-title' content={this.props.data.ArticleTitle.content.html} />
-              </ArticleHeader>
+              <ArticleHeader ArticleCategory={this.props.data.ArticleCategory} ArticleTitle={this.props.data.ArticleTitle} />
             </Col>
           </Row>
-        </Grid>
+        </Container>
         <Grid>
           <Row>
             <Col sm={6}>
-              <ContributorList>
-                <Contributor data={this.props.data.ContributorList[0]} />
-                <Separator separatorType=',' />
-                <Contributor data={this.props.data.ContributorList[1]} />
-              </ContributorList>
+              <ContributorList componentClasses='contributor-list' data={this.props.data.ContributorList} separator=', ' />
             </Col>
             <Col sm={6}>
-              <ParticleText />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[1].content.html} />
             </Col>
           </Row>
         </Grid>
         <Grid>
           <Row>
             <Col>
-              <ParticleImage className='img-responsive' />
+              <ParticleImage url={this.props.data.fields[2].content.url} />
             </Col>
             <Col sm={6}>
-              <ParticleText />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[3].content.html} />
             </Col>
             <Col sm={6}>
-              <ParticleText />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[4].content.html} />
             </Col>
             <Col>
-              <ParticleImage className='img-responsive' />
+              <ParticleImage url={this.props.data.fields[5].content.url} />
             </Col>
             <Col>
-              <ParticleImage className='img-responsive' />
+              <ParticleImage url={this.props.data.fields[6].content.url} />
             </Col>
             <Col sm={6}>
-              <ParticleH2 />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[7].content.html} />
               <HR />
-              <ParticleText />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[8].content.html} />
             </Col>
             <Col sm={6}>
-              <ParticleText />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[9].content.html} />
             </Col>
             <Col>
-              <ParticleImage className='img-responsive' />
+              <ParticleImage url={this.props.data.fields[10].content.url} />
             </Col>
             <Col sm={6}>
-              <ParticleImage className='img-responsive' />
+              <ParticleImage url={this.props.data.fields[11].content.url} />
             </Col>
             <Col sm={6}>
-              <ParticleText />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[12].content.html} />
             </Col>
             <Col>
-              <ParticleImage className='img-responsive' />
+              <ParticleImage url={this.props.data.fields[13].content.url} />
             </Col>
             <Col>
-              <ParticleImage className='img-responsive' />
+              <ParticleImage url={this.props.data.fields[14].content.url} />
             </Col>
             <Col sm={6} smOffset={6}>
-              <ParticleText />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[15].content.html} />
             </Col>
             <Col>
-              <ParticleImage className='img-responsive' />
+              <ParticleImage url={this.props.data.fields[16].content.url} />
             </Col>
             <Col sm={6}>
-              <ParticleH2 />
+              <ParticleH2 componentClasses='particle-text' content={this.props.data.fields[17].content.html} />
               <HR />
-              <ParticleText />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[18].content.html} />
             </Col>
             <Col sm={6}>
-              <ParticleText />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[19].content.html} />
             </Col>
             <Col>
-              <ParticleImage className='img-responsive' />
+              <ParticleImage url={this.props.data.fields[20].content.url} />
             </Col>
             <Col sm={6}>
-              <ParticleText />
-              <ParticleImage className='img-responsive' />
+              <ParticleText componentClasses='particle-text' content={this.props.data.fields[20].content.html} />
+              <ParticleImage url={this.props.data.fields[21].content.url} />
             </Col>
           </Row>
         </Grid>

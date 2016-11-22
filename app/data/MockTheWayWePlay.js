@@ -1,11 +1,39 @@
 const MockTheWayWePlay = {
-  ArticleCategory: 'Women\'s Health',
-  ArticleTitle: 'Small Talk - Emelie Torling',
-  ContributorList: [{
-    ContributorCredit: 'The Way We Play'
-  }, {
-    ContributorCredit: 'Linda Alfvegren/Agent Bauer'
-  }],
+  ArticleCategory: {
+    type: 'text',
+    content: {
+      html: 'WOMEN’S HEALTH'
+    },
+    classes: 'text-color-white text-uppercase'
+  },
+  ArticleTitle: {
+    type: 'text',
+    content: {
+      html: 'Small Talk - Emelie Torling'
+    },
+    classes: 'text-color-white text-uppercase'
+  },
+  DatePublished: {
+    type: 'text',
+    content: {
+      html: 'November 18, 2016'
+    }
+  },
+  ContributorList: [
+    {
+      Avatar: '/images/mock/avatar.png',
+      ContributorRole: 'Written by',
+      ContributorCredit: 'The Way We Play',
+      ContributorLink: '//cms.enliven.co/en/groups/the-way-we-play'
+    }, {
+      Avatar: '/images/mock/avatar.png',
+      ContributorRole: 'Photographer',
+      ContributorCredit: 'Linda Alfvegren',
+      ContributorLink: '//cms.enliven.co/en/people/linda-alfvegren',
+      ContributorAssociation: 'Agent Bauer',
+      ContributorAssociationLink: '//cms.enliven.co/en/groups/agent-bauer'
+    }
+  ],
   fields: [{
     type: 'image',
     content: {
@@ -19,7 +47,7 @@ const MockTheWayWePlay = {
   }, {
     type: 'image',
     content: {
-      url: '/images/mock/twwp-2.jpg'
+      url: '/images/mock/twwp-11.jpg'
     }
   }, {
     type: 'text',
@@ -44,7 +72,13 @@ const MockTheWayWePlay = {
   }, {
     type: 'text',
     content: {
-      html: 'Berätta om första tiden med Nico Anaïs.<br/><br/>Hon är vårt första barn så som tur är hade vi inget att jämföra med, för resan har inte varit helt lätt. Jag började blöda i vecka 30. Väl på sjukhuset stannade blödningen av men startade på nytt igen efter några timmar och då ännu värre. Beslutet att göra ett akut kejsarsnitt togs direkt eftersom det var fara för både mitt och Anaïs liv och fjorton minuter senare var hon ute. Första natten drabbades jag av en panikattack. Jag förstod inte att jag hade fått barn. Allt som hänt var ett sådant trauma och jag fick inte heller träffa henne de första tolv timmarna. Jag hade obeskrivligt ont och var så rädd för att hon inte skulle klara sig.<br/>     Fem dagar efter förlossningen var jag och Gustaf tvungna att checka ut från sjukhusen och åka hem utan Anaïs. Vi kom innanför dörren med förlossningsväska och patientarmband runt armen och lägenheten var precis den samma men ändå var inget sig likt. Vi var föräldrar men vår bebis var inte där. Under två månader fick vi inte ha henne hemma. Jag bröstpumpade var tredje timme och åkte tvärs över Manhattan varje dag i sextio dagar för att få vara med henne och för att lämna mjölken som hon fick genom näsan. Hon var kopplad till så många olika slangar och jag satt vid kuvösen så länge jag orkade, jag fick inte hålla henne i mer än en timme per dag då hon inte fick vara längre tid än så utanför kuvösen. Såhär i efterhand när vi pratar om det så inser vi hur påfrestande det faktiskt har varit. Det tog lång lång tid för mig att verkligen fatta att hon – den där underbara lilla människan var vår.'
+      html: 'Berätta om första tiden med Nico Anaïs.'
+    },
+    'classes': 'text-color-gold text-uppercase'
+  }, {
+    type: 'text',
+    content: {
+      html: 'Hon är vårt första barn så som tur är hade vi inget att jämföra med, för resan har inte varit helt lätt. Jag började blöda i vecka 30. Väl på sjukhuset stannade blödningen av men startade på nytt igen efter några timmar och då ännu värre. Beslutet att göra ett akut kejsarsnitt togs direkt eftersom det var fara för både mitt och Anaïs liv och fjorton minuter senare var hon ute. Första natten drabbades jag av en panikattack. Jag förstod inte att jag hade fått barn. Allt som hänt var ett sådant trauma och jag fick inte heller träffa henne de första tolv timmarna. Jag hade obeskrivligt ont och var så rädd för att hon inte skulle klara sig.<br/>     Fem dagar efter förlossningen var jag och Gustaf tvungna att checka ut från sjukhusen och åka hem utan Anaïs. Vi kom innanför dörren med förlossningsväska och patientarmband runt armen och lägenheten var precis den samma men ändå var inget sig likt. Vi var föräldrar men vår bebis var inte där. Under två månader fick vi inte ha henne hemma. Jag bröstpumpade var tredje timme och åkte tvärs över Manhattan varje dag i sextio dagar för att få vara med henne och för att lämna mjölken som hon fick genom näsan. Hon var kopplad till så många olika slangar och jag satt vid kuvösen så länge jag orkade, jag fick inte hålla henne i mer än en timme per dag då hon inte fick vara längre tid än så utanför kuvösen. Såhär i efterhand när vi pratar om det så inser vi hur påfrestande det faktiskt har varit. Det tog lång lång tid för mig att verkligen fatta att hon – den där underbara lilla människan var vår.'
     }
   }, {
     type: 'text',
@@ -89,7 +123,13 @@ const MockTheWayWePlay = {
   }, {
     type: 'text',
     content: {
-      html: 'Dina fem bästa New York tips<br/><br/>Indochine – Fransk-vietnamesisk middagsrestaurang, bra för alla tillfällen. Romantisk middag för två eller stimmig fest med tjugo kompisar.<br/>Kiki\´s – Mitt nya favoritställe på Lower East Side. Det går inte att boka bord men det är bara att droppa in och vänta i baren. Kiki kommer att seata er. Bästa grekmaten någonsin. Beställ in ost med honung till förrätt. Vin får man i små karaffer, man sitter vackert vid träbord, kulörta lampor, stimmigt och billigt!<br/><br/>Dia Beacon – Ett museum som ligger i staden Beacon, ca 50 min med tåg från Manhattan. Ta tåget från Grand Central Station efter att ni druckit ett glas champagne och ätit ostron på The Grand Central Oyster Bar, och njut av konst av Dan Flavin och Donald Judd i den vackraste konstlokal jag sett. Lovar att det är värt resan. Att åka tåg upstate USA är också en upplevelse. Jag vågar säga att naturen i USA är den vackraste i världen.'
+      html: 'Dina fem bästa New York tips'
+    },
+    'classes': 'text-color-gold text-uppercase'
+  }, {
+    type: 'text',
+    content: {
+      html: 'Indochine – Fransk-vietnamesisk middagsrestaurang, bra för alla tillfällen. Romantisk middag för två eller stimmig fest med tjugo kompisar.<br/>Kiki\´s – Mitt nya favoritställe på Lower East Side. Det går inte att boka bord men det är bara att droppa in och vänta i baren. Kiki kommer att seata er. Bästa grekmaten någonsin. Beställ in ost med honung till förrätt. Vin får man i små karaffer, man sitter vackert vid träbord, kulörta lampor, stimmigt och billigt!<br/><br/>Dia Beacon – Ett museum som ligger i staden Beacon, ca 50 min med tåg från Manhattan. Ta tåget från Grand Central Station efter att ni druckit ett glas champagne och ätit ostron på The Grand Central Oyster Bar, och njut av konst av Dan Flavin och Donald Judd i den vackraste konstlokal jag sett. Lovar att det är värt resan. Att åka tåg upstate USA är också en upplevelse. Jag vågar säga att naturen i USA är den vackraste i världen.'
     }
   }, {
     type: 'text',
@@ -106,11 +146,7 @@ const MockTheWayWePlay = {
     content: {
       html: 'Hur får man kärleken att hålla under småbarnsåren?<br/><br/>Ha respekt för varandras känslor. Man kommer alltid känna olika inför saker men sålänge man respekterar och försöker hjälpa varandra så kommer man långt. Prata med varandra om allt så blir det färre missförstånd. Ha egentid. Själv men även tillsammans med din partner. Man får inte glömma bort vem man är och vilka man var innan man fick barn, det är det tuffaste men också det vikigaste. Jag och Gustav har ofta barnvakt och det har vi haft sedan Anaïs var väldigt liten. Det har varit viktigt för oss.<br/><br/>Hur länge planerar ni att stanna i New York?<br/><br/>Vi trivs väldigt bra just nu och har inga planer på att lämna men vi pratar om Paris ibland…'
     }
-  }, {
-    type: 'image',
-    content: {
-      url: '/images/mock/twwp-11.jpg'
-    }
-  }]
+  }
+  ]
 }
 module.exports = MockTheWayWePlay

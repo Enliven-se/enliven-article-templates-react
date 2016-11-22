@@ -1,16 +1,12 @@
 //
 
+$greyish: #9B9B9B;
+
 .brand-logo {
     .navbar-brand-img {
         width : 200px;
         float : none;
         margin: 0 auto;
-    }
-}
-
-.navbar-item {
-    .buttons-link {
-        display: none;
     }
 }
 
@@ -30,14 +26,21 @@
         letter-spacing: 0.27px;
         font-weight   : lighter;
         max-width     : 500px;
-        color         : #ffffff;
         font-size     : 20px;
 
         .article-category {
-            border   : 0.5px solid #ffffff;
+            border   : 0.5px solid #000000;
             display  : inline;
             padding  : 10px;
             font-size: 14px;
+
+            &.text-color-white {
+                border-color: #ffffff;
+            }
+
+            &.text-color-gold {
+                border-color: $golden-retriever;
+            }
         }
 
         .particle-intro {
@@ -64,7 +67,7 @@ blockquote {
 
     .contributor-role {
         text-transform: uppercase;
-        color         : #9B9B9B;
+        color         : $greyish;
     }
 
     .contributor-credit {
@@ -80,11 +83,23 @@ blockquote {
 
 .pull-right {
     .date-published {
-        color: #9B9B9B;
+        color: $greyish;
     }
 }
 
 .body-text {
     box-sizing: border-box;
     padding   : 60px;
+}
+
+.text-color-black {
+    color: #000;
+}
+
+.text-color-white {
+    color: #fff;
+}
+
+.text-color-gold {
+    color: $golden-retriever;
 }

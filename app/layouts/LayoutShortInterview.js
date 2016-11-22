@@ -1,72 +1,37 @@
-const React = window.React = require('react'),
-  Container = require('../containers/Container'),
-  ContributorContainer = require('../containers/ContributorContainer'),
-  DateContainer = require('../containers/DateContainer'),
-  HeaderContainer = require('../containers/HeaderContainer'),
-  ArticleHeader = require('../containers/ArticleHeader'),
-  BodyContainer = require('../containers/BodyContainer'),
-  MetaContainer = require('../containers/MetaContainer'),
+import React from 'react'
+import { Grid, Row, Col } from 'react-bootstrap'
+// window.React = React
 
-  ArticleCategory = require('../components/base/ArticleCategory'),
-  ArticleTitle = require('../components/base/ArticleTitle'),
-  ArticleIntro = require('../components/base/ArticleIntro'),
-  Avatar = require('../components/base/Avatar'),
-  HR = require('../components/base/HR'),
+const Container = require('../containers/Container'),
+  ArticleHeader = require('../containers/ArticleHeader'),
+  ArticleIntro = require('../containers/ArticleIntro'),
+  ContributorList = require('../containers/ContributorList'),
+
   DatePublished = require('../components/base/DatePublished'),
   Separator = require('../components/base/Separator'),
 
-  ContributorList = require('../components/contributors/ContributorList'),
-  Contributor = require('../components/contributors/Contributor'),
-  ContributorCredit = require('../components/contributors/ContributorCredit'),
-  ContributorRole = require('../components/contributors/ContributorRole'),
-  ContributorLink = require('../components/contributors/ContributorLink'),
-
-  ParticleAttachment = require('../components/particles/ParticleAttachment'),
-  ParticleH1 = require('../components/particles/ParticleH1'),
-  ParticleH2 = require('../components/particles/ParticleH2'),
-  ParticleH3 = require('../components/particles/ParticleH3'),
-  ParticleH4 = require('../components/particles/ParticleH4'),
-  ParticleH5 = require('../components/particles/ParticleH5'),
-  ParticleH6 = require('../components/particles/ParticleH6'),
-  ParticleImag = require('../components/particles/ParticleImag'),
-  ParticleImage = require('../components/particles/ParticleImage'),
-  ParticlePreamble_intro_ = require('../components/particles/ParticlePreamble_intro_'),
   ParticlePullquote = require('../components/particles/ParticlePullquote'),
-  ParticleText = require('../components/particles/ParticleText'),
-  ParticleVideo = require('../components/particles/ParticleVideo')
-
-import { Grid, Row, Col } from 'react-bootstrap'
+  ParticleText = require('../components/particles/ParticleText')
 
 const LayoutShortInterview = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className='layout'>
         <Container componentClasses='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
           <Row>
             <Col sm={5} smOffset={1}>
-              <ArticleHeader>
-                <ArticleCategory componentClasses='article-category' content={this.props.data.ArticleCategory.content.html} />
-                <ArticleTitle componentClasses='article-title' content={this.props.data.ArticleTitle.content.html} />
-              </ArticleHeader>
-              <ArticleIntro>
-                <HR componentClasses='hr' />
-                <ParticlePreamble_intro_ componentClasses='particle-intro' content={this.props.data.fields[1].content.html} />
-                <HR componentClasses='hr' />
-              </ArticleIntro>
+              <ArticleHeader ArticleCategory={this.props.data.ArticleCategory} ArticleTitle={this.props.data.ArticleTitle} />
+              <ArticleIntro bordered data={this.props.data.fields[1]} />
             </Col>
           </Row>
         </Container>
         <Grid>
-          <ContributorList componentClasses='contributor-list'>
-            <Contributor data={this.props.data.ContributorList[0]} />
-            <Separator separatorType=',' />
-            <Contributor data={this.props.data.ContributorList[1]} />
-          </ContributorList>
+          <ContributorList componentClasses='contributor-list' data={this.props.data.ContributorList} separator=', ' />
           <div className='pull-right'>
-            <DatePublished componentClasses='date-published' content={this.props.data.DatePublished} />
+            <DatePublished componentClasses='date-published' content={this.props.data.DatePublished.content.html} />
           </div>
         </Grid>
-        <Container componentClasses='body-text'>
+        <Grid>
           <Row>
             <Col sm={6}>
               <ParticleText componentClasses='particle-text' content={this.props.data.fields[2].content.html} />
@@ -77,7 +42,7 @@ const LayoutShortInterview = React.createClass({
               <ParticleText componentClasses='particle-text' content={this.props.data.fields[5].content.html} />
             </Col>
           </Row>
-      </Container>
+        </Grid>
       </div>
     )
   }
