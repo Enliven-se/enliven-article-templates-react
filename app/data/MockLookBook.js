@@ -1,11 +1,29 @@
 const MockLookBook = {
-  ArticleCategory: 'Fashion, Women\'s Lifestyle',
+  ArticleCategory: {
+    content: {
+      html: 'Fashion, Women\'s Lifestyle'
+    }
+  },
+  ArticleTitle: {
+    content: {
+      html: 'Lookbook Autumn // Winter 2016'
+    }
+  },
+  DatePublished: {
+    type: 'text',
+    content: {
+      html: 'November 18, 2016'
+    }
+  },
   Charity: {
     icon: '/images/mock/charity.png',
     content: 'CHARITABLE CONTRIBUTION PROCEEDS TO CANCER RESEARCH'
   },
-  ArticleTitle: 'Lookbook Autumn // Winter 2016',
-  Preamble_intro_: 'Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.',
+  Preamble_intro_: {
+    content: {
+      html: 'Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.'
+    }
+  },
   ContributorList: [
     {
       Avatar: '/images/mock/avatar.png',

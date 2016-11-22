@@ -42,31 +42,14 @@ import { Grid, Row, Col } from 'react-bootstrap'
 const LayoutLookBook = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className='layout'>
         <Grid fluid>
           <Row>
             <Col sm={6}>
-              <ArticleHeader>
-                <ArticleCategory />
-                <CharityCredit>
-                  <Icon />
-                  <Link />
-                </CharityCredit>
-              </ArticleHeader>
-              <ArticleIntro>
-                <ArticleTitle />
-                <HR />
-                <ParticlePreamble_intro_ />
-                <HR />
-              </ArticleIntro>
-              <ContributorList>
-                <Contributor data={this.props.data.ContributorList[0]} />
-                <Separator separatorType=',' />
-                <Contributor data={this.props.data.ContributorList[1]} />
-                <Separator separatorType=',' />
-                <Contributor data={this.props.data.ContributorList[2]} />
-              </ContributorList>
-              <DatePublished />
+              <ArticleHeader ArticleCategory={this.props.data.ArticleCategory} ArticleTitle={this.props.data.ArticleTitle} CharityCredit={this.props.data.CharityCredit} />
+              <ArticleIntro bordered data={this.props.data.fields[1]} />
+              <ContributorList componentClasses='contributor-list' data={this.props.data.ContributorList} separator=', ' />
+              <DatePublished componentClasses='date-published' content={this.props.data.DatePublished.content.html} />
             </Col>
             <Col sm={6}>
               <ParticleImage>
