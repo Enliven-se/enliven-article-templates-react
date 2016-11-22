@@ -6,10 +6,8 @@ const Container = require('../containers/Container'),
   ArticleHeader = require('../containers/ArticleHeader'),
   ArticleIntro = require('../containers/ArticleIntro'),
   ContributorList = require('../containers/ContributorList'),
-
   DatePublished = require('../components/base/DatePublished'),
   Separator = require('../components/base/Separator'),
-
   ParticlePullquote = require('../components/particles/ParticlePullquote'),
   ParticleText = require('../components/particles/ParticleText')
 
