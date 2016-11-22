@@ -57,7 +57,7 @@ const LayoutShortInterview = React.createClass({
           </Row>
         </Container>
         <Grid>
-          <ContributorList>
+          <ContributorList componentClasses='contributor-list'>
             <Contributor data={this.props.data.ContributorList[0]} />
             <Separator separatorType='comma' componentClasses='text-separator text-separator-comma' />
             <Contributor data={this.props.data.ContributorList[1]} />
@@ -66,7 +66,7 @@ const LayoutShortInterview = React.createClass({
             <DatePublished componentClasses='date-published' content={this.props.data.DatePublished} />
           </div>
         </Grid>
-        <Grid>
+        <Container componentClasses='body-text'>
           <Row>
             <Col sm={6}>
               <ParticleText componentClasses='particle-text' content={this.props.data.fields[2].content.html} />
@@ -77,7 +77,7 @@ const LayoutShortInterview = React.createClass({
               <ParticleText componentClasses='particle-text' content={this.props.data.fields[5].content.html} />
             </Col>
           </Row>
-        </Grid>
+      </Container>
       </div>
     )
   }
