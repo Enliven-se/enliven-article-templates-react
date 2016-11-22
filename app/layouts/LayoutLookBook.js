@@ -61,9 +61,9 @@ const LayoutLookBook = React.createClass({
               </ArticleIntro>
               <ContributorList>
                 <Contributor data={this.props.data.ContributorList[0]} />
-                <Separator separatorType='comma' />
+                <Separator separatorType=',' />
                 <Contributor data={this.props.data.ContributorList[1]} />
-                <Separator separatorType='comma' />
+                <Separator separatorType=',' />
                 <Contributor data={this.props.data.ContributorList[2]} />
               </ContributorList>
               <DatePublished />

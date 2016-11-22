@@ -59,7 +59,7 @@ const LayoutShortInterview = React.createClass({
         <Grid>
           <ContributorList>
             <Contributor data={this.props.data.ContributorList[0]} />
-            <Separator separatorType='comma' componentClasses='text-separator text-separator-comma' />
+            <Separator separatorType=',' />
             <Contributor data={this.props.data.ContributorList[1]} />
           </ContributorList>
           <div className='pull-right'>

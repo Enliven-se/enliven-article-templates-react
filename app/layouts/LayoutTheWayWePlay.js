@@ -44,8 +44,8 @@ const LayoutTheWayWePlay = React.createClass({
           <Row>
             <Col sm={6} smOffset={6}>
               <ArticleHeader>
-                <ArticleCategory />
-                <ArticleTitle />
+                <ArticleCategory componentClasses='article-category' content={this.props.data.ArticleCategory.content.html} />
+                <ArticleTitle componentClasses='article-title' content={this.props.data.ArticleTitle.content.html} />
               </ArticleHeader>
             </Col>
           </Row>
@@ -55,7 +55,7 @@ const LayoutTheWayWePlay = React.createClass({
             <Col sm={6}>
               <ContributorList>
                 <Contributor data={this.props.data.ContributorList[0]} />
-                <Separator separatorType='comma' />
+                <Separator separatorType=',' />
                 <Contributor data={this.props.data.ContributorList[1]} />
               </ContributorList>
             </Col>
