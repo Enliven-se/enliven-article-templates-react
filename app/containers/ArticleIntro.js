@@ -5,23 +5,19 @@ const ParticlePreamble_intro_ = require('../components/particles/ParticlePreambl
 
 const ArticleIntro = React.createClass({
   render: function() {
-    if (this.props.bordered) {
+    const ArticleIntroBorder = function(props) {
       return (
-        <div className={this.props.componentClasses}>
-          <HR componentClasses='hr' />
-          <ParticlePreamble_intro_ componentClasses={this.props.data.classes} content={this.props.data.content.html} />
-          <HR componentClasses='hr' />
-          {this.props.children}
-        </div>
-      )
-    } else {
-      return (
-        <div className={this.props.componentClasses}>
-          <ParticlePreamble_intro_ componentClasses={this.props.data.classes} content={this.props.data.content.html} />
-          {this.props.children}
-        </div>
+      (props.bordered) ? <HR componentClasses={props.componentClasses + ' hr'} /> : null
       )
     }
+    return (
+      <div className={this.props.componentClasses}>
+        <ArticleIntroBorder {...this.props} />
+        <ParticlePreamble_intro_ componentClasses={this.props.data.classes} content={this.props.data.content.html} />
+        <ArticleIntroBorder {...this.props} />
+        {this.props.children}
+      </div>
+    )
   }
 })
 
