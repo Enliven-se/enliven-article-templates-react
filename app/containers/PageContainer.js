@@ -3,21 +3,35 @@
  */
 const React = window.React = require('react'),
 
-  Layout = require('../layouts/LayoutShortInterview'),
-  // Layout = require('../layouts/LayoutTheWayWePlay'),
-  // Layout = require('../layouts/LayoutLookBook'),
-  // Layout = require('../layouts/LayoutTestLayout'),
+  LayoutShortInterview = require('../layouts/LayoutShortInterview'),
+  LayoutTheWayWePlay = require('../layouts/LayoutTheWayWePlay'),
+  LayoutLookBook = require('../layouts/LayoutLookBook'),
+  // LayoutTestLayout = require('../layouts/LayoutTestLayout'),
 
-  mock = require('../data/MockShortInterview')
-  // mock = require('../data/MockTheWayWePlay')
-  // mock = require('../data/MockLookBook')
-  // mock = require('../data/MockTestLayout')
+  MockShortInterview = require('../data/MockShortInterview'),
+  MockTheWayWePlay = require('../data/MockTheWayWePlay'),
+  MockLookBook = require('../data/MockLookBook')
+  // MockTestLayout = require('../data/MockTestLayout')
 
 const PageContainer = React.createClass({
   render: function() {
+    const switchLayout = function(props) {
+      switch (props.layout) {
+        case 'LookBook':
+          return <LayoutLookBook data={MockLookBook} />
+        case 'TheWayWePlay':
+          return <LayoutTheWayWePlay data={MockTheWayWePlay} />
+        case 'ShortInterview':
+        default:
+          return <LayoutShortInterview data={MockShortInterview} />
+      }
+    }
+
     return (
       <div className='page'>
-        <Layout data={mock} />
+        { switchLayout({
+        layout: this.props.layout
+      }) }
       </div>
     )
   }

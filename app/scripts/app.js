@@ -4,4 +4,7 @@ const React = window.React = require('react'),
   PageContainer = require('../containers/PageContainer'),
   mountNode = document.getElementById('app')
 
-ReactDOM.render(<PageContainer />, mountNode)
+var layout = location.search.match(/[&\?]layout=(\w+)/)
+layout = layout && (layout.length > 1) ? layout[1] : ''
+
+ReactDOM.render(<PageContainer layout={layout} />, mountNode)

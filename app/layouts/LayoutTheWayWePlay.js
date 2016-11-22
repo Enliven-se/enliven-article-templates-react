@@ -41,7 +41,6 @@ const LayoutTheWayWePlay = React.createClass({
     return (
       <div>
         <Grid fluid className='panel-1'>
-          <ParticleHeroImage />
           <Row>
             <Col sm={6} smOffset={6}>
               <ArticleHeader>
@@ -55,16 +54,9 @@ const LayoutTheWayWePlay = React.createClass({
           <Row>
             <Col sm={6}>
               <ContributorList>
-                <Contributor>
-                  <ContributorCredit />
-                  <ContributorLink />
-                </Contributor>
+                <Contributor data={this.props.data.ContributorList[0]} />
                 <Separator separatorType='comma' />
-                <Contributor>
-                  <ContributorCredit />
-                  <ContributorLink />
-                  <ContributorAssociation />
-                </Contributor>
+                <Contributor data={this.props.data.ContributorList[1]} />
               </ContributorList>
             </Col>
             <Col sm={6}>

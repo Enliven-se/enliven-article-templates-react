@@ -1,10 +1,18 @@
 {
-  "navbar_items": [
-    {
-      "title": "front",
-      "className": "front",
-      "extra_classes" : ["front"],
-      "url": "/"
-    }
-  ]
+    "navbar_items": [{
+        "title": "Short Interview",
+        "className": "short-interview",
+        "extra_classes": [""],
+        "url": "/?layout=ShortInterview"
+    }, {
+        "title": "Look Book",
+        "className": "look-book",
+        "extra_classes": [""],
+        "url": "/?layout=LookBook"
+    }, {
+        "title": "The Way We Play",
+        "className": "the-way-we-play",
+        "extra_classes": [""],
+        "url": "/?layout=TheWayWePlay"
+    }]
 }

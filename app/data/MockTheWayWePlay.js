@@ -1,5 +1,11 @@
 const MockTheWayWePlay = {
-
+  ArticleCategory: 'Women\'s Health',
+  ArticleTitle: 'Small Talk - Emelie Torling',
+  ContributorList: [{
+    ContributorCredit: 'The Way We Play'
+  }, {
+    ContributorCredit: 'Linda Alfvegren/Agent Bauer'
+  }],
   fields: [{
     type: 'image',
     content: {
@@ -105,13 +111,6 @@ const MockTheWayWePlay = {
     content: {
       url: '/images/mock/twwp-11.jpg'
     }
-  }],
-  ArticleCategory: 'Women\'s Health',
-  ArticleTitle: 'Small Talk - Emelie Torling',
-  ContributorList: [{
-    ContributorCredit: 'The Way We Play'
-  }, {
-    ContributorCredit: 'Linda Alfvegren/Agent Bauer'
   }]
 }
 module.exports = MockTheWayWePlay

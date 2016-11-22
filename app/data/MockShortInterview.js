@@ -1,7 +1,29 @@
-// mock
-// this.props.data.images[0].imageURL
-// this.props.data.fields[0].content.url
+// mock data
 const MockShortInterview = {
+  ArticleCategory: {
+    content: {
+      html: 'WOMEN’S HEALTH'
+    }
+  },
+  ArticleTitle: {
+    content: {
+      html: 'The Different Sides of Charlize'
+    }
+  },
+  ContributorList: [
+    {
+      Avatar: '/images/mock/avatar.png',
+      ContributorRole: 'Written by',
+      ContributorCredit: 'Peter Larsen',
+      ContributorLink: '//cms.enliven.co/en/people/peter-larsen'
+    }, {
+      Avatar: '/images/mock/avatar.png',
+      ContributorRole: 'Photographer',
+      ContributorCredit: 'Anna Sidorova',
+      ContributorLink: '//cms.enliven.co/en/people/anna'
+    }
+  ],
+  DatePublished: 'November 18, 2016',
   fields: [
     {
       type: 'image',
@@ -34,30 +56,6 @@ const MockShortInterview = {
         html: 'If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is \“packed\” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is \“packed\” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is \“packed\” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. If you had to live your life over again, what one thing would you change? This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is \“packed\” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size.'
       }
     }
-  ],
-  ArticleCategory: {
-    content: {
-      html: 'WOMEN’S HEALTH'
-    }
-  },
-  ArticleTitle: {
-    content: {
-      html: 'The Different Sides of Charlize'
-    }
-  },
-  ContributorList: [
-    {
-      Avatar: '/images/mock/avatar.png',
-      ContributorRole: 'Written by',
-      ContributorCredit: 'Peter Larsen',
-      ContributorLink: '//cms.enliven.co/en/people/peter-larsen'
-    }, {
-      Avatar: '/images/mock/avatar.png',
-      ContributorRole: 'Photographer',
-      ContributorCredit: 'Anna Sidorova',
-      ContributorLink: '//cms.enliven.co/en/people/anna'
-    }
-  ],
-  DatePublished: 'November 18, 2016'
+  ]
 }
 module.exports = MockShortInterview

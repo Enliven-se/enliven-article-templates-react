@@ -60,23 +60,11 @@ const LayoutLookBook = React.createClass({
                 <HR />
               </ArticleIntro>
               <ContributorList>
-                <Contributor>
-                  <Avatar />
-                  <ContributorCredit />
-                  <ContributorLink />
-                </Contributor>
+                <Contributor data={this.props.data.ContributorList[0]} />
                 <Separator separatorType='comma' />
-                <Contributor>
-                  <Avatar />
-                  <ContributorCredit />
-                  <ContributorLink />
-                </Contributor>
+                <Contributor data={this.props.data.ContributorList[1]} />
                 <Separator separatorType='comma' />
-                <Contributor>
-                  <Avatar />
-                  <ContributorCredit />
-                  <ContributorLink />
-                </Contributor>
+                <Contributor data={this.props.data.ContributorList[2]} />
               </ContributorList>
               <DatePublished />
             </Col>
