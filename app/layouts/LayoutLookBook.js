@@ -9,10 +9,10 @@ const ArticleHeader = require('../containers/ArticleHeader'),
   Separator = require('../components/base/Separator'),
   ParticleImage = require('../components/particles/ParticleImage')
 
-const LayoutLookBook = React.createClass({
+const LayoutLookbook = React.createClass({
   render: function() {
     return (
-      <div className='layout'>
+      <div className='layout layout-lookbook'>
         <Grid fluid>
           <Row>
             <Col sm={6}>
@@ -44,4 +44,4 @@ const LayoutLookBook = React.createClass({
   }
 })
 
-module.exports = LayoutLookBook
+module.exports = LayoutLookbook

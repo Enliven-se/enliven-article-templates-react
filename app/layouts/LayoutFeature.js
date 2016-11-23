@@ -10,10 +10,10 @@ const Container = require('../containers/Container'),
   ParticleImage = require('../components/particles/ParticleImage'),
   ParticleText = require('../components/particles/ParticleText')
 
-const LayoutTheWayWePlay = React.createClass({
+const LayoutFeature = React.createClass({
   render: function() {
     return (
-      <div className='layout'>
+      <div className='layout layout-feature'>
         <Container fluid componentClasses='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
           <Row>
             <Col sm={6} smOffset={6}>
@@ -99,4 +99,4 @@ const LayoutTheWayWePlay = React.createClass({
   }
 })
 
-module.exports = LayoutTheWayWePlay
+module.exports = LayoutFeature

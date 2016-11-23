@@ -11,10 +11,10 @@ const Container = require('../containers/Container'),
   ParticlePullquote = require('../components/particles/ParticlePullquote'),
   ParticleText = require('../components/particles/ParticleText')
 
-const LayoutShortInterview = React.createClass({
+const LayoutShort = React.createClass({
   render: function() {
     return (
-      <div className='layout'>
+      <div className='layout layout-short-article'>
         <Container componentClasses='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
           <Row>
             <Col sm={5} smOffset={1}>
@@ -46,4 +46,4 @@ const LayoutShortInterview = React.createClass({
   }
 })
 
-module.exports = LayoutShortInterview
+module.exports = LayoutShort
