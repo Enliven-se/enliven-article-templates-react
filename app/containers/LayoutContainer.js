@@ -1,8 +1,8 @@
 /**
  * LayoutContainer
  */
-const React = window.React = require('react'),
-
+import React from 'react'
+const NavContainer = require('../containers/NavContainer'),
   LayoutShort = require('../layouts/LayoutShort'),
   LayoutFeature = require('../layouts/LayoutFeature'),
   LayoutLookbook = require('../layouts/LayoutLookbook'),
@@ -10,6 +10,23 @@ const React = window.React = require('react'),
   MockShort = require('../data/MockShort'),
   MockFeature = require('../data/MockFeature'),
   MockLookbook = require('../data/MockLookbook')
+
+var navbar_items = [{
+  'title': 'Short',
+  'className': 'short',
+  'extra_classes': [''],
+  'url': '/?layout=Short'
+}, {
+  'title': 'Lookbook',
+  'className': 'lookbook',
+  'extra_classes': [''],
+  'url': '/?layout=Lookbook'
+}, {
+  'title': 'Feature',
+  'className': 'feature',
+  'extra_classes': [''],
+  'url': '/?layout=Feature'
+}]
 
 const LayoutContainer = React.createClass({
   render: function() {
@@ -27,10 +44,11 @@ const LayoutContainer = React.createClass({
 
     return (
       <div className='page'>
-        { switchLayout({
+         <NavContainer navbar_items={navbar_items} />
+         { switchLayout({
         layout: this.props.layout
       }) }
-      </div>
+       </div>
     )
   }
 })

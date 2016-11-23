@@ -1,7 +1,58 @@
-.navbar-default {
-    background-color: transparent;
+blockquote {
+    letter-spacing: 0.75px;
+    padding       : 10px 0;
 }
 
-.navbar-sticky {
-    position: absolute !important;
+.pull-right {
+    .date-published {
+        color: $greyish;
+    }
+}
+
+.body-text {
+    box-sizing: border-box;
+    padding   : 60px;
+}
+
+.particle-text {
+    letter-spacing: 0.22px;
+    font-size     : 16px;
+    line-height   : 35px;
+}
+
+.text-color-black {
+    color: #000;
+}
+
+.text-color-white {
+    color: #fff;
+}
+
+.text-color-gold {
+    color: $golden-retriever;
+}
+
+.border-color-gold {
+    border-color: $golden-retriever;
+}
+
+.contributor-list {
+    span {
+        margin-left: 10px;
+    }
+
+    .contributor-role {
+        text-transform: uppercase;
+        color         : $greyish;
+    }
+
+    .contributor-credit {
+        text-transform: uppercase;
+    }
+
+    .avatar {
+        .img-responsive {
+            display: inline;
+        }
+    }
 }

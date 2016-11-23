@@ -14,10 +14,10 @@ const Container = require('../containers/Container'),
 const LayoutShort = React.createClass({
   render: function() {
     return (
-      <div className='layout layout-short-article'>
-        <Container componentClasses='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
+      <div className='layout layout-short'>
+        <Container fluid componentClasses='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
           <Row>
-            <Col sm={5} smOffset={1}>
+            <Col sm={5} smOffset={1} className='article-meta'>
               <ArticleHeader ArticleCategory={this.props.data.ArticleCategory} ArticleTitle={this.props.data.ArticleTitle} />
               <ArticleIntro bordered data={this.props.data.fields[1]} />
             </Col>

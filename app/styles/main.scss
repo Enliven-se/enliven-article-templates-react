@@ -5,5 +5,7 @@
 @import '../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 @import '../bower_components/enliven-bootswatch/_bootswatch.scss';
 // endbower
+@import 'variables';
 @import 'default';
 @import 'pages';
+@import 'menu';

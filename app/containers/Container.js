@@ -9,7 +9,7 @@ const Container = React.createClass({
 
     if (this.props.backgroundImage) {
       elStyle.backgroundImage = 'url(' + this.props.backgroundImage + ')'
-      elStyle.height = '100vmax'
+      elStyle.height = '105vh'
       elStyle.backgroundSize = 'cover'
       elStyle.backgroundPosition = '100% 0'
     }

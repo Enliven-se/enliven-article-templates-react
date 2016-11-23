@@ -1,18 +1,2 @@
 {
-    "navbar_items": [{
-        "title": "Short",
-        "className": "short",
-        "extra_classes": [""],
-        "url": "/?layout=Short"
-    }, {
-        "title": "Lookbook",
-        "className": "lookbook",
-        "extra_classes": [""],
-        "url": "/?layout=Lookbook"
-    }, {
-        "title": "Feature",
-        "className": "feature",
-        "extra_classes": [""],
-        "url": "/?layout=Feature"
-    }]
 }

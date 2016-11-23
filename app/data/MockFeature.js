@@ -2,7 +2,8 @@ const MockTheWayWePlay = {
   'ArticleCategory': {
     'type': 'text',
     'content': {
-      'html': 'WOMEN’S HEALTH'
+      'html': 'WOMEN’S HEALTH',
+      'url': '#'
     },
     'classes': 'text-color-white text-uppercase'
   },

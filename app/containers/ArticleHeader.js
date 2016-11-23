@@ -13,7 +13,7 @@ const ArticleHeader = React.createClass({
 
     return (
       <div className={classes}>
-        <ArticleCategory componentClasses={this.props.ArticleCategory.classes} content={this.props.ArticleCategory.content.html} />
+        <ArticleCategory componentClasses={this.props.ArticleCategory.classes} content={this.props.ArticleCategory.content.html} url={this.props.ArticleCategory.content.url} />
         <CharityCredit>
           <Icon />
           <Link />
