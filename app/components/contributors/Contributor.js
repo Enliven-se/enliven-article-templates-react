@@ -27,6 +27,7 @@ const Contributor = React.createClass({
       <span className={classes}>
           <Avatar componentClasses='avatar' url={this.props.data.Avatar} />
           <ContributorRole componentClasses='contributor-role' data={this.props.data.ContributorRole} />
+          {' '}
           <ContributorLink componentClasses='contributor-link' data={this.props.data.ContributorLink}>
               <ContributorCredit componentClasses='contributor-credit' data={this.props.data.ContributorCredit} />
           </ContributorLink>

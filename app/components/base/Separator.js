@@ -2,10 +2,11 @@ import React from 'react'
 
 const Separator = React.createClass({
   render: function() {
-    var classes = this.props.componentClasses ? this.props.componentClasses : ''
+    let classes = this.props.componentClasses ? this.props.componentClasses : ''
     classes += ' separator'
 
-    return <span className={classes}>{this.props.separatorType}</span>
+    let space = this.props.space ? this.props.space : ' '
+    return <span className={classes}>{this.props.separatorType}{space}</span>
   }
 })
 

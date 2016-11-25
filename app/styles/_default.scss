@@ -19,7 +19,7 @@ blockquote {
 }
 
 .text-color-black {
-    color: #000;
+    color: $gray-base;
 }
 
 .text-color-white {
@@ -63,6 +63,10 @@ blockquote {
             display: inline;
         }
     }
+
+    li {
+        padding: 0 !important;
+    }
 }
 
 .contributor {
@@ -80,6 +84,6 @@ blockquote {
     }
 }
 
-.separator {
-    margin-right: 1em;
-}
+// .separator {
+//     margin-right: 1em;
+// }

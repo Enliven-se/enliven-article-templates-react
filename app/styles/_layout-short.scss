@@ -20,10 +20,12 @@
     }
 
     .article-title {
-        margin-top    : 39px;
-        letter-spacing: 6.31px;
-        line-height   : 78px;
-        font-size     : 50px;
+        margin-top: 39px;
+        @media screen and (min-width: $screen-sm) {
+            letter-spacing: 6.31px;
+            line-height   : 78px;
+            font-size     : 50px;
+        }
     }
     @media screen and (min-width: $screen-sm) {
         .article-category-wrapper,
@@ -39,5 +41,11 @@
                 left    : -50px;
             }
         }
+    }
+    @media screen and (min-width: $screen-md) {
+        .date-published-wrapper {
+            text-align: right;
+        }
+
     }
 }

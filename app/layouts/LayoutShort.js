@@ -24,12 +24,14 @@ const LayoutShort = React.createClass({
               </Row>
           </Container>
           <Container componentClasses='article-byline'>
-              <div className='contributor-list pull-left'>
-                  <ContributorList data={this.props.data.ContributorList} componentClasses='' separator=', ' />
-              </div>
-              <div className='pull-right'>
-                  <DatePublished componentClasses='date-published' content={this.props.data.DatePublished.content.html} />
-              </div>
+              <Row>
+                  <Col md={8}>
+                      <ContributorList data={this.props.data.ContributorList} componentClasses='contributor-list' separator=', ' />
+                  </Col>
+                  <Col md={4}>
+                      <DatePublished componentClasses='date-published' content={this.props.data.DatePublished.content.html} />
+                  </Col>
+              </Row>
           </Container>
           <Container componentClasses='article'>
               <Row>

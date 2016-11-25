@@ -19,12 +19,16 @@ const MockShortInterview = {
       'Avatar': '/images/mock/avatar.png',
       'ContributorRole': 'Written by',
       'ContributorCredit': 'Peter Larsen',
-      'ContributorLink': '//cms.enliven.co/en/people/peter-larsen'
+      'ContributorLink': {
+        'url': '//cms.enliven.co/en/people/peter-larsen'
+      }
     }, {
       'Avatar': '/images/mock/avatar.png',
       'ContributorRole': 'Photographer',
       'ContributorCredit': 'Anna Sidorova',
-      'ContributorLink': '//cms.enliven.co/en/people/anna'
+      'ContributorLink': {
+        'url': '//cms.enliven.co/en/people/anna'
+      }
     }
   ],
   'DatePublished': {
