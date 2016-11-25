@@ -216,5 +216,16 @@ gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], functio
     .pipe(gulp.dest('dist/scripts'))
 })
 
+// deploy to Github pages
+gulp.task('deploy', ['build'], () => {
+  return gulp.src('dist')
+    .pipe($.subtree({
+      remote: 'github',
+      branch: 'gh-pages',
+      message: 'deployed by gulp'
+    }))
+// .pipe($.clean());
+});
+
 // Default task
 gulp.task('default', ['watch'])
