@@ -1,3 +1,7 @@
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
 blockquote {
     letter-spacing: 0.75px;
     padding       : 10px 0;
@@ -12,12 +16,6 @@ blockquote {
 .body-text {
     box-sizing: border-box;
     padding   : 60px;
-}
-
-.particle-text {
-    letter-spacing: 0.22px;
-    font-size     : 16px;
-    line-height   : 35px;
 }
 
 .text-color-black {
@@ -36,11 +34,21 @@ blockquote {
     border-color: $golden-retriever;
 }
 
-.contributor-list {
-    span {
-        margin-left: 10px;
-    }
+.article-intro-border {
+    border-width: 3px;
+}
 
+.avatar-wrapper .avatar {
+    display: inline;
+}
+
+.particle-text {
+    letter-spacing: 0.22px;
+    font-size     : 16px;
+    line-height   : 35px;
+}
+
+.contributor-list {
     .contributor-role {
         text-transform: uppercase;
         color         : $greyish;
@@ -55,4 +63,23 @@ blockquote {
             display: inline;
         }
     }
+}
+
+.contributor {
+    .avatar-wrapper {
+        margin-right: 10px;
+    }
+}
+
+.particle-pullquote {
+    blockquote {
+        font-size     : 42px;
+        font-family   : $font-family-serif-bold;
+        letter-spacing: 0.75px;
+        line-height   : 53px;
+    }
+}
+
+.separator {
+    margin-right: 1em;
 }

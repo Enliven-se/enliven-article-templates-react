@@ -1,12 +1,7 @@
-.article-meta {
-    line-height   : 35px;
-    letter-spacing: 0.27px;
-    font-weight   : lighter;
-    font-size     : 20px;
-    @media screen and (max-width: $screen-xs - 1) {
-        font-size  : 15px;
-        line-height: 1.5em;
-    }
+.has-hero {
+    min-height         : 105vh;
+    background-size    : cover;
+    background-position: 100% 0;
 }
 
 .article-category {
@@ -49,31 +44,19 @@
     }
 }
 
-.particle-intro {
-    margin-left: 25px;
+.article-meta {
+    line-height   : 35px;
+    letter-spacing: 0.27px;
+    font-weight   : lighter;
+    font-size     : 20px;
+    @media screen and (max-width: $screen-xs - 1) {
+        font-size  : 15px;
+        line-height: 1.5em;
+    }
 }
 
-.layout-short {
-    margin-bottom: 20px;
-    max-height   : 110vh;
-    width        : 100%;
-
-    .navbar-brand-img {
-        float : none;
-        margin: 0 auto;
-    }
-
-    .article-meta {
-        margin   : 320px 0 0 90px;
-        max-width: 500px;
-        @media screen and (max-width: $screen-xs - 1) {
-            margin-left: 0;
-            margin-top : 240px;
-        }
-        @media screen and (min-width: $screen-xs) and (max-width: $screen-sm-max) {
-            // @FIXME - intended when title is 2 rows high
-            margin-top: 177px;
-        }
-    }
-
+.article-byline {
+    min-height    : $grid-height;
+    padding-top   : 39px;
+    padding-bottom: 39px;
 }

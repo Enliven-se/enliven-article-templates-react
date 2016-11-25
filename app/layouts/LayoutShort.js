@@ -15,32 +15,34 @@ const LayoutShort = React.createClass({
   render: function() {
     return (
       <div className='layout layout-short'>
-        <Container fluid componentClasses='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
-          <Row>
-            <Col sm={5} smOffset={1} className='article-meta'>
-              <ArticleHeader ArticleCategory={this.props.data.ArticleCategory} ArticleTitle={this.props.data.ArticleTitle} />
-              <ArticleIntro bordered data={this.props.data.fields[1]} />
-            </Col>
-          </Row>
-        </Container>
-        <Grid>
-          <ContributorList componentClasses='contributor-list' data={this.props.data.ContributorList} separator=', ' />
-          <div className='pull-right'>
-            <DatePublished componentClasses='date-published' content={this.props.data.DatePublished.content.html} />
-          </div>
-        </Grid>
-        <Grid>
-          <Row>
-            <Col sm={6}>
-              <ParticleText componentClasses='particle-text' content={this.props.data.fields[2].content.html} />
-              <ParticlePullquote componentClasses='particle-pullquote' content={this.props.data.fields[3].content.html} />
-              <ParticleText componentClasses='particle-text' content={this.props.data.fields[4].content.html} />
-            </Col>
-            <Col sm={6}>
-              <ParticleText componentClasses='particle-text' content={this.props.data.fields[5].content.html} />
-            </Col>
-          </Row>
-        </Grid>
+          <Container fluid componentClasses='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
+              <Row>
+                  <Col sm={5} smOffset={1} className='article-meta'>
+                      <ArticleHeader ArticleCategory={this.props.data.ArticleCategory} ArticleTitle={this.props.data.ArticleTitle} />
+                      <ArticleIntro bordered data={this.props.data.fields[1]} />
+                  </Col>
+              </Row>
+          </Container>
+          <Container componentClasses='article-byline'>
+              <div className='contributor-list pull-left'>
+                  <ContributorList data={this.props.data.ContributorList} componentClasses='' separator=', ' />
+              </div>
+              <div className='pull-right'>
+                  <DatePublished componentClasses='date-published' content={this.props.data.DatePublished.content.html} />
+              </div>
+          </Container>
+          <Container componentClasses='article'>
+              <Row>
+                  <Col sm={6}>
+                      <ParticleText componentClasses={this.props.data.fields[2].classes} content={this.props.data.fields[2].content.html} />
+                      <ParticlePullquote componentClasses={this.props.data.fields[3].classes} content={this.props.data.fields[3].content.html} />
+                      <ParticleText componentClasses={this.props.data.fields[4].classes} content={this.props.data.fields[4].content.html} />
+                  </Col>
+                  <Col sm={6}>
+                      <ParticleText componentClasses={this.props.data.fields[5].classes} content={this.props.data.fields[5].content.html} />
+                  </Col>
+              </Row>
+          </Container>
       </div>
     )
   }

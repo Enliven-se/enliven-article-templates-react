@@ -10,21 +10,27 @@ const Avatar = require('../base/Avatar'),
 const Contributor = React.createClass({
   render: function() {
     const ifNotEmptyContributorAssociation = function(props) {
+      if (!props.ContributorAssociation) return null;
       return (
-        <span>
-          <Separator separatorType='/' />
-          <ContributorAssociation componentClasses='contributor-association' data={this.props.data.ContributorAssociation} />
+        <span className='contributor'>
+            <Separator separatorType='/' />
+            <ContributorAssociation componentClasses='contributor-association' data={props.ContributorAssociation} />
         </span>
       )
     }
+
+    var classes = this.props.componentClasses ? this.props.componentClasses : ''
+    classes += ' contributor'
+
+
     return (
-      <span className={this.props.componentClasses}>
-        <Avatar componentClasses='avatar' url={this.props.data.Avatar} />
-        <ContributorRole componentClasses='contributor-role' data={this.props.data.ContributorRole} />
-        <ContributorLink componentClasses='contributor-link' data={this.props.data.ContributorLink}>
-          <ContributorCredit componentClasses='contributor-credit' data={this.props.data.ContributorCredit} />
-        </ContributorLink>
-        <ifNotEmptyContributorAssociation data={this.props.data} />
+      <span className={classes}>
+          <Avatar componentClasses='avatar' url={this.props.data.Avatar} />
+          <ContributorRole componentClasses='contributor-role' data={this.props.data.ContributorRole} />
+          <ContributorLink componentClasses='contributor-link' data={this.props.data.ContributorLink}>
+              <ContributorCredit componentClasses='contributor-credit' data={this.props.data.ContributorCredit} />
+          </ContributorLink>
+          {ifNotEmptyContributorAssociation(this.props.data) }
       </span>
     )
   }

@@ -2,7 +2,12 @@ import React from 'react'
 
 const Link = React.createClass({
   render: function() {
-    return <div className={this.props.componentClasses}>{this.props.children}</div>
+    if (!this.props.url)
+      return null;
+
+    return (
+      <a href={this.props.url} title={this.props.title} className='link-wrapper'>{this.props.text}</a>
+    )
   }
 })
 

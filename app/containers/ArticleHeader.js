@@ -8,18 +8,18 @@ const ArticleCategory = require('../components/base/ArticleCategory'),
 
 const ArticleHeader = React.createClass({
   render: function() {
-    var classes = this.props.componentClasses ? this.props.componentClasses + ' ' : ''
-    classes += 'article-header'
+    var classes = this.props.componentClasses ? this.props.componentClasses : ''
+    classes += ' article-header'
 
     return (
       <div className={classes}>
-        <ArticleCategory componentClasses={this.props.ArticleCategory.classes} content={this.props.ArticleCategory.content.html} url={this.props.ArticleCategory.content.url} />
-        <CharityCredit>
-          <Icon />
-          <Link />
-        </CharityCredit>
-        <ArticleTitle componentClasses={this.props.ArticleTitle.classes} content={this.props.ArticleTitle.content.html} />
-        {this.props.children}
+          <ArticleCategory componentClasses={this.props.ArticleCategory.classes} content={this.props.ArticleCategory.content.html} url={this.props.ArticleCategory.content.url} />
+          <CharityCredit>
+              <Icon />
+              <Link />
+          </CharityCredit>
+          <ArticleTitle componentClasses={this.props.ArticleTitle.classes} content={this.props.ArticleTitle.content.html} />
+          {this.props.children}
       </div>
     )
   }

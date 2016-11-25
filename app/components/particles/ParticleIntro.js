@@ -2,7 +2,7 @@ import React from 'react'
 
 const ParticleText = require('../particles/ParticleText')
 
-const ParticlePreamble_intro_ = React.createClass({
+const ParticleIntro = React.createClass({
   render: function() {
     var classes = this.props.componentClasses ? this.props.componentClasses + ' ' : ''
     classes += 'particle-intro'
@@ -10,4 +10,4 @@ const ParticlePreamble_intro_ = React.createClass({
   }
 })
 
-module.exports = ParticlePreamble_intro_
+module.exports = ParticleIntro

@@ -54,7 +54,8 @@ const MockShortInterview = {
       'type': 'pullquote',
       'content': {
         'html': 'No one has completed all of their goals or, for that matter, no regrets.'
-      }
+      },
+      'classes': 'text-color-gold'
     }, {
       'type': 'text',
       'content': {

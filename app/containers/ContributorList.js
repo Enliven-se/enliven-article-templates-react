@@ -4,7 +4,7 @@ const Contributor = require('../components/contributors/Contributor'),
   Separator = require('../components/base/Separator')
 
 const ContributorList = React.createClass({
-  render: function(props) {
+  render: function() {
     /* intersperse: Return an array with the separator interspersed between
      * each element of the input array.
      */
@@ -18,9 +18,11 @@ const ContributorList = React.createClass({
       }, [arr[0]])
     }
 
-    var items = this.props.data.map(function(item, i) {
-      return <Contributor key={'c' + i} data={item} />
-    })
+    var props = this.props,
+      items = this.props.data.map(function(item, i) {
+        return <Contributor key={'c' + i} data={item} className={props.componentClasses} />
+      })
+
     items = intersperse(items, function(i) {
       return <Separator key={'s' + i} separatorType=',' />
     })

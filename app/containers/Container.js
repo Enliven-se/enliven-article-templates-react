@@ -7,14 +7,15 @@ const Container = React.createClass({
     var elStyle = {
     }
 
+    var classes = this.props.componentClasses ? this.props.componentClasses : ''
+
     if (this.props.backgroundImage) {
+      classes += ' has-hero'
+
       elStyle.backgroundImage = 'url(' + this.props.backgroundImage + ')'
-      elStyle.height = '105vh'
-      elStyle.backgroundSize = 'cover'
-      elStyle.backgroundPosition = '100% 0'
     }
 
-    return <Grid fluid={this.props.fluid} style={elStyle} className={this.props.componentClasses}>{this.props.children}</Grid>
+    return <Grid fluid={this.props.fluid} style={elStyle} className={classes}>{this.props.children}</Grid>
   }
 })
 

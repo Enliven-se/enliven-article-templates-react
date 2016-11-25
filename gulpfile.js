@@ -33,7 +33,7 @@ gulp.task('moveCss', ['sass'], function() {
 })
 
 gulp.task('sass', () => {
-  return gulp.src('app/styles/*.scss')
+  return gulp.src('app/styles/**/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass.sync({
