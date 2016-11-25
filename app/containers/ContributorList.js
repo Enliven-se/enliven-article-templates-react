@@ -18,16 +18,21 @@ const ContributorList = React.createClass({
       }, [arr[0]])
     }
 
-    var props = this.props,
-      items = this.props.data.map(function(item, i) {
-        return <Contributor key={'c' + i} data={item} className={props.componentClasses} />
-      })
+    let props = this.props,
+      classes = this.props.componentClasses ? this.props.componentClasses + ' ' : ''
+
+    classes += 'list-inline'
+
+    let items = this.props.data.map(function(item, i) {
+      let item_class = 'item-' + i
+      return <li className={item_class} key={'c' + i}><Contributor data={item} className={props.componentClasses} /></li>
+    })
 
     items = intersperse(items, function(i) {
       return <Separator key={'s' + i} separatorType=',' />
     })
 
-    return <span className={this.props.componentClasses}>{items}</span>
+    return <ul className={classes}>{items}</ul>
   }
 })
 

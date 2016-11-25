@@ -9,7 +9,7 @@
     }
 
     .article-meta {
-        margin-top: 329px;
+        margin-top: 145px;
         @media screen and (max-width: $screen-xs - 1) {
             margin-top: 240px;
         }
@@ -25,13 +25,19 @@
         line-height   : 78px;
         font-size     : 50px;
     }
+    @media screen and (min-width: $screen-sm) {
+        .article-category-wrapper,
+        .article-intro-border {
+            margin-left: -$grid-gutter-width;
+        }
 
-    .article-category-wrapper,
-    .article-intro-border {
-        margin-left: -$grid-gutter-width;
-    }
+        .contributor-list {
+            position: relative;
 
-    .contributor-list {
-        margin-left: -68px; // @FIXME
+            .item-0 .avatar-wrapper {
+                position: absolute;
+                left    : -50px;
+            }
+        }
     }
 }
