@@ -217,14 +217,21 @@ gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], functio
 })
 
 // deploy to Github pages
-gulp.task('deploy', ['build'], () => {
+gulp.task('deploy', ['build', 'cname'], () => {
   return gulp.src('dist')
     .pipe($.subtree({
       remote: 'github',
       branch: 'gh-pages',
       message: 'deployed by gulp'
     }))
-// .pipe($.clean());
+});
+
+gulp.task('cname', () => {
+  return gulp.src([
+    'app/CNAME'
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist'));
 });
 
 // Default task
