@@ -64,7 +64,7 @@ blockquote {
         }
     }
 
-    li {
+    .list-item {
         padding: 0 !important;
     }
 }
@@ -76,14 +76,27 @@ blockquote {
 }
 
 .particle-pullquote {
-    blockquote {
+    blockquote,
+    q {
         font-size     : 42px;
         font-family   : $font-family-serif-bold;
         letter-spacing: 0.75px;
         line-height   : 53px;
+
+        quotes        : "\201C" "\201D" "\2018" "\2019";
+
+        &::before {
+            content: open-quote;
+        }
+        @media screen and (min-width: $screen-sm) {
+            &.hangingindent::before {
+                margin-left: -$grid-gutter-width;
+            }
+        }
+
+        &::after {
+            content: close-quote;
+        }
+
     }
 }
-
-// .separator {
-//     margin-right: 1em;
-// }

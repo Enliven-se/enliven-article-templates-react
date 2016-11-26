@@ -2,14 +2,14 @@ import React from 'react'
 
 const ParticlePullquote = React.createClass({
   render: function() {
-    var classes = this.props.componentClasses ? this.props.componentClasses : ''
-    classes += ' particle-pullquote'
+    var classes = this.props.componentClasses ? this.props.componentClasses + ' ' : ''
+    classes += 'particle-pullquote'
 
     return (
       <div className={classes}>
-          <blockquote dangerouslySetInnerHTML={{
-              __html: this.props.content
-          }}></blockquote>
+          <blockquote className={classes} dangerouslySetInnerHTML={{
+        __html: this.props.content
+      }}></blockquote>
       </div>
     )
   }

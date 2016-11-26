@@ -59,7 +59,7 @@ const MockShortInterview = {
       'content': {
         'html': 'No one has completed all of their goals or, for that matter, no regrets.'
       },
-      'classes': 'text-color-gold'
+      'classes': 'text-color-gold hangingindent'
     }, {
       'type': 'text',
       'content': {

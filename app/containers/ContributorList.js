@@ -24,7 +24,8 @@ const ContributorList = React.createClass({
     classes += 'list-inline'
 
     let items = this.props.data.map(function(item, i) {
-      let item_class = 'item-' + i
+      let item_class = 'list-item'
+      item_class += ' item-' + i
       return <li className={item_class} key={'c' + i}><Contributor data={item} className={props.componentClasses} /></li>
     })
 
