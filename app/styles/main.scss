@@ -7,7 +7,9 @@
 @import '../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
 @import '../bower_components/enliven-bootswatch/_bootswatch';
 // endbower
-@import 'default';
-@import 'menu';
-@import 'pages';
+@import 'base';
+@import 'articles';
+@import 'contributors';
+@import 'particles';
 @import 'layout-short';
+@import 'menu';

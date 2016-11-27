@@ -1,7 +1,23 @@
-.has-hero {
-    min-height         : 105vh;
-    background-size    : cover;
-    background-position: 80% 0;
+.article {
+    text-align: justify;
+    @media screen and (min-width: $screen-sm) {
+        font-size: 18pt;
+    }
+}
+
+.article-meta {
+    line-height   : 35px;
+    letter-spacing: 0.27px;
+    font-weight   : lighter;
+    font-size     : 20px;
+    @media screen and (max-width: $screen-xs - 1) {
+        font-size  : 15px;
+        line-height: 1.5em;
+    }
+}
+
+.article-intro-border {
+    border-width: 3px;
 }
 
 .article-category {
@@ -44,27 +60,14 @@
     }
 }
 
-.article-meta {
-    line-height   : 35px;
-    letter-spacing: 0.27px;
-    font-weight   : lighter;
-    font-size     : 20px;
-    @media screen and (max-width: $screen-xs - 1) {
-        font-size  : 15px;
-        line-height: 1.5em;
-    }
-}
-
 .article-byline {
     min-height    : $grid-height;
     padding-top   : 39px;
     padding-bottom: 39px;
 }
 
-.contributor-link {
-    color: $gray-base;
-
-    &:hover {
-        color: $gray-dark;
+.pull-right {
+    .date-published {
+        color: $greyish;
     }
 }
