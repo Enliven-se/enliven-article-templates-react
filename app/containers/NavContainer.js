@@ -22,12 +22,26 @@ const NavContainer = React.createClass({
                 <span className='navbar-brand-link brand brand-inline'>
                   <span className='brand-logo'>
                     <a href='/'>
-                      <img className='navbar-brand-img brand-img' src='//www.enliven.co/images/enliven-logo.png' alt='Enliven Logo' />
+                      <img className='navbar-brand-img brand-img' src={this.props.logo_variant == "white"? '/images/logo/logo-ffffff.png':'/images/logo/logo.png'} alt='Enliven Logo' />
                     </a>
                   </span>
                 </span>
               </div>
-              <div className='navbar-hamburger hamburger'>
+              <div className='navbar-hamburger hamburger-menu hamburger'>
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="menu-label">MENU</span>
+                          <span class="icon-bar icon-bar-top"></span>
+                          <span class="icon-bar icon-bar-bottom"></span>
+                        </button>
+                        <div class="hamburger-helper">
+                          <div class="collapse navbar-collapse navbar-open container-fluid" id="navbar-collapse">
+                                     <ul id="main-menu" class="menu nav navbar-nav navbar-open">
+                              <li class="first last leaf menu-link-become-a-contributor"><a href="/en/become-contributor">Become a Contributor</a></li>
+                            </ul>
+                          </div>
+                        </div>
                 <span className='hamburger-line' />
               </div>
               <div className='navbar-column navbar-menu'>
