@@ -25,10 +25,19 @@
     .list-item {
         padding: 0 !important;
     }
+
+    .contributor-link {
+        color          : $golden-retriever;
+        text-decoration: underline;
+    }
 }
 
 .contributor {
     .avatar-wrapper {
         margin-right: 10px;
     }
+}
+
+.date-published {
+    color: $greyish;
 }

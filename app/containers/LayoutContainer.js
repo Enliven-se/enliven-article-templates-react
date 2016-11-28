@@ -44,7 +44,7 @@ const LayoutContainer = React.createClass({
 
     return (
       <div className='page'>
-         <NavContainer navbar_items={navbar_items} />
+         <NavContainer navbar_items={navbar_items} color_variant="white" />
          { switchLayout({
         layout: this.props.layout
       }) }
