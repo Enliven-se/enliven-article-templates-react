@@ -19,9 +19,8 @@ const Contributor = React.createClass({
       )
     }
 
-    var classes = this.props.componentClasses ? this.props.componentClasses : ''
-    classes += ' contributor'
-
+    var classes = this.props.componentClasses ? this.props.componentClasses + ' ' : ''
+    classes += 'contributor'
 
     return (
       <span className={classes}>

@@ -103,12 +103,9 @@ gulp.task('html', function() {
     .pipe($.useref())
     // .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.rev()))
-    .on('end', function(e) {
-      $.util.log('revved CSS', e);
-    })
     .pipe($.if('*.js', $.rev()))
-    .on('end', function(e) {
-      $.util.log('revved JS', e);
+    .on('end', function() {
+      $.util.log('revved JS');
     })
     .pipe($.revReplace({
       prefix: '/' // absolute URLs
