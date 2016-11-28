@@ -1,4 +1,5 @@
 const MockTheWayWePlay = {
+  'color_variant': 'gold',
   'ArticleCategory': {
     'type': 'text',
     'content': {

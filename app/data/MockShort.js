@@ -1,4 +1,5 @@
 const MockShortInterview = {
+  'color_variant': 'white',
   'ArticleCategory': {
     'type': 'text',
     'content': {

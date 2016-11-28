@@ -10,9 +10,9 @@ const ParticleImage = React.createClass({
 
     return (
       <div className={classes}>
-            <Image src={this.props.url} responsive />
-            <PhotoCredits content={this.props.credits} className={this.props.componentClasses} />
-        </div>
+          <Image src={this.props.url} responsive />
+          <PhotoCredits content={this.props.credits} className={this.props.componentClasses} />
+      </div>
     )
   }
 })

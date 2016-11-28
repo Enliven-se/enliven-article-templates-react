@@ -32,6 +32,7 @@
 .navbar-sticky {
     position: absolute !important;
     width   : 100%;
+    z-index : 10000;
 }
 
 .hamburger-gold {

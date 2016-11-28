@@ -26,6 +26,7 @@
         letter-spacing: 0.75px;
         line-height   : 53px;
         quotes        : "\201C" "\201D" "\2018" "\2019";
+        text-align    : left;
 
         &::before {
             content: open-quote;

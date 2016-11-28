@@ -1,4 +1,5 @@
 const MockLookBook = {
+  'color_variant': 'gold',
   'ArticleCategory': {
     'content': {
       'html': "Fashion, Women's Lifestyle",
