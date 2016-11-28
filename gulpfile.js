@@ -101,6 +101,11 @@ gulp.task('jade', function() {
 gulp.task('html', function() {
   return gulp.src('app/*.html')
     .pipe($.useref())
+    .pipe($.if('*.js', $.rev()))
+    .pipe($.if('*.css', $.rev()))
+    .pipe($.revReplace({
+      prefix: '/' // absolute URLs
+    }))
     .pipe(gulp.dest('dist'))
     .pipe($.size())
 })
