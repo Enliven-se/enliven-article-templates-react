@@ -14,21 +14,21 @@ const Contributor = React.createClass({
       return (
         <span className='contributor'>
             <Separator separatorType='/' />
-            <ContributorAssociation componentClasses='contributor-association' data={props.ContributorAssociation} />
+            <ContributorAssociation classes='contributor-association' data={props.ContributorAssociation} />
         </span>
       )
     }
 
-    var classes = this.props.componentClasses ? this.props.componentClasses + ' ' : ''
+    var classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'contributor'
 
     return (
       <span className={classes}>
-          <Avatar componentClasses='avatar' url={this.props.data.Avatar} />
-          <ContributorRole componentClasses='contributor-role' data={this.props.data.ContributorRole} />
+          <Avatar classes='avatar' url={this.props.data.Avatar} />
+          <ContributorRole classes='contributor-role' data={this.props.data.ContributorRole} />
           {' '}
-          <ContributorLink componentClasses='contributor-link' data={this.props.data.ContributorLink}>
-              <ContributorCredit componentClasses='contributor-credit' data={this.props.data.ContributorCredit} />
+          <ContributorLink classes='contributor-link' data={this.props.data.ContributorLink}>
+              <ContributorCredit classes='contributor-credit' data={this.props.data.ContributorCredit} />
           </ContributorLink>
           {ifNotEmptyContributorAssociation(this.props.data) }
       </span>

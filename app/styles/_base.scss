@@ -18,7 +18,8 @@ blockquote {
     padding       : 10px 0;
 }
 
-.text-color-black {
+.text-color-black,
+.text-color-gray {
     color: $gray-base;
 }
 
@@ -36,4 +37,8 @@ blockquote {
 
 .avatar-wrapper .avatar {
     display: inline;
+}
+
+.no-padding {
+    padding: 0 !important;
 }

@@ -6,17 +6,17 @@ const ParticleIntro = require('../components/particles/ParticleIntro'),
 const ArticleIntro = React.createClass({
   render: function() {
     const ArticleIntroBorder = function(props) {
-      var classes = props.componentClasses ? props.componentClasses : '';
+      var classes = props.classes ? props.classes : '';
       classes += ' article-intro-border'
 
       return (
-      (props.bordered) ? <HR componentClasses={classes} /> : null
+      (props.bordered) ? <HR classes={classes} /> : null
       )
     }
     return (
-      <div className={this.props.componentClasses}>
+      <div className={this.props.classes}>
           <ArticleIntroBorder {...this.props} />
-          <ParticleIntro componentClasses={this.props.data.classes} content={this.props.data.content.html} />
+          <ParticleIntro classes={this.props.data.classes} content={this.props.data.content.html} />
           <ArticleIntroBorder {...this.props} />
           {this.props.children}
       </div>

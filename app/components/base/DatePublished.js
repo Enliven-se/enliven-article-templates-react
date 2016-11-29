@@ -4,7 +4,7 @@ const DatePublished = React.createClass({
   render: function() {
     return (
       <div className='date-published-wrapper'>
-            <div className={this.props.componentClasses}>{this.props.content}</div>
+            <div className={this.props.classes}>{this.props.content}</div>
         </div>
     )
   }

@@ -5,7 +5,7 @@ const Icon = React.createClass({
     if (!this.props.imageURL)
       return null;
 
-    var classes = this.props.componentClasses ? this.props.componentClasses + ' ' : ''
+    var classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'icon'
 
     return (

@@ -7,7 +7,7 @@ const Container = React.createClass({
     var elStyle = {
     }
 
-    var classes = this.props.componentClasses ? this.props.componentClasses : ''
+    var classes = this.props.classes ? this.props.classes : ''
 
     if (this.props.backgroundImage) {
       classes += ' has-hero'

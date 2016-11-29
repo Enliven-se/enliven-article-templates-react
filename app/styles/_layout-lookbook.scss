@@ -3,9 +3,23 @@
 
     .article-meta {}
 
-    .article-title {}
+    .article-title {
+        letter-spacing: 0.8px;
+        @media screen and (min-width: $screen-sm) {
+            font-size: 45px;
+        }
+    }
 
-    .article-header {
-        margin-top: 183px;
+    .article-category-wrapper {
+        padding-top: 183px;
+    }
+
+    .article-intro-border {
+        width: 102px;
+    }
+
+    .contributor-link {
+        color          : $gray-base;
+        text-decoration: underline;
     }
 }
