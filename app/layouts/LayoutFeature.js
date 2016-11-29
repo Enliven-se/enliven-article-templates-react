@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 // window.React = React
 
 const Container = require('../containers/Container'),
@@ -21,19 +21,19 @@ const LayoutFeature = React.createClass({
                   </Col>
               </Row>
           </Container>
-          <Grid>
+          <Container fluid>
               <Row>
                   <Col sm={6}>
-                      <ContributorList classes='contributor-list' data={this.props.data.ContributorList} separator=', ' />
+                      <ContributorList classes='contributor-list' data={this.props.data.ContributorList} />
                   </Col>
                   <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[1].content.html} />
                   </Col>
               </Row>
-          </Grid>
-          <Grid>
+          </Container>
+          <Container fluid>
               <Row>
-                  <Col>
+                  <Col sm={12}>
                       <ParticleImage url={this.props.data.fields[2].content.url} />
                   </Col>
                   <Col sm={6} className='col-left'>
@@ -42,10 +42,10 @@ const LayoutFeature = React.createClass({
                   <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[4].content.html} />
                   </Col>
-                  <Col>
+                  <Col sm={12}>
                       <ParticleImage url={this.props.data.fields[5].content.url} />
                   </Col>
-                  <Col>
+                  <Col sm={12}>
                       <ParticleImage url={this.props.data.fields[6].content.url} />
                   </Col>
                   <Col sm={6} className='col-left'>
@@ -56,7 +56,7 @@ const LayoutFeature = React.createClass({
                   <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[9].content.html} />
                   </Col>
-                  <Col>
+                  <Col sm={12}>
                       <ParticleImage url={this.props.data.fields[10].content.url} />
                   </Col>
                   <Col sm={6}>
@@ -65,16 +65,16 @@ const LayoutFeature = React.createClass({
                   <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[12].content.html} />
                   </Col>
-                  <Col>
+                  <Col sm={12}>
                       <ParticleImage url={this.props.data.fields[13].content.url} />
                   </Col>
-                  <Col>
+                  <Col sm={12}>
                       <ParticleImage url={this.props.data.fields[14].content.url} />
                   </Col>
                   <Col sm={6} smOffset={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[15].content.html} />
                   </Col>
-                  <Col>
+                  <Col sm={12}>
                       <ParticleImage url={this.props.data.fields[16].content.url} />
                   </Col>
                   <Col sm={6} className='col-left'>
@@ -85,15 +85,17 @@ const LayoutFeature = React.createClass({
                   <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[19].content.html} />
                   </Col>
-                  <Col>
+                  <Col sm={12}>
                       <ParticleImage url={this.props.data.fields[20].content.url} />
                   </Col>
                   <Col sm={6} className='col-left'>
-                      <ParticleText classes='particle-text' content={this.props.data.fields[20].content.html} />
-                      <ParticleImage url={this.props.data.fields[21].content.url} />
+                      <ParticleText classes='particle-text' content={this.props.data.fields[21].content.html} />
+                  </Col>
+                  <Col sm={6}>
+                      <ParticleImage url={this.props.data.fields[22].content.url} />
                   </Col>
               </Row>
-          </Grid>
+          </Container>
       </div>
     )
   }

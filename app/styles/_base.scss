@@ -42,3 +42,17 @@ blockquote {
 .no-padding {
     padding: 0 !important;
 }
+
+.col-right {
+    padding-right: 60px;
+    @media screen and (max-width: $screen-sm) {
+        padding-right: 13px;
+    }
+}
+
+.col-left {
+    padding-left: 60px;
+    @media screen and (max-width: $screen-sm) {
+        padding-left: 13px;
+    }
+}

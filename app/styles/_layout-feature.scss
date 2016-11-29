@@ -5,7 +5,19 @@
         margin-top: 350px;
 
         .article-title {
-            font-family: $font-family-sans-serif;
+            font-family   : $font-family-sans-serif-bold;
+            font-size     : 48px;
+            letter-spacing: 8px;
+        }
+    }
+
+    .container-fluid {
+        margin-left : 20px;
+        margin-right: 20px;
+
+        &.has-hero {
+            margin-left : 0;
+            margin-right: 0;
         }
     }
 
@@ -17,22 +29,21 @@
     .particle-text {
         margin: 33px 0 100px;
     }
-}
 
-.col-right {
-    padding-right: 60px;
-    @media screen and (max-width: $screen-sm) {
-        padding-right: 13px;
+    .contributor-list {
+        color: $greyish;
     }
-}
 
-.col-left {
-    padding-left: 60px;
-    @media screen and (max-width: $screen-sm) {
-        padding-left: 13px;
+    .contributor-link {
+        color         : $blackish;
+        text-transform: uppercase;
     }
-}
 
-.photo-credits {
-    color: $golden-retriever;
+    .photo-credits {
+        color: $golden-retriever;
+    }
+
+    .contributor-list .list-item {
+        margin-bottom: 25px;
+    }
 }

@@ -30,7 +30,11 @@ const ContributorList = React.createClass({
     })
 
     items = intersperse(items, function(i) {
-      return <li key={'s' + i} className="no-padding"><Separator separatorType=',' /></li>
+      return <li key={'s' + i} className="no-padding">{
+          props.separator ?
+              <Separator separatorType={props.separator} />
+          : ''
+        }</li>
     })
 
     return <ul className={classes}>{items}</ul>

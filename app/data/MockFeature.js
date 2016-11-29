@@ -23,17 +23,23 @@ const MockTheWayWePlay = {
   },
   'ContributorList': [
     {
-      'Avatar': '/images/mock/avatar.png',
+      'Avatar': '/images/mock/linakjellvertz.png',
       'ContributorRole': 'Written by',
       'ContributorCredit': 'The Way We Play',
-      'ContributorLink': '//cms.enliven.co/en/groups/the-way-we-play'
+      'ContributorLink': {
+        'url': '//cms.enliven.co/en/groups/the-way-we-play'
+      }
     }, {
-      'Avatar': '/images/mock/avatar.png',
+      'Avatar': '/images/mock/linakjellvertz.png',
       'ContributorRole': 'Photographer',
       'ContributorCredit': 'Linda Alfvegren',
-      'ContributorLink': '//cms.enliven.co/en/people/linda-alfvegren',
+      'ContributorLink': {
+        'url': '//cms.enliven.co/en/people/linda-alfvegren'
+      },
       'ContributorAssociation': 'Agent Bauer',
-      'ContributorAssociationLink': '//cms.enliven.co/en/groups/agent-bauer'
+      'ContributorAssociationLink': {
+        'url': '//cms.enliven.co/en/groups/agent-bauer'
+      }
     }
   ],
   'fields': [{
@@ -141,12 +147,17 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-10.jpg'
+      'url': '/images/mock/twwp-2.jpg'
     }
   }, {
     'type': 'text',
     'content': {
       'html': 'Hur får man kärleken att hålla under småbarnsåren?<br/><br/>Ha respekt för varandras känslor. Man kommer alltid känna olika inför saker men sålänge man respekterar och försöker hjälpa varandra så kommer man långt. Prata med varandra om allt så blir det färre missförstånd. Ha egentid. Själv men även tillsammans med din partner. Man får inte glömma bort vem man är och vilka man var innan man fick barn, det är det tuffaste men också det vikigaste. Jag och Gustav har ofta barnvakt och det har vi haft sedan Anaïs var väldigt liten. Det har varit viktigt för oss.<br/><br/>Hur länge planerar ni att stanna i New York?<br/><br/>Vi trivs väldigt bra just nu och har inga planer på att lämna men vi pratar om Paris ibland…'
+    }
+  }, {
+    'type': 'image',
+    'content': {
+      'url': '/images/mock/twwp-10.jpg'
     }
   }
   ]

@@ -1,3 +1,7 @@
+.navbar-brand {
+    padding-top: 50px;
+}
+
 .navbar-section {
     // margin-top: 51px;
 
@@ -56,10 +60,9 @@
 }
 
 .navbar-toggle {
-    border    : 0;
-    float     : none;
-    margin-top: -11px;
-    display   : block;
+    border : 0;
+    float  : none;
+    display: block;
     @media (max-width: $screen-sm) {
         margin-top: 0;
     }
@@ -107,16 +110,16 @@
 
     &.collapsing,
     &.in {
-        padding-top: 20px;
-        background : #fff;
-        border     : 1px solid $golden-retriever;
+        padding   : 20px 25px 20px 50px;
+        background: #fff;
+        border    : 1px solid $golden-retriever;
     }
 }
 
 .hamburger-menu {
     left          : 20px;
     position      : absolute;
-    top           : 0;
+    top           : 16px;
     z-index       : 100;
     text-transform: uppercase;
     letter-spacing: 1px;

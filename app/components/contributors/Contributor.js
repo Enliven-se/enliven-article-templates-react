@@ -9,28 +9,49 @@ const Avatar = require('../base/Avatar'),
 
 const Contributor = React.createClass({
   render: function() {
-    const ifNotEmptyContributorAssociation = function(props) {
-      if (!props.ContributorAssociation) return null;
-      return (
-        <span className='contributor'>
-            <Separator separatorType='/' />
-            <ContributorAssociation classes='contributor-association' data={props.ContributorAssociation} />
-        </span>
-      )
-    }
-
     var classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'contributor'
 
+    const ifAvatar = this.props.data.Avatar ?
+      (
+      <Avatar classes='avatar' url={this.props.data.Avatar} />
+      )
+      : ''
+
+    const ifContributorRole = this.props.data.ContributorRole ?
+      (
+      <span>
+          <ContributorRole classes='contributor-role' data={this.props.data.ContributorRole} />
+          <Separator separatorType=' ' />
+      </span>
+      )
+      : ''
+
+    const ifContributorLink = this.props.data.ContributorLink ?
+      (
+      <ContributorLink classes='contributor-link' data={this.props.data.ContributorLink}>
+          <ContributorCredit classes='contributor-credit' data={this.props.data.ContributorCredit} />
+      </ContributorLink>
+      )
+      : ''
+
+    const ifContributorAssociation = this.props.data.ContributorAssociation ?
+      (
+      <span className='contributor'>
+          <Separator separatorType=' /' />
+          <ContributorLink classes='contributor-link' data={this.props.data.ContributorAssociationLink}>
+              <ContributorAssociation classes='contributor-association' data={this.props.data.ContributorAssociation} />
+          </ContributorLink>
+      </span>
+      )
+      : ''
+
     return (
       <span className={classes}>
-          <Avatar classes='avatar' url={this.props.data.Avatar} />
-          <ContributorRole classes='contributor-role' data={this.props.data.ContributorRole} />
-          {' '}
-          <ContributorLink classes='contributor-link' data={this.props.data.ContributorLink}>
-              <ContributorCredit classes='contributor-credit' data={this.props.data.ContributorCredit} />
-          </ContributorLink>
-          {ifNotEmptyContributorAssociation(this.props.data) }
+          {ifAvatar}
+          {ifContributorRole}
+          {ifContributorLink}
+          {ifContributorAssociation}
       </span>
     )
   }
