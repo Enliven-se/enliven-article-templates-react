@@ -61,14 +61,14 @@ const MockLookBook = {
     }, {
       'type': 'image',
       'content': {
-        'url': '/images/mock/lookbook-2.jpg',
-        'field_corner_option': 'text-bottom-right',
-        'html': '<div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots<br/></div><div class="text-color-gold">Right:</div><div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans,<br/>Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots</div>'
+        'url': '/images/mock/lookbook-1.jpg'
       }
     }, {
       'type': 'image',
       'content': {
-        'url': '/images/mock/lookbook-1.jpg'
+        'url': '/images/mock/lookbook-2.jpg',
+        'field_corner_option': 'text-bottom-right',
+        'html': '<div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots<br/></div><div class="text-color-gold">Right:</div><div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans,<br/>Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots</div>'
       }
     }, {
       'type': 'image',

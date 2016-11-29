@@ -28,7 +28,7 @@ const LayoutShort = React.createClass({
           <Container classes='article-byline'>
               <Row>
                   <Col md={8}>
-                      <ContributorList data={this.props.data.ContributorList} classes='contributor-list' separator=', ' />
+                      <ContributorList inline data={this.props.data.ContributorList} classes='contributor-list' separator=', ' />
                   </Col>
                   <Col md={4}>
                       <DatePublished classes='date-published' content={this.props.data.DatePublished.content.html} />
