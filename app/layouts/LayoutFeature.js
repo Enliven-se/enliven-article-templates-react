@@ -26,7 +26,7 @@ const LayoutFeature = React.createClass({
                   <Col sm={6}>
                       <ContributorList classes='contributor-list' data={this.props.data.ContributorList} separator=', ' />
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[1].content.html} />
                   </Col>
               </Row>
@@ -36,10 +36,10 @@ const LayoutFeature = React.createClass({
                   <Col>
                       <ParticleImage url={this.props.data.fields[2].content.url} />
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='col-left'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[3].content.html} />
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[4].content.html} />
                   </Col>
                   <Col>
@@ -48,12 +48,12 @@ const LayoutFeature = React.createClass({
                   <Col>
                       <ParticleImage url={this.props.data.fields[6].content.url} />
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='col-left'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[7].content.html} />
                       <HR />
                       <ParticleText classes='particle-text' content={this.props.data.fields[8].content.html} />
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[9].content.html} />
                   </Col>
                   <Col>
@@ -62,7 +62,7 @@ const LayoutFeature = React.createClass({
                   <Col sm={6}>
                       <ParticleImage url={this.props.data.fields[11].content.url} />
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[12].content.html} />
                   </Col>
                   <Col>
@@ -71,24 +71,24 @@ const LayoutFeature = React.createClass({
                   <Col>
                       <ParticleImage url={this.props.data.fields[14].content.url} />
                   </Col>
-                  <Col sm={6} smOffset={6}>
+                  <Col sm={6} smOffset={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[15].content.html} />
                   </Col>
                   <Col>
                       <ParticleImage url={this.props.data.fields[16].content.url} />
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='col-left'>
                       <ParticleH2 classes='particle-text' content={this.props.data.fields[17].content.html} />
                       <HR />
                       <ParticleText classes='particle-text' content={this.props.data.fields[18].content.html} />
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='col-right'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[19].content.html} />
                   </Col>
                   <Col>
                       <ParticleImage url={this.props.data.fields[20].content.url} />
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='col-left'>
                       <ParticleText classes='particle-text' content={this.props.data.fields[20].content.html} />
                       <ParticleImage url={this.props.data.fields[21].content.url} />
                   </Col>

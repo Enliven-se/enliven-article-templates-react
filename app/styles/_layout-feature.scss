@@ -1,11 +1,38 @@
 .layout-feature {
     .navbar-brand-img {}
 
-    .article-meta {}
-
-    .article-title {}
-
     .article-header {
-        margin-top: 183px;
+        margin-top: 350px;
+
+        .article-title {
+            font-family: $font-family-sans-serif;
+        }
     }
+
+    .has-hero,
+    .particle-image {
+        margin-bottom: 28px;
+    }
+
+    .particle-text {
+        margin: 33px 0 100px;
+    }
+}
+
+.col-right {
+    padding-right: 60px;
+    @media screen and (max-width: $screen-sm) {
+        padding-right: 13px;
+    }
+}
+
+.col-left {
+    padding-left: 60px;
+    @media screen and (max-width: $screen-sm) {
+        padding-left: 13px;
+    }
+}
+
+.photo-credits {
+    color: $golden-retriever;
 }
