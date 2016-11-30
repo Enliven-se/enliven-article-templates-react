@@ -41,15 +41,17 @@
     }
 
     .img-small {
-        display: flex;
+        @media screen and (min-width: $screen-sm ) {
+            display: flex;
 
-        .particle-image {
-            height    : 84%;
-            align-self: center;
-        }
+            .particle-image {
+                height    : 84%;
+                align-self: center;
+            }
 
-        .img-responsive {
-            max-height: 100%;
+            .img-responsive {
+                max-height: 100%;
+            }
         }
     }
 
@@ -63,16 +65,8 @@
             margin-left: 0;
         }
 
-        .img-responsive {
-            padding-bottom: 30px;
-        }
-
         .big-row {
             margin-bottom: 0;
-        }
-
-        .img-small {
-            margin-top: 0;
         }
     }
     @media screen and (min-width: $screen-sm) {
