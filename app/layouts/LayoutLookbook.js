@@ -18,10 +18,10 @@ const LayoutLookbook = React.createClass({
       <div className='layout layout-lookbook'>
           <Container fluid>
               <Row className='big-row'>
-                  <Col xs={6}>
+                  <Col md={6}>
                       <ArticleCategory content={this.props.data.ArticleCategory.content.html} url={this.props.data.ArticleCategory.content.url} classes={this.props.data.ArticleCategory.classes} />
                       <Row>
-                          <Col xs={10} xsOffset={2}>
+                          <Col md={10} mdOffset={2}>
                               <ArticleHeader ArticleTitle={this.props.data.ArticleTitle} CharityCredit={this.props.data.CharityCredit} />
                               <ArticleIntro bordered classes='border-color-gold' data={this.props.data.fields[0]} />
                               <ContributorList classes='contributor-list' data={this.props.data.ContributorList} separator=', ' />
@@ -29,38 +29,26 @@ const LayoutLookbook = React.createClass({
                           </Col>
                       </Row>
                   </Col>
-                  <Col sm={6}>
+                  <Col md={6}>
                       <ParticleImage url={this.props.data.fields[1].content.url} />
                       <PhotoCredits classes={this.props.data.fields[1].content.classes} content={this.props.data.fields[1].content.html} />
                   </Col>
               </Row>
               <Row className='big-row'>
-                  <Col sm={6}>
+                  <Col md={6}>
                       <ParticleImage url={this.props.data.fields[2].content.url}/>
                   </Col>
-                  <Col sm={6}>
-                      <Row>
-                          <Col sm={8} className='img-small'>
-                              <ParticleImage url={this.props.data.fields[3].content.url} />
-                          </Col>
-                      </Row>
-                      <div className='credit-container'>
-                        <PhotoCredits classes={this.props.data.fields[3].content.classes} content={this.props.data.fields[3].content.html} />
-                      </div>
+                  <Col md={6} className='img-small'>
+                      <ParticleImage url={this.props.data.fields[3].content.url} />
+                      <PhotoCredits classes={this.props.data.fields[3].content.classes} content={this.props.data.fields[3].content.html} />
                   </Col>
               </Row>
               <Row className='big-row'>
-                  <Col sm={6}>
-                      <Row>
-                          <Col sm={8} className='img-small'>
-                              <ParticleImage url={this.props.data.fields[4].content.url} />
-                          </Col>
-                      </Row>
-                      <div className='credit-container'>
-                        <PhotoCredits classes={this.props.data.fields[4].content.classes} content={this.props.data.fields[4].content.html} />
-                      </div>
+                  <Col md={6} className='img-small'>
+                      <ParticleImage url={this.props.data.fields[4].content.url} />
+                      <PhotoCredits classes={this.props.data.fields[4].content.classes} content={this.props.data.fields[4].content.html} />
                   </Col>
-                  <Col sm={6}>
+                  <Col md={6}>
                       <ParticleImage url={this.props.data.fields[5].content.url}/>
                   </Col>
               </Row>

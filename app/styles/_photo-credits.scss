@@ -1,0 +1,43 @@
+.credit-container {
+    padding: 10px;
+
+    .particle-text,
+    .photo-credits {
+        max-width  : 200px;
+        line-height: 22px;
+        font-size  : 14px;
+    }
+}
+
+.big-row {
+    display  : flex;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: $screen-sm) {
+    .text-bottom-left,
+    .text-bottom-right,
+    .text-top-left,
+    .text-top-right {
+        position: absolute;
+    }
+
+    .text-top-left {
+        left: 0;
+        top : 0;
+    }
+
+    .text-bottom-left {
+        left  : 0;
+        bottom: 0;
+    }
+
+    .text-top-right {
+        right: 0;
+        top  : 0;
+    }
+
+    .text-bottom-right {
+        right : 0;
+        bottom: 0;
+    }
+}
