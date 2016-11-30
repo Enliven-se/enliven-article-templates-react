@@ -31,7 +31,7 @@ const LayoutLookbook = React.createClass({
                   </Col>
                   <Col sm={6}>
                       <ParticleImage url={this.props.data.fields[1].content.url} />
-                      <PhotoCredits classes='credits' content={this.props.data.fields[1].content.html} />
+                      <PhotoCredits classes={this.props.data.fields[1].content.classes} content={this.props.data.fields[1].content.html} />
                   </Col>
               </Row>
               <Row className='big-row'>
@@ -44,7 +44,7 @@ const LayoutLookbook = React.createClass({
                               <ParticleImage url={this.props.data.fields[3].content.url} />
                           </Col>
                       </Row>
-                      <PhotoCredits classes='credits' content={this.props.data.fields[3].content.html} />
+                      <PhotoCredits classes={this.props.data.fields[3].content.classes} content={this.props.data.fields[3].content.html} />
                   </Col>
               </Row>
               <Row className='big-row'>
@@ -54,7 +54,7 @@ const LayoutLookbook = React.createClass({
                               <ParticleImage url={this.props.data.fields[4].content.url} />
                           </Col>
                       </Row>
-                      <PhotoCredits classes='credits' content={this.props.data.fields[4].content.html} />
+                      <PhotoCredits classes={this.props.data.fields[4].content.classes} content={this.props.data.fields[4].content.html} />
                   </Col>
                   <Col sm={6}>
                       <ParticleImage url={this.props.data.fields[5].content.url}/>
