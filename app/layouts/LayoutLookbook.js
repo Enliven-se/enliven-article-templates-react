@@ -29,7 +29,7 @@ const LayoutLookbook = React.createClass({
                       </Row>
                   </Col>
                   <Col md={6}>
-                      <ParticleImage url={this.props.data.fields[1].content.url} classes={this.props.data.fields[1].content.classes} credits={this.props.data.fields[1].content.html} />
+                      <ParticleImage url={this.props.data.fields[1].content.url} classes_credits={this.props.data.fields[1].credits.classes} credits={this.props.data.fields[1].credits.html} />
                   </Col>
               </Row>
               <Row className='big-row'>
@@ -37,17 +37,12 @@ const LayoutLookbook = React.createClass({
                       <ParticleImage url={this.props.data.fields[2].content.url}/>
                   </Col>
                   <Col md={6} className='img-small'>
-                      <ParticleImage url={this.props.data.fields[3].content.url} classes={this.props.data.fields[3].content.classes} credits={this.props.data.fields[3].content.html} />
+                      <ParticleImage url={this.props.data.fields[3].content.url} classes_credits={this.props.data.fields[3].credits.classes} credits={this.props.data.fields[3].credits.html} />
                   </Col>
               </Row>
               <Row className='big-row'>
                   <Col md={6} className='img-small'>
-<<<<<<< HEAD
-                      <ParticleImage url={this.props.data.fields[4].content.url} classes={this.props.data.fields[4].content.classes} credits={this.props.data.fields[4].content.html} />
-=======
-                      <ParticleImage classes='small-left-image' url={this.props.data.fields[4].content.url} />
-                      <PhotoCredits classes={this.props.data.fields[4].content.classes} content={this.props.data.fields[4].content.html} />
->>>>>>> origin/isaiahArticles
+                      <ParticleImage classes='small-left-image' url={this.props.data.fields[4].content.url} classes_credits={this.props.data.fields[4].credits.classes} credits={this.props.data.fields[4].credits.html} />
                   </Col>
                   <Col md={6}>
                       <ParticleImage url={this.props.data.fields[5].content.url}/>

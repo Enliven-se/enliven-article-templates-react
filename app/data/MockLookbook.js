@@ -54,7 +54,9 @@ const MockLookBook = {
     {
       'type': 'image',
       'content': {
-        'url': '/images/mock/lookbook-1.jpg',
+        'url': '/images/mock/lookbook-1.jpg'
+      },
+      'credits': {
         'classes': 'text-bottom-right',
         'html': '<div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>,<br/>Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara,<br/><a>zara.com</a>, in Zara Tops, Boots, Zara,<br/><a>zara.com</a>, in Zara Boots</div>'
       }
@@ -66,17 +68,20 @@ const MockLookBook = {
     }, {
       'type': 'image',
       'content': {
-        'url': '/images/mock/lookbook-2.jpg',
+        'url': '/images/mock/lookbook-2.jpg'
+      },
+      'credits': {
         'classes': 'text-bottom-right',
         'html': '<div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots<br/></div><div class="text-color-gold">Right:</div><div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans,<br/>Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots</div>'
       }
     }, {
       'type': 'image',
       'content': {
-        'url': '/images/mock/lookbook-2.jpg',
+        'url': '/images/mock/lookbook-2.jpg'
+      },
+      'credits': {
         'classes': 'text-bottom-left',
         'html': '<div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots<br/></div><div class="text-color-gold">Right:</div><div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans,<br/>Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots</div>'
-
       }
     }, {
       'type': 'image',

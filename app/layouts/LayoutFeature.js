@@ -34,7 +34,7 @@ const LayoutFeature = React.createClass({
           <Container fluid>
               <Row>
                   <Col sm={12}>
-                      <ParticleImage url={this.props.data.fields[2].content.url} classes={this.props.data.fields[2].content.classes} credits={this.props.data.fields[2].content.html} />
+                      <ParticleImage url={this.props.data.fields[2].content.url} />
 
                   </Col>
                   <Col sm={6} className='col-left'>
