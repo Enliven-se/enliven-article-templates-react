@@ -8,6 +8,10 @@
         margin: 0 auto;
     }
 
+    .particle-text {
+        font-size: 18px;
+    }
+
     .article-meta {
         margin-top: 145px;
         @media screen and (max-width: $screen-xs - 1) {
@@ -46,6 +50,5 @@
         .date-published-wrapper {
             text-align: right;
         }
-
     }
 }

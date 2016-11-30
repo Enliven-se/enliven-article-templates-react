@@ -40,21 +40,25 @@ const LayoutLookbook = React.createClass({
                   </Col>
                   <Col sm={6}>
                       <Row>
-                          <Col sm={8} smOffset={4} className='img-small'>
+                          <Col sm={8} className='img-small'>
                               <ParticleImage url={this.props.data.fields[3].content.url} />
                           </Col>
                       </Row>
-                      <PhotoCredits classes={this.props.data.fields[3].content.classes} content={this.props.data.fields[3].content.html} />
+                      <div className='credit-container'>
+                        <PhotoCredits classes={this.props.data.fields[3].content.classes} content={this.props.data.fields[3].content.html} />
+                      </div>
                   </Col>
               </Row>
               <Row className='big-row'>
                   <Col sm={6}>
                       <Row>
-                          <Col sm={8} smOffset={4} className='img-small'>
+                          <Col sm={8} className='img-small'>
                               <ParticleImage url={this.props.data.fields[4].content.url} />
                           </Col>
                       </Row>
-                      <PhotoCredits classes={this.props.data.fields[4].content.classes} content={this.props.data.fields[4].content.html} />
+                      <div className='credit-container'>
+                        <PhotoCredits classes={this.props.data.fields[4].content.classes} content={this.props.data.fields[4].content.html} />
+                      </div>
                   </Col>
                   <Col sm={6}>
                       <ParticleImage url={this.props.data.fields[5].content.url}/>
