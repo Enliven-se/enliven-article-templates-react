@@ -45,7 +45,7 @@ const LayoutLookbook = React.createClass({
               </Row>
               <Row className='big-row'>
                   <Col md={6} className='img-small'>
-                      <ParticleImage url={this.props.data.fields[4].content.url} />
+                      <ParticleImage classes='small-left-image' url={this.props.data.fields[4].content.url} />
                       <PhotoCredits classes={this.props.data.fields[4].content.classes} content={this.props.data.fields[4].content.html} />
                   </Col>
                   <Col md={6}>
