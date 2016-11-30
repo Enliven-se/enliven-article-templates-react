@@ -55,7 +55,9 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-11.jpg'
+      'url': '/images/mock/twwp-11.jpg',
+      'classes': 'text-bottom-right',
+      'html': '<div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>,<br/>Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara,<br/><a>zara.com</a>, in Zara Tops, Boots, Zara,<br/><a>zara.com</a>, in Zara Boots</div>'
     }
   }, {
     'type': 'text',

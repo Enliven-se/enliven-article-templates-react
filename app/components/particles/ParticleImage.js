@@ -6,7 +6,8 @@ const PhotoCredits = require('../../containers/PhotoCredits')
 const ParticleImage = React.createClass({
   render: function() {
     let classes = this.props.classes ? this.props.classes + ' ' : ''
-    let classes_image = classes + 'particle-image'
+    // let classes_image = classes + 'particle-image'
+    let classes_image = 'particle-image'
     let classes_credits = classes
 
     if (this.props.field_corner_option) {
