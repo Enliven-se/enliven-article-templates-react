@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { Grid } from 'react-bootstrap'
-
 const NavContainer = React.createClass({
   render: function() {
     var link_classes = 'buttons-link text-black'

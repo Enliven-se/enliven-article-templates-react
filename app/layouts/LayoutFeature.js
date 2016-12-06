@@ -17,7 +17,7 @@ const LayoutFeature = React.createClass({
           <Container fluid classes='panel-1' backgroundImage={this.props.data.fields[0].content.url}>
               <Row>
                   <Col sm={6} smOffset={6}>
-                      <ArticleHeader ArticleCategory={this.props.data.ArticleCategory} ArticleTitle={this.props.data.ArticleTitle} />
+                      <ArticleHeader {...this.props.data} />
                   </Col>
               </Row>
           </Container>

@@ -16,7 +16,7 @@ const ArticleIntro = React.createClass({
     return (
       <div className={this.props.classes}>
           <ArticleIntroBorder {...this.props} />
-          <ParticleIntro classes={this.props.data.classes} content={this.props.data.content.html} />
+          <ParticleIntro classes={this.props.classes} content={this.props.content.html} />
           <ArticleIntroBorder {...this.props} />
           {this.props.children}
       </div>

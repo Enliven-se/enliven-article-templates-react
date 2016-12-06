@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 // window.React = React
 
 const Container = require('../containers/Container'),
@@ -19,8 +19,8 @@ const LayoutShort = React.createClass({
               <Container>
                   <Row>
                       <Col sm={6} className='article-meta'>
-                          <ArticleHeader ArticleCategory={this.props.data.ArticleCategory} ArticleTitle={this.props.data.ArticleTitle} />
-                          <ArticleIntro bordered data={this.props.data.fields[1]} />
+                          <ArticleHeader {...this.props.data} />
+                          <ArticleIntro bordered {...this.props.data.fields[1]} />
                       </Col>
                   </Row>
               </Container>

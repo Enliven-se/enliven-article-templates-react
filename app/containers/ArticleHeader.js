@@ -13,31 +13,21 @@ const ArticleHeader = React.createClass({
 
     return (
       <div className={classes}>
-          {this.props.ArticleCategory && this.props.ArticleCategory.content.html ?
-        <ArticleCategory classes={this.props.ArticleCategory.classes} content={this.props.ArticleCategory.content.html} url={this.props.ArticleCategory.content.url} />
-        : '' }
+          {this.props.ArticleCategory ?
+              <ArticleCategory {...this.props.ArticleCategory} />
+          : '' }
           <CharityCredit>
               <Icon />
               <Link />
           </CharityCredit>
           {this.props.ArticleTitle ?
-        <ArticleTitle classes={this.props.ArticleTitle.classes} content={this.props.ArticleTitle.content.html} />
-        : ''}
+              <ArticleTitle classes={this.props.ArticleTitle.classes} content={this.props.ArticleTitle.content.html} />
+          : ''}
           {this.props.children}
 
       </div>
     )
   }
 })
-
-ArticleHeader.defaultProps = {
-  ArticleCategory: {
-    classes: '',
-    content: {
-      html: ''
-    }
-  }
-
-}
 
 module.exports = ArticleHeader

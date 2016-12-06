@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 // window.React = React
 
 const Container = require('../containers/Container'),
@@ -18,11 +18,11 @@ const LayoutLookbook = React.createClass({
           <Container fluid>
               <Row className='big-row'>
                   <Col md={6}>
-                      <ArticleCategory content={this.props.data.ArticleCategory.content.html} url={this.props.data.ArticleCategory.content.url} classes={this.props.data.ArticleCategory.classes} />
+                      <ArticleCategory {...this.props.data.ArticleCategory} />
                       <Row>
                           <Col md={10} mdOffset={2}>
-                              <ArticleHeader ArticleTitle={this.props.data.ArticleTitle} CharityCredit={this.props.data.CharityCredit} />
-                              <ArticleIntro bordered classes='border-color-gold' data={this.props.data.fields[0]} />
+                              <ArticleHeader {...this.props.data} ArticleCategory={null} />
+                              <ArticleIntro bordered classes='border-color-gold' {...this.props.data.fields[0]} />
                               <ContributorList classes='contributor-list' data={this.props.data.ContributorList} separator=', ' />
                               <DatePublished classes='date-published' content={this.props.data.DatePublished.content.html} />
                           </Col>
