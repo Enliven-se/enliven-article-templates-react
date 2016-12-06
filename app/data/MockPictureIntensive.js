@@ -2,7 +2,7 @@ const Mock = {
   'ArticleHeader': {
     'type': 'image',
     'content': {
-      'url': '/images/mock/pi-1.jpg'
+      'url': '/images/mock/pi-image-1.jpg'
     }
   },
   'ArticleCategory': {
@@ -40,7 +40,7 @@ const Mock = {
     {
       'type': 'image',
       'content': {
-        'url': '/images/mock/pi-1.jpg'
+        'url': '/images/mock/pi-image-1.jpg'
       }
     },
     {
@@ -56,7 +56,7 @@ const Mock = {
     }, {
       'type': 'image',
       'content': {
-        'url': '/images/mock/pi-2.jpg'
+        'url': '/images/mock/pi-image-2.jpg'
       }
     }, {
       'type': 'text',
@@ -66,14 +66,14 @@ const Mock = {
     }, {
       'type': 'image',
       'content': {
-        'url': '/images/mock/pi-3.jpg',
+        'url': '/images/mock/pi-image-3.jpg',
         'classes': 'text-top-right',
         'html': 'Jacket, Bershka, Jeans, Calvin Klein, T shirt, Zara, Boots, Zara.'
       }
     }, {
       'type': 'image',
       'content': {
-        'url': '/images/mock/pi-4.jpg',
+        'url': '/images/mock/pi-image-4.jpg',
         'classes': 'text-bottom-left',
         'html': 'Jacket, Bershka, Jeans, Calvin Klein, T shirt, Zara, Boots, Zara.'
       }
