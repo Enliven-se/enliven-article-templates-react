@@ -7,10 +7,10 @@ const PhotoCredits = React.createClass({
     var classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'photo-credits'
 
-    let output = this.props.content ?
+    let output = this.props.credits ?
       (
       <div className='credit-container'>
-          <ParticleText classes={classes} content={this.props.content} />
+          <ParticleText content={this.props.credits} classes={classes} />
       </div>
       )
       : null

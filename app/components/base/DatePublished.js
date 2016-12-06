@@ -2,9 +2,12 @@ import React from 'react'
 
 const DatePublished = React.createClass({
   render: function() {
+    let classes = this.props.classes ? this.props.classes + ' ' : ''
+    classes += 'date-published'
+
     return (
       <div className='date-published-wrapper'>
-            <div className={this.props.classes}>{this.props.content}</div>
+          <div className={classes}>{this.props.content.html}</div>
         </div>
     )
   }

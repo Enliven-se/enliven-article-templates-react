@@ -12,7 +12,7 @@ const Container = React.createClass({
     if (this.props.backgroundImage) {
       classes += ' has-hero'
 
-      elStyle.backgroundImage = 'url(' + this.props.backgroundImage + ')'
+      elStyle.backgroundImage = 'url(' + this.props.backgroundImage.content.url + ')'
     }
 
     return <Grid fluid={this.props.fluid} style={elStyle} className={classes}>{this.props.children}</Grid>

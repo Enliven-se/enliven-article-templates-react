@@ -8,7 +8,8 @@ const ContributorList = React.createClass({
       num_items = props.data.length
 
     let classes = this.props.classes ? this.props.classes + ' ' : ''
-    classes += props.inline ? 'list-inline' : 'list-unstyled'
+    classes += 'contributor-list'
+    classes += props.inline ? ' list-inline' : ' list-unstyled'
 
     let items = props.data.map(function(item, i) {
       let item_class = 'list-item'
@@ -19,7 +20,7 @@ const ContributorList = React.createClass({
       } else if (i === 0) {
         item_class += ' first'
       }
-      return <li className={item_class} key={'c' + i}><Contributor data={item} className={props.classes} /></li>
+      return <li className={item_class} key={'c' + i}><Contributor {...item} className={props.classes} /></li>
     })
 
     return <ul className={classes}>{items}</ul>

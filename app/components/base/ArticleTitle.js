@@ -9,7 +9,7 @@ const ArticleTitle = React.createClass({
 
     return (
       <div className='article-title-wrapper'>
-          <ParticleH1 classes={classes} content={this.props.content} />
+          <ParticleH1 {...this.props} classes={classes} />
       </div>
     )
   }

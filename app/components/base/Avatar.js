@@ -3,8 +3,11 @@ import { Image } from 'react-bootstrap'
 
 const Avatar = React.createClass({
   render: function() {
+    var classes = this.props.classes ? this.props.classes + ' ' : ''
+    classes += 'avatar'
+
     return <span className='avatar-wrapper'>
-        <Image src={this.props.url} className={this.props.classes} responsive />
+        <Image src={this.props.url} className={classes} responsive />
     </span>
   }
 })

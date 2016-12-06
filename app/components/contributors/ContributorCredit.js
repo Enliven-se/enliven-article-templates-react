@@ -2,7 +2,10 @@ import React from 'react'
 
 const ContributorCredit = React.createClass({
   render: function() {
-    return <span className={this.props.classes}>{this.props.data}</span>
+      var classes = this.props.classes ? this.props.classes + ' ' : ''
+      classes += 'contributor-credit'
+
+    return <span className={classes}>{this.props.data}</span>
   }
 })
 

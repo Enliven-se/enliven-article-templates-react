@@ -12,35 +12,35 @@ const Contributor = React.createClass({
     var classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'contributor'
 
-    const ifAvatar = this.props.data.Avatar ?
+    const ifAvatar = this.props.Avatar ?
       (
-      <Avatar classes='avatar' url={this.props.data.Avatar} />
+      <Avatar url={this.props.Avatar} />
       )
       : ''
 
-    const ifContributorRole = this.props.data.ContributorRole ?
+    const ifContributorRole = this.props.ContributorRole ?
       (
       <span>
-          <ContributorRole classes='contributor-role' data={this.props.data.ContributorRole} />
+          <ContributorRole data={this.props.ContributorRole} />
           <Separator separatorType=' ' />
       </span>
       )
       : ''
 
-    const ifContributorLink = this.props.data.ContributorLink ?
+    const ifContributorLink = this.props.ContributorLink ?
       (
-      <ContributorLink classes='contributor-link' data={this.props.data.ContributorLink}>
-          <ContributorCredit classes='contributor-credit' data={this.props.data.ContributorCredit} />
+      <ContributorLink data={this.props.ContributorLink}>
+          <ContributorCredit data={this.props.ContributorCredit} />
       </ContributorLink>
       )
       : ''
 
-    const ifContributorAssociation = this.props.data.ContributorAssociation ?
+    const ifContributorAssociation = this.props.ContributorAssociation ?
       (
       <span className='contributor'>
           <Separator separatorType=' /' />
-          <ContributorLink classes='contributor-link' data={this.props.data.ContributorAssociationLink}>
-              <ContributorAssociation classes='contributor-association' data={this.props.data.ContributorAssociation} />
+          <ContributorLink data={this.props.ContributorAssociationLink}>
+              <ContributorAssociation data={this.props.ContributorAssociation} />
           </ContributorLink>
       </span>
       )
@@ -61,17 +61,9 @@ const Contributor = React.createClass({
 Contributor.propTypes = {
   Avatar: PropTypes.string,
   ContributorRole: PropTypes.string,
-  ContributorLink: PropTypes.string,
+  ContributorLink: PropTypes.object,
   ContributorCredit: PropTypes.string,
   ContributorAssociation: PropTypes.string
-}
-
-Contributor.defaultProps = {
-  Avatar: '',
-  ContributorRole: '',
-  ContributorLink: '',
-  ContributorCredit: '',
-  ContributorAssociation: ''
 }
 
 module.exports = Contributor

@@ -21,7 +21,7 @@ const ArticleHeader = React.createClass({
               <Link />
           </CharityCredit>
           {this.props.ArticleTitle ?
-              <ArticleTitle classes={this.props.ArticleTitle.classes} content={this.props.ArticleTitle.content.html} />
+              <ArticleTitle {...this.props.ArticleTitle} />
           : ''}
           {this.props.children}
 

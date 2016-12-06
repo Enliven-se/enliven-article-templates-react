@@ -1,7 +1,7 @@
 import React from 'react'
 
-const ParticleIntro = require('../components/particles/ParticleIntro'),
-  HR = require('../components/base/HR')
+const ParticleIntro = require('../particles/ParticleIntro'),
+  HR = require('./HR')
 
 const ArticleIntro = React.createClass({
   render: function() {
@@ -16,7 +16,7 @@ const ArticleIntro = React.createClass({
     return (
       <div className={this.props.classes}>
           <ArticleIntroBorder {...this.props} />
-          <ParticleIntro classes={this.props.classes} content={this.props.content.html} />
+          <ParticleIntro {...this.props} />
           <ArticleIntroBorder {...this.props} />
           {this.props.children}
       </div>

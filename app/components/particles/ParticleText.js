@@ -7,7 +7,7 @@ const ParticleText = React.createClass({
 
     return (
       <div className={classes} dangerouslySetInnerHTML={{
-        __html: this.props.content
+          __html: this.props.content.html
       }}></div>
 
     )

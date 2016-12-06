@@ -8,7 +8,7 @@ const ParticlePullquote = React.createClass({
     return (
       <div className={classes}>
           <blockquote className={classes} dangerouslySetInnerHTML={{
-        __html: this.props.content
+              __html: this.props.content.html
       }}></blockquote>
       </div>
     )
