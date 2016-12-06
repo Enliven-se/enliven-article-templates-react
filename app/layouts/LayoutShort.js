@@ -20,7 +20,7 @@ const LayoutShort = React.createClass({
                         <Row>
                             <Col sm={6} className='article-meta'>
                                 <ArticleHeader {...this.props.data}/>
-                                <ArticleIntro {...this.props.data.fields[1]} bordered />
+                                <ArticleIntro {...this.props.data.fields[1]} bordered/>
                             </Col>
                         </Row>
                     </Container>
@@ -28,7 +28,7 @@ const LayoutShort = React.createClass({
                 <Container classes='article-byline'>
                     <Row>
                         <Col md={8}>
-                            <ContributorList data={this.props.data.ContributorList} inline separator=', ' />
+                            <ContributorList data={this.props.data.ContributorList} inline separator=', '/>
                         </Col>
                         <Col md={4}>
                             <DatePublished {...this.props.data.DatePublished}/>

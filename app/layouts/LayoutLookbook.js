@@ -12,7 +12,7 @@ const ArticleIntro = require('../components/base/ArticleIntro'),
     ParticleImage = require('../components/particles/ParticleImage')
 
 const LayoutLookbook = React.createClass({
-    render: function() {
+    render : function() {
         return (
             <div className='layout layout-lookbook'>
                 <Container fluid>
@@ -24,7 +24,7 @@ const LayoutLookbook = React.createClass({
                                     <ArticleHeader {...this.props.data} ArticleCategory={false}/>
                                     <ArticleIntro {...this.props.data.fields[0]} bordered classes='border-color-gold'/>
                                     <ContributorList data={this.props.data.ContributorList} separator=', '/>
-                                    <DatePublished {...this.props.data.DatePublished} />
+                                    <DatePublished {...this.props.data.DatePublished}/>
                                 </Col>
                             </Row>
                         </Col>
