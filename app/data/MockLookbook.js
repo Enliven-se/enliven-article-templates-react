@@ -50,8 +50,7 @@ const MockLookBook = {
       'content': {
         'html': 'Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.'
       }
-    },
-    {
+    }, {
       'type': 'image',
       'content': {
         'url': '/images/mock/lookbook-1.jpg',

@@ -6,10 +6,13 @@ const NavContainer = require('../containers/NavContainer'),
   LayoutShort = require('../layouts/LayoutShort'),
   LayoutFeature = require('../layouts/LayoutFeature'),
   LayoutLookbook = require('../layouts/LayoutLookbook'),
+  LayoutPictureIntensive = require('../layouts/LayoutPictureIntensive'),
 
   MockShort = require('../data/MockShort'),
   MockFeature = require('../data/MockFeature'),
-  MockLookbook = require('../data/MockLookbook')
+  MockLookbook = require('../data/MockLookbook'),
+  MockPictureIntensive = require('../data/MockPictureIntensive')
+
 
 var navbar_items = [{
   'title': 'Short',
@@ -26,6 +29,11 @@ var navbar_items = [{
   'className': 'feature',
   'extra_classes': [''],
   'url': '/?layout=Feature'
+}, {
+  'title': 'Picture Intensive',
+  'className': 'PictureIntensive',
+  'extra_classes': [''],
+  'url': '/?layout=PictureIntensive'
 }]
 
 const LayoutContainer = React.createClass({
@@ -33,6 +41,9 @@ const LayoutContainer = React.createClass({
     var color_variant = ''
     const switchLayout = function(props) {
       switch (props.layout) {
+        case 'PictureIntensive':
+          color_variant = MockPictureIntensive.color_variant
+          return <LayoutPictureIntensive data={MockPictureIntensive} />
         case 'Lookbook':
           color_variant = MockLookbook.color_variant
           return <LayoutLookbook data={MockLookbook} />
