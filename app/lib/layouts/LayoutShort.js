@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Col} from 'react-bootstrap'
+import { Grid, Row, Col } from 'react-bootstrap'
 // window.React = React
 
 import ArticleIntro from '../components/base/ArticleIntro'
