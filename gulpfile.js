@@ -33,7 +33,7 @@ gulp.task('moveCss', ['sass'], function() {
 })
 
 gulp.task('sass', () => {
-  return gulp.src('app/styles/**/*.scss')
+  return gulp.src('app/lib/styles/**/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass.sync({
@@ -207,7 +207,7 @@ gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
   // Watch .html files
   gulp.watch('app/*.html', ['html'])
 
-  gulp.watch(['app/styles/**/*.scss', 'app/styles/**/*.css'], ['styles', 'scripts', reload])
+  gulp.watch(['app/lib/styles/**/*.scss', 'app/lib/styles/**/*.css'], ['styles', 'scripts', reload])
 
   // Watch .jade files
   gulp.watch('app/templates/**/*.jade', ['jade', 'html', reload])

@@ -1,6 +1,6 @@
 {
   "name": "enliven-article-templates",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "react-bootstrap": "^0.30.6"
   },
