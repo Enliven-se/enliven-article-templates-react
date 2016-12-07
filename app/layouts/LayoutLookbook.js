@@ -22,7 +22,7 @@ const LayoutLookbook = React.createClass({
                             <Row>
                                 <Col md={10} mdOffset={2}>
                                     <ArticleHeader {...this.props.data} ArticleCategory={false}/>
-                                    <ArticleIntro {...this.props.data.fields[0]} bordered classes='border-color-gold'/>
+                                    <ArticleIntro {...this.props.data.fields[0]} bordered/>
                                     <ContributorList data={this.props.data.ContributorList} separator=', '/>
                                     <DatePublished {...this.props.data.DatePublished}/>
                                 </Col>
@@ -42,7 +42,7 @@ const LayoutLookbook = React.createClass({
                     </Row>
                     <Row className='big-row'>
                         <Col md={6} className='img-small'>
-                            <ParticleImage {...this.props.data.fields[4]} classes='small-left-image'/>
+                            <ParticleImage {...this.props.data.fields[4]} />
                         </Col>
                         <Col md={6}>
                             <ParticleImage {...this.props.data.fields[5]}/>

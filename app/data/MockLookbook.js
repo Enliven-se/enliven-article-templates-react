@@ -51,7 +51,8 @@ const MockLookBook = {
         {
             'content': {
                 'html': 'Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.'
-            }
+            },
+            'classes': 'border-color-gold',
         }, {
             'type': 'image',
             'content': {
@@ -80,6 +81,7 @@ const MockLookBook = {
             'content': {
                 'url': '/images/mock/lookbook-2.jpg'
             },
+            'classes':'small-left-image',
             'credits': {
                 'classes': 'text-bottom-left',
                 'html': '<div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots<br/></div><div class="text-color-gold">Right:</div><div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>, Jeans,<br/>Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots</div>'
