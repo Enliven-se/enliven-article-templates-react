@@ -1,10 +1,12 @@
 // app.js
-const React = window.React = require('react'),
-  ReactDOM = require('react-dom'),
-  LayoutContainer = require('../containers/LayoutContainer'),
-  mountNode = document.getElementById('app')
+import React from 'react'
+import ReactDOM from 'react-dom';
 
-var layout = location.search.match(/[&\?]layout=(\w+)/)
+import LayoutContainer from '../containers/LayoutContainer';
+
+const mountNode = document.getElementById('app')
+
+let layout = location.search.match(/[&\?]layout=(\w+)/)
 layout = layout && (layout.length > 1) ? layout[1] : ''
 
 ReactDOM.render(<LayoutContainer layout={layout} />, mountNode)

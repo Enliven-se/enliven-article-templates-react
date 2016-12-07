@@ -1,12 +1,14 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
 
-const ParticleImag = React.createClass({
-  render: function() {
+class ParticleImag extends React.Component {
+  render() {
     return <div className='particle-imag'>
       <Image src={this.props.url} responsive />
     </div>
   }
-})
 
-module.exports = ParticleImag
+
+}
+
+export default ParticleImag

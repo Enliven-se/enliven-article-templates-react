@@ -1,12 +1,14 @@
 import React from 'react'
 
-const ContributorAssociation = React.createClass({
-  render: function() {
+class ContributorAssociation extends React.Component {
+  render() {
     let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'contributor-association'
 
     return <span className={classes}>{this.props.data}</span>
   }
-})
 
-module.exports = ContributorAssociation
+
+}
+
+export default ContributorAssociation

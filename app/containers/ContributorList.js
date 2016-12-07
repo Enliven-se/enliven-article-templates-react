@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Contributor = require('../components/contributors/Contributor')
+import Contributor from '../components/contributors/Contributor'
 
-const ContributorList = React.createClass({
-  render: function() {
+class ContributorList extends React.Component {
+  render() {
     const props = this.props,
       num_items = props.data.length
 
@@ -25,6 +25,8 @@ const ContributorList = React.createClass({
 
     return <ul className={classes}>{items}</ul>
   }
-})
 
-module.exports = ContributorList
+
+}
+
+export default ContributorList

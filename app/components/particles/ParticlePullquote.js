@@ -1,7 +1,7 @@
 import React from 'react'
 
-const ParticlePullquote = React.createClass({
-  render: function() {
+class ParticlePullquote extends React.Component {
+  render() {
     let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'particle-pullquote'
 
@@ -13,6 +13,8 @@ const ParticlePullquote = React.createClass({
       </div>
     )
   }
-})
 
-module.exports = ParticlePullquote
+
+}
+
+export default ParticlePullquote

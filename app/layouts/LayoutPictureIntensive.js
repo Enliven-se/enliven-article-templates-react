@@ -2,13 +2,13 @@ import React from 'react'
 import {Row, Col} from 'react-bootstrap'
 // window.React = React
 
-const Container = require('../containers/Container'),
-    ArticleHeader = require('../containers/ArticleHeader'),
-    ParticleImage = require('../components/particles/ParticleImage'),
-    ParticleText = require('../components/particles/ParticleText')
+import Container from '../containers/Container'
+import ArticleHeader from '../containers/ArticleHeader'
+import ParticleImage from '../components/particles/ParticleImage'
+import ParticleText from '../components/particles/ParticleText'
 
-const PictureIntensive = React.createClass({
-    render: function() {
+class PictureIntensive extends React.Component {
+    render() {
         return (
             <div className='layout layout-picture-intensive'>
                 <Container fluid classes='panel-1' backgroundImage={this.props.data.fields[0]}>
@@ -56,6 +56,8 @@ const PictureIntensive = React.createClass({
             </div>
         )
     }
-})
 
-module.exports = PictureIntensive
+
+}
+
+export default PictureIntensive

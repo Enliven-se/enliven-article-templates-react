@@ -2,17 +2,15 @@
  * LayoutContainer
  */
 import React from 'react'
-const NavContainer = require('../containers/NavContainer'),
-  LayoutShort = require('../layouts/LayoutShort'),
-  LayoutFeature = require('../layouts/LayoutFeature'),
-  LayoutLookbook = require('../layouts/LayoutLookbook'),
-  LayoutPictureIntensive = require('../layouts/LayoutPictureIntensive'),
-
-  MockShort = require('../data/MockShort'),
-  MockFeature = require('../data/MockFeature'),
-  MockLookbook = require('../data/MockLookbook'),
-  MockPictureIntensive = require('../data/MockPictureIntensive')
-
+import NavContainer from '../containers/NavContainer'
+import LayoutShort from '../layouts/LayoutShort'
+import LayoutFeature from '../layouts/LayoutFeature'
+import LayoutLookbook from '../layouts/LayoutLookbook'
+import LayoutPictureIntensive from '../layouts/LayoutPictureIntensive'
+import MockShort from '../data/MockShort'
+import MockFeature from '../data/MockFeature'
+import MockLookbook from '../data/MockLookbook'
+import MockPictureIntensive from '../data/MockPictureIntensive'
 
 let navbar_items = [{
   'title': 'Short',
@@ -36,8 +34,8 @@ let navbar_items = [{
   'url': '/?layout=PictureIntensive'
 }]
 
-const LayoutContainer = React.createClass({
-  render: function() {
+class LayoutContainer extends React.Component {
+  render() {
     let color_variant = ''
     const switchLayout = function(props) {
       switch (props.layout) {
@@ -68,6 +66,6 @@ const LayoutContainer = React.createClass({
       </div>
     )
   }
-})
+}
 
-module.exports = LayoutContainer
+export default LayoutContainer

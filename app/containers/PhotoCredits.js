@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ParticleText = require('../components/particles/ParticleText')
+import ParticleText from '../components/particles/ParticleText'
 
-const PhotoCredits = React.createClass({
-  render: function() {
+class PhotoCredits extends React.Component {
+  render() {
     let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'photo-credits'
 
@@ -17,6 +17,8 @@ const PhotoCredits = React.createClass({
 
     return output
   }
-})
 
-module.exports = PhotoCredits
+
+}
+
+export default PhotoCredits

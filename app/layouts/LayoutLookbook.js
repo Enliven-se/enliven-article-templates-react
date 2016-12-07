@@ -2,17 +2,17 @@ import React from 'react'
 import {Row, Col} from 'react-bootstrap'
 // window.React = React
 
-const ArticleIntro = require('../components/base/ArticleIntro'),
-    ArticleCategory = require('../components/base/ArticleCategory'),
-    DatePublished = require('../components/base/DatePublished'),
-    Separator = require('../components/base/Separator'),
-    Container = require('../containers/Container'),
-    ArticleHeader = require('../containers/ArticleHeader'),
-    ContributorList = require('../containers/ContributorList'),
-    ParticleImage = require('../components/particles/ParticleImage')
+import ArticleIntro from '../components/base/ArticleIntro'
+import ArticleCategory from '../components/base/ArticleCategory'
+import DatePublished from '../components/base/DatePublished'
+import Separator from '../components/base/Separator'
+import Container from '../containers/Container'
+import ArticleHeader from '../containers/ArticleHeader'
+import ContributorList from '../containers/ContributorList'
+import ParticleImage from '../components/particles/ParticleImage'
 
-const LayoutLookbook = React.createClass({
-    render : function() {
+class LayoutLookbook extends React.Component {
+    render() {
         return (
             <div className='layout layout-lookbook'>
                 <Container fluid>
@@ -42,7 +42,7 @@ const LayoutLookbook = React.createClass({
                     </Row>
                     <Row className='big-row'>
                         <Col md={6} className='img-small'>
-                            <ParticleImage {...this.props.data.fields[4]} />
+                            <ParticleImage {...this.props.data.fields[4]}/>
                         </Col>
                         <Col md={6}>
                             <ParticleImage {...this.props.data.fields[5]}/>
@@ -52,6 +52,6 @@ const LayoutLookbook = React.createClass({
             </div>
         )
     }
-})
+}
 
-module.exports = LayoutLookbook
+export default LayoutLookbook

@@ -1,12 +1,14 @@
 import React from 'react'
 
-const CharityCredit = React.createClass({
-  render: function() {
+class CharityCredit extends React.Component {
+  render() {
     if (this.props.children) {
       return <div className={this.props.classes}>{this.props.children}</div>
     }
     return null
   }
-})
 
-module.exports = CharityCredit
+
+}
+
+export default CharityCredit

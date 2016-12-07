@@ -1,7 +1,7 @@
 import React from 'react'
 
-const NavContainer = React.createClass({
-  render: function() {
+class NavContainer extends React.Component {
+  render() {
     let link_classes = 'buttons-link text-black'
     let navItems = this.props.navbar_items.map(function(item, i) {
       return (
@@ -54,6 +54,8 @@ const NavContainer = React.createClass({
       </section>
     )
   }
-})
 
-module.exports = NavContainer
+
+}
+
+export default NavContainer

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ParticleH1 = require('../particles/ParticleH1')
+import ParticleH1 from '../particles/ParticleH1'
 
-const ArticleTitle = React.createClass({
-  render: function() {
+class ArticleTitle extends React.Component {
+  render() {
     let classes = this.props.classes ? this.props.classes : ''
     classes += ' article-title'
 
@@ -13,6 +13,8 @@ const ArticleTitle = React.createClass({
       </div>
     )
   }
-})
 
-module.exports = ArticleTitle
+
+}
+
+export default ArticleTitle

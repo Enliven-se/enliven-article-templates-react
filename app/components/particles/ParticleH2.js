@@ -1,11 +1,13 @@
 import React from 'react'
 
-const ParticleH2 = React.createClass({
-  render: function() {
+class ParticleH2 extends React.Component {
+  render() {
     return <h2 className={this.props.classes} dangerouslySetInnerHTML={{
         __html: this.props.content.html
       }} />
   }
-})
 
-module.exports = ParticleH2
+
+}
+
+export default ParticleH2

@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Link = React.createClass({
-  render: function() {
+class Link extends React.Component {
+  render() {
     if (!this.props.url)
       return null;
 
@@ -9,6 +9,8 @@ const Link = React.createClass({
       <a href={this.props.url} title={this.props.title} className='link-wrapper'>{this.props.text}</a>
     )
   }
-})
 
-module.exports = Link
+
+}
+
+export default Link

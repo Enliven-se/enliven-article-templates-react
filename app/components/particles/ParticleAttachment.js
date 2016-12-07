@@ -1,9 +1,11 @@
 import React from 'react';
 
-const ParticleAttachment = React.createClass({
-  render: function() {
+class ParticleAttachment extends React.Component {
+  render() {
     return <div className={this.props.classes}>{this.props.particleName}</div>
   }
-})
 
-module.exports = ParticleAttachment
+
+}
+
+export default ParticleAttachment

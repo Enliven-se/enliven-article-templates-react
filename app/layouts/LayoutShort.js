@@ -2,17 +2,17 @@ import React from 'react'
 import {Row, Col} from 'react-bootstrap'
 // window.React = React
 
-const ArticleIntro = require('../components/base/ArticleIntro'),
-    DatePublished = require('../components/base/DatePublished'),
-    Separator = require('../components/base/Separator'),
-    Container = require('../containers/Container'),
-    ArticleHeader = require('../containers/ArticleHeader'),
-    ContributorList = require('../containers/ContributorList'),
-    ParticlePullquote = require('../components/particles/ParticlePullquote'),
-    ParticleText = require('../components/particles/ParticleText')
+import ArticleIntro from '../components/base/ArticleIntro'
+import DatePublished from '../components/base/DatePublished'
+import Separator from '../components/base/Separator'
+import Container from '../containers/Container'
+import ArticleHeader from '../containers/ArticleHeader'
+import ContributorList from '../containers/ContributorList'
+import ParticlePullquote from '../components/particles/ParticlePullquote'
+import ParticleText from '../components/particles/ParticleText'
 
-const LayoutShort = React.createClass({
-    render: function() {
+class LayoutShort extends React.Component {
+    render() {
         return (
             <div className='layout layout-short'>
                 <Container fluid classes='panel-1' backgroundImage={this.props.data.fields[0]}>
@@ -50,6 +50,6 @@ const LayoutShort = React.createClass({
             </div>
         )
     }
-})
+}
 
-module.exports = LayoutShort
+export default LayoutShort

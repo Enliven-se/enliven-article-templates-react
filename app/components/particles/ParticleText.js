@@ -1,7 +1,7 @@
 import React from 'react'
 
-const ParticleText = React.createClass({
-  render: function() {
+class ParticleText extends React.Component {
+  render() {
     let classes = this.props.classes ? this.props.classes : ''
     classes += ' particle-text'
 
@@ -12,6 +12,8 @@ const ParticleText = React.createClass({
 
     )
   }
-})
 
-module.exports = ParticleText
+
+}
+
+export default ParticleText

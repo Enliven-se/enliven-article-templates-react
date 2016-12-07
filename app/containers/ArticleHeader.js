@@ -1,13 +1,13 @@
 import React from 'react'
 
-const ArticleCategory = require('../components/base/ArticleCategory'),
-  ArticleTitle = require('../components/base/ArticleTitle'),
-  Icon = require('../components/base/Icon'),
-  Link = require('../components/base/Link'),
-  CharityCredit = require('../components/contributors/CharityCredit')
+import ArticleCategory from '../components/base/ArticleCategory'
+import ArticleTitle from '../components/base/ArticleTitle'
+import Icon from '../components/base/Icon'
+import Link from '../components/base/Link'
+import CharityCredit from '../components/contributors/CharityCredit'
 
-const ArticleHeader = React.createClass({
-  render: function() {
+class ArticleHeader extends React.Component {
+  render() {
     let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'article-header'
 
@@ -28,6 +28,8 @@ const ArticleHeader = React.createClass({
       </div>
     )
   }
-})
 
-module.exports = ArticleHeader
+
+}
+
+export default ArticleHeader

@@ -1,9 +1,11 @@
 import React from 'react'
 
-const HR = React.createClass({
-  render: function() {
+class HR extends React.Component {
+  render() {
     return <hr className={this.props.classes}>{this.props.children}</hr>
   }
-})
 
-module.exports = HR
+
+}
+
+export default HR

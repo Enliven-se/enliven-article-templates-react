@@ -1,7 +1,7 @@
 import React from 'react'
 
-const DatePublished = React.createClass({
-  render: function() {
+class DatePublished extends React.Component {
+  render() {
     let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'date-published'
 
@@ -11,6 +11,8 @@ const DatePublished = React.createClass({
         </div>
     )
   }
-})
 
-module.exports = DatePublished
+
+}
+
+export default DatePublished

@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Grid } from 'react-bootstrap'
 
-const Container = React.createClass({
-  render: function() {
+class Container extends React.Component {
+  render() {
     let elStyle = {
     }
 
@@ -17,6 +17,8 @@ const Container = React.createClass({
 
     return <Grid fluid={this.props.fluid} style={elStyle} className={classes}>{this.props.children}</Grid>
   }
-})
 
-module.exports = Container
+
+}
+
+export default Container

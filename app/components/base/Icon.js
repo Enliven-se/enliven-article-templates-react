@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Icon = React.createClass({
-  render: function() {
+class Icon extends React.Component {
+  render() {
     if (!this.props.imageURL)
       return null;
 
@@ -12,6 +12,8 @@ const Icon = React.createClass({
       <div className='icon-wrapper'><a href={this.props.url} title={this.props.title} className={classes}><img src={this.props.imageURL}/></a></div>
     )
   }
-})
 
-module.exports = Icon
+
+}
+
+export default Icon

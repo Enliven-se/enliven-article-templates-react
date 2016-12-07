@@ -1,9 +1,11 @@
 import React from 'react'
 
-const ParticleVideo = React.createClass({
-  render: function() {
+class ParticleVideo extends React.Component {
+  render() {
     return <div className='particle-video'>{this.props.particleName}</div>
   }
-})
 
-module.exports = ParticleVideo
+
+}
+
+export default ParticleVideo
