@@ -14,7 +14,7 @@ const NavContainer = require('../containers/NavContainer'),
   MockPictureIntensive = require('../data/MockPictureIntensive')
 
 
-var navbar_items = [{
+let navbar_items = [{
   'title': 'Short',
   'className': 'short',
   'extra_classes': [''],
@@ -38,7 +38,7 @@ var navbar_items = [{
 
 const LayoutContainer = React.createClass({
   render: function() {
-    var color_variant = ''
+    let color_variant = ''
     const switchLayout = function(props) {
       switch (props.layout) {
         case 'PictureIntensive':

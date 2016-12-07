@@ -4,10 +4,10 @@ import { Grid } from 'react-bootstrap'
 
 const Container = React.createClass({
   render: function() {
-    var elStyle = {
+    let elStyle = {
     }
 
-    var classes = this.props.classes ? this.props.classes : ''
+    let classes = this.props.classes ? this.props.classes : ''
 
     if (this.props.backgroundImage) {
       classes += ' has-hero'

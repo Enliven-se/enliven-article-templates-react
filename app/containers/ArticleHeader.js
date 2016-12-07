@@ -8,7 +8,7 @@ const ArticleCategory = require('../components/base/ArticleCategory'),
 
 const ArticleHeader = React.createClass({
   render: function() {
-    var classes = this.props.classes ? this.props.classes + ' ' : ''
+    let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'article-header'
 
     return (

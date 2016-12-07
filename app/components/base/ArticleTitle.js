@@ -4,7 +4,7 @@ const ParticleH1 = require('../particles/ParticleH1')
 
 const ArticleTitle = React.createClass({
   render: function() {
-    var classes = this.props.classes ? this.props.classes : ''
+    let classes = this.props.classes ? this.props.classes : ''
     classes += ' article-title'
 
     return (

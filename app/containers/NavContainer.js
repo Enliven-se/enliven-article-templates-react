@@ -2,8 +2,8 @@ import React from 'react'
 
 const NavContainer = React.createClass({
   render: function() {
-    var link_classes = 'buttons-link text-black'
-    var navItems = this.props.navbar_items.map(function(item, i) {
+    let link_classes = 'buttons-link text-black'
+    let navItems = this.props.navbar_items.map(function(item, i) {
       return (
         <li key={i} className='navbar-item'>
           <a className={link_classes} href={item.url}>{item.title}</a>
@@ -11,7 +11,7 @@ const NavContainer = React.createClass({
       )
     })
 
-    var burger_classes = 'navbar-hamburger hamburger-menu hamburger'
+    let burger_classes = 'navbar-hamburger hamburger-menu hamburger'
     if (this.props.color_variant == 'white') {
       burger_classes += ' hamburger-white'
     } else {

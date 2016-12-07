@@ -9,7 +9,7 @@ const Avatar = require('../base/Avatar'),
 
 const Contributor = React.createClass({
   render: function() {
-    var classes = this.props.classes ? this.props.classes + ' ' : ''
+    let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'contributor'
 
     const ifAvatar = this.props.Avatar ?

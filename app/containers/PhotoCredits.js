@@ -4,7 +4,7 @@ const ParticleText = require('../components/particles/ParticleText')
 
 const PhotoCredits = React.createClass({
   render: function() {
-    var classes = this.props.classes ? this.props.classes + ' ' : ''
+    let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'photo-credits'
 
     let output = this.props.credits ?

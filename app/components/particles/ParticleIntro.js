@@ -4,7 +4,7 @@ const ParticleText = require('../particles/ParticleText')
 
 const ParticleIntro = React.createClass({
   render: function() {
-    var classes = this.props.classes ? this.props.classes + ' ' : ''
+    let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'particle-intro'
     return <ParticleText {...this.props} classes={classes} />
   }
