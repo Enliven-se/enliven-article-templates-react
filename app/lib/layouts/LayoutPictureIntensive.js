@@ -1,10 +1,17 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
-// window.React = React
 
-import Container from '../containers/Container'
+// containers
 import ArticleHeader from '../containers/ArticleHeader'
+import Container from '../containers/Container'
+import ContributorList from '../containers/ContributorList'
+
+// components
+import ArticleCategory from '../components/base/ArticleCategory'
+import ArticleTitle from '../components/base/ArticleTitle'
+import HR from '../components/base/HR'
 import ParticleImage from '../components/particles/ParticleImage'
+import ParticlePullquote from '../components/particles/ParticlePullquote'
 import ParticleText from '../components/particles/ParticleText'
 
 class PictureIntensive extends React.Component {
@@ -23,7 +30,7 @@ class PictureIntensive extends React.Component {
                                 <Col md={5} mdOffset={8} className='article-meta'>
                                     <ArticleTitle {...this.props.data.ArticleTitle} />
                                     <ParticleText {...this.props.data.fields[0]} />
-                                    <hr></hr>
+                                    <HR/>
                                     <ContributorList data={this.props.data.ContributorList} inline separator=', '/>
 
                                 </Col>
