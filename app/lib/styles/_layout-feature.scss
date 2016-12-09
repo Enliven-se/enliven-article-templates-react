@@ -21,6 +21,10 @@
         }
     }
 
+    .article-category-wrapper {
+        margin-left: -30px;
+    }
+
     .has-hero,
     .particle-image {
         margin-bottom: 28px;
@@ -30,6 +34,10 @@
         margin    : 33px 0 100px;
         font-size : 18px;
         text-align: justify;
+
+        strong {
+            font-family: $font-family-avenirnext-demibold, Sans-Serif;
+        }
     }
 
     .contributor-list {

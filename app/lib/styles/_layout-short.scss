@@ -10,6 +10,10 @@
 
     .particle-text {
         font-size: 18px;
+
+        strong {
+            font-family: $font-family-avenirnext-demibold, Sans-Serif;
+        }
     }
 
     .article-meta {
