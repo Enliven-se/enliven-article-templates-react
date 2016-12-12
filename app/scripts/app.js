@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 
 // containers
 import LayoutContainer from '../lib/containers/LayoutContainer';
+import GridLayout from '../lib/containers/GridLayout'
 
 // layouts
 import LayoutFront from '../lib/layouts/LayoutFront'
@@ -40,6 +41,10 @@ const switchLayout = function(props) {
         case 'Short':
             ChosenLayout = LayoutShort
             mock = MockShort
+            break;
+        case 'Grid':
+            ChosenLayout = GridLayout
+            mock = {}
             break;
         default:
             ChosenLayout = LayoutFront
