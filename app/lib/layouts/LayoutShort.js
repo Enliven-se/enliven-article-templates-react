@@ -1,4 +1,5 @@
-import React from 'react'
+// import Telescope from 'meteor/nova:lib';
+import React, { PropTypes, Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap'
 // window.React = React
 
@@ -15,6 +16,7 @@ class LayoutShort extends React.Component {
     render() {
         return (
             <div className='layout layout-short'>
+
                 <Container fluid classes='panel-1' backgroundImage={this.props.data.fields[0]}>
                     <Container>
                         <Row>
@@ -52,4 +54,5 @@ class LayoutShort extends React.Component {
     }
 }
 
+module.exports = LayoutShort
 export default LayoutShort
