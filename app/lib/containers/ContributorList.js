@@ -20,7 +20,9 @@ class ContributorList extends React.Component {
       } else if (i === 0) {
         item_class += ' first'
       }
-      return <li className={item_class} key={'c' + i}><Contributor {...item} className={props.classes} /></li>
+      return (
+        <li className={item_class} key={'c' + i}><Contributor {...item} className={props.classes} /></li>
+      )
     })
 
     return <ul className={classes}>{items}</ul>

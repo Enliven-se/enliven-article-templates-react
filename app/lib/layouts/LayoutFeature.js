@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Col} from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 // window.React = React
 
 import Container from '../containers/Container'
@@ -11,9 +11,9 @@ import ParticleImage from '../components/particles/ParticleImage'
 import ParticleText from '../components/particles/ParticleText'
 
 class LayoutFeature extends React.Component {
-    render() {
-        return (
-            <div className='layout layout-feature'>
+  render() {
+    return (
+      <div className='layout layout-feature'>
                 <Container fluid classes='panel-1' backgroundImage={this.props.data.fields[0]}>
                     <Row>
                         <Col sm={6} smOffset={6}>
@@ -78,7 +78,7 @@ class LayoutFeature extends React.Component {
                             <ParticleImage {...this.props.data.fields[16]}/>
                         </Col>
                         <Col sm={6} className='col-left'>
-                            <ParticleH2 {...this.props.data.fields[17]}/>
+                            <ParticleText {...this.props.data.fields[17]}/>
                             <HR/>
                             <ParticleText {...this.props.data.fields[18]}/>
                         </Col>
@@ -97,8 +97,8 @@ class LayoutFeature extends React.Component {
                     </Row>
                 </Container>
             </div>
-        )
-    }
+    )
+  }
 }
 
 export default LayoutFeature

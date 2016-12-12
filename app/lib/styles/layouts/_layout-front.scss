@@ -1,5 +1,40 @@
 .layout-front {
-    .panel-1 {
-        padding-top: 150px;
+    // .article-meta-large {
+    //     max-width: 450px;
+    // }
+    //
+    // .article-meta-small {
+    //     max-width: 320px;
+    // }
+
+    .article-meta-large,
+    .article-meta-small {
+        background-color: #ffffff;
+        border          : 1px solid $golden-retriever;
+        z-index         : 5;
+        box-sizing      : border-box;
+        padding         : 22px 24px;
+
+        a {
+            color          : $golden-retriever;
+            text-transform : uppercase;
+            text-decoration: underline;
+        }
+
+        h3 {
+            font-size     : 16px;
+            text-transform: uppercase;
+            color         : $golden-retriever;
+        }
+
+        h2 {
+            margin     : 0 0 9px 6px;
+            line-height: 46px;
+        }
+
+        p {
+            margin-left: 6px;
+            line-height: 24px;
+        }
     }
 }
