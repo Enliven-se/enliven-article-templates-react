@@ -51,7 +51,7 @@ class ProductReview extends React.Component {
                       <ParticleImage {...this.props.data.fields[5]}/>
                   </Col>
               </Row>
-              <Row className="text-row">
+              <Row className="text-row last-text">
                   <Col md={6} className='col-right'>
                       <ParticleText {...this.props.data.fields[6]} />
                   </Col>

@@ -45,24 +45,24 @@ const MockTheWayWePlay = {
   'fields': [{
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-1.jpg'
+      'url': '/images/mock/hp-1.jpg'
     }
   }, {
     'type': 'text',
     'content': {
-      'html': 'Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/>När: En varm höstdag i november, 2015<br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet.<br/>Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie själv andas och lever och som det egna märket Leontine personifierar – en bohemisk fri själ med. Emelie Törling  är grundare och designer på Leontine samt sångerska. Läs hennes blogg här!<br/>Tack Emelie och Nico Anaïs för att vi fick komma!'
+      'html': '<a href="enliven.co">Women\'s Lifestyle</a><h2>London Fashion Week</h2><h3>Photographer And Contributor</h3>'
     }
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-11.jpg',
+      'url': '/images/mock/hp-2.jpg',
       'classes': 'text-bottom-right',
       'html': '<div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>,<br/>Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara,<br/><a>zara.com</a>, in Zara Tops, Boots, Zara,<br/><a>zara.com</a>, in Zara Boots</div>'
     }
   }, {
     'type': 'text',
     'content': {
-      'html': 'Berätta om Leontine.<br/><br/>Jag och min man Gustaf bodde i Laurel Canyon i Los Angeles 2012 och jag kunde aldrig riktigt hitta boots eller accessorer som jag ville bära, så jag började tillverka saker till mig själv. Första dagen på stan i LA med bootsen på frågade femton personer mig var de gick att köpa. Jag gav min mailadress och gick hem och startade mitt märke. Jag började göra boots och smycken i återvunnen metall och gjorde om vintage smycken. Jag designade en handgjord klädkollektion på 10 plagg som såldes slut direkt och jag skulle precis lansera en smyckeskollektion, men allt lades på is då min dotter valda att komma ut två månader för tidigt.'
+      'html': '<a href="enliven.co">Women\'s Lifestyle</a><h2>Traveling to the Heart of Stockholm</h2><p>At the start of a project, we usually need to make wireframes in some form or another.</p><h3>Photographer And Contributor</h3>'
     }
   }, {
     'type': 'text',
@@ -72,12 +72,12 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-3.jpg'
+      'url': '/images/mock/hp-3.jpg'
     }
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-4.jpg'
+      'url': '/images/mock/hp-4.jpg'
     }
   }, {
     'type': 'text',
@@ -98,12 +98,12 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-5.jpg'
+      'url': '/images/mock/dummy-contributor.png'
     }
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-6.jpg'
+      'url': '/images/mock/hp-5.jpg'
     }
   }, {
     'type': 'text',
@@ -113,12 +113,12 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-7.jpg'
+      'url': '/images/mock/hp-6.jpg'
     }
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-8.jpg'
+      'url': '/images/mock/hp-7.jpg'
     }
   }, {
     'type': 'text',
