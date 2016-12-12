@@ -1,12 +1,10 @@
 @import 'variables';
-
 // bower:scss
 @import '../../bower_components/enliven-bootswatch/_variables';
 @import '../../../node_modules/compass-mixins/lib/compass';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
-@import '../../bower_components/enliven-bootswatch/_bootswatch';
-// endbower
+@import '../../bower_components/enliven-bootswatch/_bootswatch'; // endbower
 @import 'components/base';
 @import 'components/menu';
 @import 'components/articles';
@@ -18,3 +16,4 @@
 @import 'layouts/layout-feature';
 @import 'layouts/layout-lookbook';
 @import 'layouts/layout-picture-intensive';
+@import 'layouts/layout-product-review';

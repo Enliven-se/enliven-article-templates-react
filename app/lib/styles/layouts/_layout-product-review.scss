@@ -1,0 +1,112 @@
+.layout-product-review {
+    .panel-1 {
+        .col-md-9 {
+            padding-left: 0;
+            height      : 110vh;
+
+            .panel-2 {
+                height: 110vh;
+                @media screen and (max-width: $screen-sm) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .col-md-3 {
+            background-color: #ffffff;
+            z-index         : 5;
+            box-sizing      : border-box;
+            padding-top     : 76px;
+
+            .article-category {
+                margin-left: 34px;
+            }
+
+            h1 {
+                font-family: $font-family-avenirnext-demibold, Sans-Serif;
+                font-size  : 36px;
+                line-height: 61px;
+                margin     : 89px 0 0 60px;
+            }
+
+            hr {
+                max-width: 100px;
+                border   : 1.5px solid $golden-retriever;
+            }
+
+            .particle-text {
+                line-height: 35px;
+                margin-left: 65px;
+            }
+
+            .contributor-list {
+                margin: 149px 0 0 27px;
+            }
+            @media screen and (max-width: $screen-sm) {
+                padding-top: 30px;
+
+                h1 {
+                    font-size  : 25px;
+                    line-height: 35px;
+                }
+
+                .article-category,
+                .particle-text,
+                h1 {
+                    margin-left: 20px;
+                }
+            }
+            @media screen and (max-width: $screen-md) {
+                width   : 90%;
+                position: absolute;
+                border  : 1px solid $golden-retriever;
+                top     : 210px;
+            }
+        }
+    }
+    @media screen and (max-width: $screen-md) {
+        .first-text {
+            margin-top: 35px;
+        }
+
+        .col-right {
+            img {
+                margin: 35px 0;
+            }
+        }
+
+        .col-left {
+            img {
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    .particle-text {
+        strong {
+            font-family: $font-family-avenirnext-demibold, Sans-Serif;
+        }
+    }
+
+    .text-row {
+        box-sizing: border-box;
+        padding   : 10px;
+        text-align: justify;
+
+        .col-left {
+            margin-top: 35px;
+        }
+        @media screen and (min-width: $screen-md) {
+            padding: 65px 138px 30px;
+
+            .col-right {
+                padding-right: 55px;
+            }
+
+            .col-left {
+                padding-left: 55px;
+                margin-top  : 0;
+            }
+        }
+    }
+}
