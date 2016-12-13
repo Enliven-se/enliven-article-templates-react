@@ -51,7 +51,7 @@ const switchLayout = function(props) {
             break;
         case 'Grid':
             ChosenLayout = GridLayout
-            mock = {}
+            mock = MockFront
             sticky = false
             break;
         default:

@@ -1,24 +1,33 @@
 import React from 'react'
 
 class NavContainer extends React.Component {
-  render() {
-    let link_classes = 'buttons-link text-black'
-    let navItems = this.props.navbar_items.map(function(item, i) {
-      return (
-        <li key={i} className='navbar-item'>
-          <a className={link_classes} href={item.url}>{item.title}</a>
-        </li>
-      )
-    })
+    navItems() {
+        let link_classes = 'buttons-link text-black'
+        return this.props.navbar_items.map(function(item, i) {
+          return (
+            <li key={i} className='navbar-item'>
+              <a className={link_classes} href={item.url}>{item.title}</a>
+            </li>
+          )
+        })
+    }
 
+  render() {
     let burger_classes = 'navbar-hamburger hamburger-menu hamburger'
+    let navbar_classes = 'navbar navbar-freeze'
+
     if (this.props.color_variant == 'white') {
       burger_classes += ' hamburger-white'
     } else {
       burger_classes += ' hamburger-gold'
     }
+
+    if ( !!this.props.sticky) {
+        navbar_classes += 'navbar-absolute navbar-sticky navbar-auto-collapse top'
+    }
+
     return (
-      <section id='ext_menu-0' className='navbar navbar-freeze navbar-absolute navbar-sticky navbar-auto-collapse top'>
+      <section id='ext_menu-0' className={navbar_classes}>
           <nav className='navbar-section section navbar navbar-default'>
               <div className='section-container'>
                   <div className='navbar-container navbar-header container'>
@@ -41,7 +50,7 @@ class NavContainer extends React.Component {
                           <div className="hamburger-helper">
                               <div className="collapse navbar-collapse navbar-open container-fluid" id="navbar-collapse">
                                   <ul id="main-menu" className="menu nav navbar-nav navbar-open">
-                              {navItems}
+                              {this.navItems()}
                               <li className="first last leaf menu-link-become-a-contributor"><a href="/en/become-contributor">Become a Contributor</a></li>
                           </ul>
                       </div>

@@ -9,7 +9,7 @@ class LayoutContainer extends React.Component {
 
     return (
       <div className='page'>
-          <NavContainer navbar_items={this.props.navbar_items} color_variant={this.props.color_variant} />
+          <NavContainer {...this.props} />
           { this.props.children}
       </div>
     )
