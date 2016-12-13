@@ -3,9 +3,9 @@ import { Row, Col } from 'react-bootstrap'
 
 import Container from '../containers/Container'
 import HR from '../components/base/HR'
+
 import ParticleImage from '../components/particles/ParticleImage'
 import ParticleText from '../components/particles/ParticleText'
-
 
 class LayoutFront extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class LayoutFront extends React.Component {
           <Container fluid classes='panel-1'>
               <Row>
                   <Col sm={12} className=''>
-                      <h2 className='text-color-gold'>New On Enliven</h2>
+                      <h2 className='text-color-gold header-top'>New On Enliven</h2>
                       <HR className=''/>
                   </Col>
               </Row>

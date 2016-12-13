@@ -1,5 +1,10 @@
 .navbar-brand {
     padding-top: 50px;
+    height     : auto;
+}
+
+.navbar {
+    margin-bottom: 0;
 }
 
 .navbar-section {
@@ -166,3 +171,11 @@
         display: block;
     }
 }
+
+/// move the navbar closer to the top
+// .navbar-brand {
+//     padding-top: 20px;
+// }
+// .hamburger-menu {
+// top:0;
+// }
