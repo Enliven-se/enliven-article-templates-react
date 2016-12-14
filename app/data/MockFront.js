@@ -62,12 +62,12 @@ const MockTheWayWePlay = {
   }, {
     'type': 'text',
     'content': {
-      'html': '<a href="enliven.co">Women\'s Lifestyle</a><h2>Traveling to the Heart of Stockholm</h2><p>At the start of a project, we usually need to make wireframes in some form or another.</p><h3>Photographer And Contributor</h3>'
+      'html': '<a href="enliven.co">Women\'s Lifestyle</a><h2>Traveling to the Heart of Stockholm</h2><h3>Photographer And Contributor</h3>'
     }
   }, {
     'type': 'text',
     'content': {
-      'html': 'Vem bär Leontine?<br/><br/>"Leontinekvinnan" är självständig, självsäker och orädd. Hon gör det hon vill och tror på, vad det än är som gör henne lycklig, utan en tanke på vart det ska leda. Hon är en bohemisk och fri själ med en stark stil och hon inspirerar andra att leva som hon. Märket är en tydlig blandning av eklektisk lyx-rocknroll och elegans. En perfekt grå sliten tisha tillsammans med ett par guldpaljettbyxor. Jag har gjort boots till Kate Moss, Englands superstylist Katy England och artisten Cat Power. Superkul!'
+      'html': '<strong class="bold-bits">Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.</strong><br/><br/>Take a Tip From Ashley and Mary-Kate Olsen and Stock Up on Chic Basics for Under $500<br/><br/>Hailey Baldwin Takes Red Carpet Denim Dressing to the Streets<br/><br/>Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.'
     }
   }, {
     'type': 'image',
@@ -82,18 +82,18 @@ const MockTheWayWePlay = {
   }, {
     'type': 'text',
     'content': {
-      'html': 'Berätta om första tiden med Nico Anaïs.'
+      'html': '<h2>Traveling to the Heart of Stockholm</h2>by <a class="text-color-gold">Tod Vanderwolve</a>'
     },
     'classes': 'text-color-gold text-uppercase'
   }, {
     'type': 'text',
     'content': {
-      'html': 'Hon är vårt första barn så som tur är hade vi inget att jämföra med, för resan har inte varit helt lätt. Jag började blöda i vecka 30. Väl på sjukhuset stannade blödningen av men startade på nytt igen efter några timmar och då ännu värre. Beslutet att göra ett akut kejsarsnitt togs direkt eftersom det var fara för både mitt och Anaïs liv och fjorton minuter senare var hon ute. Första natten drabbades jag av en panikattack. Jag förstod inte att jag hade fått barn. Allt som hänt var ett sådant trauma och jag fick inte heller träffa henne de första tolv timmarna. Jag hade obeskrivligt ont och var så rädd för att hon inte skulle klara sig.<br/>     Fem dagar efter förlossningen var jag och Gustaf tvungna att checka ut från sjukhusen och åka hem utan Anaïs. Vi kom innanför dörren med förlossningsväska och patientarmband runt armen och lägenheten var precis den samma men ändå var inget sig likt. Vi var föräldrar men vår bebis var inte där. Under två månader fick vi inte ha henne hemma. Jag bröstpumpade var tredje timme och åkte tvärs över Manhattan varje dag i sextio dagar för att få vara med henne och för att lämna mjölken som hon fick genom näsan. Hon var kopplad till så många olika slangar och jag satt vid kuvösen så länge jag orkade, jag fick inte hålla henne i mer än en timme per dag då hon inte fick vara längre tid än så utanför kuvösen. Såhär i efterhand när vi pratar om det så inser vi hur påfrestande det faktiskt har varit. Det tog lång lång tid för mig att verkligen fatta att hon – den där underbara lilla människan var vår.'
+      'html': '<h3 class="text-color-gold">Popular Contributions</h3><p>At the start of a project, we usually need to make wireframes in some form or another. </p>'
     }
   }, {
     'type': 'text',
     'content': {
-      'html': 'Hur var det när hon äntligen fick komma hem?<br/><br/>Jag var livrädd och allt var som i en dimma den första tiden. Vi sov inte. Vi hade levt med henne på sjukhuset och var trygga med att hon låg vid en monitor som pep om hennes hjärta glömde slå ett slag. Att se henne utan sladdar var läskigt. Anaïs hade kolik i tre månader och jag gick runt med öronproppar och med sovmask i pannan, så när hon väl somnade under dagen la jag mig bredvid henne och försökte sova en stund. Jag försökte lära henne att amma och det kunde ta upp till tre timmar varje gång. Jag fick väcka henne på natten med en våt trasa på pannan och blåsa på henne för att hon skulle vakna till lite och amma. Förra sommaren var jag i Sverige en längre tid och fick avlastning av mina underbara föräldrar, då började jag få tillbaka gnistan. Gustav var det bästa stödet, men började på ett nytt jobb i samma veva så det var oerhört tufft för honom också. När jag började förstå hennes signaler var det en obeskrivlig lycka. Jag och Gustaf grät båda två när hon log för första gången. Det var så stort för oss. Hon hade växt och var ok.'
+      'html': '<a>More</a>'
     }
   }, {
     'type': 'image',
@@ -128,7 +128,7 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-9.jpg'
+      'url': '/images/mock/icon-i.png'
     }
   }, {
     'type': 'text',

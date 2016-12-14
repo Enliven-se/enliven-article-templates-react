@@ -6,15 +6,36 @@
     // .article-meta-small {
     //     max-width: 320px;
     // }
+    hr {
+        border-color: $golden-retriever;
+    }
+
+    .article-meta-large {
+        max-width: 450px;
+    }
+
+    .article-meta-small {
+        max-width: 320px;
+    }
 
     .article-meta-large,
     .article-meta-small {
         background-color: #ffffff;
         border          : 1px solid $golden-retriever;
-        z-index         : 5;
+        bottom          : 80px;
         box-sizing      : border-box;
-        padding         : 22px 24px;
         height          : 237px;
+        padding         : 22px 24px;
+        position        : absolute;
+        z-index         : 5;
+
+        .particle-text {
+            height          : 237px;
+            background-color: #ffffff;
+            z-index         : 5;
+            padding         : 22px 24px;
+            border          : 1px solid $golden-retriever;
+        }
 
         a {
             color          : $golden-retriever;
@@ -29,8 +50,11 @@
         }
 
         h2 {
-            margin     : 0 0 9px 6px;
-            line-height: 46px;
+            font-size     : 36px;
+            margin        : 0 0 9px 6px;
+            line-height   : 46px;
+            letter-spacing: 0.64px;
+            color         : $blackish;
         }
 
         p {
@@ -55,6 +79,108 @@
         .col-sm-8,
         .col-sm-9 {
             align-items: baseline;
+        }
+    }
+
+    .lg-img {
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .lg-img,
+    .sm-img {
+        position      : relative;
+        padding-bottom: 237px;
+    }
+
+    .articles-grid-row-1 {
+        margin-top: 150px;
+    }
+
+    .articles-grid-row-2 {
+        margin-top: 222px;
+    }
+
+    .articles-list,
+    .square-article {
+        hr {
+            margin-bottom: 50px;
+        }
+    }
+
+    .articles-list {
+        box-sizing   : border-box;
+        padding-right: 40px;
+
+        .bold-bits {
+            font-family: $font-family-avenirnext-demibold, Sans-Serif;
+            font-size  : 18px;
+            color      : $blackish;
+        }
+
+        .more-button {
+            align-self      : flex-end;
+            background-color: $golden-retriever;
+            text-align      : right;
+            margin-top      : 50px;
+
+            a {
+                color         : #ffffff;
+                font-family   : $font-family-sans-serif;
+                font-size     : 18px;
+                text-transform: uppercase;
+                padding       : 11px 25px 11px 0;
+            }
+        }
+    }
+
+    .contributors-grid-row-2 {
+        margin-top: 125px;
+    }
+
+    .contributors-headline {
+        margin    : 180px 0 110px;
+        text-align: center;
+
+        h2 {
+            color           : $golden-retriever;
+            font-family     : $font-family-sans-serif;
+            background-color: #ffffff;
+        }
+    }
+
+    .about-contributor {
+        padding: 0 30px;
+
+        h2 {
+            color    : $blackish;
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size      : 16px;
+            text-decoration: underline;
+            margin         : 12px 0 17px;
+            text-transform : uppercase;
+            font-family    : $font-family-sans-serif;
+        }
+
+        p {
+            font-size     : 14px;
+            letter-spacing: 0.19px;
+            line-height   : 24px;
+            margin-left   : 15px;
+        }
+    }
+
+    .recommend-headline {
+        text-align: center;
+        margin    : 80px 0;
+
+        h2 {
+            color      : $golden-retriever;
+            font-family: "avenirnext-regular", Helvetica, Arial, sans-serif;
         }
     }
 }
