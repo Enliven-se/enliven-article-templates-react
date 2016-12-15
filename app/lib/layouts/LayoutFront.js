@@ -3,6 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 
 import Container from '../containers/Container'
 import SectionHeader from '../containers/SectionHeader'
+import FooterContainer from '../containers/FooterContainer'
 
 import HR from '../components/base/HR'
 
@@ -29,12 +30,14 @@ class LayoutFront extends React.Component {
                           </div>
                       </div>
                   </Col>
-                  <Col sm={6} className='lg-img'>
-                      <ParticleImage {...this.props.data.fields[2]}/>
-                      { /* <ParticleImage {...this.props.data.fields[16]}/> */ }
-                      <Col sm={8} smOffset={2} className="article-meta-large">
-                          <ParticleText {...this.props.data.fields[3]} />
-                      </Col>
+                  <Col sm={6} className=''>
+                      <div className="wrapper lg-img">
+                          <ParticleImage {...this.props.data.fields[2]}/>
+                          { /* <ParticleImage {...this.props.data.fields[16]}/> */ }
+                          <Col sm={8} smOffset={2} className="article-meta-large">
+                              <ParticleText {...this.props.data.fields[3]} />
+                          </Col>
+                      </div>
                   </Col>
                   <Col sm={3} className=''>
                       <h2 className='heading-text'>AD SPACE</h2>
@@ -43,17 +46,21 @@ class LayoutFront extends React.Component {
           </Container>
           <Container fluid>
               <Row>
-                  <Col sm={6} className='lg-img'>
-                      <ParticleImage {...this.props.data.fields[5]}/>
-                      <Col sm={8} smOffset={4} className="article-meta-large">
-                          <ParticleText {...this.props.data.fields[3]} />
-                      </Col>
+                  <Col sm={6} className=''>
+                      <div className="wrapper lg-img">
+                          <ParticleImage {...this.props.data.fields[5]}/>
+                          <Col sm={8} smOffset={4} className="article-meta-large">
+                              <ParticleText {...this.props.data.fields[3]} />
+                          </Col>
+                      </div>
                   </Col>
-                  <Col sm={6} className='lg-img'>
-                      <ParticleImage {...this.props.data.fields[6]}/>
-                      <Col sm={8} smOffset={4} className="article-meta-large">
-                          <ParticleText {...this.props.data.fields[3]} />
-                      </Col>
+                  <Col sm={6} className=''>
+                      <div className="wrapper lg-img">
+                          <ParticleImage {...this.props.data.fields[6]}/>
+                          <Col sm={8} smOffset={4} className="article-meta-large">
+                              <ParticleText {...this.props.data.fields[3]} />
+                          </Col>
+                      </div>
                   </Col>
               </Row>
           </Container>
@@ -161,25 +168,31 @@ class LayoutFront extends React.Component {
                   </Col>
               </Row>
               <Row>
-                  <Col sm={6} className='lg-img'>
-                      <ParticleImage {...this.props.data.fields[5]}/>
-                      <Col sm={8} smOffset={4} className="article-meta-large">
-                          <ParticleText {...this.props.data.fields[3]} />
-                      </Col>
+                  <Col sm={6} className=''>
+                      <div className="wrapper lg-img">
+                          <ParticleImage {...this.props.data.fields[5]}/>
+                          <Col sm={8} smOffset={4} className="article-meta-large">
+                              <ParticleText {...this.props.data.fields[3]} />
+                          </Col>
+                      </div>
                   </Col>
-                  <Col sm={6} className='lg-img'>
-                      <ParticleImage {...this.props.data.fields[6]}/>
-                      <Col sm={8} smOffset={4} className="article-meta-large">
-                          <ParticleText {...this.props.data.fields[3]} />
-                      </Col>
+                  <Col sm={6} className=''>
+                      <div className="wrapper lg-img">
+                          <ParticleImage {...this.props.data.fields[6]}/>
+                          <Col sm={8} smOffset={4} className="article-meta-large">
+                              <ParticleText {...this.props.data.fields[3]} />
+                          </Col>
+                      </div>
                   </Col>
               </Row>
               <Row>
-                  <Col sm={9} className='wide-img lg-img'>
-                      <ParticleImage {...this.props.data.fields[11]}/>
-                      <Col sm={5} smOffset={1} className="article-meta-large">
-                          <ParticleText {...this.props.data.fields[3]} />
-                      </Col>
+                  <Col sm={9} className='wide-img'>
+                      <div className="wrapper lg-img">
+                          <ParticleImage {...this.props.data.fields[11]}/>
+                          <Col sm={5} smOffset={1} className="article-meta-large">
+                              <ParticleText {...this.props.data.fields[3]} />
+                          </Col>
+                      </div>
                   </Col>
                   <Col sm={3} className=''>
                       <div className="wrapper xtr-sm-img lg-img">
@@ -190,12 +203,8 @@ class LayoutFront extends React.Component {
                       </div>
                   </Col>
               </Row>
-              <Row>
-                  <Col sm={12} className=''>
-                      <h2 className='heading-text'>FOOTER</h2>
-                  </Col>
-              </Row>
           </Container>
+          <FooterContainer/>
       </div>
     )
   }
