@@ -3,7 +3,6 @@ import { Row, Col } from 'react-bootstrap'
 
 import Container from '../containers/Container'
 import SectionHeader from '../containers/SectionHeader'
-import FooterContainer from '../containers/FooterContainer'
 
 import HR from '../components/base/HR'
 
@@ -204,7 +203,6 @@ class LayoutFront extends React.Component {
                   </Col>
               </Row>
           </Container>
-          <FooterContainer/>
       </div>
     )
   }

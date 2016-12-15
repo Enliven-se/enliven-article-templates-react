@@ -57,6 +57,7 @@ const switchLayout = function(props) {
         default:
             ChosenLayout = LayoutFront
             mock = MockFront
+            is_front = true
             sticky = false
     }
 
@@ -76,6 +77,7 @@ layout = layout && (layout.length > 1) ?
 // global rendering options
 let color_variant = ''
 let sticky = true
+let is_front = false
 
 const content = switchLayout({
     'layout': layout
@@ -96,6 +98,9 @@ ReactDOM.render( <
         }
         sticky = {
             sticky
+        }
+        is_front = {
+            is_front
         }
         > {
             content

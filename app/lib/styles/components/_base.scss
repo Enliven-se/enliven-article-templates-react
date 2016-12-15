@@ -75,3 +75,19 @@ blockquote {
         align-items: baseline;
     }
 }
+
+.copyright {
+    font-size     : 16px;
+    color         : $greyish;
+    letter-spacing: 1.33px;
+    text-align    : center;
+
+    .para {
+        margin: 0;
+    }
+}
+
+.footer-logo {
+    max-width: 320px;
+    margin   : 0 auto 20px;
+}
