@@ -50,7 +50,7 @@ const MockTheWayWePlay = {
   }, {
     'type': 'text',
     'content': {
-      'html': '<a href="enliven.co">Women\'s Lifestyle</a><h2>London Fashion Week</h2><h3>Photographer And Contributor</h3>'
+      'html': '<a href="#">Women\'s Lifestyle</a><h2>London Fashion Week</h2><h3>Photographer And Contributor</h3>'
     }
   }, {
     'type': 'image',
@@ -62,7 +62,7 @@ const MockTheWayWePlay = {
   }, {
     'type': 'text',
     'content': {
-      'html': '<a href="enliven.co">Women\'s Lifestyle</a><h2>Traveling to the Heart of Stockholm</h2><h3>Photographer And Contributor</h3>'
+      'html': '<a href="#">Women\'s Lifestyle</a><h2>Traveling to the Heart of Stockholm</h2><h3>Photographer And Contributor</h3>'
     }
   }, {
     'type': 'text',

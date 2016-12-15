@@ -1,11 +1,6 @@
 .layout-front {
-    // .article-meta-large {
-    //     max-width: 450px;
-    // }
-    //
-    // .article-meta-small {
-    //     max-width: 320px;
-    // }
+    $vertical-padding: 40px;
+
     hr {
         border-color: $golden-retriever;
     }
@@ -20,14 +15,10 @@
 
     .article-meta-large,
     .article-meta-small {
-        background-color: #ffffff;
-        border          : 1px solid $golden-retriever;
-        bottom          : 80px;
-        box-sizing      : border-box;
-        height          : 237px;
-        padding         : 22px 24px;
-        position        : absolute;
-        z-index         : 5;
+        bottom    : $vertical-padding;
+        box-sizing: border-box;
+        position  : absolute;
+        z-index   : 5;
 
         .particle-text {
             height          : 237px;
@@ -49,7 +40,7 @@
             color         : $golden-retriever;
         }
 
-        h2 {
+        .heading-text {
             font-size     : 36px;
             margin        : 0 0 9px 6px;
             line-height   : 46px;
@@ -63,23 +54,16 @@
         }
     }
 
-    .row {
-        display       : flex;
-        flex-direction: row;
-
-        .col-sm-1,
-        .col-sm-10,
-        .col-sm-11,
-        .col-sm-2,
-        .col-sm-3,
-        .col-sm-4,
-        .col-sm-5,
-        .col-sm-6,
-        .col-sm-7,
-        .col-sm-8,
-        .col-sm-9 {
-            align-items: baseline;
+    .xtr-sm-img {
+        .article-meta-small {
+            right: 0;
         }
+    }
+
+    .lg-img,
+    .sm-img {
+        position      : relative;
+        padding-bottom: 197px;
     }
 
     .lg-img {
@@ -88,14 +72,8 @@
         }
     }
 
-    .lg-img,
-    .sm-img {
-        position      : relative;
-        padding-bottom: 237px;
-    }
-
     .articles-grid-row-1 {
-        margin-top: 150px;
+        margin-top: $vertical-padding;
     }
 
     .articles-grid-row-2 {
@@ -105,7 +83,7 @@
     .articles-list,
     .square-article {
         hr {
-            margin-bottom: 50px;
+            margin-bottom: $vertical-padding;
         }
     }
 
@@ -123,7 +101,7 @@
             align-self      : flex-end;
             background-color: $golden-retriever;
             text-align      : right;
-            margin-top      : 50px;
+            margin-top      : $vertical-padding;
 
             a {
                 color         : #ffffff;
@@ -142,18 +120,12 @@
     .contributors-headline {
         margin    : 180px 0 110px;
         text-align: center;
-
-        h2 {
-            color           : $golden-retriever;
-            font-family     : $font-family-sans-serif;
-            background-color: #ffffff;
-        }
     }
 
     .about-contributor {
         padding: 0 30px;
 
-        h2 {
+        .heading-text {
             color    : $blackish;
             font-size: 36px;
         }
@@ -177,10 +149,28 @@
     .recommend-headline {
         text-align: center;
         margin    : 80px 0;
+    }
+}
 
-        h2 {
-            color      : $golden-retriever;
-            font-family: "avenirnext-regular", Helvetica, Arial, sans-serif;
-        }
+.recommend-headline,
+.section-header {
+    .heading-text {
+        color      : $golden-retriever;
+        font-family: $font-family-sans-serif;
+    }
+}
+
+.section-header {
+    .heading-line {
+        border-color: $golden-retriever;
+    }
+
+    .heading-text {
+        margin-top: -1.5em;
+    }
+
+    .heading-text-valign-middle {
+        background-color: #ffffff;
+        padding         : 0 20px;
     }
 }
