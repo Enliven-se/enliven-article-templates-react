@@ -58,8 +58,10 @@ blockquote {
 }
 
 .row {
-    display       : flex;
-    flex-direction: row;
+    @media screen and (min-width: $screen-sm) {
+        display       : flex;
+        flex-direction: row;
+    }
 
     .col-sm-1,
     .col-sm-10,
