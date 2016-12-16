@@ -7,9 +7,12 @@
     margin-bottom: 0;
 }
 
+#topics-menu {
+    max-width: 100%;
+}
+
 .navbar-section {
     // margin-top: 51px;
-
     .navbar-container {
         width: 100%;
         @media screen and (max-width: $screen-sm) {
@@ -172,6 +175,16 @@
     }
 }
 
+#footer-menu {
+    line-height: 11px;
+}
+
+.copyright {
+    font-size: 16px;
+    @media screen and (max-width: $screen-sm) {
+        font-size: 10px;
+    }
+}
 /// move the navbar closer to the top
 // .navbar-brand {
 //     padding-top: 20px;

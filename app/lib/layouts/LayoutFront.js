@@ -5,9 +5,11 @@ import Container from '../containers/Container'
 import SectionHeader from '../containers/SectionHeader'
 
 import HR from '../components/base/HR'
+import DatePublished from '../components/base/DatePublished'
 
 import ParticleImage from '../components/particles/ParticleImage'
 import ParticleText from '../components/particles/ParticleText'
+
 
 class LayoutFront extends React.Component {
   render() {
@@ -25,15 +27,19 @@ class LayoutFront extends React.Component {
                       <div className="wrapper sm-img">
                           <ParticleImage {...this.props.data.fields[0]}/>
                           <div className="article-meta-small">
+                              <DatePublished {...this.props.data.DatePublished}/>
                               <ParticleText {...this.props.data.fields[1]} />
                           </div>
                       </div>
                   </Col>
                   <Col sm={6} className=''>
-                      <div className="wrapper lg-img">
+                      <div className="wrapper lg-img first-center-img">
+                          <div className="icon-i">
+                              <ParticleImage {...this.props.data.fields[16]}/>
+                          </div>
                           <ParticleImage {...this.props.data.fields[2]}/>
-                          { /* <ParticleImage {...this.props.data.fields[16]}/> */ }
                           <Col sm={8} smOffset={2} className="article-meta-large">
+                              <DatePublished {...this.props.data.DatePublished}/>
                               <ParticleText {...this.props.data.fields[3]} />
                           </Col>
                       </div>
@@ -49,6 +55,7 @@ class LayoutFront extends React.Component {
                       <div className="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[5]}/>
                           <Col sm={8} smOffset={4} className="article-meta-large">
+                              <DatePublished {...this.props.data.DatePublished}/>
                               <ParticleText {...this.props.data.fields[3]} />
                           </Col>
                       </div>
@@ -57,6 +64,7 @@ class LayoutFront extends React.Component {
                       <div className="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[6]}/>
                           <Col sm={8} smOffset={4} className="article-meta-large">
+                              <DatePublished {...this.props.data.DatePublished}/>
                               <ParticleText {...this.props.data.fields[3]} />
                           </Col>
                       </div>
@@ -102,7 +110,7 @@ class LayoutFront extends React.Component {
                       <ParticleImage {...this.props.data.fields[14]}/>
                       <ParticleText {...this.props.data.fields[7]} />
 
-                      
+
                   </Col>
                   <Col sm={4} className='articles-list'>
                       <h2 className='text-color-gold'>Interior Design</h2>
@@ -172,6 +180,7 @@ class LayoutFront extends React.Component {
                       <div className="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[5]}/>
                           <Col sm={8} smOffset={4} className="article-meta-large">
+                              <DatePublished {...this.props.data.DatePublished}/>
                               <ParticleText {...this.props.data.fields[3]} />
                           </Col>
                       </div>
@@ -180,6 +189,7 @@ class LayoutFront extends React.Component {
                       <div className="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[6]}/>
                           <Col sm={8} smOffset={4} className="article-meta-large">
+                              <DatePublished {...this.props.data.DatePublished}/>
                               <ParticleText {...this.props.data.fields[3]} />
                           </Col>
                       </div>
@@ -190,6 +200,7 @@ class LayoutFront extends React.Component {
                       <div className="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[11]}/>
                           <Col sm={5} smOffset={1} className="article-meta-large">
+                              <DatePublished {...this.props.data.DatePublished}/>
                               <ParticleText {...this.props.data.fields[3]} />
                           </Col>
                       </div>
@@ -197,9 +208,10 @@ class LayoutFront extends React.Component {
                   <Col sm={3} className=''>
                       <div className="wrapper xtr-sm-img lg-img">
                           <ParticleImage {...this.props.data.fields[13]}/>
-                          <div className="article-meta-small">
+                          <Col sm={11} smOffset={1} className="article-meta-xtr-sm">
+                              <DatePublished {...this.props.data.DatePublished}/>
                               <ParticleText {...this.props.data.fields[1]} />
-                          </div>
+                          </Col>
                       </div>
                   </Col>
               </Row>

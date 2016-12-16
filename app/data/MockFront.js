@@ -50,7 +50,7 @@ const MockTheWayWePlay = {
   }, {
     'type': 'text',
     'content': {
-      'html': '<a href="#">Women\'s Lifestyle</a><h2>London Fashion Week</h2><a class="text-color-gray">Tod Vanderwolve</a>'
+      'html': '<div class="meta-links"><a href="#">Women\'s Lifestyle</a></div><h2>London Fashion Week</h2><div class="meta-links">by <a class="text-color-gray">Tod Vanderwolve</a></div>'
     }
   }, {
     'type': 'image',
@@ -62,7 +62,7 @@ const MockTheWayWePlay = {
   }, {
     'type': 'text',
     'content': {
-      'html': '<a href="#">Women\'s Lifestyle</a><h2>Traveling to the Heart of Stockholm</h2><h3>Photographer And Contributor</h3>'
+      'html': '<div class="meta-links"><a href="#">Women\'s Lifestyle</a></div><h2>Traveling to the Heart of Stockholm</h2><h3>Photographer & Contributor</h3>'
     }
   }, {
     'type': 'text',
@@ -82,9 +82,8 @@ const MockTheWayWePlay = {
   }, {
     'type': 'text',
     'content': {
-      'html': '<h2>Traveling to the Heart of Stockholm</h2>by <a class="text-color-gold">Tod Vanderwolve</a>'
-    },
-    'classes': 'text-color-gold text-uppercase'
+      'html': '<h2>Traveling to the Heart of Stockholm</h2><div class="meta-links">by <a class="text-color-gold">Tod Vanderwolve</a></div>'
+    }
   }, {
     'type': 'text',
     'content': {
