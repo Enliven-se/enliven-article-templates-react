@@ -50,7 +50,7 @@ const MockTheWayWePlay = {
   }, {
     'type': 'text',
     'content': {
-      'html': '<a href="#">Women\'s Lifestyle</a><h2>London Fashion Week</h2><h3>Photographer And Contributor</h3>'
+      'html': '<a href="#">Women\'s Lifestyle</a><h2>London Fashion Week</h2><a class="text-color-gray">Tod Vanderwolve</a>'
     }
   }, {
     'type': 'image',

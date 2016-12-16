@@ -102,6 +102,7 @@ class LayoutFront extends React.Component {
                       <ParticleImage {...this.props.data.fields[14]}/>
                       <ParticleText {...this.props.data.fields[7]} />
 
+                      
                   </Col>
                   <Col sm={4} className='articles-list'>
                       <h2 className='text-color-gold'>Interior Design</h2>
@@ -203,6 +204,7 @@ class LayoutFront extends React.Component {
                   </Col>
               </Row>
           </Container>
+
       </div>
     )
   }

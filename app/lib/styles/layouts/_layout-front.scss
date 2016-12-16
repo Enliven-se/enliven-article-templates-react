@@ -7,170 +7,155 @@
 
     .article-meta-large {
         max-width: 450px;
+        bottom   : 80px;
     }
 
     .article-meta-small {
         max-width: 320px;
+        bottom   : 80px;
+    }
+
+    .article-meta-wide {
+        bottom   : -160px;
+        max-width: 450px;
+    }
+
+    .article-meta-thin {
+        bottom   : -160px;
+        max-width: 320px;
     }
 
     .article-meta-large,
-    .article-meta-small {
-        bottom    : $vertical-padding;
-        box-sizing: border-box;
-        position  : absolute;
-        z-index   : 5;
-
-        .particle-text {
-            height          : 237px;
-            background-color: #ffffff;
-            z-index         : 5;
-            padding         : 22px 24px;
-            border          : 1px solid $golden-retriever;
-        }
-
-        a {
-            color          : $golden-retriever;
-            text-transform : uppercase;
-            text-decoration: underline;
-        }
-
-        h3 {
-            font-size     : 16px;
-            text-transform: uppercase;
-            color         : $golden-retriever;
-        }
-
-        .heading-text {
-            font-size     : 36px;
-            margin        : 0 0 9px 6px;
-            line-height   : 46px;
-            letter-spacing: 0.64px;
-            color         : $blackish;
-        }
-
-        p {
-            margin-left: 6px;
-            line-height: 24px;
-        }
-    }
-
-    .xtr-sm-img {
-        .article-meta-small {
-            right: 0;
-        }
-    }
-
-    .lg-img,
-    .sm-img {
-        position      : relative;
-        padding-bottom: 197px;
-    }
-
-    .lg-img {
-        img {
-            margin: 0 auto;
-        }
-    }
-
-    .articles-grid-row-1 {
-        margin-top: $vertical-padding;
-    }
-
-    .articles-grid-row-2 {
-        margin-top: 222px;
-    }
-
-    .articles-list,
-    .square-article {
-        hr {
-            margin-bottom: $vertical-padding;
-        }
-    }
-
-    .articles-list {
-        box-sizing   : border-box;
-        padding-right: 40px;
-
-        .bold-bits {
-            font-family: $font-family-avenirnext-demibold, Sans-Serif;
-            font-size  : 18px;
-            color      : $blackish;
-        }
-
-        .more-button {
-            align-self      : flex-end;
-            background-color: $golden-retriever;
-            text-align      : right;
-            margin-top      : $vertical-padding;
-
-            a {
-                color         : #ffffff;
-                font-family   : $font-family-sans-serif;
-                font-size     : 18px;
-                text-transform: uppercase;
-                padding       : 11px 25px 11px 0;
+    .article-meta-small,
+    .article-meta-small,
+    .article-meta-thin,
+    .article-meta-wide {
+        .xtr-sm-img {
+            .article-meta-small {
+                right: 0;
             }
         }
+
+        .lg-img,
+        .sm-img {
+            position      : relative;
+            padding-bottom: 197px;
+        }
+
+        .lg-img {
+            img {
+                margin: 0 auto;
+            }
+        }
+        @media screen and (max-width: $screen-sm) {
+            .sm-img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .articles-grid-row-1 {
+            margin-top: $vertical-padding;
+        }
+
+        .articles-grid-row-2 {
+            margin-top: 222px;
+        }
+
+        .articles-list,
+        .square-article {
+            hr {
+                margin-bottom: $vertical-padding;
+            }
+        }
+
+        .articles-list {
+            box-sizing   : border-box;
+            padding-right: 40px;
+
+            .bold-bits {
+                font-family: $font-family-avenirnext-demibold, Sans-Serif;
+                font-size  : 18px;
+                color      : $blackish;
+            }
+
+            .more-button {
+                align-self      : flex-end;
+                background-color: $golden-retriever;
+                text-align      : right;
+                margin-top      : $vertical-padding;
+
+                a {
+                    color         : #ffffff;
+                    font-family   : $font-family-sans-serif;
+                    font-size     : 18px;
+                    text-transform: uppercase;
+                    padding       : 11px 25px 11px 0;
+                }
+            }
+        }
+
+        .contributors-grid-row-2 {
+            margin-top: 125px;
+        }
+
+        .contributors-headline {
+            margin    : 180px 0 110px;
+            text-align: center;
+        }
+
+        .about-contributor {
+            padding: 0 30px;
+
+            .heading-text {
+                color    : $blackish;
+                font-size: 36px;
+            }
+
+            h3 {
+                font-size      : 16px;
+                text-decoration: underline;
+                margin         : 12px 0 17px;
+                text-transform : uppercase;
+                font-family    : $font-family-sans-serif;
+            }
+
+            p {
+                font-size     : 14px;
+                letter-spacing: 0.19px;
+                line-height   : 24px;
+                margin-left   : 15px;
+            }
+        }
+
+        .recommend-headline {
+            text-align: center;
+            margin    : 80px 0;
+        }
     }
 
-    .contributors-grid-row-2 {
-        margin-top: 125px;
+    .recommend-headline,
+    .section-header {
+        .heading-text {
+            color      : $golden-retriever;
+            font-family: $font-family-sans-serif;
+        }
     }
 
-    .contributors-headline {
-        margin    : 180px 0 110px;
-        text-align: center;
-    }
-
-    .about-contributor {
-        padding: 0 30px;
+    .section-header {
+        .heading-line {
+            border-color: $golden-retriever;
+        }
 
         .heading-text {
-            color    : $blackish;
-            font-size: 36px;
+            margin-top: -1.5em;
         }
 
-        h3 {
-            font-size      : 16px;
-            text-decoration: underline;
-            margin         : 12px 0 17px;
-            text-transform : uppercase;
-            font-family    : $font-family-sans-serif;
-        }
-
-        p {
-            font-size     : 14px;
-            letter-spacing: 0.19px;
-            line-height   : 24px;
-            margin-left   : 15px;
+        .heading-text-valign-middle {
+            background-color: #ffffff;
+            padding         : 0 20px;
         }
     }
-
-    .recommend-headline {
-        text-align: center;
-        margin    : 80px 0;
-    }
-}
-
-.recommend-headline,
-.section-header {
-    .heading-text {
-        color      : $golden-retriever;
-        font-family: $font-family-sans-serif;
-    }
-}
-
-.section-header {
-    .heading-line {
-        border-color: $golden-retriever;
-    }
-
-    .heading-text {
-        margin-top: -1.5em;
-    }
-
-    .heading-text-valign-middle {
-        background-color: #ffffff;
-        padding         : 0 20px;
-    }
-}
