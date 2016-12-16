@@ -173,22 +173,22 @@ class LayoutFront extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col sm={10} className='wide-img'>
+            <Col sm={9} className='wide-img'>
               <ParticleImage {...this.props.data.fields[11]}/>
-              <div className="article-meta-large">
+              <Col sm={8} smOffset={1} className="article-meta-wide">
                 <ParticleText {...this.props.data.fields[3]} />
-              </div>
+              </Col>
             </Col>
-            <Col sm={2} className='xtr-sm-img'>
+            <Col sm={3} className='xtr-sm-img'>
               <ParticleImage {...this.props.data.fields[13]}/>
-              <div className="article-meta-small">
+              <Col sm={11}  smOffset={1} className="article-meta-thin">
                 <ParticleText {...this.props.data.fields[1]} />
-              </div>
+              </Col>
             </Col>
           </Row>
           <Row>
             <Col sm={12} className=''>
-              <h2>FOOTER</h2>
+              
             </Col>
           </Row>
         </Container>

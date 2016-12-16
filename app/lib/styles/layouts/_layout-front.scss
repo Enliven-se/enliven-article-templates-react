@@ -12,17 +12,30 @@
 
     .article-meta-large {
         max-width: 450px;
+        bottom   : 80px;
     }
 
     .article-meta-small {
         max-width: 320px;
+        bottom   : 80px;
+    }
+
+    .article-meta-wide {
+        bottom   : -160px;
+        max-width: 450px;
+    }
+
+    .article-meta-thin {
+        bottom   : -160px;
+        max-width: 320px;
     }
 
     .article-meta-large,
-    .article-meta-small {
+    .article-meta-small,
+    .article-meta-thin,
+    .article-meta-wide {
         box-sizing: border-box;
         position  : absolute;
-        bottom    : 80px;
 
         .particle-text {
             height          : 237px;
@@ -56,6 +69,19 @@
             margin-left: 6px;
             line-height: 24px;
         }
+        @media screen and (max-width: $screen-md) {
+            h2 {
+                font-size  : 25px;
+                line-height: 30px;
+            }
+
+            a,
+            h3,
+            p {
+                font-size  : 14px;
+                line-height: 14px;
+            }
+        }
     }
 
     .lg-img {
@@ -68,6 +94,15 @@
     .sm-img {
         position      : relative;
         padding-bottom: 237px;
+    }
+    @media screen and (max-width: $screen-sm) {
+        .sm-img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
     .articles-grid-row-1 {
