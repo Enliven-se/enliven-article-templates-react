@@ -11,9 +11,28 @@
     margin: 9.75px 0;
 }
 
+#topics-menu {
+    max-width : 100%;
+    text-align: justify;
+
+    .dropdown {
+        display: inline-block !important;
+    }
+
+    .dropdown-toggle {
+        color         : $golden-retriever;
+        text-transform: uppercase;
+
+    }
+
+    // &:after {
+    //     display: inline-block !important;
+    //     content: ' ';
+    // }
+}
+
 .navbar-section {
     // margin-top: 51px;
-
     .navbar-container {
         width: 100%;
         @media screen and (max-width: $screen-sm) {
@@ -176,6 +195,16 @@
     }
 }
 
+#footer-menu {
+    line-height: 11px;
+}
+
+.copyright {
+    font-size: 16px;
+    @media screen and (max-width: $screen-sm) {
+        font-size: 10px;
+    }
+}
 /// move the navbar closer to the top
 // .navbar-brand {
 //     padding-top: 20px;
