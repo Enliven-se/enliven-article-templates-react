@@ -1,4 +1,4 @@
-const MockTheWayWePlay = {
+const MockFront = {
   'color_variant': 'gold',
   'ArticleCategory': {
     'type': 'text',
@@ -23,29 +23,29 @@ const MockTheWayWePlay = {
   },
   'ContributorList': [
     {
-      'Avatar': '/images/mock/linakjellvertz.png',
+      'Avatar': '//qa.enliven.co/images/mock/linakjellvertz.png',
       'ContributorRole': 'Written by',
       'ContributorCredit': 'The Way We Play',
       'ContributorLink': {
-        'url': '//cms.enliven.co/en/groups/the-way-we-play'
+        'url': '//qa.enliven.co//cms.enliven.co/en/groups/the-way-we-play'
       }
     }, {
-      'Avatar': '/images/mock/linakjellvertz.png',
+      'Avatar': '//qa.enliven.co/images/mock/linakjellvertz.png',
       'ContributorRole': 'Photographer',
       'ContributorCredit': 'Linda Alfvegren',
       'ContributorLink': {
-        'url': '//cms.enliven.co/en/people/linda-alfvegren'
+        'url': '//qa.enliven.co//cms.enliven.co/en/people/linda-alfvegren'
       },
       'ContributorAssociation': 'Agent Bauer',
       'ContributorAssociationLink': {
-        'url': '//cms.enliven.co/en/groups/agent-bauer'
+        'url': '//qa.enliven.co//cms.enliven.co/en/groups/agent-bauer'
       }
     }
   ],
   'fields': [{
     'type': 'image',
     'content': {
-      'url': '/images/mock/hp-1.jpg'
+      'url': '//qa.enliven.co/images/mock/hp-1.jpg'
     }
   }, {
     'type': 'text',
@@ -55,7 +55,7 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/hp-2.jpg',
+      'url': '//qa.enliven.co/images/mock/hp-2.jpg',
       'classes': 'text-bottom-right',
       'html': '<div class="text-color-gray">Jacket, Bershka, <a>bershka.com</a>,<br/>Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara,<br/><a>zara.com</a>, in Zara Tops, Boots, Zara,<br/><a>zara.com</a>, in Zara Boots</div>'
     }
@@ -72,12 +72,12 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/hp-3.jpg'
+      'url': '//qa.enliven.co/images/mock/hp-3.jpg'
     }
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/hp-4.jpg'
+      'url': '//qa.enliven.co/images/mock/hp-4.jpg'
     }
   }, {
     'type': 'text',
@@ -97,12 +97,12 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/dummy-contributor.png'
+      'url': '//qa.enliven.co/images/mock/dummy-contributor.png'
     }
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/hp-5.jpg'
+      'url': '//qa.enliven.co/images/mock/hp-5.jpg'
     }
   }, {
     'type': 'text',
@@ -112,12 +112,12 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/hp-6.jpg'
+      'url': '//qa.enliven.co/images/mock/hp-6.jpg'
     }
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/hp-7.jpg'
+      'url': '//qa.enliven.co/images/mock/hp-7.jpg'
     }
   }, {
     'type': 'text',
@@ -127,7 +127,7 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/icon-i.png'
+      'url': '//qa.enliven.co/images/mock/icon-i.png'
     }
   }, {
     'type': 'text',
@@ -148,7 +148,7 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-2.jpg'
+      'url': '//qa.enliven.co/images/mock/twwp-2.jpg'
     }
   }, {
     'type': 'text',
@@ -158,10 +158,10 @@ const MockTheWayWePlay = {
   }, {
     'type': 'image',
     'content': {
-      'url': '/images/mock/twwp-10.jpg'
+      'url': '//qa.enliven.co/images/mock/twwp-10.jpg'
     }
   }
   ]
 }
 
-module.exports = MockTheWayWePlay
+module.exports = MockFront
