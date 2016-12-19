@@ -128,11 +128,13 @@ gulp.task('images', function() {
 
 // Fonts
 gulp.task('fonts', function() {
-  return gulp.src(require('main-bower-files')({
-    filter: '**/*.{eot,svg,ttf,woff,woff2}'
-  }).concat('app/fonts/**/*'))
+  return gulp.src(['app/bower_components/**/*.{eot,svg,ttf,woff,woff2}'], {
+    base: 'app/bower_components'
+  })
+    .pipe($.flatten())
     .pipe(gulp.dest('dist/fonts'))
 })
+
 
 // Clean
 gulp.task('clean', function(cb) {

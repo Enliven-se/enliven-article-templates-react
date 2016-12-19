@@ -10,7 +10,9 @@ class SectionHeader extends React.Component {
     return (
       <div className={classes}>
           <HR classes='heading-line'/>
-          <h2 className='heading-text'><span className='heading-text-valign-middle'>{this.props.children}</span></h2>
+          <h2 className='heading-text'><span className='heading-text-valign-middle' dangerouslySetInnerHTML={{
+              __html: this.props.content.html
+          }}></span></h2>
       </div>
     )
   }
