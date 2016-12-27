@@ -8,7 +8,12 @@
     .date-published {
         color     : $golden-retriever;
         float     : right;
-        margin-top: 5px;
+        margin-top: 8px;
+        font-size : 16px;
+        @media screen and (max-width: $screen-lg) {
+            padding-left: 10px;
+            float       : none;
+        }
     }
 
     .article-category {
@@ -43,6 +48,11 @@
         position  : absolute;
         bottom    : $vertical-padding;
         z-index   : 5;
+
+        .article-category-wrapper,
+        .date-published-wrapper {
+            display: inline;
+        }
 
         .meta-links {
             height          : 237px;
@@ -188,10 +198,16 @@
             }
         }
 
+        h2:last-child {
+            color: $blackish;
+        }
+
         a {
             text-transform: uppercase;
         }
         @media screen and (max-width: $screen-md) {
+            margin-top: 50px;
+
             img {
                 width: 100%;
             }
@@ -202,10 +218,14 @@
         box-sizing   : border-box;
         padding-right: 40px;
 
-        .bold-bits {
-            font-family: $font-family-avenirnext-demibold, Sans-Serif;
-            font-size  : 18px;
-            color      : $blackish;
+        .particle-text {
+            font-size: 18px;
+
+            .bold-bits {
+                font-family: $font-family-avenirnext-demibold, Sans-Serif;
+                font-size  : 24px;
+                color      : $blackish;
+            }
         }
 
         .more-button {
@@ -263,6 +283,19 @@
             letter-spacing: 0.19px;
             line-height   : 24px;
             margin-left   : 15px;
+        }
+        @media screen and (max-width: $screen-md) {
+            text-align   : center;
+            margin-bottom: 35px;
+
+            .particle-image {
+                width: 100%;
+
+                img {
+                    margin : 0 auto;
+                    display: block;
+                }
+            }
         }
     }
 

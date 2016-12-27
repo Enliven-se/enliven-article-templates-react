@@ -12,19 +12,23 @@
 }
 
 #topics-menu {
-    max-width : 100%;
+    font-size : 0;
+    margin    : 0 auto;
     text-align: justify;
+    width     : 100%;
+    float     : none;
 
     .dropdown {
-        display: inline-block !important;
+        float      : none;
+        font-size  : 14px;
+        line-height: 1em;
+        display    : inline-block !important;
     }
 
     .dropdown-toggle {
         color         : $golden-retriever;
         text-transform: uppercase;
-
     }
-
     // &:after {
     //     display: inline-block !important;
     //     content: ' ';
