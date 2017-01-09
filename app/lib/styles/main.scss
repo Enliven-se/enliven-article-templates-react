@@ -1,18 +1,19 @@
-@import 'variables';
-// bower:scss
+@import 'variables'; // bower:scss
 @import '../../bower_components/enliven-bootswatch/_variables';
 @import '../../../node_modules/compass-mixins/lib/compass';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
-@import '../../bower_components/enliven-bootswatch/_bootswatch';
-// @import '../../../node_modules/react-grid-layout/css/styles';
+@import '../../bower_components/enliven-bootswatch/_bootswatch'; // @import '../../../node_modules/react-grid-layout/css/styles';
 // @import '../../../node_modules/react-resizable/css/styles';
-@import '../../bower_components/font-awesome/scss/font-awesome';
-// endbower
+@import '../../bower_components/font-awesome/scss/font-awesome'; // endbower
 @import 'components/base';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/menu';
+@import 'components/about-contributor';
+@import 'components/articles-list';
+@import 'components/articles-meta';
+@import 'components/front-images';
 @import 'components/articles';
 @import 'components/contributors';
 @import 'components/particles';
@@ -22,7 +23,5 @@
 @import 'layouts/layout-feature';
 @import 'layouts/layout-lookbook';
 @import 'layouts/layout-picture-intensive';
-@import 'layouts/layout-product-review';
-
-// DEBUGGING
+@import 'layouts/layout-product-review'; // DEBUGGING
 @import 'testing';

@@ -1,0 +1,91 @@
+.layout-front {
+    $vertical-padding: 40px;
+
+    .article-meta-large,
+    .article-meta-small,
+    .article-meta-wide,
+    .article-meta-xtr-sm {
+        box-sizing      : border-box;
+        position        : absolute;
+        bottom          : $vertical-padding;
+        z-index         : 5;
+        height          : 237px;
+        background-color: #ffffff;
+        padding         : 22px 24px;
+        border          : 1px solid $golden-retriever;
+        line-height     : 20px;
+
+        h2 {
+            color : $blackish;
+            margin: 25px auto 25px 10px;
+            @media screen and (max-width: $screen-lg) {
+                font-size  : 26px;
+                line-height: 30px;
+                margin-top : 10px;
+            }
+        }
+
+        .article-category {
+            border         : none;
+            font-size      : 16px;
+            padding        : 0;
+            color          : $golden-retriever;
+            text-transform : uppercase;
+            text-decoration: underline;
+        }
+
+        .article-category:hover {
+            background-color: #ffffff;
+        }
+
+        .has-intro-text {
+            h2 {
+                margin-top   : 10px;
+                margin-bottom: 0;
+            }
+
+            .particle-text {
+                line-height: 24px;
+                font-size  : 14px;
+                margin     : 10px 0 0 10px;
+            }
+        }
+        @media screen and (max-width: $screen-sm) {
+            max-width    : 100%;
+            padding-left : 15px;
+            padding-right: 0;
+            width        : 450px;
+
+            .article-category {
+                font-size  : 14px;
+                line-height: 14px;
+            }
+        }
+    }
+    @media screen and (min-width: $screen-sm) {
+        .article-meta-large {
+            bottom   : $vertical-padding;
+            max-width: 450px;
+        }
+
+        .article-meta-small {
+            bottom   : $vertical-padding;
+            max-width: 320px;
+        }
+
+        .article-meta-wide {
+            bottom   : -160px;
+            max-width: 450px;
+        }
+
+        .article-meta-thin {
+            bottom   : -160px;
+            max-width: 320px;
+        }
+
+        .article-meta-xtr-sm {
+            max-width    : 320px;
+            padding-right: 0;
+        }
+    }
+}

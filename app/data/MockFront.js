@@ -80,7 +80,7 @@ const MockFront = {
     8: {
       'type': 'text',
       'content': {
-        'html': '<strong class="bold-bits">Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.</strong><br/><br/>Take a Tip From Ashley and Mary-Kate Olsen and Stock Up on Chic Basics for Under $500<br/><br/>Hailey Baldwin Takes Red Carpet Denim Dressing to the Streets<br/><br/>Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.'
+        'html': '<strong class="bold-bits">Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.</strong>'
       }
     },
     9: {
@@ -174,6 +174,30 @@ const MockFront = {
         'html': 'We Recommend'
       },
       'classes': 'text-uppercase'
+    },
+    23: {
+      'type': 'text',
+      'content': {
+        'html': 'Hailey Baldwin Takes Red Carpet Denim Dressing to the Streets'
+      }
+    },
+    24: {
+      'type': 'text',
+      'content': {
+        'html': 'Hailey Baldwin Takes Red Carpet Denim Dressing to the Streets'
+      }
+    },
+    25: {
+      'type': 'text',
+      'content': {
+        'html': 'Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos'
+      }
+    },
+    26: {
+      'type': 'text',
+      'content': {
+        'html': 'At the start of a project, we usually need to make wireframes in some form or another.'
+      }
     }
   }
 }

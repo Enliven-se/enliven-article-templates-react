@@ -1,0 +1,41 @@
+.layout-front {
+    $vertical-padding: 40px;
+
+    .first-center-img {
+        .icon-i {
+            position: absolute;
+            display : none;
+
+            img {
+                margin : 0 auto;
+                z-index: 500;
+            }
+            @media screen and (max-width: $screen-sm) {
+                display: none;
+            }
+        }
+    }
+
+    .lg-img,
+    .sm-img {
+        position      : relative;
+        padding-bottom: 197px;
+    }
+
+    .lg-img {
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .sm-img,
+    .xtr-sm-img {
+        @media screen and (max-width: $screen-sm) {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

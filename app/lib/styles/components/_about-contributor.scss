@@ -1,0 +1,52 @@
+.layout-front {
+    $vertical-padding: 40px;
+
+    .contributors-grid-row-2 {
+        margin-top: 125px;
+        @media screen and (max-width: $screen-sm) {
+            margin-top: 15px;
+        }
+    }
+
+    .contributors-headline {
+        margin    : 180px 0 110px;
+        text-align: center;
+    }
+
+    .about-contributor {
+        padding: 0 30px;
+
+        h2 {
+            color: $blackish;
+        }
+
+        h3 {
+            text-decoration: underline;
+            margin         : 12px 0 17px;
+        }
+
+        .particle-text {
+            font-size     : 14px;
+            letter-spacing: 0.19px;
+            line-height   : 24px;
+            margin-left   : 15px;
+        }
+        @media screen and (max-width: $screen-md) {
+            text-align   : center;
+            margin-bottom: 35px;
+
+            .particle-text {
+                margin-left: 0;
+            }
+
+            .particle-image {
+                width: 100%;
+
+                img {
+                    margin : 0 auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
