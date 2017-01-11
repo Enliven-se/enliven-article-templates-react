@@ -27,13 +27,11 @@ class LayoutFront extends React.Component {
         return (
             <div className='layout layout-front'>
                 <Container fluid classes='panel-1'>
-                    <Row>
+                    <Row className='articles'>
                         <Col sm={12}>
                             <ParticleH2 className='text-color-gold header-top' {...this.props.data.fields[17]}/>
                             <HR/>
                         </Col>
-                    </Row>
-                    <Row>
                         <Col sm={3}>
                             <ArticleTeaser classes="wrapper sm-img">
                                 <ParticleImage {...this.props.data.fields[0]}/>
@@ -90,8 +88,8 @@ class LayoutFront extends React.Component {
                     </Row>
                 </Container>
                 <Container fluid>
-                    <Row className='articles-grid-row-1'>
-                        <Col sm={4}>
+                    <Row className='articles-grid'>
+                        <Col xs={12} sm={6} md={4}>
                             <SquareArticleContainer>
                                 <ParticleH2 className='text-color-gold' {...this.props.data.fields[17]}/>
                                 <HR/>
@@ -99,7 +97,7 @@ class LayoutFront extends React.Component {
                                 <ParticleH2 {...this.props.data.fields[4]}/>
                             </SquareArticleContainer>
                         </Col>
-                        <Col sm={4}>
+                        <Col xs={12} sm={6} md={4}>
                             <ArticlesListContainer>
                                 <ParticleH2 className='text-color-gold' {...this.props.data.fields[18]}/>
                                 <HR/>
@@ -114,7 +112,7 @@ class LayoutFront extends React.Component {
                                 </div>
                             </ArticlesListContainer>
                         </Col>
-                        <Col sm={4}>
+                        <Col xs={12} sm={6} md={4}>
                             <SquareArticleContainer>
                                 <ParticleH2 className='text-color-gold' {...this.props.data.fields[19]}/>
                                 <HR/>
@@ -122,9 +120,7 @@ class LayoutFront extends React.Component {
                                 <ParticleH2 {...this.props.data.fields[4]}/>
                             </SquareArticleContainer>
                         </Col>
-                    </Row>
-                    <Row className='articles-grid-row-2'>
-                        <Col sm={4}>
+                        <Col sm={6} md={4}>
                             <ArticlesListContainer>
                                 <ParticleH2 className='text-color-gold' {...this.props.data.fields[17]}/>
                                 <HR/>
@@ -139,7 +135,7 @@ class LayoutFront extends React.Component {
                                 </div>
                             </ArticlesListContainer>
                         </Col>
-                        <Col sm={4}>
+                        <Col xs={12} sm={6} md={4}>
                             <SquareArticleContainer>
                                 <ParticleH2 className='text-color-gold' {...this.props.data.fields[18]}/>
                                 <HR/>
@@ -147,7 +143,7 @@ class LayoutFront extends React.Component {
                                 <ParticleH2 {...this.props.data.fields[4]}/>
                             </SquareArticleContainer>
                         </Col>
-                        <Col sm={4}>
+                        <Col xs={12} sm={6} md={4}>
                             <ArticlesListContainer>
                                 <ParticleH2 className='text-color-gold' {...this.props.data.fields[19]}/>
                                 <HR/>
@@ -168,7 +164,7 @@ class LayoutFront extends React.Component {
                             <SectionHeader {...this.props.data.fields[21]}/>
                         </Col>
                     </Row>
-                    <Row className='contributors-grid-row-1'>
+                    <Row className='contributors-grid'>
                         <Col sm={3}>
                             <AboutContributorContainer>
                                 <ParticleImage {...this.props.data.fields[10]}/>
@@ -201,8 +197,6 @@ class LayoutFront extends React.Component {
                                 <ParticleText {...this.props.data.fields[12]}/>
                             </AboutContributorContainer>
                         </Col>
-                    </Row>
-                    <Row className='contributors-grid-row-2'>
                         <Col sm={3}>
                             <AboutContributorContainer>
                                 <ParticleImage {...this.props.data.fields[10]}/>
@@ -241,7 +235,7 @@ class LayoutFront extends React.Component {
                             <SectionHeader {...this.props.data.fields[22]}/>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className='articles'>
                         <Col sm={6}>
                             <ArticleTeaser classes="wrapper lg-img">
                                 <ParticleImage {...this.props.data.fields[5]}/>
@@ -266,19 +260,19 @@ class LayoutFront extends React.Component {
                                 </Col>
                             </ArticleTeaser>
                         </Col>
-                    </Row>
-                    <Row>
-                        <Col sm={9}><WideImgContainer>
-                            <ArticleTeaser classes="wrapper lg-img">
-                                <ParticleImage {...this.props.data.fields[13]}/>
-                                <Col sm={5} smOffset={1} className="article-meta-large">
-                                    <MetaLinksContainer>
-                                        <ArticleCategory {...this.props.data.fields[1]}/>
-                                        <ParticleH2 {...this.props.data.fields[4]}/>
-                                    </MetaLinksContainer>
-                                </Col>
-                            </ArticleTeaser>
-                        </WideImgContainer></Col>
+                        <Col sm={9}>
+                            <WideImgContainer>
+                                <ArticleTeaser classes="wrapper lg-img">
+                                    <ParticleImage {...this.props.data.fields[13]}/>
+                                    <Col sm={5} smOffset={1} className="article-meta-large">
+                                        <MetaLinksContainer>
+                                            <ArticleCategory {...this.props.data.fields[1]}/>
+                                            <ParticleH2 {...this.props.data.fields[4]}/>
+                                        </MetaLinksContainer>
+                                    </Col>
+                                </ArticleTeaser>
+                            </WideImgContainer>
+                        </Col>
                         <Col sm={3}>
                             <ArticleTeaser classes="wrapper xtr-sm-img lg-img">
                                 <ParticleImage {...this.props.data.fields[14]}/>
@@ -293,7 +287,6 @@ class LayoutFront extends React.Component {
                         </Col>
                     </Row>
                 </Container>
-
             </div>
         )
     }
