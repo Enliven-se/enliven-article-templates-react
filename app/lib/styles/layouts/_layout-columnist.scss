@@ -1,0 +1,117 @@
+.layout-columnist {
+    .article-header-row {
+        box-sizing: border-box;
+        flex-wrap : wrap;
+        padding   : 209px 64px 55px 99px;
+        @media screen and (max-width: $screen-sm) {
+            padding: 180px 0 55px;
+        }
+
+        h1 {
+            color         : $blackish;
+            letter-spacing: 6.48px;
+            line-height   : 72px;
+            padding-left  : 0;
+            @media screen and (max-width: $screen-lg) {
+                font-size: 50px;
+            }
+            @media screen and (min-width: $screen-lg) {
+                padding  : 0 0 84px 10px;
+                font-size: 62px;
+            }
+        }
+
+        .date-published {
+            padding-left: 0;
+            @media screen and (min-width: $screen-lg) {
+                padding-left: 10px;
+            }
+        }
+        @media screen and (max-width: $screen-sm) {
+            .date-published {
+                padding-left: 0;
+            }
+
+            h1 {
+                font-size   : 33px;
+                line-height : 1em;
+                padding-left: 0;
+            }
+        }
+
+        .article-category-wrapper {
+            padding-bottom: 52px;
+            @media screen and (max-width: $screen-sm) {
+                padding-bottom: 10px;
+            }
+        }
+
+        .right-panel {
+            padding-top: 112px;
+            @media screen and (max-width: $screen-md) {
+                padding-top: 40px;
+            }
+
+            .about-columnist {
+                display        : flex;
+                flex-wrap      : wrap;
+                flex-direction : column;
+                justify-content: space-between;
+                height         : 288px;
+                @media screen and (max-width: $screen-md) {
+                    margin-top: 25px;
+                    height    : 210px;
+                }
+
+                a {
+                    font-size      : 18px;
+                    text-decoration: underline;
+                }
+
+                .follow-button {
+                    border    : 1px solid $golden-retriever;
+                    font-size : 20px;
+                    text-align: center;
+                    width     : 115px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                .particle-text {
+                    color      : $blackish;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+    .hr-container {
+        box-sizing: border-box;
+        padding   : 0 110px;
+    }
+
+    .body-text {
+        box-sizing: border-box;
+        text-align: justify;
+        padding   : 127px 375px 450px;
+        @media screen and (max-width: $screen-md) {
+            padding: 127px 13px 450px;
+        }
+    }
+
+    .first-text {
+        .particle-text::first-letter {
+            float        : left;
+            margin-top   : 10px;
+            padding-right: 10px;
+            font-size    : 170px;
+            color        : $blackish;
+        }
+    }
+
+    .particle-pullquote {
+        padding: 25px 0 44px;
+    }
+}
