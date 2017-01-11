@@ -92,6 +92,7 @@
 
     .first-text {
         .particle-text::first-letter {
+            float      : left;
             font-size  : 170px;
             font-style : italic;
             font-family: $font-family-serif;
