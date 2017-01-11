@@ -6,7 +6,7 @@ class Link extends React.Component {
       return null;
 
     return (
-      <a href={this.props.url} title={this.props.title} className='link-wrapper'>{this.props.text}</a>
+      <a href={this.props.url} title={this.props.title} className={this.props.classes}>{this.props.text}</a>
     )
   }
 

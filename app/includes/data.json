@@ -5,6 +5,16 @@
       "extra_classes": [""],
       "url": "/?layout=Short"
     }, {
+      "title": "Columnist",
+      "className": "columnist",
+      "extra_classes": [""],
+      "url": "/?layout=Columnist"
+    },{
+      "title": "Front",
+      "className": "front",
+      "extra_classes": [""],
+      "url": "/?layout=Front"
+    },{
       "title": "Lookbook",
       "className": "lookbook",
       "extra_classes": [""],
