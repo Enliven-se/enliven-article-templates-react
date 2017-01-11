@@ -166,68 +166,68 @@ class LayoutFront extends React.Component {
                     </Row>
                     <Row className='contributors-grid'>
                         <Col sm={3}>
-                            <AboutContributorContainer>
-                                <ParticleImage {...this.props.data.fields[10]}/>
-                                <ParticleH2 className='heading-text' {...this.props.data.fields[20]}/>
-                                <ParticleH3 {...this.props.data.fields[11]}/>
-                                <ParticleText {...this.props.data.fields[12]}/>
-                            </AboutContributorContainer>
+                            <AboutContributorContainer
+                                ParticleImage={this.props.data.fields[10]}
+                                ParticleH2={this.props.data.fields[20]}
+                                ParticleH3={this.props.data.fields[11]}
+                                ParticleText={this.props.data.fields[12]}
+                            />
                         </Col>
                         <Col sm={3}>
-                            <AboutContributorContainer>
-                                <ParticleImage {...this.props.data.fields[10]}/>
-                                <ParticleH2 className='heading-text' {...this.props.data.fields[20]}/>
-                                <ParticleH3 {...this.props.data.fields[11]}/>
-                                <ParticleText {...this.props.data.fields[12]}/>
-                            </AboutContributorContainer>
+                            <AboutContributorContainer
+                                ParticleImage={this.props.data.fields[10]}
+                                ParticleH2={this.props.data.fields[20]}
+                                ParticleH3={this.props.data.fields[11]}
+                                ParticleText={this.props.data.fields[12]}
+                            />
                         </Col>
                         <Col sm={3}>
-                            <AboutContributorContainer>
-                                <ParticleImage {...this.props.data.fields[10]}/>
-                                <ParticleH2 className='heading-text' {...this.props.data.fields[20]}/>
-                                <ParticleH3 {...this.props.data.fields[11]}/>
-                                <ParticleText {...this.props.data.fields[12]}/>
-                            </AboutContributorContainer>
+                            <AboutContributorContainer
+                                ParticleImage={this.props.data.fields[10]}
+                                ParticleH2={this.props.data.fields[20]}
+                                ParticleH3={this.props.data.fields[11]}
+                                ParticleText={this.props.data.fields[12]}
+                            />
                         </Col>
                         <Col sm={3}>
-                            <AboutContributorContainer>
-                                <ParticleImage {...this.props.data.fields[10]}/>
-                                <ParticleH2 className='heading-text' {...this.props.data.fields[20]}/>
-                                <ParticleH3 {...this.props.data.fields[11]}/>
-                                <ParticleText {...this.props.data.fields[12]}/>
-                            </AboutContributorContainer>
+                            <AboutContributorContainer
+                                ParticleImage={this.props.data.fields[10]}
+                                ParticleH2={this.props.data.fields[20]}
+                                ParticleH3={this.props.data.fields[11]}
+                                ParticleText={this.props.data.fields[12]}
+                            />
                         </Col>
                         <Col sm={3}>
-                            <AboutContributorContainer>
-                                <ParticleImage {...this.props.data.fields[10]}/>
-                                <ParticleH2 className='heading-text' {...this.props.data.fields[20]}/>
-                                <ParticleH3 {...this.props.data.fields[11]}/>
-                                <ParticleText {...this.props.data.fields[12]}/>
-                            </AboutContributorContainer>
+                            <AboutContributorContainer
+                                ParticleImage={this.props.data.fields[10]}
+                                ParticleH2={this.props.data.fields[20]}
+                                ParticleH3={this.props.data.fields[11]}
+                                ParticleText={this.props.data.fields[12]}
+                            />
                         </Col>
                         <Col sm={3}>
-                            <AboutContributorContainer>
-                                <ParticleImage {...this.props.data.fields[10]}/>
-                                <ParticleH2 className='heading-text' {...this.props.data.fields[20]}/>
-                                <ParticleH3 {...this.props.data.fields[11]}/>
-                                <ParticleText {...this.props.data.fields[12]}/>
-                            </AboutContributorContainer>
+                            <AboutContributorContainer
+                                ParticleImage={this.props.data.fields[10]}
+                                ParticleH2={this.props.data.fields[20]}
+                                ParticleH3={this.props.data.fields[11]}
+                                ParticleText={this.props.data.fields[12]}
+                            />
                         </Col>
                         <Col sm={3}>
-                            <AboutContributorContainer>
-                                <ParticleImage {...this.props.data.fields[10]}/>
-                                <ParticleH2 className='heading-text' {...this.props.data.fields[20]}/>
-                                <ParticleH3 {...this.props.data.fields[11]}/>
-                                <ParticleText {...this.props.data.fields[12]}/>
-                            </AboutContributorContainer>
+                            <AboutContributorContainer
+                                ParticleImage={this.props.data.fields[10]}
+                                ParticleH2={this.props.data.fields[20]}
+                                ParticleH3={this.props.data.fields[11]}
+                                ParticleText={this.props.data.fields[12]}
+                            />
                         </Col>
                         <Col sm={3}>
-                            <AboutContributorContainer>
-                                <ParticleImage {...this.props.data.fields[10]}/>
-                                <ParticleH2 className='heading-text' {...this.props.data.fields[20]}/>
-                                <ParticleH3 {...this.props.data.fields[11]}/>
-                                <ParticleText {...this.props.data.fields[12]}/>
-                            </AboutContributorContainer>
+                            <AboutContributorContainer
+                                ParticleImage={this.props.data.fields[10]}
+                                ParticleH2={this.props.data.fields[20]}
+                                ParticleH3={this.props.data.fields[11]}
+                                ParticleText={this.props.data.fields[12]}
+                            />
                         </Col>
                     </Row>
                     <Row>
