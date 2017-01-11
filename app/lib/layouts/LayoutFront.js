@@ -21,13 +21,11 @@ class LayoutFront extends React.Component {
     return (
       <div className='layout layout-front'>
           <Container fluid classes='panel-1'>
-              <Row>
+              <Row className='articles'>
                   <Col sm={12} className=''>
                       <ParticleH2 className='text-color-gold header-top' {...this.props.data.fields[17]}/>
                       <HR className=''/>
                   </Col>
-              </Row>
-              <Row>
                   <Col sm={3} className=''>
                       <div className="wrapper sm-img">
                           <ParticleImage {...this.props.data.fields[0]}/>
@@ -84,14 +82,14 @@ class LayoutFront extends React.Component {
               </Row>
           </Container>
           <Container fluid>
-              <Row className='articles-grid-row-1'>
-                  <Col sm={4} className='square-article'>
+              <Row className='articles-grid'>
+                  <Col xs={12} sm={6} md={4} className='square-article'>
                       <ParticleH2 className='text-color-gold' {...this.props.data.fields[17]} />
                       <HR className=''/>
                       <ParticleImage {...this.props.data.fields[7]}/>
                       <ParticleH2 {...this.props.data.fields[4]} />
                   </Col>
-                  <Col sm={4} className='articles-list'>
+                  <Col xs={12} sm={6} md={4} className='articles-list'>
                       <ParticleH2 className='text-color-gold' {...this.props.data.fields[18]} />
                       <HR className=''/>
                       <div className='articles-list-text'>
@@ -104,15 +102,13 @@ class LayoutFront extends React.Component {
                           </div>
                       </div>
                   </Col>
-                  <Col sm={4} className='square-article'>
+                  <Col xs={12} sm={6} md={4} className='square-article'>
                       <ParticleH2 className='text-color-gold' {...this.props.data.fields[19]} />
                       <HR className=''/>
                       <ParticleImage {...this.props.data.fields[7]}/>
                       <ParticleH2 {...this.props.data.fields[4]} />
                   </Col>
-              </Row>
-              <Row className='articles-grid-row-2'>
-                  <Col sm={4} className='articles-list'>
+                  <Col sm={6} md={4} className='articles-list'>
                       <ParticleH2 className='text-color-gold' {...this.props.data.fields[17]} />
                       <HR className=''/>
                       <div className='articles-list-text'>
@@ -123,14 +119,15 @@ class LayoutFront extends React.Component {
                           <div className="more-button">
                               <Link text={this.props.data.fields[9].content.html} url={this.props.data.fields[9].url}/>
                           </div>
-                      </div>            </Col>
-                  <Col sm={4} className='square-article'>
+                      </div>
+                  </Col>
+                  <Col xs={12} sm={6} md={4} className='square-article'>
                       <ParticleH2 className='text-color-gold' {...this.props.data.fields[18]} />
                       <HR className=''/>
                       <ParticleImage {...this.props.data.fields[7]}/>
                       <ParticleH2 {...this.props.data.fields[4]} />
                   </Col>
-                  <Col sm={4} className='articles-list'>
+                  <Col xs={12} sm={6} md={4} className='articles-list'>
                       <ParticleH2 className='text-color-gold' {...this.props.data.fields[19]} />
                       <HR className=''/>
                       <div className='articles-list-text'>
@@ -149,7 +146,7 @@ class LayoutFront extends React.Component {
                       <SectionHeader {...this.props.data.fields[21]}/>
                   </Col>
               </Row>
-              <Row className='contributors-grid-row-1'>
+              <Row className='contributors-grid'>
                   <Col sm={3} className='about-contributor'>
                       <ParticleImage {...this.props.data.fields[10]}/>
                       <ParticleH2 className='heading-text' {...this.props.data.fields[20]} />
@@ -174,8 +171,6 @@ class LayoutFront extends React.Component {
                       <ParticleH3 {...this.props.data.fields[11]} />
                       <ParticleText {...this.props.data.fields[12]} />
                   </Col>
-              </Row>
-              <Row className='contributors-grid-row-2'>
                   <Col sm={3} className='about-contributor'>
                       <ParticleImage {...this.props.data.fields[10]}/>
                       <ParticleH2 className='heading-text' {...this.props.data.fields[20]} />
@@ -206,7 +201,7 @@ class LayoutFront extends React.Component {
                       <SectionHeader {...this.props.data.fields[22]}/>
                   </Col>
               </Row>
-              <Row>
+              <Row className='articles'>
                   <Col sm={6} className=''>
                       <div className="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[5]}/>
@@ -231,8 +226,6 @@ class LayoutFront extends React.Component {
                           </Col>
                       </div>
                   </Col>
-              </Row>
-              <Row>
                   <Col sm={9} className='wide-img'>
                       <div className="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[13]}/>

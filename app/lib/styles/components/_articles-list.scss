@@ -1,41 +1,24 @@
 .layout-front {
     $vertical-padding: 40px;
 
-    .articles-grid-row-1 {
+    .articles-grid {
         margin-top: $vertical-padding;
-    }
-
-    .articles-grid-row-2 {
-        margin-top: 125px;
-        @media screen and (max-width: $screen-sm) {
-            margin-top: 15px;
-        }
     }
 
     .articles-list,
     .square-article {
-        hr {
-            margin-bottom: $vertical-padding;
+        @media screen and (min-width: $screen-md) {
+            margin-bottom: 180px;
         }
 
-        h2 {
-            @media screen and (max-width: $screen-md) {
-                margin-left: 10px;
-            }
-            @media screen and (max-width: $screen-lg) {
-                font-size  : 26px;
-                line-height: 30px;
-                margin-top : 10px;
-            }
+        hr {
+            margin-bottom: $vertical-padding;
         }
 
         h2:last-child {
             margin: 38px 10px 0 32px;
             width : auto;
             color : $blackish;
-            @media screen and (max-width: $screen-md) {
-                margin-left: 10px;
-            }
         }
 
         a {
@@ -44,15 +27,22 @@
         @media screen and (max-width: $screen-md) {
             margin-top: 50px;
 
-            img {
-                width: 100%;
+            h2,
+            h2:last-child {
+                margin-left: 10px;
+            }
+        }
+        @media screen and (max-width: $screen-lg) {
+            h2 {
+                font-size  : 26px;
+                line-height: 30px;
+                margin-top : 10px;
             }
         }
     }
 
     .articles-list {
-        box-sizing   : border-box;
-        padding-right: 40px;
+        box-sizing: border-box;
 
         .particle-text {
             padding-bottom: 1em;

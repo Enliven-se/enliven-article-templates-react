@@ -178,7 +178,7 @@ const MockFront = {
     23: {
       'type': 'text',
       'content': {
-        'html': 'Hailey Baldwin Takes Red Carpet Denim Dressing to the Streets'
+        'html': 'Take a Tip From Ashley and Mary-Kate Olsen and Stock Up on Chic Basics for Under $500'
       }
     },
     24: {

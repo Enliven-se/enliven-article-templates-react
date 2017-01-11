@@ -45,9 +45,13 @@
             }
 
             .particle-text {
-                line-height: 24px;
-                font-size  : 14px;
                 margin     : 10px 0 0 10px;
+                line-height: 20px;
+                font-size  : 12px;
+                @media screen and (min-width: $screen-md) {
+                    line-height: 24px;
+                    font-size  : 14px;
+                }
             }
         }
         @media screen and (max-width: $screen-sm) {
