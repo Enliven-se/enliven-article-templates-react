@@ -10,6 +10,11 @@
       "extra_classes": [""],
       "url": "/?layout=Lookbook"
     }, {
+      "title": "Picture Intensive 2",
+      "className": "PictureIntensive2",
+      "extra_classes": [""],
+      "url": "/?layout=PictureIntensive2"
+    }, {
       "title": "Feature",
       "className": "feature",
       "extra_classes": [""],
