@@ -20,11 +20,12 @@
     }
 
     .article-category-container {
-        margin-top: 160px;
-        position  : absolute;
-        z-index   : 10;
-        text-align: center;
-        @media screen and (max-width: $screen-sm) {
+        margin-top   : 160px;
+        position     : absolute;
+        z-index      : 10;
+        text-align   : center;
+        padding-right: 0;
+        @media screen and (max-width: $screen-md) {
             width: 100%;
         }
     }
@@ -38,7 +39,7 @@
         position        : absolute;
         top             : 140px;
         left            : 100px;
-        @media screen and (max-width: $screen-sm) {
+        @media screen and (max-width: $screen-md) {
             position: relative;
             left    : 0;
             top     : 220px;

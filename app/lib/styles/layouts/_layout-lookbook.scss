@@ -38,6 +38,9 @@
 
     .date-published-wrapper {
         float: left;
+        @media screen and (max-width: $screen-sm ) {
+            margin: 15px 0 45px;
+        }
     }
 
     .big-row {

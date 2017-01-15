@@ -58,7 +58,7 @@ blockquote {
     }
 }
 
-.row {
+.row-flex {
     @media screen and (min-width: $screen-sm) {
         display       : flex;
         flex-direction: row;

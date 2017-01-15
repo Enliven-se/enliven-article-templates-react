@@ -21,7 +21,7 @@ class LayoutFront extends React.Component {
     return (
       <div className='layout layout-front'>
           <Container fluid classes='panel-1'>
-              <Row className='articles'>
+              <Row className='articles row-flex'>
                   <Col sm={12} className=''>
                       <ParticleH2 className='text-color-gold header-top' {...this.props.data.fields[17]}/>
                       <HR className=''/>
@@ -82,7 +82,7 @@ class LayoutFront extends React.Component {
               </Row>
           </Container>
           <Container fluid>
-              <Row className='articles-grid'>
+              <Row className='articles-grid row-flex'>
                   <Col xs={12} sm={6} md={4} className='square-article'>
                       <ParticleH2 className='text-color-gold' {...this.props.data.fields[17]} />
                       <HR className=''/>
@@ -141,7 +141,7 @@ class LayoutFront extends React.Component {
                       </div>
                   </Col>
               </Row>
-              <Row>
+              <Row className='row-flex'>
                   <Col sm={12} className='contributors-headline'>
                       <SectionHeader {...this.props.data.fields[21]}/>
                   </Col>
@@ -196,12 +196,12 @@ class LayoutFront extends React.Component {
                       <ParticleText {...this.props.data.fields[12]} />
                   </Col>
               </Row>
-              <Row>
+              <Row className='row-flex'>
                   <Col sm={12} className='recommend-headline'>
                       <SectionHeader {...this.props.data.fields[22]}/>
                   </Col>
               </Row>
-              <Row className='articles'>
+              <Row className='articles row-flex'>
                   <Col sm={6} className=''>
                       <div className="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[5]}/>
