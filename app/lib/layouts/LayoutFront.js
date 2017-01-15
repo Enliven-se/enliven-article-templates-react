@@ -5,6 +5,13 @@ import Container from '../containers/Container'
 import SectionHeader from '../containers/SectionHeader'
 import ContributorList from '../containers/ContributorList'
 
+import AboutContributorContainer from '../containers/AboutContributorContainer'
+import ArticlesListContainer from '../containers/ArticlesListContainer'
+import ArticleTeaser from '../containers/ArticleTeaser'
+import MetaLinksContainer from '../containers/MetaLinksContainer'
+import SquareArticleContainer from '../containers/SquareArticleContainer'
+import WideImgContainer from '../containers/WideImgContainer'
+
 import HR from '../components/base/HR'
 import DatePublished from '../components/base/DatePublished'
 import ArticleCategory from '../components/base/ArticleCategory'
@@ -15,8 +22,8 @@ import ParticleText from '../components/particles/ParticleText'
 import ParticleH2 from '../components/particles/ParticleH2'
 import ParticleH3 from '../components/particles/ParticleH3'
 
-
 class LayoutFront extends React.Component {
+
   render() {
     return (
       <div className='layout layout-front'>
@@ -251,7 +258,6 @@ class LayoutFront extends React.Component {
                   </Col>
               </Row>
           </Container>
-
       </div>
     )
   }

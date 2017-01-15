@@ -31,7 +31,7 @@ class LayoutColumnist extends React.Component {
                           <div className='follow-button'>
                               <Link text={this.props.data.fields[6].content.html} url={this.props.data.fields[6].url} classes={this.props.data.fields[6].classes}/>
                           </div>
-                              <Link text={this.props.data.fields[5].content.html} url={this.props.data.fields[5].url} classes={this.props.data.fields[5].classes}/>
+                          <Link text={this.props.data.fields[5].content.html} url={this.props.data.fields[5].url} classes={this.props.data.fields[5].classes}/>
                           <ParticleText {...this.props.data.fields[1]} />
                           <Link text={this.props.data.fields[7].content.html} url={this.props.data.fields[7].url} classes={this.props.data.fields[7].classes}/>
                       </Col>
@@ -53,8 +53,8 @@ class LayoutColumnist extends React.Component {
               </Row>
           </Container>
       </div>
-    )
-  }
+          )
+      }
 }
 
 export default LayoutColumnist

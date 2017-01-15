@@ -67,6 +67,7 @@
             line-height   : 27px;
             letter-spacing: 0.2px;
             color         : $blackish;
+            font-family   : $font-family-sans-serif-bold;
             @media screen and (max-width: $screen-sm) {
                 box-sizing: none !important;
                 font-size : 12px;
@@ -100,6 +101,7 @@
             @media screen and (min-width:$screen-sm) {
                 margin-left : -100px;
                 margin-right: 100px;
+                padding-top : 12px;
             }
         }
     }
@@ -162,6 +164,8 @@
     }
 
     .particle-text {
+        text-align: justify;
+
         h4 {
             font-family   : $font-family-sans-serif;
             color         : $golden-retriever;
@@ -179,6 +183,7 @@
     .photo-credits {
         box-sizing: border-box;
         padding   : 60px 40px;
+        text-align: left;
 
         a {
             color: #ffffff;
