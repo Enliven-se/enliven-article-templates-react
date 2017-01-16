@@ -75,7 +75,8 @@
         }
 
         .contributor-list {
-            font-size: 13px;
+            font-size  : 13px;
+            margin-left: -39px;
         }
     }
 
@@ -90,6 +91,7 @@
         letter-spacing: 0.75px;
         display       : flex;
         align-self    : flex-end;
+        margin-left   : 90px;
     }
 
     .first-text {
@@ -142,7 +144,7 @@
             color         : $golden-retriever;
             text-transform: uppercase;
             font-size     : 16px;
-            margin        : 31px 0 34px -25px;
+            margin        : 31px 0 34px;
         }
 
         strong {

@@ -40,6 +40,10 @@
 
     .contributor-list {
         color: $greyish;
+
+        .img-responsive {
+            max-width: 29px;
+        }
     }
 
     .contributor-link {

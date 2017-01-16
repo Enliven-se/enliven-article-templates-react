@@ -11,6 +11,7 @@ import ArticleCategory from '../components/base/ArticleCategory'
 import ArticleTitle from '../components/base/ArticleTitle'
 import HR from '../components/base/HR'
 import ParticleImage from '../components/particles/ParticleImage'
+import ParticleH4 from '../components/particles/ParticleH4'
 import ParticlePullquote from '../components/particles/ParticlePullquote'
 import ParticleText from '../components/particles/ParticleText'
 
@@ -25,7 +26,7 @@ class PictureIntensive extends React.Component {
                   </Col>
                   <Col md={10} className='header-image'>
                       <Container fluid classes='panel-2' backgroundImage={this.props.data.fields[1]}>
-                          <Col md={5} mdOffset={8} className='article-meta'>
+                          <Col md={4} mdOffset={9} className='article-meta'>
                               <ArticleTitle {...this.props.data.ArticleTitle} />
                               <ParticleText {...this.props.data.fields[0]} />
                               <HR/>
@@ -40,7 +41,7 @@ class PictureIntensive extends React.Component {
                   <Col md={6} mdOffset={2}>
                       <ParticleText {...this.props.data.fields[2]} />
                   </Col>
-                  <Col md={2} mdOffset={1} className="pullquote-container">
+                  <Col md={3} className="pullquote-container">
                       <ParticlePullquote {...this.props.data.fields[3]} />
                   </Col>
               </Row>
@@ -48,7 +49,8 @@ class PictureIntensive extends React.Component {
                   <Col md={12}>
                       <Container fluid classes='panel-3' backgroundImage={this.props.data.fields[4]}>
                           <Col md={3} className='text-field-in-img'>
-                              <ParticleText {...this.props.data.fields[7]}/>
+                              <ParticleH4 {...this.props.data.fields[7]}/>
+                              <ParticleText {...this.props.data.fields[8]}/>
                               <ParticleText {...this.props.data.fields[6]}/>
 
                           </Col>
@@ -62,18 +64,18 @@ class PictureIntensive extends React.Component {
               </Row>
               <Row className='big-row small-image'>
                   <Col md={6}>
-                      <ParticleImage {...this.props.data.fields[8]}/>
+                      <ParticleImage {...this.props.data.fields[9]}/>
                   </Col>
                   <Col md={6}>
-                      <ParticleImage {...this.props.data.fields[9]}/>
+                      <ParticleImage {...this.props.data.fields[10]}/>
                   </Col>
               </Row>
               <Row className='big-row'>
                   <Col md={6} mdOffset={2}>
-                      <ParticleText {...this.props.data.fields[10]} />
+                      <ParticleText {...this.props.data.fields[11]} />
                   </Col>
                   <Col md={2} mdOffset={1} className="pullquote-container">
-                      <ParticlePullquote {...this.props.data.fields[11]} />
+                      <ParticlePullquote {...this.props.data.fields[12]} />
                   </Col>
               </Row>
           </Container>
