@@ -1,21 +1,19 @@
 .layout-picture-intensive {
-    .panel-1 {
-        box-sizing    : border-box;
-        padding-bottom: 600px;
-        padding-left  : 0;
-    }
-
-    .big-row {
-        @media screen and (max-width: $screen-sm) {
-            padding-left: 20px;
-        }
+    .header-image,
+    .panel-1,
+    .row {
+        margin-left  : 0;
+        margin-right : 0;
+        padding-left : 0;
+        padding-right: 0;
     }
 
     .panel-2 {
-        height       : 110vh;
         margin-bottom: 65px;
-        @media screen and (max-width: $screen-sm) {
-            display: block;
+        height       : 100vh;
+        @media screen and (max-width: $screen-md) {
+            height    : 50vh;
+            min-height: none !important;
         }
     }
 
@@ -26,7 +24,8 @@
         text-align   : center;
         padding-right: 0;
         @media screen and (max-width: $screen-md) {
-            width: 100%;
+            width  : 100%;
+            display: block;
         }
     }
 
@@ -39,27 +38,15 @@
         position        : absolute;
         top             : 140px;
         left            : 100px;
-        @media screen and (max-width: $screen-md) {
-            position: relative;
-            left    : 0;
-            top     : 220px;
-        }
 
         h1 {
             font-size: 28px;
             margin   : 25px 0 50px;
-            @media screen and (max-width: $screen-sm) {
-                font-size: 20px;
-                margin   : 20px 0;
-            }
         }
 
         hr {
             border-color: $greyish;
             margin      : 25px 0 47px;
-            @media screen and (max-width: $screen-sm) {
-                margin: 10px 0;
-            }
         }
 
         .particle-text {
@@ -67,16 +54,33 @@
             line-height   : 27px;
             letter-spacing: 0.2px;
             color         : $blackish;
-            font-family   : $font-family-sans-serif-bold;
-            @media screen and (max-width: $screen-sm) {
-                box-sizing: none !important;
-                font-size : 12px;
-            }
+            font-family   : $font-family-sans-serif-demi;
         }
 
         .contributor-list {
             font-size  : 13px;
             margin-left: -39px;
+        }
+    }
+    @media screen and (max-width: $screen-md) {
+        .article-meta {
+            top  : 50vh;
+            left : 0;
+            width: 100%;
+
+            h1 {
+                font-size: 20px;
+                margin   : 20px 0;
+            }
+
+            .particle-text {
+                box-sizing: none !important;
+                font-size : 12px;
+            }
+
+            hr {
+                margin: 10px 0;
+            }
         }
     }
 
@@ -91,38 +95,49 @@
         letter-spacing: 0.75px;
         display       : flex;
         align-self    : flex-end;
-        margin-left   : 90px;
+        margin        : 0 0 0 110px;
     }
 
     .first-text {
         .particle-text::first-letter {
-            float      : left;
-            font-size  : 170px;
-            font-style : italic;
-            font-family: $font-family-serif;
+            float       : left;
+            font-size   : 170px;
+            font-style  : italic;
+            margin-right: 40px;
+            padding-top : 12px;
+            font-family : $font-family-serif;
             @media screen and (min-width:$screen-sm) {
                 margin-left : -100px;
                 margin-right: 100px;
-                padding-top : 12px;
             }
+        }
+        @media screen and (max-width: $screen-md) {
+            padding-top: 300px;
+        }
+        @media screen and (max-width: $screen-xs) {
+            padding-top: 400px;
         }
     }
 
     .big-image {
         margin: 90px 0 55px;
+
+        .col-sm-12 {
+            padding: 0;
+        }
         @media screen and (max-width: $screen-sm) {
             margin: 10px 0;
-        }
-
-        .col-md-12 {
-            width: 100%;
         }
     }
 
     .small-image {
         margin: 84px 0 125px;
         @media screen and (max-width: $screen-sm) {
-            margin: 10px;
+            margin: 0;
+
+            .col-sm-6 {
+                padding: 0;
+            }
         }
 
         .credit-container {
