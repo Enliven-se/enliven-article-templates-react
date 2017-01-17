@@ -5,6 +5,14 @@ import Container from '../containers/Container'
 import SectionHeader from '../containers/SectionHeader'
 import ContributorList from '../containers/ContributorList'
 
+/*
+articles-list-text => ArticlesListContainer
+ArticleTeaser
+meta-links => MetaLinksContainer
+square-article => SquareArticleContainer
+wide-img => WideImgContainer
+ */
+
 import AboutContributorContainer from '../containers/AboutContributorContainer'
 import ArticlesListContainer from '../containers/ArticlesListContainer'
 import ArticleTeaser from '../containers/ArticleTeaser'
@@ -64,24 +72,20 @@ class LayoutFront extends React.Component {
                         <Col sm={6}>
                             <ArticleTeaser classes="wrapper lg-img">
                                 <ParticleImage {...this.props.data.fields[5]}/>
-                                <Col sm={8} smOffset={3} className="article-meta-large">
-                                    <div className="meta-links has-intro-text">
-                                        <ArticleCategory {...this.props.data.fields[1]}/>
-                                        <ParticleH2 {...this.props.data.fields[4]}/>
-                                        <ParticleText {...this.props.data.fields[26]}/>
-                                    </div>
+                                <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
+                                    <ArticleCategory {...this.props.data.fields[1]}/>
+                                    <ParticleH2 {...this.props.data.fields[4]}/>
+                                    <ParticleText {...this.props.data.fields[26]}/>
                                 </Col>
                             </ArticleTeaser>
                         </Col>
                         <Col sm={6}>
                             <ArticleTeaser classes="wrapper lg-img">
                                 <ParticleImage {...this.props.data.fields[6]}/>
-                                <Col sm={8} smOffset={3} className="article-meta-large">
-                                    <div className="meta-links has-intro-text">
-                                        <ArticleCategory {...this.props.data.fields[1]}/>
-                                        <ParticleH2 {...this.props.data.fields[4]}/>
-                                        <ParticleText {...this.props.data.fields[26]}/>
-                                    </div>
+                                <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
+                                    <ArticleCategory {...this.props.data.fields[1]}/>
+                                    <ParticleH2 {...this.props.data.fields[4]}/>
+                                    <ParticleText {...this.props.data.fields[26]}/>
                                 </Col>
                             </ArticleTeaser>
                         </Col>
@@ -239,24 +243,20 @@ class LayoutFront extends React.Component {
                         <Col sm={6}>
                             <ArticleTeaser classes="wrapper lg-img">
                                 <ParticleImage {...this.props.data.fields[5]}/>
-                                <Col sm={8} smOffset={3} className="article-meta-large">
-                                    <div className="meta-links has-intro-text">
-                                        <ArticleCategory {...this.props.data.fields[1]}/>
-                                        <ParticleH2 {...this.props.data.fields[4]}/>
-                                        <ParticleText {...this.props.data.fields[26]}/>
-                                    </div>
+                                <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
+                                    <ArticleCategory {...this.props.data.fields[1]}/>
+                                    <ParticleH2 {...this.props.data.fields[4]}/>
+                                    <ParticleText {...this.props.data.fields[26]}/>
                                 </Col>
                             </ArticleTeaser>
                         </Col>
                         <Col sm={6}>
                             <ArticleTeaser classes="wrapper lg-img">
                                 <ParticleImage {...this.props.data.fields[6]}/>
-                                <Col sm={8} smOffset={3} className="article-meta-large">
-                                    <div className="meta-links has-intro-text">
-                                        <ArticleCategory {...this.props.data.fields[1]}/>
-                                        <ParticleH2 {...this.props.data.fields[4]}/>
-                                        <ParticleText {...this.props.data.fields[26]}/>
-                                    </div>
+                                <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
+                                    <ArticleCategory {...this.props.data.fields[1]}/>
+                                    <ParticleH2 {...this.props.data.fields[4]}/>
+                                    <ParticleText {...this.props.data.fields[26]}/>
                                 </Col>
                             </ArticleTeaser>
                         </Col>
