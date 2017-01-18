@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "enliven-bootswatch": "git@gitlab.com:enliven/enliven-bootswatch.git#^0.1.4",
+    "enliven-bootswatch": "git@gitlab.com:enliven/enliven-bootswatch.git#*",
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
     "bootstrap-sass": "^3.3.7"
