@@ -3,6 +3,12 @@
     max-height   : 110vh;
     width        : 100%;
 
+    .article-byline {
+        box-sizing   : border-box;
+        padding-left : 110px;
+        padding-right: 62px;
+    }
+
     .navbar-brand-img {
         float : none;
         margin: 0 auto;

@@ -21,7 +21,7 @@
     }
 
     .article-category-wrapper {
-        padding-top: 183px;
+        padding: 183px 0 0 66px;
     }
 
     .article-category {
@@ -38,6 +38,9 @@
 
     .date-published-wrapper {
         float: left;
+        @media screen and (max-width: $screen-sm ) {
+            margin: 15px 0 45px;
+        }
     }
 
     .big-row {

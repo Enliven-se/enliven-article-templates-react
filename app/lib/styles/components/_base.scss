@@ -9,9 +9,11 @@ body {
 }
 
 .has-hero {
-    min-height         : 768px;
     background-size    : cover;
     background-position: 80% 0;
+    @media screen and (min-width: $screen-md) {
+        min-height: 100vh;
+    }
 }
 
 blockquote {
@@ -58,7 +60,7 @@ blockquote {
     }
 }
 
-.row {
+.row-flex {
     @media screen and (min-width: $screen-sm) {
         display       : flex;
         flex-direction: row;

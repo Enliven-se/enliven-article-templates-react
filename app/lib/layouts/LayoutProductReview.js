@@ -20,7 +20,6 @@ class ProductReview extends React.Component {
       <div className='layout layout-product-review'>
           <Container fluid classes='panel-1'>
               <Row>
-
                   <Col md={9} className='header-image'>
                       <Container fluid classes='panel-2' backgroundImage={this.props.data.fields[0]}>
                       </Container>

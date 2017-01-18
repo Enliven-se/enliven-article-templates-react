@@ -11,7 +11,7 @@ const MockPictureIntensive2 = {
     'content': {
       'html': 'Interior Design, Minimalism & Trends'
     },
-    'classes': 'text-uppercase'
+    'classes': 'text-uppercase text-color-gold'
   },
   'ContributorList': [
     {
@@ -41,7 +41,11 @@ const MockPictureIntensive2 = {
       'type': 'image',
       'content': {
         'url': '/images/mock/pi2-1.png'
-      }
+      },
+      'credits': {
+        'classes': 'text-bottom-left text-color-white',
+        'html': 'Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary.'
+      },
     },
     2: {
       'type': 'image',

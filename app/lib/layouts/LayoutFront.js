@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Col} from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 
 import Container from '../containers/Container'
 import SectionHeader from '../containers/SectionHeader'
@@ -35,7 +35,7 @@ class LayoutFront extends React.Component {
         return (
             <div className='layout layout-front'>
                 <Container fluid classes='panel-1'>
-                    <Row className='articles'>
+                    <Row className='articles row-flex'>
                         <Col sm={12}>
                             <ParticleH2 className='text-color-gold header-top' {...this.props.data.fields[17]}/>
                             <HR/>
@@ -92,7 +92,7 @@ class LayoutFront extends React.Component {
                     </Row>
                 </Container>
                 <Container fluid>
-                    <Row className='articles-grid'>
+                    <Row className='articles-grid row-flex'>
                         <Col xs={12} sm={6} md={4}>
                             <SquareArticleContainer>
                                 <ParticleH2 className='text-color-gold' {...this.props.data.fields[17]}/>
@@ -163,7 +163,7 @@ class LayoutFront extends React.Component {
                             </ArticlesListContainer>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className='row-flex'>
                         <Col sm={12} className='contributors-headline'>
                             <SectionHeader {...this.props.data.fields[21]}/>
                         </Col>
@@ -234,12 +234,12 @@ class LayoutFront extends React.Component {
                             />
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className='row-flex'>
                         <Col sm={12} className='recommend-headline'>
                             <SectionHeader {...this.props.data.fields[22]}/>
                         </Col>
                     </Row>
-                    <Row className='articles'>
+                    <Row className='articles row-flex'>
                         <Col sm={6}>
                             <ArticleTeaser classes="wrapper lg-img">
                                 <ParticleImage {...this.props.data.fields[5]}/>
