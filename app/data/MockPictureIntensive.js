@@ -56,7 +56,7 @@ const Mock = {
       'content': {
         'html': 'If you had to live your life over again, what one thing would you. This  design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the  boxes makes. Boxes makes the design literally stand out.<br/><br/> This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. <br/><br/> This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally .'
       },
-        'classes':'first-letter'
+        'classes':'first-letter first-letter-gold'
     },
     3: {
       'type': 'pullquote',

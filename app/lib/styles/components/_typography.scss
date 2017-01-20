@@ -1,14 +1,17 @@
-&.first-letter::first-letter {
-    float      : left;
-    font-size  : 170px;
-    line-height: 140px;
-    color      : $blackish;
+&.first-letter {
+    &::first-letter {
+        float      : left;
+        font-size  : 170px;
+        line-height: 140px;
+        color      : $blackish;
+    }
 
-    &.first-letter-gold {
+    &.first-letter-gold::first-letter {
         color: $golden-retriever;
     }
 
-    &.first-letter-white {
+    &.first-letter-white::first-letter {
         color: #ffffff;
     }
+
 }
