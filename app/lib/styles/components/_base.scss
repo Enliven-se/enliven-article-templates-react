@@ -61,6 +61,11 @@ blockquote {
 }
 
 .row-flex {
+    &:after,
+    &:before {
+        content: " ";
+        display: block;
+    }
     @media screen and (min-width: $screen-sm) {
         display       : flex;
         flex-direction: row;
