@@ -9,7 +9,7 @@ const MockColumnist = {
   },
   'ArticleTitle': {
     'content': {
-      'html': 'The Most Overlooked Tips About fashion'
+      'html': 'The Most Over&shy;looked Tips About fashion'
     },
     'classes': 'text-uppercase'
   },

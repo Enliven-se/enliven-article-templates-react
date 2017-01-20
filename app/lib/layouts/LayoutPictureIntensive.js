@@ -40,7 +40,7 @@ class PictureIntensive extends React.Component {
                   </Col>
               </Row>
               <Row className='big-row first-text'>
-                  <Col sm={6} smOffset={2}>
+                  <Col sm={6} smOffset={3} mdOffset={2}>
                       <ParticleText {...this.props.data.fields[2]} />
                   </Col>
                   <Col sm={4} md={3} className="pullquote-container">
@@ -54,7 +54,6 @@ class PictureIntensive extends React.Component {
                               <ParticleH4 {...this.props.data.fields[7]}/>
                               <ParticleText {...this.props.data.fields[8]}/>
                               <ParticleText {...this.props.data.fields[6]}/>
-
                           </Col>
                       </Container>
                   </Col>
@@ -73,10 +72,10 @@ class PictureIntensive extends React.Component {
                   </Col>
               </Row>
               <Row className='big-row'>
-                  <Col sm={6} smOffset={2}>
+                  <Col sm={6} smOffset={3} mdOffset={2}>
                       <ParticleText {...this.props.data.fields[11]} />
                   </Col>
-                  <Col sm={4} className="pullquote-container">
+                  <Col sm={4} md={3} className="pullquote-container">
                       <ParticlePullquote {...this.props.data.fields[12]} />
                   </Col>
               </Row>
