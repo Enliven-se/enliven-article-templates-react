@@ -20,17 +20,17 @@ class PictureIntensive2 extends React.Component {
   render() {
     return (
       <div className='layout layout-picture-intensive-2'>
-        <Container fluid classes='panel-1'>
-          <Row className='header-goodies'>
-            <Col md={6} className='left-panel'>
-              <ArticleCategory {...this.props.data.ArticleCategory}/>
-              <ArticleTitle {...this.props.data.ArticleTitle} />
-              <ArticleIntro {...this.props.data.fields[0]}/>
-              <HR className=''/>
-              <ContributorList data={this.props.data.ContributorList} separator=', '/>
-            </Col>
-            <Col md={6} className='right-panel'>
-              <ParticleImage {...this.props.data.fields[1]}/>
+          <Container fluid classes='panel-1'>
+              <Row className='header-goodies'>
+                  <Col md={6} className='left-panel'>
+                      <ArticleCategory {...this.props.data.ArticleCategory}/>
+                      <ArticleTitle {...this.props.data.ArticleTitle} />
+                      <ArticleIntro {...this.props.data.fields[0]}/>
+                      <HR className=''/>
+                      <ContributorList data={this.props.data.ContributorList} separator=', '/>
+                  </Col>
+                  <Col md={6} className='right-panel'>
+                      <ParticleImage {...this.props.data.fields[1]}/>
             </Col>
           </Row>
           <Row>
