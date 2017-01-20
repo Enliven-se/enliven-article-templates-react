@@ -20,24 +20,23 @@ class PictureIntensive2 extends React.Component {
   render() {
     return (
       <div className='layout layout-picture-intensive-2'>
-          <Container fluid classes='panel-1'>
-              <Row className='header-goodies'>
-                  <Col md={6} className='left-panel'>
-                      <ArticleCategory {...this.props.data.ArticleCategory}/>
-                      <ArticleTitle {...this.props.data.ArticleTitle} />
-                      <ArticleIntro {...this.props.data.fields[0]}/>
-                      <HR className=''/>
-                      <ContributorList data={this.props.data.ContributorList} separator=', '/>
-
-                  </Col>
-                  <Col md={6} className='right-panel' backgroundImage={this.props.data.fields[1]}>
-
-                  </Col>
-              </Row>
-              <Row>
-                  <Col md={6} className="removed-padding-col">
-                      <Col className='round-image'>
-                          <ParticleImage {...this.props.data.fields[2]}/>
+        <Container fluid classes='panel-1'>
+          <Row className='header-goodies'>
+            <Col md={6} className='left-panel'>
+              <ArticleCategory {...this.props.data.ArticleCategory}/>
+              <ArticleTitle {...this.props.data.ArticleTitle} />
+              <ArticleIntro {...this.props.data.fields[0]}/>
+              <HR className=''/>
+              <ContributorList data={this.props.data.ContributorList} separator=', '/>
+            </Col>
+            <Col md={6} className='right-panel'>
+              <ParticleImage {...this.props.data.fields[1]}/>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6} className="removed-padding-col">
+              <Col className='round-image'>
+                <ParticleImage {...this.props.data.fields[2]}/>
                           <div className='credits'>
                               <ParticleText {...this.props.data.fields[4]}/>
                           </div>

@@ -1,4 +1,11 @@
 .layout-picture-intensive {
+    h4 {
+        font-family   : $font-family-sans-serif;
+        color         : $golden-retriever;
+        text-transform: uppercase;
+        font-size     : 18px;
+    }
+
     .header-image,
     .panel-1,
     .row {
@@ -12,8 +19,10 @@
         margin-bottom: 65px;
         height       : 100vh;
         @media screen and (max-width: $screen-md) {
-            height    : 50vh;
-            min-height: none !important;
+            height       : 50vh;
+            min-height   : none !important;
+            width        : 100%;
+            margin-bottom: 0;
         }
     }
 
@@ -23,9 +32,16 @@
         z-index      : 10;
         text-align   : center;
         padding-right: 0;
+        width        : 100%;
         @media screen and (max-width: $screen-md) {
             width  : 100%;
             display: block;
+        }
+    }
+
+    .article-meta-col {
+        @media screen and (min-width: $screen-md) {
+            margin-left: -275px;
         }
     }
 
@@ -33,11 +49,8 @@
         background-color: #ffffff;
         z-index         : 5;
         border          : 1px solid $golden-retriever;
-        box-sizing      : border-box;
         padding         : 50px 80px;
-        position        : absolute;
-        top             : 140px;
-        left            : 100px;
+        margin-top      : 140px;
 
         h1 {
             font-size: 28px;
@@ -64,9 +77,8 @@
     }
     @media screen and (max-width: $screen-md) {
         .article-meta {
-            top  : 50vh;
-            left : 0;
-            width: 100%;
+            width     : 100%;
+            margin-top: 13px;
 
             h1 {
                 font-size: 20px;
@@ -84,24 +96,20 @@
         }
     }
 
-    .text-container {
-        box-sizing  : border-box;
-        padding-left: 250px;
-    }
-
     .pullquote-container {
         font-style    : italic;
         font-size     : 42px;
         letter-spacing: 0.75px;
         display       : flex;
         align-self    : flex-end;
-        margin        : 0 0 0 110px;
+        margin        : 0 0 0 65px;
     }
 
     .first-text {
         .particle-text::first-letter {
             float       : left;
             font-size   : 170px;
+            line-height : 170px;
             font-style  : italic;
             margin-right: 40px;
             padding-top : 12px;
@@ -112,10 +120,7 @@
             }
         }
         @media screen and (max-width: $screen-md) {
-            padding-top: 300px;
-        }
-        @media screen and (max-width: $screen-xs) {
-            padding-top: 400px;
+            padding-top: 70px;
         }
     }
 
@@ -141,8 +146,13 @@
         }
 
         .credit-container {
-            box-sizing: border-box;
-            padding   : 20px;
+            padding: 20px;
+        }
+    }
+
+    .panel-3 {
+        @media screen and (min-width: $screen-md) {
+            padding-right: 80px;
         }
     }
 
@@ -155,11 +165,8 @@
         line-height     : 30px;
 
         h4 {
-            font-family   : $font-family-sans-serif;
-            color         : $golden-retriever;
-            text-transform: uppercase;
-            font-size     : 16px;
-            margin        : 31px 0 34px;
+            font-size: 16px;
+            margin   : 31px 0 34px;
         }
 
         strong {
@@ -183,13 +190,6 @@
     .particle-text {
         text-align: justify;
 
-        h4 {
-            font-family   : $font-family-sans-serif;
-            color         : $golden-retriever;
-            text-transform: uppercase;
-            font-size     : 18px;
-        }
-
         hr {
             border-color: $golden-retriever;
             max-width   : 300px;
@@ -198,7 +198,6 @@
     }
 
     .photo-credits {
-        box-sizing: border-box;
         padding   : 60px 40px;
         text-align: left;
 
