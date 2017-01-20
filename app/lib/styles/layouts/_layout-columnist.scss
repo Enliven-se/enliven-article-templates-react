@@ -102,15 +102,10 @@
         }
     }
 
-    .first-text {
-        .particle-text::first-letter {
-            float        : left;
-            margin       : 10px 0 0 -15px;
-            padding-right: 10px;
-            font-size    : 170px;
-            line-height  : 140px;
-            color        : $blackish;
-        }
+    .first-letter::first-letter {
+        margin       : 10px 0 0 -15px;
+        padding-right: 10px;
+        color        : $blackish;
     }
 
     .particle-pullquote {

@@ -1,0 +1,14 @@
+&.first-letter::first-letter {
+    float      : left;
+    font-size  : 170px;
+    line-height: 140px;
+    color      : $blackish;
+
+    &.first-letter-gold {
+        color: $golden-retriever;
+    }
+
+    &.first-letter-white {
+        color: #ffffff;
+    }
+}

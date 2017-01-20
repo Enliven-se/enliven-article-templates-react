@@ -116,10 +116,7 @@
     }
 
     .first-text {
-        .particle-text::first-letter {
-            float       : left;
-            font-size   : 170px;
-            line-height : 170px;
+        .first-letter::first-letter {
             font-style  : italic;
             margin-right: 40px;
             padding-top : 12px;
