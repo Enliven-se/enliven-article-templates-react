@@ -243,21 +243,21 @@
         .article-category:hover {
             background-color: #ffffff;
         }
+    }
 
-        .has-intro-text {
-            h2 {
-                margin-top   : 10px;
-                margin-bottom: 0;
-            }
+    .has-intro-text {
+        h2 {
+            margin-top   : 10px;
+            margin-bottom: 0;
+        }
 
-            .particle-text {
-                margin     : 10px 0 0 10px;
-                line-height: 20px;
-                font-size  : 12px;
-                @media screen and (min-width: $screen-md) {
-                    line-height: 24px;
-                    font-size  : 14px;
-                }
+        .particle-text {
+            margin     : 10px 0 0 10px;
+            line-height: 22px;
+            font-size  : 14px;
+            @media screen and (min-width: $screen-md) {
+                line-height: 24px;
+                font-size  : 14px;
             }
         }
         @media screen and (max-width: $screen-sm) {
