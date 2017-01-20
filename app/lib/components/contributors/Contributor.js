@@ -49,9 +49,11 @@ class Contributor extends React.Component {
         return (
             <span className={classes}>
                 {ifAvatar}
-                {ifContributorRole}
-                {ifContributorLink}
-                {ifContributorAssociation}
+                <span className='contributor-meta'>
+                    {ifContributorRole}
+                    {ifContributorLink}
+                    {ifContributorAssociation}
+                </span>
             </span>
         )
     }

@@ -23,14 +23,14 @@ const MockTheWayWePlay = {
   },
   'ContributorList': [
     {
-      'Avatar': '/images/mock/dummy-contributor.png',
+      'Avatar': '/images/mock/avatar.png',
       'ContributorRole': 'Written by',
       'ContributorCredit': 'The Way We Play',
       'ContributorLink': {
         'url': '//cms.enliven.co/en/groups/the-way-we-play'
       }
     }, {
-      'Avatar': '/images/mock/dummy-contributor.png',
+      'Avatar': '/images/mock/avatar.png',
       'ContributorRole': 'Photographer',
       'ContributorCredit': 'Linda Alfvegren',
       'ContributorLink': {

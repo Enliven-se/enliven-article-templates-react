@@ -37,6 +37,9 @@
 }
 
 .contributor {
+    display       : flex;
+    flex-direction: row;
+
     .avatar-wrapper {
         margin-right: 10px;
     }

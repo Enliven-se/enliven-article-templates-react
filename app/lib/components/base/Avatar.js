@@ -7,7 +7,7 @@ class Avatar extends React.Component {
     classes += 'avatar'
 
     return <span className='avatar-wrapper'>
-        <Image src={this.props.url} className={classes} responsive />
+        <Image src={this.props.url} className={classes} />
     </span>
   }
 
