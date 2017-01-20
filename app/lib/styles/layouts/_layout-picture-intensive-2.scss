@@ -19,17 +19,18 @@
             margin-top: 183px;
 
             h1 {
-                font-size: 45px;
-                margin   : 52px 144px 75px 63px;
+                font-size  : 45px;
+                margin     : 52px 144px 55px 63px;
+                line-height: 57px;
             }
 
             hr {
-                width       : 100px;
-                border-color: $golden-retriever;
+                width : 260px;
+                border: 1px solid $golden-retriever;
             }
 
             .particle-text {
-                margin: 0 144px 0 63px;
+                margin: 0 63px;
             }
 
             .article-category {
@@ -63,6 +64,19 @@
                 }
             }
         }
+
+        .right-panel {
+            padding-right: 0;
+            padding-left : 0;
+
+            .photo-credits {
+                font-size    : 16px;
+                font-weight  : 300;
+                line-height  : 27px;
+                margin-bottom: 115px;
+                text-align   : left;
+            }
+        }
     }
 
     .text-with-borderbox {
@@ -76,7 +90,7 @@
 
     .round-image {
         position: absolute;
-        @media screen and (max-width: $screen-sm) {
+        @media screen and (max-width: $screen-md) {
             max-width: 75%;
         }
     }
@@ -88,6 +102,7 @@
             line-height : 27px;
             max-width   : 35%;
             padding-left: 15px;
+            font-weight : 300;
             @media screen and (max-width: $screen-md) {
                 max-width: 50%;
             }
@@ -97,12 +112,16 @@
     .behind-image {
         z-index      : -1;
         float        : right;
-        margin-top   : 30vw;
+        margin-top   : 41vw;
         margin-bottom: 100px;
-        @media screen and (max-width: $screen-sm) {
+        @media screen and (max-width: $screen-md) {
             max-width : 50%;
             margin-top: 25vw;
         }
+    }
+
+    .responsive-text-3 {
+        padding-top: 95px;
     }
     @media screen and (max-width: $screen-md) {
         .responsive-text-1 {
@@ -148,8 +167,7 @@
     @media screen and (max-width: $screen-md) {
         .centered-picture,
         .right-aligned-picture {
-            padding-left : 0;
-            padding-right: 0;
+            padding: 0;
 
             img {
                 margin : 0 auto 15px;

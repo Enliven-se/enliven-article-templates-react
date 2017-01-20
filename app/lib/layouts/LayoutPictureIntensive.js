@@ -19,38 +19,41 @@ class PictureIntensive extends React.Component {
   render() {
     return (
       <div className='layout layout-picture-intensive'>
-        <Container fluid classes='panel-1'>
-          <Row>
-            <Col sm={12} className='article-category-container'>
-              <ArticleCategory {...this.props.data.ArticleCategory}/>
-            </Col>
-            <Col sm={12} md={10} className='header-image'>
-              <Container fluid classes='panel-2' backgroundImage={this.props.data.fields[1]}>
-                <Col md={4} mdOffset={9} className='article-meta'>
-                  <ArticleTitle {...this.props.data.ArticleTitle} />
-                  <ParticleText {...this.props.data.fields[0]} />
-                  <HR/>
-                  <ContributorList data={this.props.data.ContributorList} inline separator=', '/>
-                </Col>
-              </Container>
-            </Col>
-          </Row>
-          <Row className='big-row first-text'>
-            <Col sm={6} smOffset={2}>
-              <ParticleText {...this.props.data.fields[2]} />
-            </Col>
-            <Col sm={4} md={3} className="pullquote-container">
+          <Container fluid classes='panel-1'>
+              <Row>
+                  <Col className='article-category-container'>
+                      <ArticleCategory {...this.props.data.ArticleCategory}/>
+                  </Col>
+              </Row>
+              <Row>
+                  <Col md={10} className='header-image'>
+                      <Container fluid classes='panel-2' backgroundImage={this.props.data.fields[1]}>
+                      </Container>
+                  </Col>
+                  <Col md={4} className='article-meta-col'>
+                      <div className='article-meta'>
+                          <ArticleTitle {...this.props.data.ArticleTitle} />
+                          <ParticleText {...this.props.data.fields[0]} />
+                          <HR/>
+                          <ContributorList data={this.props.data.ContributorList} inline separator=', '/>
+                      </div>
+                  </Col>
+              </Row>
+              <Row className='big-row first-text'>
+                  <Col sm={6} smOffset={3} mdOffset={2}>
+                      <ParticleText {...this.props.data.fields[2]} />
+                  </Col>
+                  <Col sm={4} md={3} className="pullquote-container">
                       <ParticlePullquote {...this.props.data.fields[3]} />
                   </Col>
               </Row>
               <Row className='big-row big-image'>
-                  <Col sm={12}>
+                  <Col xs={12}>
                       <Container fluid classes='panel-3' backgroundImage={this.props.data.fields[4]}>
                           <Col sm={3} className='text-field-in-img'>
                               <ParticleH4 {...this.props.data.fields[7]}/>
                               <ParticleText {...this.props.data.fields[8]}/>
                               <ParticleText {...this.props.data.fields[6]}/>
-
                           </Col>
                       </Container>
                   </Col>
@@ -69,10 +72,10 @@ class PictureIntensive extends React.Component {
                   </Col>
               </Row>
               <Row className='big-row'>
-                  <Col sm={6} smOffset={2}>
+                  <Col sm={6} smOffset={3} mdOffset={2}>
                       <ParticleText {...this.props.data.fields[11]} />
                   </Col>
-                  <Col sm={4} className="pullquote-container">
+                  <Col sm={4} md={3} className="pullquote-container">
                       <ParticlePullquote {...this.props.data.fields[12]} />
                   </Col>
               </Row>

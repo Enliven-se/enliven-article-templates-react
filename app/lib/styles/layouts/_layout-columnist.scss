@@ -1,8 +1,7 @@
 .layout-columnist {
     .article-header-row {
-        box-sizing: border-box;
-        flex-wrap : wrap;
-        padding   : 209px 64px 55px 99px;
+        flex-wrap: wrap;
+        padding  : 209px 64px 55px 99px;
         @media screen and (max-width: $screen-sm) {
             padding: 180px 0 55px;
         }
@@ -88,12 +87,10 @@
     }
 
     .hr-container {
-        box-sizing: border-box;
-        padding   : 0 110px;
+        padding: 0 110px;
     }
 
     .body-text {
-        box-sizing: border-box;
         text-align: justify;
         padding   : 127px 375px 450px;
 
@@ -111,6 +108,7 @@
             margin       : 10px 0 0 -15px;
             padding-right: 10px;
             font-size    : 170px;
+            line-height  : 140px;
             color        : $blackish;
         }
     }
