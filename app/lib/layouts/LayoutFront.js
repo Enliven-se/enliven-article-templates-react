@@ -85,7 +85,7 @@ class LayoutFront extends React.Component {
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
                               <ArticleCategory {...this.props.data.fields[1]}/>
                               <ParticleH2 {...this.props.data.fields[4]}/>
-                                  <ParticleText {...this.props.data.fields[26]}/>
+                              <ParticleText {...this.props.data.fields[26]}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
@@ -171,67 +171,67 @@ class LayoutFront extends React.Component {
               <Row className='contributors-grid'>
                   <Col sm={3}>
                       <AboutContributorContainer
-      ParticleImage={this.props.data.fields[10]}
-      ParticleH2={this.props.data.fields[20]}
-      ParticleH3={this.props.data.fields[11]}
-      ParticleText={this.props.data.fields[12]}
-      />
+                          ParticleImage={this.props.data.fields[10]}
+                          ParticleH2={this.props.data.fields[20]}
+                          ParticleH3={this.props.data.fields[11]}
+                          ParticleText={this.props.data.fields[12]}
+                      />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-      ParticleImage={this.props.data.fields[10]}
-      ParticleH2={this.props.data.fields[20]}
-      ParticleH3={this.props.data.fields[11]}
-      ParticleText={this.props.data.fields[12]}
-      />
+                          ParticleImage={this.props.data.fields[10]}
+                          ParticleH2={this.props.data.fields[20]}
+                          ParticleH3={this.props.data.fields[11]}
+                          ParticleText={this.props.data.fields[12]}
+                      />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-      ParticleImage={this.props.data.fields[10]}
-      ParticleH2={this.props.data.fields[20]}
-      ParticleH3={this.props.data.fields[11]}
-      ParticleText={this.props.data.fields[12]}
-      />
+                          ParticleImage={this.props.data.fields[10]}
+                          ParticleH2={this.props.data.fields[20]}
+                          ParticleH3={this.props.data.fields[11]}
+                          ParticleText={this.props.data.fields[12]}
+                      />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-      ParticleImage={this.props.data.fields[10]}
-      ParticleH2={this.props.data.fields[20]}
-      ParticleH3={this.props.data.fields[11]}
-      ParticleText={this.props.data.fields[12]}
-      />
+                          ParticleImage={this.props.data.fields[10]}
+                          ParticleH2={this.props.data.fields[20]}
+                          ParticleH3={this.props.data.fields[11]}
+                          ParticleText={this.props.data.fields[12]}
+                      />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-      ParticleImage={this.props.data.fields[10]}
-      ParticleH2={this.props.data.fields[20]}
-      ParticleH3={this.props.data.fields[11]}
-      ParticleText={this.props.data.fields[12]}
-      />
+                          ParticleImage={this.props.data.fields[10]}
+                          ParticleH2={this.props.data.fields[20]}
+                          ParticleH3={this.props.data.fields[11]}
+                          ParticleText={this.props.data.fields[12]}
+                      />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-      ParticleImage={this.props.data.fields[10]}
-      ParticleH2={this.props.data.fields[20]}
-      ParticleH3={this.props.data.fields[11]}
-      ParticleText={this.props.data.fields[12]}
-      />
+                          ParticleImage={this.props.data.fields[10]}
+                          ParticleH2={this.props.data.fields[20]}
+                          ParticleH3={this.props.data.fields[11]}
+                          ParticleText={this.props.data.fields[12]}
+                      />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-      ParticleImage={this.props.data.fields[10]}
-      ParticleH2={this.props.data.fields[20]}
-      ParticleH3={this.props.data.fields[11]}
-      ParticleText={this.props.data.fields[12]}
-      />
+                          ParticleImage={this.props.data.fields[10]}
+                          ParticleH2={this.props.data.fields[20]}
+                          ParticleH3={this.props.data.fields[11]}
+                          ParticleText={this.props.data.fields[12]}
+                      />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-      ParticleImage={this.props.data.fields[10]}
-      ParticleH2={this.props.data.fields[20]}
-      ParticleH3={this.props.data.fields[11]}
-      ParticleText={this.props.data.fields[12]}
-      />
+                          ParticleImage={this.props.data.fields[10]}
+                          ParticleH2={this.props.data.fields[20]}
+                          ParticleH3={this.props.data.fields[11]}
+                          ParticleText={this.props.data.fields[12]}
+                      />
                   </Col>
               </Row>
               <Row className='row-flex'>
@@ -256,38 +256,38 @@ class LayoutFront extends React.Component {
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
                               <ArticleCategory {...this.props.data.fields[1]}/>
                               <ParticleH2 {...this.props.data.fields[4]}/>
-                                  <ParticleText {...this.props.data.fields[26]}/>
-                                </Col>
-                            </ArticleTeaser>
-                        </Col>
-                        <Col sm={9}>
-                            <WideImgContainer>
-                                <ArticleTeaser classes="wrapper lg-img">
-                                    <ParticleImage {...this.props.data.fields[13]}/>
-                                    <Col sm={5} smOffset={1} className="article-meta-large">
-                                        <MetaLinksContainer>
-                                            <ArticleCategory {...this.props.data.fields[1]}/>
-                                            <ParticleH2 {...this.props.data.fields[4]}/>
-                                        </MetaLinksContainer>
-                                    </Col>
-                                </ArticleTeaser>
-                            </WideImgContainer>
-                        </Col>
-                        <Col sm={3}>
-                            <ArticleTeaser classes="wrapper xtr-sm-img lg-img">
-                                <ParticleImage {...this.props.data.fields[14]}/>
-                                <Col sm={11} smOffset={1} className="article-meta-xtr-sm">
-                                    <MetaLinksContainer>
-                                        <ArticleCategory {...this.props.data.fields[1]}/>
-                                        <ParticleH2 {...this.props.data.fields[2]}/>
-                                        <Link {...this.props.data.fields[3]}/>
-                                    </MetaLinksContainer>
-                                </Col>
-                            </ArticleTeaser>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                              <ParticleText {...this.props.data.fields[26]}/>
+                          </Col>
+                      </ArticleTeaser>
+                  </Col>
+                  <Col sm={9}>
+                      <WideImgContainer>
+                          <ArticleTeaser classes="wrapper lg-img">
+                              <ParticleImage {...this.props.data.fields[13]}/>
+                              <Col sm={5} smOffset={1} className="article-meta-large">
+                                  <MetaLinksContainer>
+                                      <ArticleCategory {...this.props.data.fields[1]}/>
+                                      <ParticleH2 {...this.props.data.fields[4]}/>
+                                  </MetaLinksContainer>
+                              </Col>
+                          </ArticleTeaser>
+                      </WideImgContainer>
+                  </Col>
+                  <Col sm={3}>
+                      <ArticleTeaser classes="wrapper xtr-sm-img lg-img">
+                          <ParticleImage {...this.props.data.fields[14]}/>
+                          <Col sm={11} smOffset={1} className="article-meta-xtr-sm">
+                              <MetaLinksContainer>
+                                  <ArticleCategory {...this.props.data.fields[1]}/>
+                                  <ParticleH2 {...this.props.data.fields[2]}/>
+                                  <Link {...this.props.data.fields[3]}/>
+                              </MetaLinksContainer>
+                          </Col>
+                      </ArticleTeaser>
+                  </Col>
+              </Row>
+          </Container>
+      </div>
     )
   }
 }
