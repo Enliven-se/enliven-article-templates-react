@@ -32,8 +32,8 @@ class ArticleTeaser extends React.Component {
               {this.props.ParticleText ? <ParticleText {...this.props.ParticleText} /> : ''}
               {this.props.Link ? <Link {...this.props.Link} /> : ''}
           </MetaLinksContainer>
-                {this.props.children}
-            </div>
+          {this.props.children}
+      </div>
     )
   }
 }

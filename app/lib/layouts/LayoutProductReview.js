@@ -30,7 +30,7 @@ class ProductReview extends React.Component {
                       <HR/>
                       <ParticleText {...this.props.data.fields[1]} />
                       <HR/>
-                      <ContributorList data={this.props.data.ContributorList} inline separator=', '/>
+                      <ContributorList {...this.props.data.ContributorList} inline separator=', '/>
                   </Col>
 
               </Row>

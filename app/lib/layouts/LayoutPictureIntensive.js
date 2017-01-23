@@ -35,7 +35,7 @@ class PictureIntensive extends React.Component {
                           <ArticleTitle {...this.props.data.ArticleTitle} />
                           <ParticleText {...this.props.data.fields[0]} />
                           <HR/>
-                          <ContributorList data={this.props.data.ContributorList} inline separator=', '/>
+                          <ContributorList {...this.props.data.ContributorList} inline separator=', '/>
                       </div>
                   </Col>
               </Row>

@@ -27,7 +27,7 @@ class PictureIntensive2 extends React.Component {
                       <ArticleTitle {...this.props.data.ArticleTitle} />
                       <ArticleIntro {...this.props.data.fields[0]}/>
                       <HR className=''/>
-                      <ContributorList data={this.props.data.ContributorList} separator=', '/>
+                      <ContributorList {...this.props.data.ContributorList} separator=', '/>
                   </Col>
                   <Col md={6} className='right-panel'>
                       <ParticleImage {...this.props.data.fields[1]}/>

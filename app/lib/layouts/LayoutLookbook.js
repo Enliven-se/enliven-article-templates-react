@@ -23,7 +23,7 @@ class LayoutLookbook extends React.Component {
                                 <Col md={10} mdOffset={2}>
                                     <ArticleHeader {...this.props.data} ArticleCategory={false}/>
                                     <ArticleIntro {...this.props.data.fields[0]} bordered/>
-                                    <ContributorList data={this.props.data.ContributorList} separator=', '/>
+                                    <ContributorList {...this.props.data.ContributorList} separator=', '/>
                                     <DatePublished {...this.props.data.DatePublished}/>
                                 </Col>
                             </Row>
