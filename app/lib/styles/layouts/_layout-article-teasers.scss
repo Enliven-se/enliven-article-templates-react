@@ -1,0 +1,108 @@
+.layout-article-teasers {
+    h2 {
+        font-size     : 18px;
+        color         : $blackish;
+        line-height   : 30px;
+        letter-spacing: 1.5px;
+        font-family   : $font-family-sans-serif-bold;
+    }
+
+    .picture-left {
+        .particle-image {
+            max-width: 212px;
+        }
+
+        .article-category {
+            margin-bottom: 23px;
+            @media screen and (max-width: $screen-md) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .big-picture-left {
+        .particle-image {
+            max-width: 331px;
+        }
+
+        h2 {
+            font-size     : 24px;
+            letter-spacing: 2px;
+        }
+
+        .particle-text {
+            font-family: $font-family-sans-serif-bold;
+            line-height: 27px;
+        }
+
+        .article-category {
+            margin-bottom: 43px;
+            @media screen and (max-width: $screen-md) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .big-picture-left,
+    .picture-left {
+        padding: 40px 0 25px 100px;
+
+        .particle-image {
+            max-width: 50%;
+            float    : left;
+        }
+
+        .meta-links {
+            padding-left: 15px;
+            max-width   : 50%;
+            float       : right;
+        }
+        @media screen and (max-width: $screen-md) {
+            padding-left: 0;
+
+            .meta-links,
+            .particle-image {
+                max-width: 100%;
+                float    : none;
+            }
+        }
+    }
+
+    .large-h {
+        padding: 0 60px 45px 85px;
+
+        h2 {
+            font-size     : 24px;
+            letter-spacing: 2px;
+        }
+        @media screen and (max-width: $screen-md) {
+            padding-left: 13px;
+        }
+    }
+
+    .small-h {
+        padding: 0 60px 45px 85px;
+        @media screen and (max-width: $screen-md) {
+            padding-left: 13px;
+        }
+    }
+
+    .large-h-with-intro {
+        padding: 0 0 68px 140px;
+
+        h2 {
+            font-size     : 24px;
+            letter-spacing: 2px;
+            margin-bottom : 35px;
+        }
+
+        .particle-text {
+            color      : $blackish;
+            font-size  : 15px;
+            font-family: $font-family-sans-serif-bold;
+        }
+        @media screen and (max-width: $screen-md) {
+            padding-left: 13px;
+        }
+    }
+}

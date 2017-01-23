@@ -39,6 +39,11 @@
       "className": "ProductReview",
       "extra_classes": [""],
       "url": "/?layout=ProductReview"
+    }, {
+      "title": "Article Teasers",
+      "className": "ArticleTeasers",
+      "extra_classes": [""],
+      "url": "/?layout=ArticleTeasers"
     }]
 
 }
