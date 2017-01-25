@@ -50,6 +50,7 @@
     .img-small {
         @media screen and (min-width: $screen-sm ) {
             display: flex;
+            height : 100%;
 
             .particle-image {
                 height    : 84%;
@@ -88,9 +89,7 @@
         }
 
         .small-left-image {
-            img {
-                float: right;
-            }
+            float: right;
         }
     }
 }
