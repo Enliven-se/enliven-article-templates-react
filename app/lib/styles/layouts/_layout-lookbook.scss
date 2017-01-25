@@ -89,7 +89,9 @@
         }
 
         .small-left-image {
-            float: right;
+            img {
+                float: right;
+            }
         }
     }
 }
