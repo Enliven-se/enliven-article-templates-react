@@ -7,6 +7,10 @@
         font-family   : $font-family-sans-serif-bold;
     }
 
+    .contributor-list {
+        margin-top: 16px;
+    }
+
     .picture-left {
         .particle-image {
             max-width: 212px;
@@ -33,6 +37,7 @@
         .particle-text {
             font-family: $font-family-sans-serif-bold;
             line-height: 27px;
+            margin-top : 9px;
         }
 
         .article-category {

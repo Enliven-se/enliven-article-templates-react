@@ -24,13 +24,13 @@ class ArticleTeaser extends React.Component {
 
     return (
       <div className={classes}>
-          {this.props.ParticleImage ? <ParticleImage {...this.props.ParticleImage} /> : ''}
-          <MetaLinksContainer className={ metaLinksClasses } {...this.props.MetaLinksContainer}>
-              {this.props.ArticleCategory ? <ArticleCategory {...this.props.ArticleCategory} /> : ''}
-              {this.props.ParticleH2 ? <ParticleH2 {...this.props.ParticleH2} /> : ''}
-              {this.props.ContributorList ? <ContributorList {...this.props.ContributorList} /> : ''}
-              {this.props.ParticleText ? <ParticleText {...this.props.ParticleText} /> : ''}
-              {this.props.Link ? <Link {...this.props.Link} /> : ''}
+        {this.props.ParticleImage ? <ParticleImage {...this.props.ParticleImage} /> : ''}
+        <MetaLinksContainer className={ metaLinksClasses } {...this.props.MetaLinksContainer}>
+          {this.props.ArticleCategory ? <ArticleCategory {...this.props.ArticleCategory} /> : ''}
+          {this.props.ParticleH2 ? <ParticleH2 {...this.props.ParticleH2} /> : ''}
+          {this.props.ParticleText ? <ParticleText {...this.props.ParticleText} /> : ''}
+          {this.props.Link ? <Link {...this.props.Link} /> : ''}
+          {this.props.ContributorList ? <ContributorList {...this.props.ContributorList} /> : ''}
           </MetaLinksContainer>
           {this.props.children}
       </div>
