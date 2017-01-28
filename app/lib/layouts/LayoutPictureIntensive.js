@@ -22,7 +22,7 @@ class PictureIntensive extends React.Component {
           <Container fluid classes='panel-1'>
               <Row>
                   <Col className='article-category-container'>
-                      <ArticleCategory {...this.props.data.ArticleCategory}/>
+                      <ArticleCategory name={this.props.data.ArticleCategory.name} url={this.props.data.ArticleCategory.url}/>
                   </Col>
               </Row>
               <Row>

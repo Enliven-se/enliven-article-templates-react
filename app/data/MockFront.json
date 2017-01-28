@@ -1,19 +1,14 @@
 {
     "color_variant": "gold",
     "ArticleCategory": {
-        "type": "text",
-        "content": {
-            "html": "WOMEN’S HEALTH",
-            "url": "#"
-        },
+        "name": "WOMEN’S HEALTH",
+        "url": "#",
         "classes": "text-color-white text-uppercase"
     },
 
     "DatePublished": {
         "type": "text",
-        "content": {
-            "html": "29.10.2016"
-        }
+        "value": "29.10.2016"
     },
     "ContributorList": {
         "data": [
@@ -39,15 +34,11 @@
         },
         1: {
             "type": "text",
-            "content": {
-                "html": "Women\"s Lifestyle"
-            }
+            "value": "Women's Lifestyle"
         },
         2: {
             "type": "text",
-            "content": {
-                "html": "London Fashion Week"
-            }
+            "value": "London Fashion Week"
         },
         3: {
             "type": "image",
@@ -57,9 +48,7 @@
         },
         4: {
             "type": "text",
-            "content": {
-                "html": "Traveling to the Heart of Stockholm"
-            }
+            "value": "Traveling to the Heart of Stockholm"
         },
         5: {
             "type": "image",
@@ -81,15 +70,11 @@
         },
         8: {
             "type": "text",
-            "content": {
-                "html": "<strong class=\"bold-bits\">Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.</strong>"
-            }
+            "value": "<strong class=\"bold-bits\">Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.</strong>"
         },
         9: {
             "type": "text",
-            "content": {
-                "html": "More"
-            },
+            "value": "More",
             "url": "#"
         },
         10: {
@@ -100,17 +85,12 @@
         },
         11: {
             "type": "text",
-            "content": {
-                "html": "Popular Contributions"
-
-            },
+            "value": "Popular Contributions",
             "classes": "text-color-gold text-uppercase"
         },
         12: {
             "type": "text",
-            "content": {
-                "html": "At the start of a project, we usually need to make wireframes in some form or another."
-            }
+            "value": "At the start of a project, we usually need to make wireframes in some form or another."
         },
         13: {
             "type": "image",
@@ -126,80 +106,56 @@
         },
         15: {
             "type": "text",
-            "content": {
-                "html": "New On Enliven"
-            }
+            "value": "New On Enliven"
         },
         16: {
             "type": "text",
-            "content": {
-                "html": "Ad Space"
-            }
+            "value": "Ad Space"
         },
         17: {
             "type": "text",
-            "content": {
-                "html": "Women\"s Health"
-            },
+            "value": "Women's Health",
             "classes": "text-color-gold"
         },
         18: {
             "type": "text",
-            "content": {
-                "html": "Top Articles"
-            },
+            "value": "Top Articles",
             "classes": "text-color-gold"
         },
         19: {
             "type": "text",
-            "content": {
-                "html": "Interior Design"
-            },
+            "value": "Interior Design",
             "classes": "text-color-gold"
         },
         20: {
             "type": "text",
-            "content": {
-                "html": "Peter Larsen"
-            }
+            "value": "Peter Larsen"
         },
         21: {
             "type": "text",
-            "content": {
-                "html": "Our Contributors"
-            },
+            "value": "Our Contributors",
             "classes": "text-uppercase"
         },
         22: {
             "type": "text",
-            "content": {
-                "html": "We Recommend"
-            },
+            "value": "We Recommend",
             "classes": "text-uppercase"
         },
         23: {
             "type": "text",
-            "content": {
-                "html": "Take a Tip From Ashley and Mary-Kate Olsen and Stock Up on Chic Basics for Under $500"
-            }
+            "value": "Take a Tip From Ashley and Mary-Kate Olsen and Stock Up on Chic Basics for Under $500"
         },
         24: {
             "type": "text",
-            "content": {
-                "html": "Hailey Baldwin Takes Red Carpet Denim Dressing to the Streets"
-            }
+            "value": "Hailey Baldwin Takes Red Carpet Denim Dressing to the Streets"
         },
         25: {
             "type": "text",
-            "content": {
-                "html": "Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos"
-            }
+            "value": "Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos"
         },
         26: {
             "type": "text",
-            "content": {
-                "html": "At the start of a project, we usually need to make wireframes in some form or another."
-            }
+            "value": "At the start of a project, we usually need to make wireframes in some form or another."
         }
     }
 }

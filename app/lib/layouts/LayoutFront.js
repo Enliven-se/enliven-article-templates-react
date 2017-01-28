@@ -45,7 +45,7 @@ class LayoutFront extends React.Component {
                           <ParticleImage {...this.props.data.fields[0]}/>
                           <div className="article-meta-small">
                               <MetaLinksContainer>
-                                  <ArticleCategory {...this.props.data.fields[1]}/>
+                                  <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
                                   <ParticleH2 {...this.props.data.fields[2]}/>
                               </MetaLinksContainer>
                           </div>
@@ -56,7 +56,7 @@ class LayoutFront extends React.Component {
                           <ParticleImage {...this.props.data.fields[3]}/>
                           <Col sm={8} smOffset={2} className="article-meta-large">
                               <MetaLinksContainer>
-                                  <ArticleCategory {...this.props.data.fields[1]}/>
+                                  <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
                                   <ParticleH2 {...this.props.data.fields[4]}/>
                               </MetaLinksContainer>
                           </Col>
@@ -73,7 +73,7 @@ class LayoutFront extends React.Component {
                       <ArticleTeaser classes="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[5]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleCategory {...this.props.data.fields[1]}/>
+                              <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
                               <ParticleH2 {...this.props.data.fields[4]}/>
                               <ParticleText {...this.props.data.fields[26]}/>
                           </Col>
@@ -83,7 +83,7 @@ class LayoutFront extends React.Component {
                       <ArticleTeaser classes="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[6]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleCategory {...this.props.data.fields[1]}/>
+                              <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
                               <ParticleH2 {...this.props.data.fields[4]}/>
                               <ParticleText {...this.props.data.fields[26]}/>
                           </Col>
@@ -111,7 +111,7 @@ class LayoutFront extends React.Component {
                               <ParticleText {...this.props.data.fields[24]}/>
                               <ParticleText {...this.props.data.fields[25]}/>
                               <div className="more-button">
-                                  <Link text={this.props.data.fields[9].content.html} url={this.props.data.fields[9].url}/>
+                                  <Link text={this.props.data.fields[9].value} url={this.props.data.fields[9].url}/>
                               </div>
                           </div>
                       </ArticlesListContainer>
@@ -134,7 +134,7 @@ class LayoutFront extends React.Component {
                               <ParticleText {...this.props.data.fields[24]}/>
                               <ParticleText {...this.props.data.fields[25]}/>
                               <div className="more-button">
-                                  <Link text={this.props.data.fields[9].content.html} url={this.props.data.fields[9].url}/>
+                                  <Link text={this.props.data.fields[9].value} url={this.props.data.fields[9].url}/>
                               </div>
                           </div>
                       </ArticlesListContainer>
@@ -157,7 +157,7 @@ class LayoutFront extends React.Component {
                               <ParticleText {...this.props.data.fields[24]}/>
                               <ParticleText {...this.props.data.fields[25]}/>
                               <div className="more-button">
-                                  <Link text={this.props.data.fields[9].content.html} url={this.props.data.fields[9].url}/>
+                                  <Link text={this.props.data.fields[9].value} url={this.props.data.fields[9].url}/>
                               </div>
                           </div>
                       </ArticlesListContainer>
@@ -244,7 +244,7 @@ class LayoutFront extends React.Component {
                       <ArticleTeaser classes="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[5]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleCategory {...this.props.data.fields[1]}/>
+                              <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
                               <ParticleH2 {...this.props.data.fields[4]}/>
                               <ParticleText {...this.props.data.fields[26]}/>
                           </Col>
@@ -254,7 +254,7 @@ class LayoutFront extends React.Component {
                       <ArticleTeaser classes="wrapper lg-img">
                           <ParticleImage {...this.props.data.fields[6]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleCategory {...this.props.data.fields[1]}/>
+                              <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
                               <ParticleH2 {...this.props.data.fields[4]}/>
                               <ParticleText {...this.props.data.fields[26]}/>
                           </Col>
@@ -266,7 +266,7 @@ class LayoutFront extends React.Component {
                               <ParticleImage {...this.props.data.fields[13]}/>
                               <Col sm={5} smOffset={1} className="article-meta-large">
                                   <MetaLinksContainer>
-                                      <ArticleCategory {...this.props.data.fields[1]}/>
+                                      <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
                                       <ParticleH2 {...this.props.data.fields[4]}/>
                                   </MetaLinksContainer>
                               </Col>
@@ -278,7 +278,7 @@ class LayoutFront extends React.Component {
                           <ParticleImage {...this.props.data.fields[14]}/>
                           <Col sm={11} smOffset={1} className="article-meta-xtr-sm">
                               <MetaLinksContainer>
-                                  <ArticleCategory {...this.props.data.fields[1]}/>
+                                  <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
                                   <ParticleH2 {...this.props.data.fields[2]}/>
                                   <Link {...this.props.data.fields[3]}/>
                               </MetaLinksContainer>

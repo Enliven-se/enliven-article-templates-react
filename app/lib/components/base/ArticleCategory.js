@@ -7,7 +7,7 @@ class ArticleCategory extends React.Component {
             : ''
         classes += 'article-category'
         return <div className='article-category-wrapper'>
-            <a href={this.props.content.url} className={classes}>{this.props.content.html}</a>
+            <a href={this.props.url} className={classes}>{this.props.name}</a>
         </div>
     }
 

@@ -10,7 +10,7 @@ class PhotoCredits extends React.Component {
     let output = this.props.credits ?
       (
       <div className='credit-container'>
-          <ParticleText content={this.props.credits} classes={classes} />
+          <ParticleText {...this.props.credits} classes={classes} />
       </div>
       )
       : null

@@ -17,7 +17,10 @@ class LayoutFeature extends React.Component {
           <Container fluid classes='panel-1' backgroundImage={this.props.data.fields[0]}>
               <Row>
                   <Col sm={6} smOffset={6}>
-                      <ArticleHeader {...this.props.data}/>
+                      <ArticleHeader
+                        ArticleCategory={this.props.data.ArticleCategory}
+                        ArticleTitle={this.props.data.ArticleTitle}
+                        />
                   </Col>
               </Row>
           </Container>

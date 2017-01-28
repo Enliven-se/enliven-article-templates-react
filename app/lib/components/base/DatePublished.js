@@ -7,7 +7,7 @@ class DatePublished extends React.Component {
 
     return (
       <div className='date-published-wrapper'>
-          <div className={classes}>{this.props.content.html}</div>
+          <div className={classes}>{this.props.value}</div>
         </div>
     )
   }

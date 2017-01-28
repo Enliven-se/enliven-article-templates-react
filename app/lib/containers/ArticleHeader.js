@@ -14,17 +14,21 @@ class ArticleHeader extends React.Component {
     return (
       <div className={classes}>
           {this.props.ArticleCategory ?
-              <ArticleCategory {...this.props.ArticleCategory} />
+              <ArticleCategory
+                  name={this.props.ArticleCategory.name}
+                  url={this.props.ArticleCategory.url}
+                  classes={this.props.ArticleCategory.classes}
+              />
           : '' }
           <CharityCredit>
               <Icon />
               <Link />
           </CharityCredit>
           {this.props.ArticleTitle ?
-              <ArticleTitle {...this.props.ArticleTitle} />
+              <ArticleTitle
+                  {...this.props.ArticleTitle}
+              />
           : ''}
-          {this.props.children}
-
       </div>
     )
   }

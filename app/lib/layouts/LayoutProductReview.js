@@ -25,7 +25,7 @@ class ProductReview extends React.Component {
                       </Container>
                   </Col>
                   <Col md={3}>
-                      <ArticleCategory {...this.props.data.ArticleCategory}/>
+                      <ArticleCategory name={this.props.data.ArticleCategory.name} url={this.props.data.ArticleCategory.url}/>
                       <ArticleTitle {...this.props.data.ArticleTitle} />
                       <HR/>
                       <ParticleText {...this.props.data.fields[1]} />

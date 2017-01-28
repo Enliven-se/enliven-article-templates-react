@@ -7,7 +7,7 @@ class ParticleText extends React.Component {
 
     return (
       <div className={classes} dangerouslySetInnerHTML={{
-          __html: this.props.content.html
+          __html: this.props.value
       }}></div>
 
     )

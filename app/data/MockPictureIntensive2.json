@@ -1,16 +1,12 @@
 {
     "color_variant": "gold",
     "ArticleCategory": {
-        "content": {
-            "html": "Interior Design",
-            "url": "#"
-        },
+        "name": "Interior Design",
+        "url": "#",
         "classes": "text-color-gold text-uppercase"
     },
     "ArticleTitle": {
-        "content": {
-            "html": "Interior Design, Minimalism & Trends"
-        },
+        "value": "Interior Design, Minimalism & Trends",
         "classes": "text-uppercase text-color-gold"
     },
     "ContributorList": {
@@ -35,9 +31,7 @@
     "fields": {
         0: {
             "type": "text",
-            "content": {
-                "html": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects."
-            }
+            "value": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects."
         },
         1: {
             "type": "image",
@@ -46,7 +40,7 @@
             },
             "credits": {
                 "classes": "text-bottom-left text-color-white",
-                "html": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
+                "value": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
             }
         },
         2: {
@@ -63,23 +57,17 @@
         },
         4: {
             "type": "text",
-            "content": {
-                "html": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
-            }
+            "value": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
         },
         5: {
             "type": "text",
-            "content": {
-                "html": "PRODUCT IN IMAGE ABOVE"
-            },
+            "value": "PRODUCT IN IMAGE ABOVE",
             "classes": "text-color-gold"
         },
 
         6: {
             "type": "text",
-            "content": {
-                "html": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015<br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie."
-            }
+            "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015<br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie."
         },
         7: {
             "type": "image",
@@ -89,15 +77,11 @@
         },
         8: {
             "type": "text",
-            "content": {
-                "html": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York. När: En varm höstdag i november, 2015 Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet Att få komma hem till Emelie och Nico Anaïs."
-            }
+            "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York. När: En varm höstdag i november, 2015 Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet Att få komma hem till Emelie och Nico Anaïs."
         },
         9: {
             "type": "text",
-            "content": {
-                "html": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015 <br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie själv andas och lever och som det egna märket Leontine personifierar – en bohemisk fri själ med. Emelie Törling  är grundare och designer på Leontine samt sångerska. Läs hennes blogg här!<br/><br/>Tack Emelie och Nico Anaïs för att vi fick komma!"
-            }
+            "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015 <br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie själv andas och lever och som det egna märket Leontine personifierar – en bohemisk fri själ med. Emelie Törling  är grundare och designer på Leontine samt sångerska. Läs hennes blogg här!<br/><br/>Tack Emelie och Nico Anaïs för att vi fick komma!"
         }
     }
 }

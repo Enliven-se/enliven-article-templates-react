@@ -18,10 +18,12 @@ class LayoutLookbook extends React.Component {
                 <Container fluid>
                     <Row className='big-row'>
                         <Col md={6}>
-                            <ArticleCategory {...this.props.data.ArticleCategory}/>
+                            <ArticleCategory name={this.props.data.ArticleCategory.name} url={this.props.data.ArticleCategory.url}/>
                             <Row>
                                 <Col md={10} mdOffset={2}>
-                                    <ArticleHeader {...this.props.data} ArticleCategory={false}/>
+                                    <ArticleHeader
+                                      ArticleTitle={this.props.data.ArticleTitle}
+                                      />
                                     <ArticleIntro {...this.props.data.fields[0]} bordered/>
                                     <ContributorList {...this.props.data.ContributorList} separator=', '/>
                                     <DatePublished {...this.props.data.DatePublished}/>

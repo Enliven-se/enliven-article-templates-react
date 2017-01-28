@@ -8,7 +8,7 @@ class ParticlePullquote extends React.Component {
     return (
       <div className={classes}>
           <blockquote className={classes} dangerouslySetInnerHTML={{
-              __html: this.props.content.html
+              __html: this.props.value
       }}></blockquote>
       </div>
     )

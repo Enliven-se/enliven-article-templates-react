@@ -11,7 +11,7 @@ class SectionHeader extends React.Component {
       <div className={classes}>
           <HR classes='heading-line'/>
           <h2 className='heading-text'><span className='heading-text-valign-middle' dangerouslySetInnerHTML={{
-              __html: this.props.content.html
+              __html: this.props.value
           }}></span></h2>
       </div>
     )

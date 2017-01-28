@@ -21,7 +21,10 @@ class LayoutShort extends React.Component {
                     <Container>
                         <Row>
                             <Col sm={6} className='article-meta'>
-                                <ArticleHeader {...this.props.data}/>
+                                <ArticleHeader
+                                  ArticleCategory={this.props.data.ArticleCategory}
+                                  ArticleTitle={this.props.data.ArticleTitle}
+                                  />
                                 <ArticleIntro {...this.props.data.fields[1]} bordered/>
                             </Col>
                         </Row>

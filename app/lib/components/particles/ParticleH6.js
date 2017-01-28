@@ -3,7 +3,7 @@ import React from 'react'
 class ParticleH6 extends React.Component {
   render() {
     return <h6 className={this.props.classes} dangerouslySetInnerHTML={{
-        __html: this.props.content.html
+        __html: this.props.value
       }}></h6>
   }
 
