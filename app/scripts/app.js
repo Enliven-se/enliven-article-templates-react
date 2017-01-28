@@ -17,17 +17,6 @@ import LayoutPictureIntensive2 from '../lib/layouts/LayoutPictureIntensive2'
 import LayoutProductReview from '../lib/layouts/LayoutProductReview'
 import LayoutArticleTeasers from '../lib/layouts/LayoutArticleTeasers'
 
-// mock data
-import MockFront from '../data/MockFront'
-import MockColumnist from '../data/MockColumnist'
-import MockShort from '../data/MockShort'
-import MockFeature from '../data/MockFeature'
-import MockLookbook from '../data/MockLookbook'
-import MockProductReview from '../data/MockProductReview'
-import MockPictureIntensive from '../data/MockPictureIntensive'
-import MockPictureIntensive2 from '../data/MockPictureIntensive2'
-import MockArticleTeasers from '../data/MockArticleTeasers'
-
 const data = require('./../includes/data.json')
 
 const switchLayout = function(props) {
@@ -37,44 +26,44 @@ const switchLayout = function(props) {
   switch (props.layout) {
     case 'ProductReview':
       ChosenLayout = LayoutProductReview
-      mock = MockProductReview
+      mock = require('../data/MockProductReview.json')
       break;
     case 'PictureIntensive':
       ChosenLayout = LayoutPictureIntensive
-      mock = MockPictureIntensive
+      mock = require('../data/MockPictureIntensive.json')
       break;
     case 'Columnist':
       ChosenLayout = LayoutColumnist
-      mock = MockColumnist
+      mock = require('../data/MockColumnist.json')
       break;
     case 'PictureIntensive2':
       ChosenLayout = LayoutPictureIntensive2
-      mock = MockPictureIntensive2
+      mock = require('../data/MockPictureIntensive2.json')
       break;
     case 'Lookbook':
       ChosenLayout = LayoutLookbook
-      mock = MockLookbook
+      mock = require('../data/MockLookbook.json')
       break;
     case 'Feature':
       ChosenLayout = LayoutFeature
-      mock = MockFeature
+      mock = require('../data/MockFeature.json')
       break;
     case 'Short':
       ChosenLayout = LayoutShort
-      mock = MockShort
+      mock = require('../data/MockShort.json')
       break;
     case 'ArticleTeasers':
       ChosenLayout = LayoutArticleTeasers
-      mock = MockArticleTeasers
+      mock = require('../data/MockArticleTeasers.json')
       break;
     case 'Grid':
       ChosenLayout = GridLayout
-      mock = MockFront
+      mock = require('../data/MockFront.json')
       sticky = false
       break;
     default:
       ChosenLayout = LayoutFront
-      mock = MockFront
+      mock = require('../data/MockFront.json')
       is_front = true
       sticky = false
   }
