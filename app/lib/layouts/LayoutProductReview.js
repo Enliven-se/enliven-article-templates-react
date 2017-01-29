@@ -42,10 +42,10 @@ class ProductReview extends React.Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col className='col-right md={6}>
+                        <Col className='col-right' md={6}>
                             <ParticleImage url={this.props.data.field_particles[4].url} classes={this.props.data.field_particles[4].classes} credits={this.props.data.field_particles[4].credits}/>
                         </Col>
-                        <Col className='col-left md={6}>
+                        <Col className='col-left' md={6}>
                             <ParticleImage url={this.props.data.field_particles[5].url} classes={this.props.data.field_particles[5].classes} credits={this.props.data.field_particles[5].credits}/>
                         </Col>
                     </Row>
