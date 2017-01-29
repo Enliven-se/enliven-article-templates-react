@@ -22,7 +22,7 @@ class LayoutLookbook extends React.Component {
                             <Row>
                                 <Col md={10} mdOffset={2}>
                                     <ArticleHeader
-                                      ArticleTitle={this.props.data.ArticleTitle}
+                                        ArticleTitle={this.props.data.ArticleTitle}
                                       />
                                     <ArticleIntro {...this.props.data.fields[0]} bordered/>
                                     <ContributorList {...this.props.data.ContributorList} separator=', '/>

@@ -17,78 +17,72 @@ import LayoutPictureIntensive2 from '../lib/layouts/LayoutPictureIntensive2'
 import LayoutProductReview from '../lib/layouts/LayoutProductReview'
 import LayoutArticleTeasers from '../lib/layouts/LayoutArticleTeasers'
 
-const data = require('./../includes/data.json')
-
 const switchLayout = function(props) {
-  let ChosenLayout = {},
-    mock = {}
+    let ChosenLayout = {},
+        mock = {}
 
-  switch (props.layout) {
-    case 'ProductReview':
-      ChosenLayout = LayoutProductReview
-      mock = require('../data/MockProductReview.json')
-      break;
-    case 'PictureIntensive':
-      ChosenLayout = LayoutPictureIntensive
-      mock = require('../data/MockPictureIntensive.json')
-      break;
-    case 'Columnist':
-      ChosenLayout = LayoutColumnist
-      mock = require('../data/MockColumnist.json')
-      break;
-    case 'PictureIntensive2':
-      ChosenLayout = LayoutPictureIntensive2
-      mock = require('../data/MockPictureIntensive2.json')
-      break;
-    case 'Lookbook':
-      ChosenLayout = LayoutLookbook
-      mock = require('../data/MockLookbook.json')
-      break;
-    case 'Feature':
-      ChosenLayout = LayoutFeature
-      mock = require('../data/MockFeature.json')
-      break;
-    case 'Short':
-      ChosenLayout = LayoutShort
-      mock = require('../data/MockShort.json')
-      break;
-    case 'ArticleTeasers':
-      ChosenLayout = LayoutArticleTeasers
-      mock = require('../data/MockArticleTeasers.json')
-      break;
-    case 'Grid':
-      ChosenLayout = GridLayout
-      mock = require('../data/MockFront.json')
-      sticky = false
-      break;
-    default:
-      ChosenLayout = LayoutFront
-      mock = require('../data/MockFront.json')
-      is_front = true
-      sticky = false
-  }
+    switch (props.layout) {
+        case 'ProductReview':
+            ChosenLayout = LayoutProductReview
+            mock = require('../data/MockProductReview.json');
+            break;
+        case 'PictureIntensive':
+            ChosenLayout = LayoutPictureIntensive
+            mock = require('../data/MockPictureIntensive.json');
+            break;
+        case 'Columnist':
+            ChosenLayout = LayoutColumnist
+            mock = require('../data/MockColumnist.json');
+            break;
+        case 'PictureIntensive2':
+            ChosenLayout = LayoutPictureIntensive2
+            mock = require('../data/MockPictureIntensive2.json');
+            break;
+        case 'Lookbook':
+            ChosenLayout = LayoutLookbook
+            mock = require('../data/MockLookbook.json');
+            break;
+        case 'Feature':
+            ChosenLayout = LayoutFeature
+            mock = require('../data/MockFeature.json');
+            break;
+        case 'Short':
+            ChosenLayout = LayoutShort
+            mock = require('../data/MockShort.json');
+            break;
+        case 'ArticleTeasers':
+            ChosenLayout = LayoutArticleTeasers
+            mock = require('../data/MockArticleTeasers.json');
+            break;
+        case 'Grid':
+            ChosenLayout = GridLayout
+            mock = require('../data/MockFront.json');
+            break;
+        default:
+            ChosenLayout = LayoutFront
+            mock = require('../data/MockFront.json')
+    }
 
-  color_variant = mock.color_variant
-  return <ChosenLayout data={mock}/>
+    return (
+        <LayoutContainer layout={props.layout} navbar_items={props.data.navbar_items} color_variant={mock.color_variant} sticky={!mock.is_front} is_front={!!mock.is_front}>
+            <ChosenLayout data={mock}/>
+        </LayoutContainer>
+    )
 }
 
-// query string parsing
-let layout = location.search.match(/[&\?]layout=(\w+)/)
-layout = layout && (layout.length > 1)
-  ? layout[1]
-  : ''
+function renderRoot() {
+    const data = require('./../includes/data.json')
 
-// global rendering options
-let color_variant = ''
-let sticky = true
-let is_front = false
+    // query string parsing
+    let layout = location.search.match(/[&\?]layout=(\w+)/)
+    layout = layout && (layout.length > 1)
+        ? layout[1]
+        : ''
 
-const content = switchLayout({
-  'layout': layout
-})
+    return switchLayout({'layout': layout, 'data': data})
+}
 
 // React root
 const mountNode = document.getElementById('app')
-const node = <LayoutContainer layout={layout} navbar_items={data.navbar_items} color_variant={color_variant} sticky={sticky} is_front={is_front}>{content}</LayoutContainer>
-
+const node = renderRoot()
 ReactDOM.render(node, mountNode)
