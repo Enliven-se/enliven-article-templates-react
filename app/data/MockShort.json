@@ -1,11 +1,11 @@
 {
     "color_variant": "white",
-    "ArticleCategory": {
+    "field_main_topics": {
         "name": "WOMEN’S HEALTH",
         "url": "#",
         "classes": "text-color-white text-uppercase"
     },
-    "ArticleTitle": {
+    "field_headline": {
         "value": "The Different Sides of Charlize",
         "classes": "text-color-white text-uppercase"
     },
@@ -28,11 +28,11 @@
             }
         ]
     },
-    "DatePublished": {
+    "created": {
         "type": "text",
-        "value": "November 18, 2016"
+        "value": "1478258637"
     },
-    "fields": [
+    "field_particles": [
         {
             "type": "image",
             "url": "/images/mock/Charlize-Theron--Capitol-Grand-Photoshoot-2015--05.jpg"

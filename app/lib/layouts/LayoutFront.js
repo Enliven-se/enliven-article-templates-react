@@ -21,7 +21,6 @@ import SquareArticleContainer from '../containers/SquareArticleContainer'
 import WideImgContainer from '../containers/WideImgContainer'
 
 import HR from '../components/base/HR'
-import DatePublished from '../components/base/DatePublished'
 import ArticleCategory from '../components/base/ArticleCategory'
 import Link from '../components/base/Link'
 
@@ -37,33 +36,33 @@ class LayoutFront extends React.Component {
           <Container fluid classes='panel-1'>
               <Row className='articles row-flex'>
                   <Col sm={12}>
-                      <ParticleH2 className='text-color-gold header-top' {...this.props.data.fields[17]}/>
+                      <ParticleH2 className='text-color-gold header-top' {...this.props.data.field_particles[17]}/>
                       <HR/>
                   </Col>
                   <Col sm={3}>
                       <ArticleTeaser classes="wrapper sm-img">
-                          <ParticleImage {...this.props.data.fields[0]}/>
+                          <ParticleImage {...this.props.data.field_particles[0]}/>
                           <div className="article-meta-small">
                               <MetaLinksContainer>
-                                  <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
-                                  <ParticleH2 {...this.props.data.fields[2]}/>
+                                  <ArticleCategory name={this.props.data.field_particles[1].name} url={this.props.data.field_particles[1].url}/>
+                                  <ParticleH2 {...this.props.data.field_particles[2]}/>
                               </MetaLinksContainer>
                           </div>
                       </ArticleTeaser>
                   </Col>
                   <Col sm={6}>
                       <ArticleTeaser classes="wrapper lg-img first-center-img">
-                          <ParticleImage {...this.props.data.fields[3]}/>
+                          <ParticleImage {...this.props.data.field_particles[3]}/>
                           <Col sm={8} smOffset={2} className="article-meta-large">
                               <MetaLinksContainer>
-                                  <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
-                                  <ParticleH2 {...this.props.data.fields[4]}/>
+                                  <ArticleCategory name={this.props.data.field_particles[1].name} url={this.props.data.field_particles[1].url}/>
+                                  <ParticleH2 {...this.props.data.field_particles[4]}/>
                               </MetaLinksContainer>
                           </Col>
                       </ArticleTeaser>
                   </Col>
                   <Col sm={3}>
-                      <ParticleH2 className='heading-text' {...this.props.data.fields[16]}/>
+                      <ParticleH2 className='heading-text' {...this.props.data.field_particles[16]}/>
                   </Col>
               </Row>
           </Container>
@@ -71,21 +70,21 @@ class LayoutFront extends React.Component {
               <Row>
                   <Col sm={6}>
                       <ArticleTeaser classes="wrapper lg-img">
-                          <ParticleImage {...this.props.data.fields[5]}/>
+                          <ParticleImage {...this.props.data.field_particles[5]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
-                              <ParticleH2 {...this.props.data.fields[4]}/>
-                              <ParticleText {...this.props.data.fields[26]}/>
+                              <ArticleCategory name={this.props.data.field_particles[1].name} url={this.props.data.field_particles[1].url}/>
+                              <ParticleH2 {...this.props.data.field_particles[4]}/>
+                              <ParticleText {...this.props.data.field_particles[26]}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
                   <Col sm={6}>
                       <ArticleTeaser classes="wrapper lg-img">
-                          <ParticleImage {...this.props.data.fields[6]}/>
+                          <ParticleImage {...this.props.data.field_particles[6]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
-                              <ParticleH2 {...this.props.data.fields[4]}/>
-                              <ParticleText {...this.props.data.fields[26]}/>
+                              <ArticleCategory name={this.props.data.field_particles[1].name} url={this.props.data.field_particles[1].url}/>
+                              <ParticleH2 {...this.props.data.field_particles[4]}/>
+                              <ParticleText {...this.props.data.field_particles[26]}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
@@ -95,69 +94,69 @@ class LayoutFront extends React.Component {
               <Row className='articles-grid row-flex'>
                   <Col xs={12} sm={6} md={4}>
                       <SquareArticleContainer>
-                          <ParticleH2 className='text-color-gold' {...this.props.data.fields[17]}/>
+                          <ParticleH2 className='text-color-gold' {...this.props.data.field_particles[17]}/>
                           <HR/>
-                          <ParticleImage {...this.props.data.fields[7]}/>
-                          <ParticleH2 {...this.props.data.fields[4]}/>
+                          <ParticleImage {...this.props.data.field_particles[7]}/>
+                          <ParticleH2 {...this.props.data.field_particles[4]}/>
                       </SquareArticleContainer>
                   </Col>
                   <Col xs={12} sm={6} md={4}>
                       <ArticlesListContainer>
-                          <ParticleH2 className='text-color-gold' {...this.props.data.fields[18]}/>
+                          <ParticleH2 className='text-color-gold' {...this.props.data.field_particles[18]}/>
                           <HR/>
                           <div className='articles-list-text'>
-                              <ParticleText {...this.props.data.fields[8]}/>
-                              <ParticleText {...this.props.data.fields[23]}/>
-                              <ParticleText {...this.props.data.fields[24]}/>
-                              <ParticleText {...this.props.data.fields[25]}/>
+                              <ParticleText {...this.props.data.field_particles[8]}/>
+                              <ParticleText {...this.props.data.field_particles[23]}/>
+                              <ParticleText {...this.props.data.field_particles[24]}/>
+                              <ParticleText {...this.props.data.field_particles[25]}/>
                               <div className="more-button">
-                                  <Link text={this.props.data.fields[9].value} url={this.props.data.fields[9].url}/>
+                                  <Link text={this.props.data.field_particles[9].value} url={this.props.data.field_particles[9].url}/>
                               </div>
                           </div>
                       </ArticlesListContainer>
                   </Col>
                   <Col xs={12} sm={6} md={4}>
                       <SquareArticleContainer>
-                          <ParticleH2 className='text-color-gold' {...this.props.data.fields[19]}/>
+                          <ParticleH2 className='text-color-gold' {...this.props.data.field_particles[19]}/>
                           <HR/>
-                          <ParticleImage {...this.props.data.fields[7]}/>
-                          <ParticleH2 {...this.props.data.fields[4]}/>
+                          <ParticleImage {...this.props.data.field_particles[7]}/>
+                          <ParticleH2 {...this.props.data.field_particles[4]}/>
                       </SquareArticleContainer>
                   </Col>
                   <Col sm={6} md={4}>
                       <ArticlesListContainer>
-                          <ParticleH2 className='text-color-gold' {...this.props.data.fields[17]}/>
+                          <ParticleH2 className='text-color-gold' {...this.props.data.field_particles[17]}/>
                           <HR/>
                           <div className='articles-list-text'>
-                              <ParticleText {...this.props.data.fields[8]}/>
-                              <ParticleText {...this.props.data.fields[23]}/>
-                              <ParticleText {...this.props.data.fields[24]}/>
-                              <ParticleText {...this.props.data.fields[25]}/>
+                              <ParticleText {...this.props.data.field_particles[8]}/>
+                              <ParticleText {...this.props.data.field_particles[23]}/>
+                              <ParticleText {...this.props.data.field_particles[24]}/>
+                              <ParticleText {...this.props.data.field_particles[25]}/>
                               <div className="more-button">
-                                  <Link text={this.props.data.fields[9].value} url={this.props.data.fields[9].url}/>
+                                  <Link text={this.props.data.field_particles[9].value} url={this.props.data.field_particles[9].url}/>
                               </div>
                           </div>
                       </ArticlesListContainer>
                   </Col>
                   <Col xs={12} sm={6} md={4}>
                       <SquareArticleContainer>
-                          <ParticleH2 className='text-color-gold' {...this.props.data.fields[18]}/>
+                          <ParticleH2 className='text-color-gold' {...this.props.data.field_particles[18]}/>
                           <HR/>
-                          <ParticleImage {...this.props.data.fields[7]}/>
-                          <ParticleH2 {...this.props.data.fields[4]}/>
+                          <ParticleImage {...this.props.data.field_particles[7]}/>
+                          <ParticleH2 {...this.props.data.field_particles[4]}/>
                       </SquareArticleContainer>
                   </Col>
                   <Col xs={12} sm={6} md={4}>
                       <ArticlesListContainer>
-                          <ParticleH2 className='text-color-gold' {...this.props.data.fields[19]}/>
+                          <ParticleH2 className='text-color-gold' {...this.props.data.field_particles[19]}/>
                           <HR/>
                           <div className='articles-list-text'>
-                              <ParticleText {...this.props.data.fields[8]}/>
-                              <ParticleText {...this.props.data.fields[23]}/>
-                              <ParticleText {...this.props.data.fields[24]}/>
-                              <ParticleText {...this.props.data.fields[25]}/>
+                              <ParticleText {...this.props.data.field_particles[8]}/>
+                              <ParticleText {...this.props.data.field_particles[23]}/>
+                              <ParticleText {...this.props.data.field_particles[24]}/>
+                              <ParticleText {...this.props.data.field_particles[25]}/>
                               <div className="more-button">
-                                  <Link text={this.props.data.fields[9].value} url={this.props.data.fields[9].url}/>
+                                  <Link text={this.props.data.field_particles[9].value} url={this.props.data.field_particles[9].url}/>
                               </div>
                           </div>
                       </ArticlesListContainer>
@@ -165,109 +164,109 @@ class LayoutFront extends React.Component {
               </Row>
               <Row className='row-flex'>
                   <Col sm={12} className='contributors-headline'>
-                      <SectionHeader {...this.props.data.fields[21]}/>
+                      <SectionHeader {...this.props.data.field_particles[21]}/>
                   </Col>
               </Row>
               <Row className='contributors-grid'>
                   <Col sm={3}>
                       <AboutContributorContainer
-                          ParticleImage={this.props.data.fields[10]}
-                          ParticleH2={this.props.data.fields[20]}
-                          ParticleH3={this.props.data.fields[11]}
-                          ParticleText={this.props.data.fields[12]}
+                          ParticleImage={this.props.data.field_particles[10]}
+                          ParticleH2={this.props.data.field_particles[20]}
+                          ParticleH3={this.props.data.field_particles[11]}
+                          ParticleText={this.props.data.field_particles[12]}
                       />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-                          ParticleImage={this.props.data.fields[10]}
-                          ParticleH2={this.props.data.fields[20]}
-                          ParticleH3={this.props.data.fields[11]}
-                          ParticleText={this.props.data.fields[12]}
+                          ParticleImage={this.props.data.field_particles[10]}
+                          ParticleH2={this.props.data.field_particles[20]}
+                          ParticleH3={this.props.data.field_particles[11]}
+                          ParticleText={this.props.data.field_particles[12]}
                       />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-                          ParticleImage={this.props.data.fields[10]}
-                          ParticleH2={this.props.data.fields[20]}
-                          ParticleH3={this.props.data.fields[11]}
-                          ParticleText={this.props.data.fields[12]}
+                          ParticleImage={this.props.data.field_particles[10]}
+                          ParticleH2={this.props.data.field_particles[20]}
+                          ParticleH3={this.props.data.field_particles[11]}
+                          ParticleText={this.props.data.field_particles[12]}
                       />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-                          ParticleImage={this.props.data.fields[10]}
-                          ParticleH2={this.props.data.fields[20]}
-                          ParticleH3={this.props.data.fields[11]}
-                          ParticleText={this.props.data.fields[12]}
+                          ParticleImage={this.props.data.field_particles[10]}
+                          ParticleH2={this.props.data.field_particles[20]}
+                          ParticleH3={this.props.data.field_particles[11]}
+                          ParticleText={this.props.data.field_particles[12]}
                       />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-                          ParticleImage={this.props.data.fields[10]}
-                          ParticleH2={this.props.data.fields[20]}
-                          ParticleH3={this.props.data.fields[11]}
-                          ParticleText={this.props.data.fields[12]}
+                          ParticleImage={this.props.data.field_particles[10]}
+                          ParticleH2={this.props.data.field_particles[20]}
+                          ParticleH3={this.props.data.field_particles[11]}
+                          ParticleText={this.props.data.field_particles[12]}
                       />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-                          ParticleImage={this.props.data.fields[10]}
-                          ParticleH2={this.props.data.fields[20]}
-                          ParticleH3={this.props.data.fields[11]}
-                          ParticleText={this.props.data.fields[12]}
+                          ParticleImage={this.props.data.field_particles[10]}
+                          ParticleH2={this.props.data.field_particles[20]}
+                          ParticleH3={this.props.data.field_particles[11]}
+                          ParticleText={this.props.data.field_particles[12]}
                       />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-                          ParticleImage={this.props.data.fields[10]}
-                          ParticleH2={this.props.data.fields[20]}
-                          ParticleH3={this.props.data.fields[11]}
-                          ParticleText={this.props.data.fields[12]}
+                          ParticleImage={this.props.data.field_particles[10]}
+                          ParticleH2={this.props.data.field_particles[20]}
+                          ParticleH3={this.props.data.field_particles[11]}
+                          ParticleText={this.props.data.field_particles[12]}
                       />
                   </Col>
                   <Col sm={3}>
                       <AboutContributorContainer
-                          ParticleImage={this.props.data.fields[10]}
-                          ParticleH2={this.props.data.fields[20]}
-                          ParticleH3={this.props.data.fields[11]}
-                          ParticleText={this.props.data.fields[12]}
+                          ParticleImage={this.props.data.field_particles[10]}
+                          ParticleH2={this.props.data.field_particles[20]}
+                          ParticleH3={this.props.data.field_particles[11]}
+                          ParticleText={this.props.data.field_particles[12]}
                       />
                   </Col>
               </Row>
               <Row className='row-flex'>
                   <Col sm={12} className='recommend-headline'>
-                      <SectionHeader {...this.props.data.fields[22]}/>
+                      <SectionHeader {...this.props.data.field_particles[22]}/>
                   </Col>
               </Row>
               <Row className='articles row-flex'>
                   <Col sm={6}>
                       <ArticleTeaser classes="wrapper lg-img">
-                          <ParticleImage {...this.props.data.fields[5]}/>
+                          <ParticleImage {...this.props.data.field_particles[5]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
-                              <ParticleH2 {...this.props.data.fields[4]}/>
-                              <ParticleText {...this.props.data.fields[26]}/>
+                              <ArticleCategory name={this.props.data.field_particles[1].name} url={this.props.data.field_particles[1].url}/>
+                              <ParticleH2 {...this.props.data.field_particles[4]}/>
+                              <ParticleText {...this.props.data.field_particles[26]}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
                   <Col sm={6}>
                       <ArticleTeaser classes="wrapper lg-img">
-                          <ParticleImage {...this.props.data.fields[6]}/>
+                          <ParticleImage {...this.props.data.field_particles[6]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
-                              <ParticleH2 {...this.props.data.fields[4]}/>
-                              <ParticleText {...this.props.data.fields[26]}/>
+                              <ArticleCategory name={this.props.data.field_particles[1].name} url={this.props.data.field_particles[1].url}/>
+                              <ParticleH2 {...this.props.data.field_particles[4]}/>
+                              <ParticleText {...this.props.data.field_particles[26]}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
                   <Col sm={9}>
                       <WideImgContainer>
                           <ArticleTeaser classes="wrapper lg-img">
-                              <ParticleImage {...this.props.data.fields[13]}/>
+                              <ParticleImage {...this.props.data.field_particles[13]}/>
                               <Col sm={5} smOffset={1} className="article-meta-large">
                                   <MetaLinksContainer>
-                                      <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
-                                      <ParticleH2 {...this.props.data.fields[4]}/>
+                                      <ArticleCategory name={this.props.data.field_particles[1].name} url={this.props.data.field_particles[1].url}/>
+                                      <ParticleH2 {...this.props.data.field_particles[4]}/>
                                   </MetaLinksContainer>
                               </Col>
                           </ArticleTeaser>
@@ -275,12 +274,12 @@ class LayoutFront extends React.Component {
                   </Col>
                   <Col sm={3}>
                       <ArticleTeaser classes="wrapper xtr-sm-img lg-img">
-                          <ParticleImage {...this.props.data.fields[14]}/>
+                          <ParticleImage {...this.props.data.field_particles[14]}/>
                           <Col sm={11} smOffset={1} className="article-meta-xtr-sm">
                               <MetaLinksContainer>
-                                  <ArticleCategory name={this.props.data.fields[1].name} url={this.props.data.fields[1].url}/>
-                                  <ParticleH2 {...this.props.data.fields[2]}/>
-                                  <Link {...this.props.data.fields[3]}/>
+                                  <ArticleCategory name={this.props.data.field_particles[1].name} url={this.props.data.field_particles[1].url}/>
+                                  <ParticleH2 {...this.props.data.field_particles[2]}/>
+                                  <Link {...this.props.data.field_particles[3]}/>
                               </MetaLinksContainer>
                           </Col>
                       </ArticleTeaser>

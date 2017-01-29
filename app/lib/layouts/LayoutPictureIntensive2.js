@@ -23,50 +23,50 @@ class PictureIntensive2 extends React.Component {
           <Container fluid classes='panel-1'>
               <Row className='header-goodies'>
                   <Col md={6} className='left-panel'>
-                      <ArticleCategory name={this.props.data.ArticleCategory.name} url={this.props.data.ArticleCategory.url}/>
-                      <ArticleTitle {...this.props.data.ArticleTitle} />
-                      <ArticleIntro {...this.props.data.fields[0]}/>
+                      <ArticleCategory name={this.props.data.field_main_topics.name} url={this.props.data.field_main_topics.url}/>
+                      <ArticleTitle {...this.props.data.field_headline} />
+                      <ArticleIntro {...this.props.data.field_particles[0]}/>
                       <HR className=''/>
                       <ContributorList {...this.props.data.ContributorList} separator=', '/>
                   </Col>
                   <Col md={6} className='right-panel'>
-                      <ParticleImage {...this.props.data.fields[1]}/>
+                      <ParticleImage {...this.props.data.field_particles[1]}/>
             </Col>
           </Row>
           <Row>
             <Col md={6} className="removed-padding-col">
               <Col className='round-image'>
-                <ParticleImage {...this.props.data.fields[2]}/>
+                <ParticleImage {...this.props.data.field_particles[2]}/>
                           <div className='credits'>
-                              <ParticleText {...this.props.data.fields[4]}/>
+                              <ParticleText {...this.props.data.field_particles[4]}/>
                           </div>
                       </Col>
                       <Col md={6} className='behind-image'>
-                          <ParticleImage {...this.props.data.fields[3]}/>
+                          <ParticleImage {...this.props.data.field_particles[3]}/>
                       </Col>
 
                       <Col md={6} md={12} className=''>
                           <div className='text-with-borderbox responsive-text-1'>
-                              <ParticleH2 {...this.props.data.fields[5]}/>
-                              <ParticleText {...this.props.data.fields[8]}/>
+                              <ParticleH2 {...this.props.data.field_particles[5]}/>
+                              <ParticleText {...this.props.data.field_particles[8]}/>
                           </div>
                       </Col>
                   </Col>
                   <Col md={6} className='right-side right-aligned-picture'>
                       <div className='text-with-borderbox responsive-text-2'>
-                          <ParticleH2 {...this.props.data.fields[5]}/>
-                          <ParticleText {...this.props.data.fields[6]}/>
+                          <ParticleH2 {...this.props.data.field_particles[5]}/>
+                          <ParticleText {...this.props.data.field_particles[6]}/>
                       </div>
-                      <ParticleImage {...this.props.data.fields[7]}/>
+                      <ParticleImage {...this.props.data.field_particles[7]}/>
                   </Col>
               </Row>
               <Row>
                   <Col md={6} className='centered-picture'>
-                      <ParticleImage {...this.props.data.fields[7]}/>
+                      <ParticleImage {...this.props.data.field_particles[7]}/>
                   </Col>
                   <Col md={6} className='text-with-borderbox responsive-text-3'>
-                      <ParticleH2 {...this.props.data.fields[5]}/>
-                      <ParticleText {...this.props.data.fields[9]}/>
+                      <ParticleH2 {...this.props.data.field_particles[5]}/>
+                      <ParticleText {...this.props.data.field_particles[9]}/>
                   </Col>
               </Row>
         </Container>

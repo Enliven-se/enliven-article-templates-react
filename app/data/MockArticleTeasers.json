@@ -1,11 +1,11 @@
 {
-    "fields": {
+    "field_particles": {
         0: {
             "ParticleImage": {
                 "type": "image",
                 "url": "/images/mock/teaser-1.png"
             },
-            "ArticleCategory": {
+            "field_main_topics": {
                 "name": "Food & Cooking",
                 "classes": "text-color-gold text-uppercase"
             },
@@ -41,7 +41,7 @@
                 "type": "image",
                 "url": "/images/mock/teaser-2.png"
             },
-            "ArticleCategory": {
+            "field_main_topics": {
                 "name": "Food & Cooking",
                 "classes": "text-color-gold text-uppercase"
             },

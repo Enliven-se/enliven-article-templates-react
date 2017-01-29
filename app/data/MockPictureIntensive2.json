@@ -1,11 +1,11 @@
 {
     "color_variant": "gold",
-    "ArticleCategory": {
+    "field_main_topics": {
         "name": "Interior Design",
         "url": "#",
         "classes": "text-color-gold text-uppercase"
     },
-    "ArticleTitle": {
+    "field_headline": {
         "value": "Interior Design, Minimalism & Trends",
         "classes": "text-uppercase text-color-gold"
     },
@@ -28,7 +28,7 @@
             }
         ]
     },
-    "fields": {
+    "field_particles": {
         0: {
             "type": "text",
             "value": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects."

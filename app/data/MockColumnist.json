@@ -1,20 +1,20 @@
 {
   "color_variant": "gold",
-  "ArticleCategory": {
+  "field_main_topics": {
     "name": "Women's Health",
     "url": "#",
     "classes": "text-color-gold text-uppercase"
   },
-  "ArticleTitle": {
+  "field_headline": {
     "value": "The Most Over&shy;looked Tips About fashion",
     "classes": "text-uppercase"
   },
-  "DatePublished": {
+  "created": {
     "type": "text",
-    "value": "18th November 2016"
+    "value": "1478258637"
   },
 
-  "fields": {
+  "field_particles": {
     0: {
       "type": "image",
       "url": "/images/mock/columnist.jpg"

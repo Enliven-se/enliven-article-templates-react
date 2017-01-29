@@ -17,15 +17,15 @@ class LayoutShort extends React.Component {
         return (
             <div className='layout layout-short'>
 
-                <Container fluid classes='panel-1' backgroundImage={this.props.data.fields[0]}>
+                <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles[0]}>
                     <Container>
                         <Row>
                             <Col sm={6} className='article-meta'>
                                 <ArticleHeader
-                                  ArticleCategory={this.props.data.ArticleCategory}
-                                  ArticleTitle={this.props.data.ArticleTitle}
-                                  />
-                                <ArticleIntro {...this.props.data.fields[1]} bordered/>
+                                    ArticleCategory={this.props.data.field_main_topics}
+                                    ArticleTitle={this.props.data.field_headline}
+                                />
+                                <ArticleIntro {...this.props.data.field_particles[1]} bordered/>
                             </Col>
                         </Row>
                     </Container>
@@ -36,19 +36,19 @@ class LayoutShort extends React.Component {
                             <ContributorList {...this.props.data.ContributorList} inline separator=', '/>
                         </Col>
                         <Col md={4}>
-                            <DatePublished {...this.props.data.DatePublished}/>
+                            <DatePublished {...this.props.data.created} date_format='MMMM D, YYYY'/>
                         </Col>
                     </Row>
                 </Container>
                 <Container classes='article'>
                     <Row>
                         <Col sm={6} className='col-left'>
-                            <ParticleText {...this.props.data.fields[2]}/>
-                            <ParticlePullquote {...this.props.data.fields[3]}/>
-                            <ParticleText {...this.props.data.fields[4]}/>
+                            <ParticleText {...this.props.data.field_particles[2]}/>
+                            <ParticlePullquote {...this.props.data.field_particles[3]}/>
+                            <ParticleText {...this.props.data.field_particles[4]}/>
                         </Col>
                         <Col sm={6} className='col-right'>
-                            <ParticleText {...this.props.data.fields[5]}/>
+                            <ParticleText {...this.props.data.field_particles[5]}/>
                         </Col>
                     </Row>
                 </Container>

@@ -1,17 +1,17 @@
 {
     "color_variant": "gold",
-    "ArticleCategory": {
+    "field_main_topics": {
         "name": "Fashion & Womens Lifestyle",
         "url": "#",
         "classes": "text-color-gold text-uppercase"
     },
-    "ArticleTitle": {
+    "field_headline": {
         "value": "Lookbook Autumn <span class=\"text-color-gray\">\/\/<\/span> Winter 2016",
         "classes": "text-color-gold text-uppercase"
     },
-    "DatePublished": {
+    "created": {
         "type": "text",
-        "value": "18 hours ago"
+        "value": "1478258637"
     },
     "Charity": {
         "icon": "/images/mock/charity.png",
@@ -43,7 +43,7 @@
             }
         ]
     },
-    "fields": [
+    "field_particles": [
         {
             "value": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.",
             "classes": "border-color-gold"

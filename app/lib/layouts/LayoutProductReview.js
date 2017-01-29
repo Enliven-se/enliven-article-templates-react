@@ -21,14 +21,14 @@ class ProductReview extends React.Component {
           <Container fluid classes='panel-1'>
               <Row>
                   <Col md={9} className='header-image'>
-                      <Container fluid classes='panel-2' backgroundImage={this.props.data.fields[0]}>
+                      <Container fluid classes='panel-2' backgroundImage={this.props.data.field_particles[0]}>
                       </Container>
                   </Col>
                   <Col md={3}>
-                      <ArticleCategory name={this.props.data.ArticleCategory.name} url={this.props.data.ArticleCategory.url}/>
-                      <ArticleTitle {...this.props.data.ArticleTitle} />
+                      <ArticleCategory name={this.props.data.field_main_topics.name} url={this.props.data.field_main_topics.url}/>
+                      <ArticleTitle {...this.props.data.field_headline} />
                       <HR/>
-                      <ParticleText {...this.props.data.fields[1]} />
+                      <ParticleText {...this.props.data.field_particles[1]} />
                       <HR/>
                       <ContributorList {...this.props.data.ContributorList} inline separator=', '/>
                   </Col>
@@ -36,26 +36,26 @@ class ProductReview extends React.Component {
               </Row>
               <Row className="text-row">
                   <Col md={6} className='col-right first-text'>
-                      <ParticleText {...this.props.data.fields[2]} />
+                      <ParticleText {...this.props.data.field_particles[2]} />
                   </Col>
                   <Col md={6} className='col-left'>
-                      <ParticleText {...this.props.data.fields[3]} />
+                      <ParticleText {...this.props.data.field_particles[3]} />
                   </Col>
               </Row>
               <Row>
                   <Col md={6}className='col-right'>
-                      <ParticleImage {...this.props.data.fields[4]}/>
+                      <ParticleImage {...this.props.data.field_particles[4]}/>
                   </Col>
                   <Col md={6}className='col-left'>
-                      <ParticleImage {...this.props.data.fields[5]}/>
+                      <ParticleImage {...this.props.data.field_particles[5]}/>
                   </Col>
               </Row>
               <Row className="text-row last-text">
                   <Col md={6} className='col-right'>
-                      <ParticleText {...this.props.data.fields[6]} />
+                      <ParticleText {...this.props.data.field_particles[6]} />
                   </Col>
                   <Col md={6} className='col-left'>
-                      <ParticleText {...this.props.data.fields[7]} />
+                      <ParticleText {...this.props.data.field_particles[7]} />
                   </Col>
               </Row>
           </Container>

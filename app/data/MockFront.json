@@ -1,15 +1,15 @@
 {
     "color_variant": "gold",
     "is_front": true,
-    "ArticleCategory": {
+    "field_main_topics": {
         "name": "WOMEN’S HEALTH",
         "url": "#",
         "classes": "text-color-white text-uppercase"
     },
 
-    "DatePublished": {
+    "created": {
         "type": "text",
-        "value": "29.10.2016"
+        "value": "1478258637"
     },
     "ContributorList": {
         "data": [
@@ -26,7 +26,7 @@
             }
         ]
     },
-    "fields": {
+    "field_particles": {
         0: {
             "type": "image",
             "url": "//qa.enliven.co/images/mock/hp-1.jpg"

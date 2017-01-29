@@ -1,7 +1,7 @@
 {
     "color_variant": "white",
 
-    "ArticleCategory": {
+    "field_main_topics": {
         "name": "Cooking",
         "url": "#",
         "classes": "text-color-white text-uppercase"
@@ -12,7 +12,7 @@
             "content": "CHARITABLE CONTRIBUTION PROCEEDS TO CANCER RESEARCH"
         }
     },
-    "ArticleTitle": {
+    "field_headline": {
         "value": "Critiquing the food we eat and love",
         "classes": "text-color-gold text-uppercase"
     },
@@ -35,7 +35,7 @@
             }
         ]
     },
-    "fields": {
+    "field_particles": {
         0: {
             "type": "text",
             "value": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began."

@@ -18,36 +18,36 @@ class LayoutLookbook extends React.Component {
                 <Container fluid>
                     <Row className='big-row'>
                         <Col md={6}>
-                            <ArticleCategory name={this.props.data.ArticleCategory.name} url={this.props.data.ArticleCategory.url}/>
+                            <ArticleCategory name={this.props.data.field_main_topics.name} url={this.props.data.field_main_topics.url}/>
                             <Row>
                                 <Col md={10} mdOffset={2}>
                                     <ArticleHeader
-                                        ArticleTitle={this.props.data.ArticleTitle}
+                                        ArticleTitle={this.props.data.field_headline}
                                       />
-                                    <ArticleIntro {...this.props.data.fields[0]} bordered/>
+                                    <ArticleIntro {...this.props.data.field_particles[0]} bordered/>
                                     <ContributorList {...this.props.data.ContributorList} separator=', '/>
-                                    <DatePublished {...this.props.data.DatePublished}/>
+                                    <DatePublished {...this.props.data.created} date_format='MMMM D, YYYY'/>
                                 </Col>
                             </Row>
                         </Col>
                         <Col md={6}>
-                            <ParticleImage {...this.props.data.fields[1]}/>
+                            <ParticleImage {...this.props.data.field_particles[1]}/>
                         </Col>
                     </Row>
                     <Row className='big-row'>
                         <Col md={6}>
-                            <ParticleImage {...this.props.data.fields[2]}/>
+                            <ParticleImage {...this.props.data.field_particles[2]}/>
                         </Col>
                         <Col md={6} className='img-small'>
-                            <ParticleImage {...this.props.data.fields[3]}/>
+                            <ParticleImage {...this.props.data.field_particles[3]}/>
                         </Col>
                     </Row>
                     <Row className='big-row'>
                         <Col md={6} className='img-small'>
-                            <ParticleImage {...this.props.data.fields[4]}/>
+                            <ParticleImage {...this.props.data.field_particles[4]}/>
                         </Col>
                         <Col md={6}>
-                            <ParticleImage {...this.props.data.fields[5]}/>
+                            <ParticleImage {...this.props.data.field_particles[5]}/>
                         </Col>
                     </Row>
                 </Container>

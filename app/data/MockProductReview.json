@@ -1,10 +1,10 @@
 {
-    "ArticleCategory": {
+    "field_main_topics": {
         "name": "Fashion",
         "url": "#",
         "classes": "text-color-gray text-uppercase"
     },
-    "ArticleTitle": {
+    "field_headline": {
         "value": "The Different Sides of Charlize",
         "classes": "text-color-gold text-uppercase"
     },
@@ -27,7 +27,7 @@
             }
         ]
     },
-    "fields": {
+    "field_particles": {
         0: {
             "type": "image",
             "url": "/images/mock/product-1.jpg"
