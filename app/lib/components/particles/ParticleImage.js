@@ -15,7 +15,7 @@ class ParticleImage extends React.Component {
 
     return (
       <div className={classes}>
-          <Image src={this.props.content.url} responsive />
+          <Image src={this.props.url} responsive />
           <PhotoCredits {...this.props} classes={classes_credits} />
       </div>
     )

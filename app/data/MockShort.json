@@ -35,9 +35,7 @@
     "fields": [
         {
             "type": "image",
-            "content": {
-                "url": "/images/mock/Charlize-Theron--Capitol-Grand-Photoshoot-2015--05.jpg"
-            }
+            "url": "/images/mock/Charlize-Theron--Capitol-Grand-Photoshoot-2015--05.jpg"
         }, {
             "type": "text",
             "value": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.",

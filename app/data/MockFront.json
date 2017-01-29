@@ -29,9 +29,7 @@
     "fields": {
         0: {
             "type": "image",
-            "content": {
-                "url": "//qa.enliven.co/images/mock/hp-1.jpg"
-            }
+            "url": "//qa.enliven.co/images/mock/hp-1.jpg"
         },
         1: {
             "type": "text",
@@ -43,9 +41,7 @@
         },
         3: {
             "type": "image",
-            "content": {
-                "url": "//qa.enliven.co/images/mock/hp-2.jpg"
-            }
+            "url": "//qa.enliven.co/images/mock/hp-2.jpg"
         },
         4: {
             "type": "text",
@@ -53,21 +49,15 @@
         },
         5: {
             "type": "image",
-            "content": {
-                "url": "//qa.enliven.co/images/mock/hp-3.jpg"
-            }
+            "url": "//qa.enliven.co/images/mock/hp-3.jpg"
         },
         6: {
             "type": "image",
-            "content": {
-                "url": "//qa.enliven.co/images/mock/hp-4.jpg"
-            }
+            "url": "//qa.enliven.co/images/mock/hp-4.jpg"
         },
         7: {
             "type": "image",
-            "content": {
-                "url": "//qa.enliven.co/images/mock/hp-7.jpg"
-            }
+            "url": "//qa.enliven.co/images/mock/hp-7.jpg"
         },
         8: {
             "type": "text",
@@ -80,9 +70,7 @@
         },
         10: {
             "type": "image",
-            "content": {
-                "url": "//qa.enliven.co/images/mock/dummy-contributor.png"
-            }
+            "url": "//qa.enliven.co/images/mock/dummy-contributor.png"
         },
         11: {
             "type": "text",
@@ -95,15 +83,11 @@
         },
         13: {
             "type": "image",
-            "content": {
-                "url": "//qa.enliven.co/images/mock/hp-5.jpg"
-            }
+            "url": "//qa.enliven.co/images/mock/hp-5.jpg"
         },
         14: {
             "type": "image",
-            "content": {
-                "url": "//qa.enliven.co/images/mock/hp-6.jpg"
-            }
+            "url": "//qa.enliven.co/images/mock/hp-6.jpg"
         },
         15: {
             "type": "text",

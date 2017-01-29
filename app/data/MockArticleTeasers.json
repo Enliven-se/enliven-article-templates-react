@@ -3,9 +3,7 @@
         0: {
             "ParticleImage": {
                 "type": "image",
-                "content": {
-                    "url": "/images/mock/teaser-1.png"
-                }
+                "url": "/images/mock/teaser-1.png"
             },
             "ArticleCategory": {
                 "name": "Food & Cooking",
@@ -41,9 +39,7 @@
         3: {
             "ParticleImage": {
                 "type": "image",
-                "content": {
-                    "url": "/images/mock/teaser-2.png"
-                }
+                "url": "/images/mock/teaser-2.png"
             },
             "ArticleCategory": {
                 "name": "Food & Cooking",

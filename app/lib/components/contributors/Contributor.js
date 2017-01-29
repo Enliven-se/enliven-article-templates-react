@@ -29,7 +29,7 @@ class Contributor extends React.Component {
 
         const ifContributorLink = this.props.ContributorLink
             ? (
-                <ContributorLink data={this.props.ContributorLink}>
+                <ContributorLink {...this.props.ContributorLink}>
                     <ContributorCredit data={this.props.ContributorCredit}/>
                 </ContributorLink>
             )
@@ -39,7 +39,7 @@ class Contributor extends React.Component {
             ? (
                 <span className='contributor'>
                     <Separator separatorType=' /'/>
-                    <ContributorLink data={this.props.ContributorAssociationLink}>
+                    <ContributorLink {...this.props.ContributorAssociationLink}>
                         <ContributorAssociation data={this.props.ContributorAssociation}/>
                     </ContributorLink>
                 </span>

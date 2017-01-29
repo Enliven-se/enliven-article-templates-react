@@ -18,9 +18,9 @@ class LayoutFeature extends React.Component {
               <Row>
                   <Col sm={6} smOffset={6}>
                       <ArticleHeader
-                        ArticleCategory={this.props.data.ArticleCategory}
-                        ArticleTitle={this.props.data.ArticleTitle}
-                        />
+                          ArticleCategory={this.props.data.ArticleCategory}
+                          ArticleTitle={this.props.data.ArticleTitle}
+                      />
                   </Col>
               </Row>
           </Container>

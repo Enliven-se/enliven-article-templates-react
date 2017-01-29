@@ -12,7 +12,7 @@ class Container extends React.Component {
     if (this.props.backgroundImage) {
       classes += ' has-hero'
 
-      elStyle.backgroundImage = 'url(' + this.props.backgroundImage.content.url + ')'
+      elStyle.backgroundImage = 'url(' + this.props.backgroundImage.url + ')'
     }
 
     return <Grid fluid={this.props.fluid} style={elStyle} className={classes}>{this.props.children}</Grid>

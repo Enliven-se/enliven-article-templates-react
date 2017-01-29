@@ -30,9 +30,7 @@
     "fields": {
         0: {
             "type": "image",
-            "content": {
-                "url": "/images/mock/product-1.jpg"
-            }
+            "url": "/images/mock/product-1.jpg"
         },
         1: {
             "type": "text",
@@ -48,15 +46,11 @@
         },
         4: {
             "type": "image",
-            "content": {
-                "url": "/images/mock/product-2.jpg"
-            }
+            "url": "/images/mock/product-2.jpg"
         },
         5: {
             "type": "image",
-            "content": {
-                "url": "/images/mock/product-3.jpg"
-            }
+            "url": "/images/mock/product-3.jpg"
         },
         6: {
             "type": "text",

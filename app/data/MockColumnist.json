@@ -17,9 +17,7 @@
   "fields": {
     0: {
       "type": "image",
-      "content": {
-        "url": "/images/mock/columnist.jpg"
-      }
+      "url": "/images/mock/columnist.jpg"
     },
     1: {
       "type": "text",
