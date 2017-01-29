@@ -27,7 +27,7 @@ class LayoutFeature extends React.Component {
           <Container fluid>
               <Row>
                   <Col sm={6}>
-                      <ContributorList {...this.props.data.ContributorList}/>
+                      <ContributorList data={this.props.data.field_contributors}/>
                   </Col>
                   <Col sm={6} className='col-right'>
                       <ParticleText {...this.props.data.field_particles[1]}/>

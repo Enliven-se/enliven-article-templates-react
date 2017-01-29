@@ -23,9 +23,9 @@ class LayoutLookbook extends React.Component {
                                 <Col md={10} mdOffset={2}>
                                     <ArticleHeader
                                         ArticleTitle={this.props.data.field_headline}
-                                      />
+                                    />
                                     <ArticleIntro {...this.props.data.field_particles[0]} bordered/>
-                                    <ContributorList {...this.props.data.ContributorList} separator=', '/>
+                                    <ContributorList data={this.props.data.field_contributors} separator=', '/>
                                     <DatePublished {...this.props.data.created} date_format='MMMM D, YYYY'/>
                                 </Col>
                             </Row>

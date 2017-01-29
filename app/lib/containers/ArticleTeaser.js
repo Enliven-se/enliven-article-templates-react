@@ -32,13 +32,13 @@ class ArticleTeaser extends React.Component {
                         ? <ArticleCategory name={this.props.ArticleCategory.name} url={this.props.ArticleCategory.url}/>
                     : ''}
                     {this.props.ParticleH2
-                        ? <ParticleH2 {...this.props.ParticleH2}/>
+                        ? <ParticleH2 value={this.props.ParticleH2.value}/>
                     : ''}
                     {this.props.ContributorList
-                        ? <ContributorList {...this.props.ContributorList}/>
+                        ? <ContributorList data={this.props.ContributorList}/>
                     : ''}
                     {this.props.ParticleText
-                        ? <ParticleText {...this.props.ParticleText}/>
+                        ? <ParticleText value={this.props.ParticleText.value}/>
                     : ''}
                     {this.props.Link
                         ? <Link {...this.props.Link}/>

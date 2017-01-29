@@ -7,25 +7,18 @@
         "classes": "text-color-white text-uppercase"
     },
 
-    "created": {
-        "type": "text",
-        "value": "1478258637"
-    },
-    "ContributorList": {
-        "data": [
-            {
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }, {
-                "ContributorCredit": "Tod Vanderwolve",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/people/tod-vanderwolve"
-                }
-            }
-        ]
-    },
+    "created": 1478258637,
+    "field_contributors": [{
+        "ContributorCredit": "Photographer & Contributor",
+        "ContributorLink": {
+            "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+        }
+    }, {
+        "ContributorCredit": "Tod Vanderwolve",
+        "ContributorLink": {
+            "url": "//cms.enliven.co/en/people/tod-vanderwolve"
+        }
+    }],
     "field_particles": {
         0: {
             "type": "image",

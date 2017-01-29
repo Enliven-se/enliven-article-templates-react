@@ -33,7 +33,7 @@ class LayoutShort extends React.Component {
                 <Container classes='article-byline'>
                     <Row>
                         <Col md={8}>
-                            <ContributorList {...this.props.data.ContributorList} inline separator=', '/>
+                            <ContributorList data={this.props.data.field_contributors} inline separator=', '/>
                         </Col>
                         <Col md={4}>
                             <DatePublished {...this.props.data.created} date_format='MMMM D, YYYY'/>

@@ -2,7 +2,7 @@
     "field_particles": {
         0: {
             "ParticleImage": {
-                "type": "image",
+                "bundle": "media",
                 "url": "/images/mock/teaser-1.png"
             },
             "field_main_topics": {
@@ -10,35 +10,31 @@
                 "classes": "text-color-gold text-uppercase"
             },
             "ParticleH2": {
-                "type": "text",
+                "bundle": "h2",
                 "value": "Winter Recipes - Salted Carmel Candies + Kale Chips + a Sweet Potato Salad"
             },
-            "ContributorList": {
-                "data": [
-                    {
-                        "ContributorCredit": "Photographer & Contributor",
-                        "ContributorLink": {
-                            "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                        }
-                    }
-                ]
-            }
+            "field_contributors": [{
+                "ContributorCredit": "Photographer & Contributor",
+                "ContributorLink": {
+                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                }
+            }]
         },
         1: {
             "ParticleH2": {
-                "type": "text",
+                "bundle": "h2",
                 "value": "Chocolate Swirl Meringes with Nutella Whipped Cream"
             }
         },
         2: {
             "ParticleH2": {
-                "type": "text",
+                "bundle": "h2",
                 "value": "Winter Recipes - Salted Carmel Candies + Kale Chips + a Sweet Potato Salad"
             }
         },
         3: {
             "ParticleImage": {
-                "type": "image",
+                "bundle": "media",
                 "url": "/images/mock/teaser-2.png"
             },
             "field_main_topics": {
@@ -46,21 +42,21 @@
                 "classes": "text-color-gold text-uppercase"
             },
             "ParticleH2": {
-                "type": "text",
+                "bundle": "h2",
                 "value": "Chocolate Swirl Meringes with Nutella Whipped Cream"
             },
             "ParticleText": {
-                "type": "text",
+                "bundle": "text",
                 "value": "Created by a group of friends who preserve 55 acres of hidden forest in. 4 Person Portion. "
             }
         },
         4: {
             "ParticleH2": {
-                "type": "text",
+                "bundle": "h2",
                 "value": "Launch your adrenaline into overdrive with these gut-wrenching workouts."
             },
             "ParticleText": {
-                "type": "text",
+                "bundle": "text",
                 "value": "Winter Recipes - Salted Carmel Candies + Kale Chips + a Sweet Potato Salad"
             }
         }
