@@ -12,11 +12,6 @@
         }
     }
 }
-
-.big-row {
-    display  : flex;
-    flex-wrap: wrap;
-}
 @media screen and (min-width: $screen-sm) {
     .text-bottom-left,
     .text-bottom-right,
@@ -27,7 +22,7 @@
 
     .text-top-left {
         left: 30px;
-        top : 0;
+        top : 20px;
     }
 
     .text-bottom-left {

@@ -139,10 +139,13 @@
             margin-bottom: $vertical-padding;
         }
 
-        h2:last-child {
+        .meta-links {
             margin: 38px 10px 0 32px;
             width : auto;
-            color : $blackish;
+
+            h2 {
+                color: $blackish;
+            }
         }
 
         a {
@@ -258,6 +261,15 @@
             @media screen and (min-width: $screen-md) {
                 line-height: 24px;
                 font-size  : 14px;
+            }
+        }
+
+        .contributor-list {
+            margin-top: 23px;
+        }
+        @media screen and (max-width: $screen-md) {
+            .particle-text {
+                display: none;
             }
         }
         @media screen and (max-width: $screen-sm) {
