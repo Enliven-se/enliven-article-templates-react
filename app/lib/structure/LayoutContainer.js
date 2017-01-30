@@ -11,7 +11,7 @@ class LayoutContainer extends React.Component {
     return (
       <div className='page'>
           <NavContainer {...this.props} TopicNav={this.props.is_front} />
-          { this.props.children}
+          { this.props.children }
           <FooterContainer {...this.props}/>
       </div>
     )
