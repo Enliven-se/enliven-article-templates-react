@@ -34,11 +34,11 @@ class ArticleTeaser extends React.Component {
                     {this.props.ParticleH2
                         ? <ParticleH2 value={this.props.ParticleH2.value}/>
                     : ''}
-                    {this.props.ContributorList
-                        ? <ContributorList data={this.props.ContributorList}/>
-                    : ''}
                     {this.props.ParticleText
                         ? <ParticleText value={this.props.ParticleText.value}/>
+                    : ''}
+                    {this.props.ContributorList
+                        ? <ContributorList data={this.props.ContributorList}/>
                     : ''}
                     {this.props.Link
                         ? <Link {...this.props.Link}/>

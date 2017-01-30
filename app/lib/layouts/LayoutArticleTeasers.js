@@ -11,23 +11,23 @@ class LayoutArticleTeasers extends React.Component {
                 <Container fluid classes='panel-1'>
                     <Row>
                         <Col md={6} className='picture-left'>
-                            <ArticleTeaser {...this.props.data.field_particles[0]}/>
+                            <ArticleTeaser ParticleImage={this.props.data.field_particles[0].ParticleImage} ArticleCategory={this.props.data.field_particles[0].field_main_topics} ContributorList={this.props.data.field_particles[0].field_contributors} ParticleH2={this.props.data.field_particles[0].ParticleH2} ParticleText={this.props.data.field_particles[0].ParticleText}/>
                         </Col>
 
                         <Col md={6} className='large-h'>
-                            <ArticleTeaser {...this.props.data.field_particles[1]}/>
+                            <ArticleTeaser ParticleImage={this.props.data.field_particles[1].ParticleImage} ArticleCategory={this.props.data.field_particles[1].field_main_topics} ContributorList={this.props.data.field_particles[1].field_contributors} ParticleH2={this.props.data.field_particles[1].ParticleH2} ParticleText={this.props.data.field_particles[1].ParticleText}/>
                         </Col>
 
                         <Col md={6} className='small-h'>
-                            <ArticleTeaser {...this.props.data.field_particles[2]}/>
+                            <ArticleTeaser ParticleImage={this.props.data.field_particles[2].ParticleImage} ArticleCategory={this.props.data.field_particles[2].field_main_topics} ContributorList={this.props.data.field_particles[2].field_contributors} ParticleH2={this.props.data.field_particles[2].ParticleH2} ParticleText={this.props.data.field_particles[2].ParticleText}/>
                         </Col>
 
                         <Col md={8} className='big-picture-left'>
-                            <ArticleTeaser {...this.props.data.field_particles[3]}/>
+                            <ArticleTeaser ParticleImage={this.props.data.field_particles[3].ParticleImage} ArticleCategory={this.props.data.field_particles[3].field_main_topics} ContributorList={this.props.data.field_particles[3].field_contributors} ParticleH2={this.props.data.field_particles[3].ParticleH2} ParticleText={this.props.data.field_particles[3].ParticleText}/>
                         </Col>
 
                         <Col md={6} className='large-h-with-intro'>
-                            <ArticleTeaser {...this.props.data.field_particles[4]}/>
+                            <ArticleTeaser ParticleImage={this.props.data.field_particles[4].ParticleImage} ArticleCategory={this.props.data.field_particles[4].field_main_topics} ContributorList={this.props.data.field_particles[4].field_contributors} ParticleH2={this.props.data.field_particles[4].ParticleH2} ParticleText={this.props.data.field_particles[4].ParticleText}/>
                         </Col>
                     </Row>
                 </Container>

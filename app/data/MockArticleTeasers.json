@@ -24,13 +24,25 @@
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Chocolate Swirl Meringes with Nutella Whipped Cream"
-            }
+            },
+            "field_contributors": [{
+                "ContributorCredit": "Photographer & Contributor",
+                "ContributorLink": {
+                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                }
+            }]
         },
         2: {
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Winter Recipes - Salted Carmel Candies + Kale Chips + a Sweet Potato Salad"
-            }
+            },
+            "field_contributors": [{
+                "ContributorCredit": "Photographer & Contributor",
+                "ContributorLink": {
+                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                }
+            }]
         },
         3: {
             "ParticleImage": {
@@ -48,7 +60,13 @@
             "ParticleText": {
                 "bundle": "text",
                 "value": "Created by a group of friends who preserve 55 acres of hidden forest in. 4 Person Portion. "
-            }
+            },
+            "field_contributors": [{
+                "ContributorCredit": "Photographer & Contributor",
+                "ContributorLink": {
+                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                }
+            }]
         },
         4: {
             "ParticleH2": {
