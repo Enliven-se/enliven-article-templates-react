@@ -24,7 +24,7 @@ class ProductReview extends React.Component {
                       <Container fluid classes='panel-2' backgroundImage={this.props.data.field_particles[0]}></Container>
                   </Col>
                   <Col md={3}>
-                      <ArticleCategory name={this.props.data.field_main_topics.name} url={this.props.data.field_main_topics.url}/>
+                      <ArticleCategory name={this.props.data.field_main_topics[0].name} url={this.props.data.field_main_topics[0].url}/>
                       <ArticleTitle {...this.props.data.field_headline}/>
                       <HR/>
                       <ParticleText {...this.props.data.field_particles[1]}/>

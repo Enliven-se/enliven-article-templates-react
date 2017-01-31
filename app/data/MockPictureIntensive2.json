@@ -1,10 +1,10 @@
 {
     "color_variant": "gold",
-    "field_main_topics": {
+    "field_main_topics": [{
         "name": "Interior Design",
         "url": "#",
         "classes": "text-color-gold text-uppercase"
-    },
+    }],
     "field_headline": {
         "value": "Interior Design, Minimalism & Trends",
         "classes": "text-uppercase text-color-gold"

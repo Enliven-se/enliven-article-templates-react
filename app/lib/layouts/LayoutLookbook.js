@@ -18,7 +18,7 @@ class LayoutLookbook extends React.Component {
           <Container fluid>
               <Row className='big-row row-flex'>
                   <Col md={6}>
-                      <ArticleCategory name={this.props.data.field_main_topics.name} url={this.props.data.field_main_topics.url}/>
+                      <ArticleCategory name={this.props.data.field_main_topics[0].name} url={this.props.data.field_main_topics[0].url}/>
                       <Row>
                           <Col md={10} mdOffset={2}>
                               <ArticleHeader ArticleTitle={this.props.data.field_headline}/>

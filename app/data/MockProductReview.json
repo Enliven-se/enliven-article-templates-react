@@ -1,9 +1,9 @@
 {
-    "field_main_topics": {
+    "field_main_topics": [{
         "name": "Fashion",
         "url": "#",
         "classes": "text-color-gray text-uppercase"
-    },
+    }],
     "field_headline": {
         "value": "The Different Sides of Charlize",
         "classes": "text-color-gold text-uppercase"

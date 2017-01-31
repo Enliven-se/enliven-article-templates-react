@@ -1,10 +1,10 @@
 {
     "color_variant": "gold",
-    "field_main_topics": {
+    "field_main_topics": [{
         "name": "Women's Health",
         "url": "#",
         "classes": "text-color-gold text-uppercase"
-    },
+    }],
     "field_headline": {
         "value": "The Most Over&shy;looked Tips About fashion",
         "classes": "text-uppercase"

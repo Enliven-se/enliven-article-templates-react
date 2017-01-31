@@ -17,7 +17,7 @@ class LayoutFeature extends React.Component {
           <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles[0]}>
               <Row>
                   <Col sm={6} smOffset={6}>
-                      <ArticleHeader ArticleCategory={this.props.data.field_main_topics} ArticleTitle={this.props.data.field_headline}/>
+                      <ArticleHeader ArticleCategory={this.props.data.field_main_topics[0]} ArticleTitle={this.props.data.field_headline}/>
                   </Col>
               </Row>
           </Container>
@@ -27,7 +27,7 @@ class LayoutFeature extends React.Component {
                       <ContributorList data={this.props.data.field_contributors}/>
                   </Col>
                   <Col sm={6} className='col-right'>
-                      <ParticleText value={this.props.data.field_particles[1].value} classes={this.props.data.field_particles[1].classes}/>
+                      <ParticleText {...this.props.data.field_particles[1]}/>
                   </Col>
               </Row>
           </Container>
@@ -37,10 +37,10 @@ class LayoutFeature extends React.Component {
                       <ParticleImage {...this.props.data.field_particles[2]}/>
                   </Col>
                   <Col sm={6} className='col-left'>
-                      <ParticleText value={this.props.data.field_particles[3].value} classes={this.props.data.field_particles[3].classes}/>
+                      <ParticleText {...this.props.data.field_particles[3]}/>
                   </Col>
                   <Col sm={6} className='col-right'>
-                      <ParticleText value={this.props.data.field_particles[4].value} classes={this.props.data.field_particles[4].classes}/>
+                      <ParticleText {...this.props.data.field_particles[4]}/>
                   </Col>
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.field_particles[5]}/>
@@ -49,12 +49,12 @@ class LayoutFeature extends React.Component {
                       <ParticleImage {...this.props.data.field_particles[6]}/>
                   </Col>
                   <Col sm={6} className='col-left'>
-                      <ParticleText value={this.props.data.field_particles[7].value} classes={this.props.data.field_particles[7].classes}/>
+                      <ParticleText {...this.props.data.field_particles[7]}/>
                       <HR/>
-                      <ParticleText value={this.props.data.field_particles[8].value} classes={this.props.data.field_particles[8].classes}/>
+                      <ParticleText {...this.props.data.field_particles[8]}/>
                   </Col>
                   <Col sm={6} className='col-right'>
-                      <ParticleText value={this.props.data.field_particles[9].value} classes={this.props.data.field_particles[9].classes}/>
+                      <ParticleText {...this.props.data.field_particles[9]}/>
                   </Col>
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.field_particles[10]}/>
@@ -63,7 +63,7 @@ class LayoutFeature extends React.Component {
                       <ParticleImage {...this.props.data.field_particles[11]}/>
                   </Col>
                   <Col sm={6} className='col-right'>
-                      <ParticleText value={this.props.data.field_particles[12].value} classes={this.props.data.field_particles[12].classes}/>
+                      <ParticleText {...this.props.data.field_particles[12]}/>
                   </Col>
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.field_particles[13]}/>
@@ -72,24 +72,24 @@ class LayoutFeature extends React.Component {
                       <ParticleImage {...this.props.data.field_particles[14]}/>
                   </Col>
                   <Col sm={6} smOffset={6} className='col-right'>
-                      <ParticleText value={this.props.data.field_particles[15].value} classes={this.props.data.field_particles[15].classes}/>
+                      <ParticleText {...this.props.data.field_particles[15]}/>
                   </Col>
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.field_particles[16]}/>
                   </Col>
                   <Col sm={6} className='col-left'>
-                      <ParticleText value={this.props.data.field_particles[17].value} classes={this.props.data.field_particles[17].classes}/>
+                      <ParticleText {...this.props.data.field_particles[17]}/>
                       <HR/>
-                      <ParticleText value={this.props.data.field_particles[18].value} classes={this.props.data.field_particles[18].classes}/>
+                      <ParticleText {...this.props.data.field_particles[18]}/>
                   </Col>
                   <Col sm={6} className='col-right'>
-                      <ParticleText value={this.props.data.field_particles[19].value} classes={this.props.data.field_particles[19].classes}/>
+                      <ParticleText {...this.props.data.field_particles[19]}/>
                   </Col>
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.field_particles[20]}/>
                   </Col>
                   <Col sm={6} className='col-left'>
-                      <ParticleText value={this.props.data.field_particles[21].value} classes={this.props.data.field_particles[21].classes}/>
+                      <ParticleText {...this.props.data.field_particles[21]}/>
                   </Col>
                   <Col sm={6}>
                       <ParticleImage {...this.props.data.field_particles[22]}/>

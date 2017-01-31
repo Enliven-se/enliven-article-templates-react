@@ -20,7 +20,7 @@ class LayoutColumnist extends React.Component {
           <Container fluid classes='panel-1'>
               <Row className='article-header-row'>
                   <Col md={6} className='left-panel'>
-                      <ArticleHeader ArticleCategory={this.props.data.field_main_topics} ArticleTitle={this.props.data.field_headline}/>
+                      <ArticleHeader ArticleCategory={this.props.data.field_main_topics[0]} ArticleTitle={this.props.data.field_headline}/>
                       <DatePublished value={this.props.data.created} date_format='Do MMMM YYYY'/>
                   </Col>
                   <Col md={6} className='right-panel'>
@@ -32,7 +32,7 @@ class LayoutColumnist extends React.Component {
                               <Link text={this.props.data.field_particles[6].value} url={this.props.data.field_particles[6].url} classes={this.props.data.field_particles[6].classes}/>
                           </div>
                           <Link text={this.props.data.field_particles[5].value} url={this.props.data.field_particles[5].url} classes={this.props.data.field_particles[5].classes}/>
-                          <ParticleText value={this.props.data.field_particles[1].value} classes={this.props.data.field_particles[1].classes}/>
+                          <ParticleText {...this.props.data.field_particles[1]}/>
                           <Link text={this.props.data.field_particles[7].value} url={this.props.data.field_particles[7].url} classes={this.props.data.field_particles[7].classes}/>
                       </Col>
                   </Col>
@@ -45,10 +45,10 @@ class LayoutColumnist extends React.Component {
               <Row className='body-text'>
                   <Col sm={12}>
                       <div className='first-text'>
-                          <ParticleText value={this.props.data.field_particles[2].value} classes={this.props.data.field_particles[2].classes}/>
+                          <ParticleText {...this.props.data.field_particles[2]}/>
                       </div>
                       <ParticlePullquote {...this.props.data.field_particles[3]}/>
-                            <ParticleText value={this.props.data.field_particles[4].value} classes={this.props.data.field_particles[4].classes}/>
+                            <ParticleText {...this.props.data.field_particles[4]}/>
                         </Col>
                     </Row>
                 </Container>

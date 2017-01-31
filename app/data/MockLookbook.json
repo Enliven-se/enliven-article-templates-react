@@ -1,10 +1,10 @@
 {
     "color_variant": "gold",
-    "field_main_topics": {
+    "field_main_topics": [{
         "name": "Fashion & Womens Lifestyle",
         "url": "#",
         "classes": "text-color-gold text-uppercase"
-    },
+    }],
     "field_headline": {
         "value": "Lookbook Autumn <span class=\"text-color-gray\">\/\/<\/span> Winter 2016",
         "classes": "text-color-gold text-uppercase"

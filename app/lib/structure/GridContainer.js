@@ -57,8 +57,9 @@ class GridContainer extends React.Component {
 
     componentDidMount() {
         if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined') {
+            const node_url = '/' + Drupal.settings.currentPath + '.json?load-entity-refs'
             jQuery.ajax({
-                url: '/' + Drupal.settings.currentPath + '.json',
+                url: node_url,
                 dataType: 'json',
                 success: function(data) {
                     this.setState({data: data});

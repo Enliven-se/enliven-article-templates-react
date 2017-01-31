@@ -1,10 +1,10 @@
 {
     "color_variant": "gold",
-    "field_main_topics": {
+    "field_main_topics": [{
         "name": "WOMEN’S HEALTH",
         "url": "#",
         "classes": "text-color-white text-uppercase"
-    },
+    }],
     "field_headline": {
         "value": "Small Talk - Emelie Torling",
         "classes": "text-color-white text-uppercase"

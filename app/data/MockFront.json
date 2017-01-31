@@ -31,10 +31,10 @@
             }
         },
         1: {
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Women's Fashion",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "London Fashion Week 2016"
@@ -55,10 +55,10 @@
             }
         },
         3: {
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Outdoor & Health",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Traveling to the Heart of Stockholm"
@@ -83,10 +83,10 @@
             }
         },
         5: {
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Outdoor & Health",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Traveling to the Heart of Stockholm"
@@ -111,10 +111,10 @@
             }
         },
         27: {
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Outdoor & Health",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Traveling to the Heart of Stockholm"
@@ -264,10 +264,10 @@
             }
         },
         33: {
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Outdoor & Health",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Traveling to the Heart of Stockholm"
@@ -292,10 +292,10 @@
             }
         },
         35: {
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Outdoor & Health",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Traveling to the Heart of Stockholm"
@@ -321,10 +321,10 @@
             }
         },
         37: {
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Women's Fashion",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "London Fashion Week 2016"
@@ -345,10 +345,10 @@
             }
         },
         39: {
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Outdoor & Health",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Traveling to the Heart of Stockholm"

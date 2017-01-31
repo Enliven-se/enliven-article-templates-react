@@ -5,10 +5,10 @@
                 "bundle": "media",
                 "url": "/images/mock/teaser-1.png"
             },
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Food & Cooking",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Winter Recipes - Salted Carmel Candies + Kale Chips + a Sweet Potato Salad"
@@ -49,10 +49,10 @@
                 "bundle": "media",
                 "url": "/images/mock/teaser-2.png"
             },
-            "field_main_topics": {
+            "field_main_topics": [{
                 "name": "Food & Cooking",
                 "classes": "text-color-gold text-uppercase"
-            },
+            }],
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Chocolate Swirl Meringes with Nutella Whipped Cream"

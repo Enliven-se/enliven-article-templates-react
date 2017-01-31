@@ -43,14 +43,14 @@ class LayoutFront extends React.Component {
                   <Col sm={3}>
                       <ParticleImage  {...this.props.data.field_particles[0]}/>
                       <Col sm={10} className="article-meta-small">
-                          <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[1].field_main_topics} ParticleH2={this.props.data.field_particles[1].ParticleH2} ContributorList={this.props.data.field_particles[1].field_contributors}/>
+                          <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[1].field_main_topics[0]} ParticleH2={this.props.data.field_particles[1].ParticleH2} ContributorList={this.props.data.field_particles[1].field_contributors}/>
                       </Col>
                   </Col>
                   <Col sm={6}>
                       <ArticleTeaser classes="wrapper lg-img first-center-img" >
                           <ParticleImage {...this.props.data.field_particles[2]}/>
                           <Col sm={8} smOffset={2} className="article-meta-large">
-                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[3].field_main_topics} ParticleH2={this.props.data.field_particles[3].ParticleH2} ContributorList={this.props.data.field_particles[3].field_contributors}/>
+                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[3].field_main_topics[0]} ParticleH2={this.props.data.field_particles[3].ParticleH2} ContributorList={this.props.data.field_particles[3].field_contributors}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
@@ -65,7 +65,7 @@ class LayoutFront extends React.Component {
                       <ArticleTeaser classes="wrapper lg-img">
                           <ParticleImage {...this.props.data.field_particles[4]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[5].field_main_topics} ParticleH2={this.props.data.field_particles[5].ParticleH2} ParticleText={this.props.data.field_particles[5].ParticleText} ContributorList={this.props.data.field_particles[5].field_contributors}/>
+                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[5].field_main_topics[0]} ParticleH2={this.props.data.field_particles[5].ParticleH2} ParticleText={this.props.data.field_particles[5].ParticleText} ContributorList={this.props.data.field_particles[5].field_contributors}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
@@ -73,7 +73,7 @@ class LayoutFront extends React.Component {
                       <ArticleTeaser classes="wrapper lg-img">
                           <ParticleImage {...this.props.data.field_particles[6]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[27].field_main_topics} ParticleH2={this.props.data.field_particles[27].ParticleH2} ParticleText={this.props.data.field_particles[27].ParticleText} ContributorList={this.props.data.field_particles[27].field_contributors}/>
+                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[27].field_main_topics[0]} ParticleH2={this.props.data.field_particles[27].ParticleH2} ParticleText={this.props.data.field_particles[27].ParticleText} ContributorList={this.props.data.field_particles[27].field_contributors}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
@@ -192,7 +192,7 @@ class LayoutFront extends React.Component {
                       <ArticleTeaser classes="wrapper lg-img">
                           <ParticleImage {...this.props.data.field_particles[32]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[33].field_main_topics} ParticleH2={this.props.data.field_particles[33].ParticleH2} ParticleText={this.props.data.field_particles[33].ParticleText} ContributorList={this.props.data.field_particles[33].field_contributors}/>
+                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[33].field_main_topics[0]} ParticleH2={this.props.data.field_particles[33].ParticleH2} ParticleText={this.props.data.field_particles[33].ParticleText} ContributorList={this.props.data.field_particles[33].field_contributors}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
@@ -200,7 +200,7 @@ class LayoutFront extends React.Component {
                       <ArticleTeaser classes="wrapper lg-img">
                           <ParticleImage {...this.props.data.field_particles[34]}/>
                           <Col sm={8} smOffset={3} className="article-meta-large meta-links has-intro-text">
-                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[35].field_main_topics} ParticleH2={this.props.data.field_particles[35].ParticleH2} ParticleText={this.props.data.field_particles[35].ParticleText} ContributorList={this.props.data.field_particles[35].field_contributors}/>
+                              <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[35].field_main_topics[0]} ParticleH2={this.props.data.field_particles[35].ParticleH2} ParticleText={this.props.data.field_particles[35].ParticleText} ContributorList={this.props.data.field_particles[35].field_contributors}/>
                           </Col>
                       </ArticleTeaser>
                   </Col>
@@ -210,7 +210,7 @@ class LayoutFront extends React.Component {
                               <ParticleImage {...this.props.data.field_particles[36]}/>
                               <Col sm={5} smOffset={1} className="article-meta-large">
                                   <MetaLinksContainer>
-                                      <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[37].field_main_topics} ParticleH2={this.props.data.field_particles[37].ParticleH2} ContributorList={this.props.data.field_particles[37].field_contributors}/>
+                                      <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[37].field_main_topics[0]} ParticleH2={this.props.data.field_particles[37].ParticleH2} ContributorList={this.props.data.field_particles[37].field_contributors}/>
                                   </MetaLinksContainer>
                               </Col>
                           </div>
@@ -221,7 +221,7 @@ class LayoutFront extends React.Component {
                           <ParticleImage {...this.props.data.field_particles[38]}/>
                           <Col sm={11} smOffset={1} className="article-meta-xtr-sm">
                               <MetaLinksContainer>
-                                    <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[39].field_main_topics} ParticleH2={this.props.data.field_particles[39].ParticleH2} ContributorList={this.props.data.field_particles[39].field_contributors}/>
+                                    <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.field_particles[39].field_main_topics[0]} ParticleH2={this.props.data.field_particles[39].ParticleH2} ContributorList={this.props.data.field_particles[39].field_contributors}/>
                               </MetaLinksContainer>
                           </Col>
                       </ArticleTeaser>
