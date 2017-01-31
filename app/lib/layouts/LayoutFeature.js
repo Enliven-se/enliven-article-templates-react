@@ -93,10 +93,10 @@ class LayoutFeature extends React.Component {
                   </Col>
                   <Col sm={6}>
                       <ParticleImage {...this.props.data.field_particles[22]}/>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                  </Col>
+              </Row>
+          </Container>
+      </div>
     )
   }
 }

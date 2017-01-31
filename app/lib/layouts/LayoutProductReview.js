@@ -55,10 +55,10 @@ class ProductReview extends React.Component {
                   </Col>
                   <Col md={6} className='col-left'>
                       <ParticleText {...this.props.data.field_particles[7]}/>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                  </Col>
+              </Row>
+          </Container>
+      </div>
     )
   }
 }

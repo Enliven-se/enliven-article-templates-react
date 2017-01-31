@@ -67,10 +67,10 @@ class PictureIntensive2 extends React.Component {
                   <Col md={6} className='text-with-borderbox responsive-text-3'>
                       <ParticleH2 {...this.props.data.field_particles[5]}/>
                       <ParticleText {...this.props.data.field_particles[9]}/>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                  </Col>
+              </Row>
+          </Container>
+      </div>
     )
   }
 }

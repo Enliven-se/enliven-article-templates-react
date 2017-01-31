@@ -46,13 +46,12 @@ class LayoutShort extends React.Component {
                   </Col>
                   <Col sm={6} className='col-right'>
                       <ParticleText {...this.props.data.field_particles[5]}/>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                  </Col>
+              </Row>
+          </Container>
+      </div>
     )
   }
 }
 
-module.exports = LayoutShort
 export default LayoutShort
