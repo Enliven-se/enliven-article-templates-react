@@ -7,10 +7,10 @@ class Container extends React.Component {
     let elStyle = {
     }
 
-    let classes = this.props.classes ? this.props.classes : ''
+    let classes = this.props.classes ? this.props.classes + ' ' : ''
 
-    if (this.props.backgroundImage) {
-      classes += ' has-hero'
+    if (this.props.backgroundImage && this.props.backgroundImage.url) {
+      classes += 'has-hero'
 
       elStyle.backgroundImage = 'url(' + this.props.backgroundImage.url + ')'
     }

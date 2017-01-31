@@ -20,7 +20,7 @@ class ProductReview extends React.Component {
           <Container fluid classes='panel-1'>
               <Row>
                   <Col md={9} className='header-image'>
-                      <Container fluid classes='panel-2' backgroundImage={this.props.data.field_particles[0]}></Container>
+                      <Container fluid classes='panel-2' backgroundImage={this.props.data.field_particles_image[0]}></Container>
                   </Col>
                   <Col md={3}>
                       <ArticleCategory name={this.props.data.field_main_topics[0].name} url={this.props.data.field_main_topics[0].url}/>
@@ -42,10 +42,10 @@ class ProductReview extends React.Component {
               </Row>
               <Row>
                   <Col className='col-right' md={6}>
-                      <ParticleImage {...this.props.data.field_particles_image[0]}/>
+                      <ParticleImage {...this.props.data.field_particles_image[1]}/>
                   </Col>
                   <Col className='col-left' md={6}>
-                      <ParticleImage {...this.props.data.field_particles_image[1]}/>
+                      <ParticleImage {...this.props.data.field_particles_image[2]}/>
                   </Col>
               </Row>
               <Row className="text-row last-text">
