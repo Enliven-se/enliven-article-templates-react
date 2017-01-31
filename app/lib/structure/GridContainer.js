@@ -46,7 +46,8 @@ class GridContainer extends React.Component {
         this.state = {
             data: {
                 color_variant: false,
-                is_front: false
+                is_front: false,
+                field_layout: {uuid:''}
             }
         }
     }
@@ -76,27 +77,48 @@ class GridContainer extends React.Component {
     }
 
     render() {
+        const layout = this.state.data.field_layout && !this.props.layout ? this.state.data.field_layout.uuid : this.props.layout
         let Widget = {}
-        switch (this.props.layout) {
+
+        console.log('layout', layout)
+
+        switch (layout) {
+
             case 'ProductReview':
+            case '7bcfd1a9-8df8-42dc-acf2-9199797d9c7b':
+                // 1p text + 1-4 products + reviews
                 Widget = LayoutProductReview
                 break;
             case 'PictureIntensive':
+            case '957795e1-3c72-401b-91d8-93e7a9725286':
+                // 1-4p picture intensive, 1-3 pictures, text (200-400w)
                 Widget = LayoutPictureIntensive
                 break;
             case 'Columnist':
+            case '81f0fb1c-c326-4767-9274-7b90b45b54b1':
+                // 1p column + short presentation about columnist
                 Widget = LayoutColumnist
                 break;
             case 'PictureIntensive2':
+            case '837c265b-90c9-47f2-9da9-a4d9e7b2da6e':
+                // 1-4p picture intensive, short text
                 Widget = LayoutPictureIntensive2
                 break;
             case 'Lookbook':
+            case '74c76273-fd65-4daa-89d5-4e1e7abc29fe':
+            case '370c4a8e-5338-4aa8-b193-b52b35d2b0ee':
+                // 1p inspiration/lookbook, clearly formatted sections (25-100w)
+                // 1p inspiration/lookbook, no clearly formatted sections (25-100w)
                 Widget = LayoutLookbook
                 break;
             case 'Feature':
+            case '5e109d73-0d26-471d-8026-5301b014c2ba':
+                // Feature
                 Widget = LayoutFeature
                 break;
             case 'Short':
+            case '0b80bd2e-8279-45ef-a6ee-e3d000e45d22':
+                //	1p short profile/interview
                 Widget = LayoutShort
                 break;
             case 'ArticleTeasers':
@@ -113,10 +135,10 @@ class GridContainer extends React.Component {
         // console.log('rendering', this.state)
         if (this.props.chrome) {
             return (
-                <LayoutContainer layout={this.props.layout} navbar_items={this.props.navbar_items} color_variant={this.state.data.color_variant} is_front={!!this.state.data.is_front} sticky={!this.state.data.is_front}>
+                <LayoutContainer layout={layout} navbar_items={this.props.navbar_items} color_variant={this.state.data.color_variant} is_front={!!this.state.data.is_front} sticky={!this.state.data.is_front}>
                     {this.state.data.field_particles
                         ? <Widget data={this.state.data}/>
-                        : ''}
+                    : ''}
                 </LayoutContainer>
             )
         }
