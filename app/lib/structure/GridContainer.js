@@ -55,6 +55,28 @@ class GridContainer extends React.Component {
     // componentWillMount () {
     // }
 
+    /**
+     * massage the data prior to setting the state
+     * @hack alert - this is a workaround for inconsistently formatted data
+     * (I'm looking at you, Drupal)
+     */
+    massageData(data) {
+        console.log('massageData', data)
+
+        if (typeof data.field_headline === 'string') {
+            data.field_headline = {value: data.field_headline}
+        }
+        if (data.field_particles.length > 0
+            && data.field_particles[0].field_assets
+            && data.field_particles[0].field_assets.length > 0
+            && data.field_particles[0].field_assets[0].url) {
+            data.field_particles[0].url = data.field_particles[0].field_assets[0].url
+            console.info(data.field_particles[0].field_assets[0].url)
+        }
+        //this.props.field_assets[0].url
+        return data
+    }
+
     componentDidMount() {
         if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined') {
             const node_url = '/' + Drupal.settings.currentPath + '.json?load-entity-refs'
@@ -62,7 +84,7 @@ class GridContainer extends React.Component {
                 url: node_url,
                 dataType: 'json',
                 success: function(data) {
-                    this.setState({data: data});
+                    this.setState({data: this.massageData(data)});
                 }.bind(this)
             }).done(function(response, textStatus, jqXHR) {
                 // console.log("response:", response);
@@ -72,7 +94,7 @@ class GridContainer extends React.Component {
             });
         } else {
             this.setState({
-                data: this.getData(this.props.layout)
+                data: this.massageData(this.getData(this.props.layout))
             });
         }
     }
