@@ -11,7 +11,6 @@ import ArticleCategory from '../components/base/ArticleCategory'
 import ArticleTitle from '../components/base/ArticleTitle'
 import HR from '../components/base/HR'
 import ParticleImage from '../components/particles/ParticleImage'
-import ParticlePullquote from '../components/particles/ParticlePullquote'
 import ParticleText from '../components/particles/ParticleText'
 
 class ProductReview extends React.Component {
@@ -27,7 +26,7 @@ class ProductReview extends React.Component {
                       <ArticleCategory name={this.props.data.field_main_topics[0].name} url={this.props.data.field_main_topics[0].url}/>
                       <ArticleTitle {...this.props.data.field_headline}/>
                       <HR/>
-                      <ParticleText {...this.props.data.field_particles[1]}/>
+                      <ParticleText {...this.props.data.field_particles_text[0]}/>
                       <HR/>
                       <ContributorList data={this.props.data.field_contributors} inline separator=', '/>
                   </Col>
@@ -35,26 +34,26 @@ class ProductReview extends React.Component {
               </Row>
               <Row className="text-row">
                   <Col md={6} className='col-right first-text'>
-                      <ParticleText {...this.props.data.field_particles[2]}/>
+                      <ParticleText {...this.props.data.field_particles_text[1]}/>
                   </Col>
                   <Col md={6} className='col-left'>
-                      <ParticleText {...this.props.data.field_particles[3]}/>
+                      <ParticleText {...this.props.data.field_particles_text[2]}/>
                   </Col>
               </Row>
               <Row>
                   <Col className='col-right' md={6}>
-                      <ParticleImage {...this.props.data.field_particles[4]}/>
+                      <ParticleImage {...this.props.data.field_particles_image[0]}/>
                   </Col>
                   <Col className='col-left' md={6}>
-                      <ParticleImage {...this.props.data.field_particles[5]}/>
+                      <ParticleImage {...this.props.data.field_particles_image[1]}/>
                   </Col>
               </Row>
               <Row className="text-row last-text">
                   <Col md={6} className='col-right'>
-                      <ParticleText {...this.props.data.field_particles[6]}/>
+                      <ParticleText {...this.props.data.field_particles_text[3]}/>
                   </Col>
                   <Col md={6} className='col-left'>
-                      <ParticleText {...this.props.data.field_particles[7]}/>
+                      <ParticleText {...this.props.data.field_particles_text[4]}/>
                   </Col>
               </Row>
           </Container>

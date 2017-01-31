@@ -25,14 +25,14 @@ class LayoutColumnist extends React.Component {
                   </Col>
                   <Col md={6} className='right-panel'>
                       <Col md={5}>
-                          <ParticleImage {...this.props.data.field_particles[0]}/>
+                          <ParticleImage {...this.props.data.field_particles_image[0]}/>
                       </Col>
                       <Col md={7} className='about-columnist'>
                           <div className='follow-button'>
                               <Link text={this.props.data.field_particles[6].value} url={this.props.data.field_particles[6].url} classes={this.props.data.field_particles[6].classes}/>
                           </div>
                           <Link text={this.props.data.field_particles[5].value} url={this.props.data.field_particles[5].url} classes={this.props.data.field_particles[5].classes}/>
-                          <ParticleText {...this.props.data.field_particles[1]}/>
+                          <ParticleText {...this.props.data.field_particles_text[0]}/>
                           <Link text={this.props.data.field_particles[7].value} url={this.props.data.field_particles[7].url} classes={this.props.data.field_particles[7].classes}/>
                       </Col>
                   </Col>
@@ -45,10 +45,10 @@ class LayoutColumnist extends React.Component {
               <Row className='body-text'>
                   <Col sm={12}>
                       <div className='first-text'>
-                          <ParticleText {...this.props.data.field_particles[2]}/>
+                          <ParticleText {...this.props.data.field_particles_text[1]}/>
                       </div>
-                      <ParticlePullquote {...this.props.data.field_particles[3]}/>
-                            <ParticleText {...this.props.data.field_particles[4]}/>
+                      <ParticlePullquote {...this.props.data.field_particles_pullquote[0]}/>
+                            <ParticleText {...this.props.data.field_particles_text[2]}/>
                         </Col>
                     </Row>
                 </Container>

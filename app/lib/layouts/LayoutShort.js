@@ -40,12 +40,12 @@ class LayoutShort extends React.Component {
           <Container classes='article'>
               <Row>
                   <Col sm={6} className='col-left'>
-                      <ParticleText {...this.props.data.field_particles[2]}/>
-                      <ParticlePullquote {...this.props.data.field_particles[3]}/>
-                      <ParticleText {...this.props.data.field_particles[4]}/>
+                      <ParticleText {...this.props.data.field_particles_text[0]}/>
+                      <ParticlePullquote {...this.props.data.field_particles_pullquote[0]}/>
+                      <ParticleText {...this.props.data.field_particles_text[1]}/>
                   </Col>
                   <Col sm={6} className='col-right'>
-                      <ParticleText {...this.props.data.field_particles[5]}/>
+                      <ParticleText {...this.props.data.field_particles_text[2]}/>
                   </Col>
               </Row>
           </Container>

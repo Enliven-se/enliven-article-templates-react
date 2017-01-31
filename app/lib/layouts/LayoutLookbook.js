@@ -29,27 +29,27 @@ class LayoutLookbook extends React.Component {
                       </Row>
                   </Col>
                   <Col md={6}>
-                      <ParticleImage {...this.props.data.field_particles[1]}/>
+                      <ParticleImage {...this.props.data.field_particles_image[0]}/>
                   </Col>
               </Row>
               <Row className='big-row row-flex'>
                   <Col md={6}>
-                      <ParticleImage {...this.props.data.field_particles[2]}/>
+                      <ParticleImage {...this.props.data.field_particles_image[1]}/>
                   </Col>
                   <Col md={6}>
                       <div className='img-small'>
-                          <ParticleImage {...this.props.data.field_particles[3]}/>
+                          <ParticleImage {...this.props.data.field_particles_image[2]}/>
                       </div>
                   </Col>
               </Row>
               <Row className='big-row row-flex'>
                   <Col md={6}>
                       <div className='img-small'>
-                          <ParticleImage {...this.props.data.field_particles[4]}/>
+                          <ParticleImage {...this.props.data.field_particles_image[3]}/>
                       </div>
                   </Col>
                   <Col md={6}>
-                      <ParticleImage {...this.props.data.field_particles[5]}/>
+                      <ParticleImage {...this.props.data.field_particles_image[4]}/>
                         </Col>
                     </Row>
                 </Container>

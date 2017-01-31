@@ -61,8 +61,6 @@ class GridContainer extends React.Component {
      * (I'm looking at you, Drupal)
      */
     massageData(data) {
-        console.log('massageData', data)
-
         if (typeof data.field_headline === 'string') {
             data.field_headline = {value: data.field_headline}
         }
@@ -73,7 +71,16 @@ class GridContainer extends React.Component {
             data.field_particles[0].url = data.field_particles[0].field_assets[0].url
             console.info(data.field_particles[0].field_assets[0].url)
         }
-        //this.props.field_assets[0].url
+
+        // filter by bundle
+        // @FIXME - this should be done server-side for performance
+        data.field_particles_text = _.where(data.field_particles, { bundle: 'text' });
+        data.field_particles_image = _.where(data.field_particles, { bundle: 'media' });
+        data.field_particles_pullquote = _.where(data.field_particles, { bundle: 'pullquote' });
+        data.field_particles_h2 = _.where(data.field_particles, { bundle: 'h2' });
+
+        console.log('massageData', data)
+
         return data
     }
 
