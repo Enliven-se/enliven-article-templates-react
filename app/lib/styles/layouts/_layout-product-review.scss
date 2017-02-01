@@ -18,14 +18,14 @@
             padding-top     : 76px;
 
             .article-category {
-                margin-left: 34px;
+                margin-left: 8px;
             }
 
             h1 {
                 font-family: $font-family-sans-serif-demi, Sans-Serif;
                 font-size  : 36px;
                 line-height: 61px;
-                margin     : 50px 0 0 60px;
+                margin     : 50px 0 0 39px;
             }
 
             hr {
@@ -35,11 +35,11 @@
 
             .particle-text {
                 line-height: 35px;
-                margin-left: 65px;
+                margin-left: 39px;
             }
 
             .contributor-list {
-                margin: 70px 0 0 27px;
+                margin: 70px 0 0 8px;
             }
             @media screen and (max-width: $screen-sm) {
                 padding-top: 30px;
@@ -71,6 +71,10 @@
             }
         }
     }
+
+    .image-row {
+        margin-bottom: 100px;
+    }
     @media screen and (max-width: $screen-md) {
         .first-text {
             margin-top: 35px;
@@ -95,25 +99,13 @@
         }
     }
 
+    .text-with-columns {
+        @include columnize-article (138px);
+    }
+
     .text-row {
-        padding   : 10px;
+        padding   : 10px 10px 30px;
         text-align: justify;
-
-        .col-left {
-            margin-top: 35px;
-        }
-        @media screen and (min-width: $screen-md) {
-            padding: 65px 138px 30px;
-
-            .col-right {
-                padding-right: 55px;
-            }
-
-            .col-left {
-                padding-left: 55px;
-                margin-top  : 0;
-            }
-        }
     }
 
     .last-text {

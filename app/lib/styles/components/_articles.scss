@@ -76,3 +76,10 @@
         color: $greyish;
     }
 }
+@mixin columnize-article ($padding-horizontal) {
+     @media screen and (min-width: $screen-sm){
+        column-count: 2;
+        column-gap  : 110px;
+        padding     : 0 $padding-horizontal;
+    }
+}

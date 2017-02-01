@@ -35,27 +35,21 @@ class ProductReview extends React.Component {
 
               </Row>
               <Row className="text-row">
-                  <Col md={6} className='col-right first-text'>
+                  <Col className='text-with-columns first-text'>
                       <ParticleText {...this.props.data.fields[2]} />
                   </Col>
-                  <Col md={6} className='col-left'>
-                      <ParticleText {...this.props.data.fields[3]} />
-                  </Col>
               </Row>
-              <Row>
-                  <Col md={6}className='col-right'>
+              <Row className='image-row'>
+                  <Col md={6} className='col-right'>
                       <ParticleImage {...this.props.data.fields[4]}/>
                   </Col>
-                  <Col md={6}className='col-left'>
+                  <Col md={6} className='col-left'>
                       <ParticleImage {...this.props.data.fields[5]}/>
                   </Col>
               </Row>
               <Row className="text-row last-text">
-                  <Col md={6} className='col-right'>
+                  <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.fields[6]} />
-                  </Col>
-                  <Col md={6} className='col-left'>
-                      <ParticleText {...this.props.data.fields[7]} />
                   </Col>
               </Row>
           </Container>

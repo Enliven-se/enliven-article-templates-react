@@ -3,13 +3,19 @@
     width        : 100%;
 
     .article-byline {
-        padding-left : 62px;
-        padding-right: 62px;
+        @media screen and (min-width: $screen-sm) {
+            padding-left : 62px;
+            padding-right: 62px;
+        }
     }
 
     .navbar-brand-img {
         float : none;
         margin: 0 auto;
+    }
+
+    .text-with-columns {
+        @include columnize-article (62px);
     }
 
     .particle-text {
