@@ -224,13 +224,23 @@
         position        : absolute;
         z-index         : 5;
 
+        .wrapper {
+            height: 100%;
+
+            .meta-links {
+                height         : 100%;
+                display        : flex;
+                flex-direction : column;
+                justify-content: space-around;
+            }
+        }
+
         h2 {
-            color : $blackish;
-            margin: 25px auto 25px 10px;
+            color      : $blackish;
+            margin-left: 10px;
             @media screen and (max-width: $screen-lg) {
                 font-size  : 26px;
                 line-height: 30px;
-                margin-top : 10px;
             }
         }
 
