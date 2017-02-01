@@ -34,11 +34,8 @@ class ProductReview extends React.Component {
 
               </Row>
               <Row className="text-row">
-                  <Col md={6} className='col-right first-text'>
+                  <Col className='text-with-columns first-text'>
                       <ParticleText {...this.props.data.field_particles[2]}/>
-                  </Col>
-                  <Col md={6} className='col-left'>
-                      <ParticleText {...this.props.data.field_particles[3]}/>
                   </Col>
               </Row>
               <Row>
@@ -50,12 +47,9 @@ class ProductReview extends React.Component {
                   </Col>
               </Row>
               <Row className="text-row last-text">
-                  <Col md={6} className='col-right'>
+                  <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.field_particles[6]}/>
                   </Col>
-                  <Col md={6} className='col-left'>
-                      <ParticleText {...this.props.data.field_particles[7]}/>
-                        </Col>
                     </Row>
                 </Container>
             </div>
