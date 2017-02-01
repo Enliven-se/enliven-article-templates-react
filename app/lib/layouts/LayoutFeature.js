@@ -31,16 +31,14 @@ class LayoutFeature extends React.Component {
                   </Col>
               </Row>
           </Container>
+
           <Container fluid>
               <Row>
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.fields[2]}/>
                   </Col>
-                  <Col sm={6} className='col-left'>
+                  <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.fields[3]}/>
-                  </Col>
-                  <Col sm={6} className='col-right'>
-                      <ParticleText {...this.props.data.fields[4]}/>
                   </Col>
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.fields[5]}/>
@@ -48,13 +46,10 @@ class LayoutFeature extends React.Component {
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.fields[6]}/>
                   </Col>
-                  <Col sm={6} className='col-left'>
+                  <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.fields[7]}/>
                       <HR/>
                       <ParticleText {...this.props.data.fields[8]}/>
-                  </Col>
-                  <Col sm={6} className='col-right'>
-                      <ParticleText {...this.props.data.fields[9]}/>
                   </Col>
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.fields[10]}/>
@@ -77,13 +72,10 @@ class LayoutFeature extends React.Component {
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.fields[16]}/>
                   </Col>
-                  <Col sm={6} className='col-left'>
+                  <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.fields[17]}/>
                       <HR/>
                       <ParticleText {...this.props.data.fields[18]}/>
-                  </Col>
-                  <Col sm={6} className='col-right'>
-                      <ParticleText {...this.props.data.fields[19]}/>
                   </Col>
                   <Col sm={12}>
                       <ParticleImage {...this.props.data.fields[20]}/>
