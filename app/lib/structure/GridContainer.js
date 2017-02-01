@@ -1,5 +1,7 @@
 import React from 'react'
 
+import _ from 'lodash'
+
 // containers
 import LayoutContainer from '../structure/LayoutContainer';
 import GridLayout from '../containers/GridLayout'
@@ -74,12 +76,10 @@ class GridContainer extends React.Component {
 
         // filter by bundle
         // @FIXME - this should be done server-side for performance
-        if (typeof _ != 'undefined') {
-            data.field_particles_text = _.where(data.field_particles, { bundle: 'text' });
-            data.field_particles_image = _.where(data.field_particles, { bundle: 'media' });
-            data.field_particles_pullquote = _.where(data.field_particles, { bundle: 'pullquote' });
-            data.field_particles_h2 = _.where(data.field_particles, { bundle: 'h2' });
-        }
+        data.field_particles_text = _.where(data.field_particles, { bundle: 'text' });
+        data.field_particles_image = _.where(data.field_particles, { bundle: 'media' });
+        data.field_particles_pullquote = _.where(data.field_particles, { bundle: 'pullquote' });
+        data.field_particles_h2 = _.where(data.field_particles, { bundle: 'h2' });
 
         console.log('massageData', data)
 
