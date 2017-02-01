@@ -1,11 +1,8 @@
-@import 'variables'; // bower:scss
+//
+// bower:scss
+//
+@import 'variables';
 @import '../../bower_components/enliven-bootswatch/_variables';
-@import '../../../node_modules/compass-mixins/lib/compass';
-@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
-@import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
-@import '../../bower_components/enliven-bootswatch/_bootswatch'; // @import '../../../node_modules/react-grid-layout/css/styles';
-// @import '../../../node_modules/react-resizable/css/styles';
-@import '../../bower_components/font-awesome/scss/font-awesome'; // endbower
 @import 'components/base';
 @import 'components/typography';
 @import 'components/header';
@@ -15,13 +12,6 @@
 @import 'components/contributors';
 @import 'components/particles';
 @import 'components/photo-credits';
-@import 'layouts/layout-columnist';
-@import 'layouts/layout-front';
-@import 'layouts/layout-short';
-@import 'layouts/layout-feature';
-@import 'layouts/layout-lookbook';
-@import 'layouts/layout-picture-intensive';
-@import 'layouts/layout-picture-intensive-2';
-@import 'layouts/layout-article-teasers';
-@import 'layouts/layout-product-review'; // DEBUGGING
-@import 'testing';
+//
+// endbower
+//

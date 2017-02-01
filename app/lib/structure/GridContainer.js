@@ -74,10 +74,12 @@ class GridContainer extends React.Component {
 
         // filter by bundle
         // @FIXME - this should be done server-side for performance
-        data.field_particles_text = _.where(data.field_particles, { bundle: 'text' });
-        data.field_particles_image = _.where(data.field_particles, { bundle: 'media' });
-        data.field_particles_pullquote = _.where(data.field_particles, { bundle: 'pullquote' });
-        data.field_particles_h2 = _.where(data.field_particles, { bundle: 'h2' });
+        if (typeof _ != 'undefined') {
+            data.field_particles_text = _.where(data.field_particles, { bundle: 'text' });
+            data.field_particles_image = _.where(data.field_particles, { bundle: 'media' });
+            data.field_particles_pullquote = _.where(data.field_particles, { bundle: 'pullquote' });
+            data.field_particles_h2 = _.where(data.field_particles, { bundle: 'h2' });
+        }
 
         console.log('massageData', data)
 
@@ -119,15 +121,15 @@ class GridContainer extends React.Component {
                 // 1p text + 1-4 products + reviews
                 Widget = LayoutProductReview
                 break;
-            case 'PictureIntensive':
-            case '957795e1-3c72-401b-91d8-93e7a9725286':
-                // 1-4p picture intensive, 1-3 pictures, text (200-400w)
-                Widget = LayoutPictureIntensive
-                break;
             case 'Columnist':
             case '81f0fb1c-c326-4767-9274-7b90b45b54b1':
                 // 1p column + short presentation about columnist
                 Widget = LayoutColumnist
+                break;
+            case 'PictureIntensive':
+            case '957795e1-3c72-401b-91d8-93e7a9725286':
+                // 1-4p picture intensive, 1-3 pictures, text (200-400w)
+                Widget = LayoutPictureIntensive
                 break;
             case 'PictureIntensive2':
             case '837c265b-90c9-47f2-9da9-a4d9e7b2da6e':
