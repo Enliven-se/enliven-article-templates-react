@@ -47,12 +47,12 @@ class LayoutFront extends React.Component {
                       </Col>
                   </Col>
                   <Col sm={6}>
-                      <ArticleTeaser classes="wrapper lg-img first-center-img" >
+                      <div classes="wrapper lg-img first-center-img" >
                           <ParticleImage {...this.props.data.field_particles[2]}/>
                           <Col sm={8} smOffset={2} className="article-meta-large">
                               <ArticleTeaser classes="wrapper " ArticleCategory={this.props.data.field_particles[3].field_main_topics} ParticleH2={this.props.data.field_particles[3].ParticleH2} ContributorList={this.props.data.field_particles[3].field_contributors}/>
                           </Col>
-                      </ArticleTeaser>
+                      </div>
                   </Col>
                   <Col sm={3}>
                       <ParticleH2 className='heading-text' {...this.props.data.field_particles[16]}/>
