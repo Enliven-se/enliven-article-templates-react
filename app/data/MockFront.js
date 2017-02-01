@@ -171,7 +171,7 @@ const MockFront = {
     17: {
       'type': 'text',
       'content': {
-        'html': 'Women\'s Health'
+        'html': 'Just For You'
       },
       'classes': 'text-color-gold'
     },
