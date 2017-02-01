@@ -52,7 +52,6 @@ class PictureIntensive extends React.Component {
                       <Container fluid classes='panel-3' backgroundImage={this.props.data.fields[4]}>
                           <Col sm={3} className='text-field-in-img'>
                               <ParticleH4 {...this.props.data.fields[7]}/>
-                              <ParticleText {...this.props.data.fields[8]}/>
                               <ParticleText {...this.props.data.fields[6]}/>
                           </Col>
                       </Container>
