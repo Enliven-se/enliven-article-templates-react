@@ -95,6 +95,10 @@
         }
     }
 
+    .text-with-columns {
+        @include columnize-article (138px);
+    }
+
     .text-row {
         padding   : 10px;
         text-align: justify;
