@@ -1,4 +1,52 @@
 {
+  "field_particles_h2": [
+  ],
+  "field_particles_image": [
+    {
+        "bundle": "media",
+        "url": "/images/mock/columnist.jpg"
+    },
+  ],
+  "field_particles_pullquote": [
+    {
+        "bundle": "pullquote",
+        "value": "No one has completed all of their goals or, for that matter, no regrets.",
+        "classes": "text-color-gold hangingindent"
+    },
+  ],
+  "field_particles_text": [
+    {
+        "bundle": "text",
+        "value": "Min man Edin, baby Max 0 år och Lola 3 år, I stockholm gör: Inköpare på HM Home och delägare i butiken Dusty Deco som min man."
+    },
+    {
+        "bundle": "text",
+        "value": "If you had to live your life over again, what one thing would you . This  design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the  boxes makes. <br/><br/> Boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. <br/><br/> The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally .",
+        "classes": "first-letter first-letter-gold"
+    },
+    {
+        "bundle": "text",
+        "value": "If you had to live your life over again, what one thing would you . This  design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the  boxes makes. <br/><br/> Boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size."
+    },
+    {
+        "bundle": "text",
+        "value": "The Way We Play",
+        "url": "#",
+        "classes": "text-color-gold text-uppercase"
+    },
+    {
+        "bundle": "text",
+        "value": "Follow",
+        "url": "#",
+        "classes": "text-color-gold text-uppercase"
+    },
+    {
+        "bundle": "text",
+        "value": "read more...",
+        "url": "#",
+        "classes": "text-color-gold"
+    },
+  ],
     "color_variant": "gold",
     "field_main_topics": [{
         "name": "Women's Health",
@@ -11,45 +59,5 @@
     },
     "created": 1478258637,
     "field_particles": {
-        0: {
-            "bundle": "media",
-            "url": "/images/mock/columnist.jpg"
-        },
-        1: {
-            "bundle": "text",
-            "value": "Min man Edin, baby Max 0 år och Lola 3 år, I stockholm gör: Inköpare på HM Home och delägare i butiken Dusty Deco som min man."
-        },
-        2: {
-            "bundle": "text",
-            "value": "If you had to live your life over again, what one thing would you . This  design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the  boxes makes. <br/><br/> Boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. <br/><br/> The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally .",
-            "classes": "first-letter first-letter-gold"
-        },
-        3: {
-            "bundle": "pullquote",
-            "value": "No one has completed all of their goals or, for that matter, no regrets.",
-            "classes": "text-color-gold hangingindent"
-        },
-        4: {
-            "bundle": "text",
-            "value": "If you had to live your life over again, what one thing would you . This  design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the  boxes makes. <br/><br/> Boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size."
-        },
-        5: {
-            "bundle": "text",
-            "value": "The Way We Play",
-            "url": "#",
-            "classes": "text-color-gold text-uppercase"
-        },
-        6: {
-            "bundle": "text",
-            "value": "Follow",
-            "url": "#",
-            "classes": "text-color-gold text-uppercase"
-        },
-        7: {
-            "bundle": "text",
-            "value": "read more...",
-            "url": "#",
-            "classes": "text-color-gold"
-        },
     }
 }

@@ -29,11 +29,11 @@ class LayoutColumnist extends React.Component {
                       </Col>
                       <Col md={7} className='about-columnist'>
                           <div className='follow-button'>
-                              <Link text={this.props.data.field_particles[6].value} url={this.props.data.field_particles[6].url} classes={this.props.data.field_particles[6].classes}/>
+                              <Link text={this.props.data.field_particles_text[4].value} url={this.props.data.field_particles_text[4].url} classes={this.props.data.field_particles_text[4].classes}/>
                           </div>
-                          <Link text={this.props.data.field_particles[5].value} url={this.props.data.field_particles[5].url} classes={this.props.data.field_particles[5].classes}/>
+                          <Link text={this.props.data.field_particles_text[3].value} url={this.props.data.field_particles_text[3].url} classes={this.props.data.field_particles_text[3].classes}/>
                           <ParticleText {...this.props.data.field_particles_text[0]}/>
-                          <Link text={this.props.data.field_particles[7].value} url={this.props.data.field_particles[7].url} classes={this.props.data.field_particles[7].classes}/>
+                          <Link text={this.props.data.field_particles_text[5].value} url={this.props.data.field_particles_text[5].url} classes={this.props.data.field_particles_text[5].classes}/>
                       </Col>
                   </Col>
               </Row>
@@ -48,11 +48,11 @@ class LayoutColumnist extends React.Component {
                           <ParticleText {...this.props.data.field_particles_text[1]}/>
                       </div>
                       <ParticlePullquote {...this.props.data.field_particles_pullquote[0]}/>
-                            <ParticleText {...this.props.data.field_particles_text[2]}/>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                      <ParticleText {...this.props.data.field_particles_text[2]}/>
+                  </Col>
+              </Row>
+          </Container>
+      </div>
     )
   }
 }

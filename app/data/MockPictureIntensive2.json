@@ -1,4 +1,57 @@
 {
+  "field_particles_h2": [
+  ],
+  "field_particles_image": [
+    {
+        "bundle": "media",
+        "url": "/images/mock/pi2-1.png",
+        "credits": {
+            "classes": "text-bottom-left text-color-white",
+            "value": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
+        }
+    },
+    {
+        "bundle": "media",
+        "url": "/images/mock/pi2-2.png"
+    },
+    {
+        "bundle": "media",
+        "url": "/images/mock/pi2-3.png"
+    },
+    {
+        "bundle": "media",
+        "url": "/images/mock/pi2-4.png"
+    },
+  ],
+  "field_particles_pullquote": [
+  ],
+  "field_particles_text": [
+    {
+        "bundle": "text",
+        "value": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects."
+    },
+    {
+        "bundle": "text",
+        "value": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
+    },
+    {
+        "bundle": "text",
+        "value": "PRODUCT IN IMAGE ABOVE",
+        "classes": "text-color-gold"
+    },
+    {
+        "bundle": "text",
+        "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015<br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie."
+    },
+    {
+        "bundle": "text",
+        "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York. När: En varm höstdag i november, 2015 Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet Att få komma hem till Emelie och Nico Anaïs."
+    },
+    {
+        "bundle": "text",
+        "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015 <br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie själv andas och lever och som det egna märket Leontine personifierar – en bohemisk fri själ med. Emelie Törling  är grundare och designer på Leontine samt sångerska. Läs hennes blogg här!<br/><br/>Tack Emelie och Nico Anaïs för att vi fick komma!"
+    }
+  ],
     "color_variant": "gold",
     "field_main_topics": [{
         "name": "Interior Design",
@@ -24,52 +77,7 @@
             "url": "//cms.enliven.co/en/people/peter-larsen"
         }
     }],
-    "field_particles": {
-        0: {
-            "bundle": "text",
-            "value": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects."
-        },
-        1: {
-            "bundle": "media",
-            "url": "/images/mock/pi2-1.png",
-            "credits": {
-                "classes": "text-bottom-left text-color-white",
-                "value": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
-            }
-        },
-        2: {
-            "bundle": "media",
-            "url": "/images/mock/pi2-2.png"
-        },
-        3: {
-            "bundle": "media",
-            "url": "/images/mock/pi2-3.png"
-        },
-        4: {
-            "bundle": "text",
-            "value": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
-        },
-        5: {
-            "bundle": "text",
-            "value": "PRODUCT IN IMAGE ABOVE",
-            "classes": "text-color-gold"
-        },
-
-        6: {
-            "bundle": "text",
-            "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015<br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie."
-        },
-        7: {
-            "bundle": "media",
-            "url": "/images/mock/pi2-4.png"
-        },
-        8: {
-            "bundle": "text",
-            "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York. När: En varm höstdag i november, 2015 Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet Att få komma hem till Emelie och Nico Anaïs."
-        },
-        9: {
-            "bundle": "text",
-            "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015 <br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie själv andas och lever och som det egna märket Leontine personifierar – en bohemisk fri själ med. Emelie Törling  är grundare och designer på Leontine samt sångerska. Läs hennes blogg här!<br/><br/>Tack Emelie och Nico Anaïs för att vi fick komma!"
-        }
-    }
+    "field_particles": [
+      
+    ]
 }
