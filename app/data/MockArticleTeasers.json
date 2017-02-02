@@ -1,5 +1,5 @@
 {
-    "field_particles": {
+    "nodes": {
         0: {
             "ParticleImage": {
                 "bundle": "media",
@@ -18,7 +18,15 @@
                 "ContributorLink": {
                     "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
                 }
-            }]
+            }],
+            "field_contributors": [{
+                "ContributorCredit": "Photographer & Contributor",
+                "ContributorLink": {
+                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                }
+            }],
+            "ParticleText": {
+            }
         },
         1: {
             "ParticleH2": {
@@ -30,7 +38,13 @@
                 "ContributorLink": {
                     "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
                 }
-            }]
+            }],
+            "field_main_topics": {
+            },
+            "ParticleImage": {
+            },
+            "ParticleText": {
+            }
         },
         2: {
             "ParticleH2": {
@@ -42,7 +56,13 @@
                 "ContributorLink": {
                     "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
                 }
-            }]
+            }],
+            "field_main_topics": {
+            },
+            "ParticleImage": {
+            },
+            "ParticleText": {
+            }
         },
         3: {
             "ParticleImage": {
@@ -76,6 +96,14 @@
             "ParticleText": {
                 "bundle": "text",
                 "value": "Winter Recipes - Salted Carmel Candies + Kale Chips + a Sweet Potato Salad"
+            },
+            "field_contributors": [{
+                "ContributorCredit": "Photographer & Contributor",
+                "ContributorLink": {
+                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                }
+            }],
+            "field_main_topics": {
             }
         }
     }

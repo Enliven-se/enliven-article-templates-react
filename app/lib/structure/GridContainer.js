@@ -78,6 +78,7 @@ class GridContainer extends React.Component {
     }
 
     render() {
+        const has_data = this.state.data.field_particles || this.state.data.nodes
         const layout = this.state.data.field_layout && !this.props.layout ? this.state.data.field_layout.uuid : this.props.layout
         let Widget = {}
 
@@ -137,14 +138,14 @@ class GridContainer extends React.Component {
         if (this.props.chrome) {
             return (
                 <LayoutContainer layout={layout} navbar_items={this.props.navbar_items} color_variant={this.state.data.color_variant} is_front={!!this.state.data.is_front} sticky={!this.state.data.is_front}>
-                    {this.state.data.field_particles
+                    { has_data
                         ? <Widget data={this.state.data}/>
                     : ''}
                 </LayoutContainer>
             )
         }
 
-        if (this.state.data.field_particles) {
+        if ( has_data ) {
             return <Widget data={this.state.data}/>
         }
 

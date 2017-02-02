@@ -7,7 +7,6 @@ import GridContainer from '../lib/structure/GridContainer';
 function config({
     chrome = true
 }) {
-
     const url = require('url')
     const urlParams = url.parse(location.href, true)
     const layout = urlParams.query['layout']
