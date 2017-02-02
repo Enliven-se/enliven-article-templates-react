@@ -57,7 +57,7 @@ class GridContainer extends React.Component {
 
     componentDidMount() {
         if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined') {
-            const node_url = '/' + Drupal.settings.currentPath + '.json?load-entity-refs'
+            const node_url = this.getDataURL()
             jQuery.ajax({
                 url: node_url,
                 dataType: 'json',
@@ -77,9 +77,26 @@ class GridContainer extends React.Component {
         }
     }
 
+    getDataURL() {
+        switch (Drupal.settings.currentPath) {
+            case 'front':
+            case 'admin/workbench':
+                return `/node.json?type=article&load-entity-refs`
+            default:
+                return `/${Drupal.settings.currentPath}.json?load-entity-refs`
+        }
+    }
+
     render() {
-        const has_data = this.state.data.field_particles || this.state.data.nodes
-        const layout = this.state.data.field_layout && !this.props.layout ? this.state.data.field_layout.uuid : this.props.layout
+        const has_data = this.state.data.field_particles || this.state.data.list
+        let layout = this.props.layout
+
+        if (!layout && this.state.data.field_layout) {
+            layout = this.state.data.field_layout.uuid
+        } else if (typeof Drupal != 'undefined') {
+            layout = 'ArticleTeasers'
+        }
+
         let Widget = {}
 
         console.log('layout', layout)

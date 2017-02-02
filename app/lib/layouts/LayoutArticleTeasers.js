@@ -11,23 +11,23 @@ class LayoutArticleTeasers extends React.Component {
                 <Container fluid classes='panel-1'>
                     <Row>
                         <Col md={6} className='picture-left'>
-                            <ArticleTeaser ParticleImage={this.props.data.nodes[0].ParticleImage} ArticleCategory={this.props.data.nodes[0].field_main_topics[0]} ContributorList={this.props.data.nodes[0].field_contributors} ParticleH2={this.props.data.nodes[0].ParticleH2} ParticleText={this.props.data.nodes[0].ParticleText}/>
+                            <ArticleTeaser ParticleImage={this.props.data.list[0].field_particles_image[0]} ArticleCategory={this.props.data.list[0].field_main_topics[0]} ContributorList={this.props.data.list[0].field_contributors} ParticleH2={this.props.data.list[0].field_particles_h2[0]} ParticleText={this.props.data.list[0].field_particles_text[0]}/>
                         </Col>
 
                         <Col md={6} className='large-h'>
-                            <ArticleTeaser ParticleImage={this.props.data.nodes[1].ParticleImage} ArticleCategory={this.props.data.nodes[1].field_main_topics[1]} ContributorList={this.props.data.nodes[1].field_contributors} ParticleH2={this.props.data.nodes[1].ParticleH2} ParticleText={this.props.data.nodes[1].ParticleText}/>
+                            <ArticleTeaser ParticleImage={this.props.data.list[1].field_particles_image[0]} ArticleCategory={this.props.data.list[1].field_main_topics[1]} ContributorList={this.props.data.list[1].field_contributors} ParticleH2={this.props.data.list[1].field_particles_h2[0]} ParticleText={this.props.data.list[1].field_particles_text[0]}/>
                         </Col>
 
                         <Col md={6} className='small-h'>
-                            <ArticleTeaser ParticleImage={this.props.data.nodes[2].ParticleImage} ArticleCategory={this.props.data.nodes[2].field_main_topics[2]} ContributorList={this.props.data.nodes[2].field_contributors} ParticleH2={this.props.data.nodes[2].ParticleH2} ParticleText={this.props.data.nodes[2].ParticleText}/>
+                            <ArticleTeaser ParticleImage={this.props.data.list[2].field_particles_image[0]} ArticleCategory={this.props.data.list[2].field_main_topics[2]} ContributorList={this.props.data.list[2].field_contributors} ParticleH2={this.props.data.list[2].field_particles_h2[0]} ParticleText={this.props.data.list[2].field_particles_text[0]}/>
                         </Col>
 
                         <Col md={8} className='big-picture-left'>
-                            <ArticleTeaser ParticleImage={this.props.data.nodes[3].ParticleImage} ArticleCategory={this.props.data.nodes[3].field_main_topics[3]} ContributorList={this.props.data.nodes[3].field_contributors} ParticleH2={this.props.data.nodes[3].ParticleH2} ParticleText={this.props.data.nodes[3].ParticleText}/>
+                            <ArticleTeaser ParticleImage={this.props.data.list[3].field_particles_image[0]} ArticleCategory={this.props.data.list[3].field_main_topics[3]} ContributorList={this.props.data.list[3].field_contributors} ParticleH2={this.props.data.list[3].field_particles_h2[0]} ParticleText={this.props.data.list[3].field_particles_text[0]}/>
                         </Col>
 
                         <Col md={6} className='large-h-with-intro'>
-                            <ArticleTeaser ParticleImage={this.props.data.nodes[4].ParticleImage} ArticleCategory={this.props.data.nodes[4].field_main_topics[4]} ContributorList={this.props.data.nodes[4].field_contributors} ParticleH2={this.props.data.nodes[4].ParticleH2} ParticleText={this.props.data.nodes[4].ParticleText}/>
+                            <ArticleTeaser ParticleImage={this.props.data.list[4].field_particles_image[0]} ArticleCategory={this.props.data.list[4].field_main_topics[4]} ContributorList={this.props.data.list[4].field_contributors} ParticleH2={this.props.data.list[4].field_particles_h2[0]} ParticleText={this.props.data.list[4].field_particles_text[0]}/>
                         </Col>
                     </Row>
                 </Container>
