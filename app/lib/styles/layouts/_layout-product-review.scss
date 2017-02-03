@@ -89,6 +89,10 @@
         }
     }
 
+    .text-with-columns {
+        @include columnize-article (138px);
+    }
+
     .particle-text {
         strong {
             font-family: $font-family-sans-serif-demi, Sans-Serif;

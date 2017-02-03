@@ -12,6 +12,10 @@
         margin: 0 auto;
     }
 
+    .text-with-columns {
+        @include columnize-article (62px);
+    }
+
     .particle-text {
         font-size: 18px;
 

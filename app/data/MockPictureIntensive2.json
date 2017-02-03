@@ -1,5 +1,18 @@
 {
   "field_particles_h2": [
+      {
+          "bundle": "text",
+          "value": "PRODUCT IN IMAGE ABOVE",
+          "classes": "text-color-gold"
+      },{
+          "bundle": "text",
+          "value": "PRODUCT IN IMAGE ABOVE",
+          "classes": "text-color-gold"
+      },{
+          "bundle": "text",
+          "value": "PRODUCT IN IMAGE ABOVE",
+          "classes": "text-color-gold"
+      }
   ],
   "field_particles_image": [
     {
@@ -16,7 +29,15 @@
     },
     {
         "bundle": "media",
-        "url": "/images/mock/pi2-3.png"
+        "url": "/images/mock/pi2-3.png",
+        "credits": {
+            "classes": "text-bottom-left standalone-credit",
+            "value": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
+        }
+    },
+    {
+        "bundle": "media",
+        "url": "/images/mock/pi2-4.png"
     },
     {
         "bundle": "media",
@@ -32,24 +53,15 @@
     },
     {
         "bundle": "text",
-        "value": "Product descriptions must focus on the provided keyword and be no less than 100 words. The keyword must be in the first sentences of the summary."
-    },
-    {
-        "bundle": "text",
-        "value": "PRODUCT IN IMAGE ABOVE",
-        "classes": "text-color-gold"
-    },
-    {
-        "bundle": "text",
         "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015<br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie."
     },
     {
         "bundle": "text",
-        "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York. När: En varm höstdag i november, 2015 Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet Att få komma hem till Emelie och Nico Anaïs."
+        "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York. När: En varm höstdag i november, 2015 Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs."
     },
     {
         "bundle": "text",
-        "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015 <br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie själv andas och lever och som det egna märket Leontine personifierar – en bohemisk fri själ med. Emelie Törling  är grundare och designer på Leontine samt sångerska. Läs hennes blogg här!<br/><br/>Tack Emelie och Nico Anaïs för att vi fick komma!"
+        "value": "Var: Hemma hos Emelie, Gustav och Nico Anaïs i deras vackra lägenhet på Upper East Side i New York.<br/><br/>När: En varm höstdag i november, 2015<br/><br/>Hur: Med en promenad bland New York Brownstones och mysigt häng i drömmarnas boho-lyx lägenhet. Att få komma hem till Emelie och Nico Anaïs och spendera en stund tillsammans med dessa ljuvliga två och ha staden New York som kuliss känns nära på filmiskt. Vi vandrar runt i lägenheten som är en direkt spegel av det Emelie."
     }
   ],
     "color_variant": "gold",
@@ -78,6 +90,6 @@
         }
     }],
     "field_particles": [
-      
+
     ]
 }

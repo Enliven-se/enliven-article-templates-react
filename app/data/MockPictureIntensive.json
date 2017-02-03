@@ -39,7 +39,7 @@
         "value": "Critiquing the food we eat and love.",
         "classes": "text-color-gold"
     }
-    
+
   ],
   "field_particles_text": [
     {
@@ -58,7 +58,7 @@
     },
     {
         "bundle": "text",
-        "value": "<strong>Ingredients</strong><br/>50g Rocket Leaves <br/>500g Salmon <br/>5 Cherry Tomatoes <br/>Pine Nuts <br/>Olive Oil Parsley<br/><br/>"
+        "value": "<strong>Ingredients</strong><br/>50g Rocket Leaves <br/>500g Salmon <br/>5 Cherry Tomatoes <br/>Pine Nuts <br/>Olive Oil Parsley<br/><br/> <strong>Ingredients</strong><br/>50g Rocket Leaves <br/>500g Salmon <br/>5 Cherry Tomatoes <br/>Pine Nuts <br/>Olive Oil Parsley<br/><br/>"
     },
     {
         "bundle": "text",
@@ -66,13 +66,9 @@
     },
     {
         "bundle": "text",
-        "value": "<strong>Ingredients</strong><br/>50g Rocket Leaves <br/>500g Salmon <br/>5 Cherry Tomatoes <br/>Pine Nuts <br/>Olive Oil Parsley<br/><br/>"
-    },
-    {
-        "bundle": "text",
         "value": " Boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. <br/><br/> The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally ."
     }
-    
+
   ],
     "color_variant": "white",
     "field_main_topics": [{
@@ -106,6 +102,6 @@
         }
     }],
     "field_particles": [
-      
+
     ]
 }

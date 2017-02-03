@@ -2,6 +2,7 @@
 // bower:scss
 //
 @import 'variables';
+@import 'mixins';
 @import '../../bower_components/enliven-bootswatch/_variables';
 @import 'layouts/layout-columnist';
 @import 'layouts/layout-front';
@@ -12,12 +13,10 @@
 @import 'layouts/layout-picture-intensive-2';
 @import 'layouts/layout-article-teasers';
 @import 'layouts/layout-product-review';
-
 //
 // DEBUGGING
 //
 @import 'testing';
-
 //
 // endbower
 //

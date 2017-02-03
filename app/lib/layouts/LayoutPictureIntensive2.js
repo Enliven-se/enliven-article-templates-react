@@ -35,27 +35,23 @@ class PictureIntensive2 extends React.Component {
               </Row>
               <Row>
                   <Col md={6} className="removed-padding-col">
-                      <Col className='round-image'>
+                      <div className='round-image'>
                           <ParticleImage {...this.props.data.field_particles_image[1]}/>
-                          <div className='credits'>
-                              <ParticleText {...this.props.data.field_particles_text[0]}/>
-                          </div>
-                      </Col>
-                      <Col md={6} className='behind-image'>
+                      </div>
+                      <div md={6} className='behind-image'>
                           <ParticleImage {...this.props.data.field_particles_image[2]}/>
-                      </Col>
-
-                      <Col md={6} md={12} className=''>
-                          <div className='text-with-borderbox responsive-text-1'>
+                      </div>
+                      <div className=''>
+                          <div className='text-with-borderbox responsive-text-2'>
                               <ParticleH2 {...this.props.data.field_particles_h2[0]}/>
-                              <ParticleText {...this.props.data.field_particles_text[1]}/>
+                              <ParticleText {...this.props.data.field_particles_text[2]}/>
                           </div>
-                      </Col>
+                      </div>
                   </Col>
                   <Col md={6} className='right-side right-aligned-picture'>
-                      <div className='text-with-borderbox responsive-text-2'>
+                      <div className='text-with-borderbox responsive-text-1'>
                           <ParticleH2 {...this.props.data.field_particles_h2[1]}/>
-                          <ParticleText {...this.props.data.field_particles_text[2]}/>
+                          <ParticleText {...this.props.data.field_particles_text[1]}/>
                       </div>
                       <ParticleImage {...this.props.data.field_particles_image[3]}/>
                   </Col>

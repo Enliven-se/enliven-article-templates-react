@@ -14,10 +14,9 @@ import ParticleText from '../components/particles/ParticleText'
 
 class LayoutShort extends React.Component {
   render() {
-// console.log(this.props.data)
+    // console.log(this.props.data)
     return (
       <div className='layout layout-short'>
-
           <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles_image[0]}>
               <Container>
                   <Row>
@@ -40,17 +39,15 @@ class LayoutShort extends React.Component {
           </Container>
           <Container classes='article'>
               <Row>
-                  <Col sm={6} className='col-left'>
+                  <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.field_particles_text[1]}/>
                       <ParticlePullquote {...this.props.data.field_particles_pullquote[0]}/>
                       <ParticleText {...this.props.data.field_particles_text[2]}/>
                   </Col>
-                  <Col sm={6} className='col-right'>
-                      <ParticleText {...this.props.data.field_particles_text[3]}/>
-                  </Col>
               </Row>
           </Container>
       </div>
+
     )
   }
 }

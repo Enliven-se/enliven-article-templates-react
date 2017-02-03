@@ -64,19 +64,6 @@
                 }
             }
         }
-
-        .right-panel {
-            padding-right: 0;
-            padding-left : 0;
-
-            .photo-credits {
-                font-size    : 16px;
-                font-weight  : 300;
-                line-height  : 27px;
-                margin-bottom: 115px;
-                text-align   : left;
-            }
-        }
     }
 
     .text-with-borderbox {
@@ -90,22 +77,9 @@
 
     .round-image {
         position: absolute;
+        z-index : 1;
         @media screen and (max-width: $screen-md) {
             max-width: 75%;
-        }
-    }
-
-    .credits {
-        .particle-text {
-            text-align  : left;
-            font-size   : 16px;
-            line-height : 27px;
-            max-width   : 35%;
-            padding-left: 15px;
-            font-weight : 300;
-            @media screen and (max-width: $screen-md) {
-                max-width: 50%;
-            }
         }
     }
 
@@ -114,9 +88,20 @@
         float        : right;
         margin-top   : 41vw;
         margin-bottom: 100px;
+        width        : 50%;
         @media screen and (max-width: $screen-md) {
-            max-width : 50%;
-            margin-top: 25vw;
+            margin-top   : 25vw;
+            margin-bottom: 0;
+        }
+
+        .standalone-credit {
+            margin: 0 0 90px -250px;
+            @media screen and (max-width: $screen-md) {
+                margin     : 0;
+                max-width  : 250px;
+                font-size  : 14px;
+                line-height: 18px;
+            }
         }
     }
 
@@ -124,11 +109,11 @@
         padding-top: 95px;
     }
     @media screen and (max-width: $screen-md) {
-        .responsive-text-1 {
-            padding: 900px 10px 10px;
+        .responsive-text-2 {
+            padding: 700px 10px 10px;
         }
 
-        .responsive-text-2 {
+        .responsive-text-1 {
             margin-top: 50px;
             padding   : 10px;
         }
@@ -139,8 +124,8 @@
         }
     }
     @media screen and (max-width: $screen-sm) {
-        .responsive-text-1 {
-            padding: 700px 10px 10px;
+        .responsive-text-2 {
+            padding: 600px 10px 10px;
         }
     }
 

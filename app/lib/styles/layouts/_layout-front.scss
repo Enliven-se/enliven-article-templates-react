@@ -212,8 +212,9 @@
     }
 
     .article-meta-large,
+    .article-meta-large-centered,
+    .article-meta-large-left,
     .article-meta-small,
-    .article-meta-wide,
     .article-meta-xtr-sm {
         background-color: #ffffff;
         border          : 1px solid $golden-retriever;
@@ -256,6 +257,7 @@
         .article-category:hover {
             background-color: #ffffff;
         }
+        @include small-screen-dimensions(13px)
     }
 
     .has-intro-text {
@@ -295,28 +297,32 @@
         }
     }
     @media screen and (min-width: $screen-sm) {
+        .article-meta-large-centered {
+            bottom     : $vertical-padding;
+            width      : 66%;
+            margin-left: 16%;
+        }
+
         .article-meta-large {
-            bottom   : $vertical-padding;
-            max-width: 450px;
+            bottom     : $vertical-padding;
+            width      : 66%;
+            margin-left: 25%;
+        }
+
+        .article-meta-large-left {
+            width      : 44%;
+            bottom     : $vertical-padding;
+            margin-left: 17%;
         }
 
         .article-meta-small {
-            bottom   : $vertical-padding;
-            max-width: 320px;
-        }
-
-        .article-meta-wide {
-            bottom   : -160px;
-            max-width: 450px;
-        }
-
-        .article-meta-thin {
-            bottom   : -160px;
-            max-width: 320px;
+            bottom: $vertical-padding;
+            width : 83%;
         }
 
         .article-meta-xtr-sm {
-            max-width    : 320px;
+            width        : 83%;
+            margin-left  : 17%;
             padding-right: 0;
         }
     }

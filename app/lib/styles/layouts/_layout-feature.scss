@@ -28,6 +28,18 @@
         margin-bottom: 28px;
     }
 
+    .text-with-columns {
+        @include columnize-article (138px);
+    }
+
+    .col-right {
+        float: right;
+    }
+
+    .one-column-by-picture {
+        padding: 0 112px 0 69px;
+    }
+
     .particle-text {
         margin    : 33px 0 100px;
         font-size : 18px;

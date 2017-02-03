@@ -32,63 +32,52 @@ class LayoutFeature extends React.Component {
           </Container>
           <Container fluid>
               <Row>
-                  <Col sm={12}>
+                  <Col>
                       <ParticleImage {...this.props.data.field_particles_image[1]}/>
                   </Col>
-                  <Col sm={6} className='col-left'>
+                  <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.field_particles_text[1]}/>
                   </Col>
-                  <Col sm={6} className='col-right'>
-                      <ParticleText {...this.props.data.field_particles_text[2]}/>
-                  </Col>
-                  <Col sm={12}>
+                  <Col>
                       <ParticleImage {...this.props.data.field_particles_image[2]}/>
                   </Col>
-                  <Col sm={12}>
+                  <Col>
                       <ParticleImage {...this.props.data.field_particles_image[3]}/>
                   </Col>
-                  <Col sm={6} className='col-left'>
+                  <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.field_particles_text[3]}/>
-                      <HR/>
-                      <ParticleText {...this.props.data.field_particles_text[4]}/>
                   </Col>
-                  <Col sm={6} className='col-right'>
-                      <ParticleText {...this.props.data.field_particles_text[5]}/>
-                  </Col>
-                  <Col sm={12}>
+                  <Col>
                       <ParticleImage {...this.props.data.field_particles_image[4]}/>
                   </Col>
                   <Col sm={6}>
                       <ParticleImage {...this.props.data.field_particles_image[5]}/>
                   </Col>
-                  <Col sm={6} className='col-right'>
-                      <ParticleText {...this.props.data.field_particles_text[6]}/>
+                  <Col sm={6} className='one-column-by-picture'>
+                      <ParticleText {...this.props.data.field_particles_text[4]}/>
                   </Col>
-                  <Col sm={12}>
+                  <Col>
                       <ParticleImage {...this.props.data.field_particles_image[6]}/>
                   </Col>
-                  <Col sm={12}>
+                  <Col>
                       <ParticleImage {...this.props.data.field_particles_image[7]}/>
                   </Col>
-                  <Col sm={6} smOffset={6} className='col-right'>
-                      <ParticleText {...this.props.data.field_particles_text[7]}/>
+                  <Col sm={6} className='col-right'>
+                      <ParticleText {...this.props.data.field_particles_text[5]}/>
                   </Col>
-                  <Col sm={12}>
+                  <Col>
                       <ParticleImage {...this.props.data.field_particles_image[8]}/>
                   </Col>
-                  <Col sm={6} className='col-left'>
-                      <ParticleText {...this.props.data.field_particles_text[8]}/>
+                  <Col className='text-with-columns'>
+                      <ParticleText {...this.props.data.field_particles_text[6]}/>
                       <HR/>
-                      <ParticleText {...this.props.data.field_particles_text[9]}/>
+                      <ParticleText {...this.props.data.field_particles_text[7]}/>
                   </Col>
-                  <Col sm={6} className='col-right'>
-                      <ParticleText {...this.props.data.field_particles_text[10]}/>
-                  </Col>
-                  <Col sm={12}>
+                  <Col>
                       <ParticleImage {...this.props.data.field_particles_image[9]}/>
                   </Col>
                   <Col sm={6} className='col-left'>
-                      <ParticleText {...this.props.data.field_particles_text[11]}/>
+                      <ParticleText {...this.props.data.field_particles_text[8]}/>
                   </Col>
                   <Col sm={6}>
                       <ParticleImage {...this.props.data.field_particles_image[10]}/>

@@ -21,6 +21,7 @@ class PictureIntensive extends React.Component {
       <div className='layout layout-picture-intensive'>
           <Container fluid classes='panel-1'>
               <Row>
+
                   <Col className='article-category-container'>
                       <ArticleCategory name={this.props.data.field_main_topics[0].name} url={this.props.data.field_main_topics[0].url}/>
                   </Col>
@@ -50,8 +51,7 @@ class PictureIntensive extends React.Component {
                   <Col xs={12}>
                       <Container fluid classes='panel-3' backgroundImage={this.props.data.field_particles_image[1]}>
                           <Col sm={3} className='text-field-in-img'>
-                              <ParticleH4 {...this.props.data.field_particles[7]}/>
-                              <ParticleText {...this.props.data.field_particles_text[2]}/>
+                              <ParticleH4 {...this.props.data.field_particles[4]}/>
                               <ParticleText {...this.props.data.field_particles_text[3]}/>
                           </Col>
                       </Container>
@@ -59,7 +59,7 @@ class PictureIntensive extends React.Component {
               </Row>
               <Row className='big-row'>
                   <Col sm={6} smOffset={2}>
-                      <ParticleText {...this.props.data.field_particles_text[4]}/>
+                      <ParticleText {...this.props.data.field_particles_text[2]}/>
                   </Col>
               </Row>
               <Row className='big-row small-image'>
