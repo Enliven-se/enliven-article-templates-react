@@ -148,12 +148,8 @@
             margin: 0;
 
             .col-sm-6 {
-                padding: 0;
+                padding: 0 0 40px;
             }
-        }
-
-        .credit-container {
-            padding: 20px;
         }
     }
 
@@ -205,14 +201,11 @@
     }
 
     .photo-credits {
-        padding   : 60px 40px;
-        text-align: left;
-
-        a {
-            color: #ffffff;
-        }
         @media screen and (max-width: $screen-sm) {
             position: absolute;
+            z-index : 10;
+            bottom  : 40px;
+            left    : 40px;
         }
     }
 }
