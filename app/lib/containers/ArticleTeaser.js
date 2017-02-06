@@ -17,7 +17,10 @@ class ArticleTeaser extends React.Component {
       ? this.props.classes + ' '
       : ''
 
-    let metaLinksClasses = ''
+    let metaLinksClasses = this.props.metaLinksClasses
+      ? this.props.metaLinksClasses + ' '
+      : ''
+
     // metaLinksClasses += 'article-meta-small'
     // metaLinksClasses += 'has-intro-text'
     // metaLinksClasses += 'padding-left:3col;padding-right:1col'

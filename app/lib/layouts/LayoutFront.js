@@ -43,13 +43,14 @@ class LayoutFront extends React.Component {
                   <Col sm={3}>
                       <ParticleImage  {...this.props.data.list[0]}/>
                       <div className="article-meta-small">
-                          <ArticleTeaser classes="wrapper" ArticleCategory={this.props.data.list[1].field_main_topics[0]} ParticleH2={this.props.data.list[1].ParticleH2} ContributorList={this.props.data.list[1].field_contributors}/>
+                          <ArticleTeaser classes="wrapper" metaLinksClasses="" ArticleCategory={this.props.data.list[1].field_main_topics[0]} ParticleH2={this.props.data.list[1].ParticleH2} ContributorList={this.props.data.list[1].field_contributors}/>
                       </div>
                   </Col>
                   <Col sm={6}>
-                      <ArticleTeaser classes="wrapper lg-img first-center-img" >
+                      <ArticleTeaser classes="wrapper lg-img first-center-img" metaLinksClasses="article-meta-large article-meta-large-centered"
+                      >
                           <ParticleImage {...this.props.data.list[2]}/>
-                          <div className="article-meta-large article-meta-large-centered">
+                          <div className="">
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[3].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[3].ParticleH2}/>
@@ -66,9 +67,9 @@ class LayoutFront extends React.Component {
           <Container fluid>
               <Row>
                   <Col sm={6}>
-                      <ArticleTeaser classes="wrapper lg-img">
+                      <ArticleTeaser classes="wrapper lg-img" metaLinksClasses="article-meta-large meta-links has-intro-text">
                           <ParticleImage {...this.props.data.list[4]}/>
-                          <div className="article-meta-large meta-links has-intro-text">
+                          <div className="">
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[5].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[5].ParticleH2}/>
@@ -78,9 +79,9 @@ class LayoutFront extends React.Component {
                       </ArticleTeaser>
                   </Col>
                   <Col sm={6}>
-                      <ArticleTeaser classes="wrapper lg-img">
+                      <ArticleTeaser classes="wrapper lg-img" metaLinksClasses="article-meta-large meta-links has-intro-text">
                           <ParticleImage {...this.props.data.list[6]}/>
-                          <div className="article-meta-large meta-links has-intro-text">
+                          <div className="">
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[27].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[27].ParticleH2}/>
@@ -98,7 +99,7 @@ class LayoutFront extends React.Component {
                           <ParticleH2 className='text-color-gold' {...this.props.data.list[15]}/>
                           <HR/>
                           <ParticleImage {...this.props.data.list[7]}/>
-                          <ArticleTeaser classes="wrapper" ParticleH2={this.props.data.list[27].ParticleH2} ContributorList={this.props.data.list[27].field_contributors}/>
+                          <ArticleTeaser classes="wrapper" metaLinksClasses="" ParticleH2={this.props.data.list[27].ParticleH2} ContributorList={this.props.data.list[27].field_contributors}/>
                       </SquareArticleContainer>
                   </Col>
                   <Col xs={12} sm={6} md={4}>
@@ -121,7 +122,7 @@ class LayoutFront extends React.Component {
                           <ParticleH2 className='text-color-gold' {...this.props.data.list[19]}/>
                           <HR/>
                           <ParticleImage {...this.props.data.list[7]}/>
-                          <ArticleTeaser classes="wrapper" ParticleH2={this.props.data.list[29].ParticleH2} ContributorList={this.props.data.list[29].field_contributors}/>
+                          <ArticleTeaser classes="wrapper" metaLinksClasses="" ParticleH2={this.props.data.list[29].ParticleH2} ContributorList={this.props.data.list[29].field_contributors}/>
                       </SquareArticleContainer>
                   </Col>
                   <Col sm={6} md={4}>
@@ -144,7 +145,7 @@ class LayoutFront extends React.Component {
                           <ParticleH2 className='text-color-gold' {...this.props.data.list[18]}/>
                           <HR/>
                           <ParticleImage {...this.props.data.list[7]}/>
-                          <ArticleTeaser classes="wrapper" ParticleH2={this.props.data.list[31].ParticleH2} ContributorList={this.props.data.list[31].field_contributors}/>
+                          <ArticleTeaser classes="wrapper" metaLinksClasses="" ParticleH2={this.props.data.list[31].ParticleH2} ContributorList={this.props.data.list[31].field_contributors}/>
                       </SquareArticleContainer>
                   </Col>
                   <Col xs={12} sm={6} md={4}>
@@ -201,9 +202,9 @@ class LayoutFront extends React.Component {
               </Row>
               <Row className='articles row-flex'>
                   <Col sm={6}>
-                      <ArticleTeaser classes="wrapper lg-img">
+                      <ArticleTeaser classes="wrapper lg-img" metaLinksClasses="article-meta-large meta-links has-intro-text">
                           <ParticleImage {...this.props.data.list[32]}/>
-                          <div className="article-meta-large meta-links has-intro-text">
+                          <div className="">
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[33].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[33].ParticleH2}/>
@@ -213,9 +214,9 @@ class LayoutFront extends React.Component {
                       </ArticleTeaser>
                   </Col>
                   <Col sm={6}>
-                      <ArticleTeaser classes="wrapper lg-img">
+                      <ArticleTeaser classes="wrapper lg-img" metaLinksClasses="article-meta-large meta-links has-intro-text">
                           <ParticleImage {...this.props.data.list[34]}/>
-                          <div className="article-meta-large meta-links has-intro-text">
+                          <div className="">
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[35].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[35].ParticleH2}/>
@@ -239,9 +240,9 @@ class LayoutFront extends React.Component {
                       </WideImgContainer>
                   </Col>
                   <Col sm={3}>
-                      <ArticleTeaser classes="wrapper xtr-sm-img">
+                      <ArticleTeaser classes="wrapper xtr-sm-img" metaLinksClasses="article-meta-xtr-sm">
                           <ParticleImage {...this.props.data.list[38]}/>
-                          <div className="article-meta-xtr-sm">
+                          <div className="">
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[39].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[39].ParticleH2}/>
