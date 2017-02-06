@@ -1,0 +1,15 @@
+@mixin columnize-article ($padding-horizontal) {
+     @media screen and (min-width: $screen-sm){
+        column-count: 2;
+        column-gap  : 110px;
+        padding     : 0 $padding-horizontal;
+    }
+}
+@mixin small-screen-dimensions ($padding-horizontal) {
+     @media screen and (max-width: $screen-sm){
+        padding-left : $padding-horizontal;
+        padding-right: $padding-horizontal;
+        width        : 100%;
+        margin-left  : 0;
+    }
+}
