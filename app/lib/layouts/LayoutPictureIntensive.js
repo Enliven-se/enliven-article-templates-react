@@ -39,7 +39,7 @@ class PictureIntensive extends React.Component {
                       </div>
                   </Col>
               </Row>
-              <Row className='big-row first-text'>
+              <Row className='big-row first-text row-flex'>
                   <Col sm={6} smOffset={3} mdOffset={2}>
                       <ParticleText {...this.props.data.field_particles_text[1]}/>
                   </Col>
@@ -70,7 +70,7 @@ class PictureIntensive extends React.Component {
                       <ParticleImage {...this.props.data.field_particles_image[3]}/>
                   </Col>
               </Row>
-              <Row className='big-row'>
+              <Row className='big-row row-flex'>
                   <Col sm={6} smOffset={3} mdOffset={2}>
                       <ParticleText {...this.props.data.field_particles_text[5]}/>
                   </Col>

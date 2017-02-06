@@ -15,7 +15,7 @@
         "url": "/images/mock/pi-image-3.jpg",
         "credits": {
             "classes": "text-bottom-left",
-            "value": "<div class=\"text-color-white\">Jacket, Bershka, <a>bershka.com</a>,<br/>Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara,<br/><a>zara.com</a>, in Zara Tops, Boots, Zara,<br/><a>zara.com</a>, in Zara Boots</div>"
+            "value": "<div class=\"text-color-white\">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>, in Calvin Klein Jeans, T shirt, Zara, <a>zara.com</a>, in Zara Tops, Boots, Zara, <a>zara.com</a>, in Zara Boots</div>"
         }
     },
     {
@@ -23,7 +23,7 @@
         "url": "/images/mock/pi-image-4.jpg",
         "credits": {
             "classes": "text-top-right",
-            "value": "<div class=\"text-color-white\">Jacket, Bershka, <a>bershka.com</a>,<br/>Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara,<br/><a>zara.com</a>, in Zara Tops, Boots, Zara,<br/><a>zara.com</a>, in Zara Boots</div>"
+            "value": "<div class=\"text-color-white\">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>, in Calvin Klein Jeans, T shirt, Zara, <a>zara.com</a>, in Zara Tops, Boots, Zara, <a>zara.com</a>, in Zara Boots</div>"
         }
     }
   ],
