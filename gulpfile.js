@@ -223,6 +223,12 @@ gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
   gulp.watch('app/images/**/*', reload)
 })
 
+gulp.task('setProduction', function() {
+   development = false
+
+    $.util.log("DEV="+ (development?"yes":"no"));
+})
+
 // Build
 gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], function() {
   gulp.src('dist/scripts/app.js')
@@ -232,9 +238,7 @@ gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], functio
 })
 
 // deploy to Github pages
-gulp.task('deploy', ['build', 'cname'], () => {
-  development = false
-
+gulp.task('deploy', ['setProduction', 'build', 'cname'], () => {
   return gulp.src('dist')
     .pipe($.subtree({
       remote: 'github',
