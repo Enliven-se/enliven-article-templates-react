@@ -30,7 +30,7 @@ class ArticleTeaser extends React.Component {
           {this.props.ParticleImage
               ? <ParticleImage {...this.props.ParticleImage}/>
           : ''}
-          <MetaLinksContainer className={metaLinksClasses} {...this.props.MetaLinksContainer}>
+          <MetaLinksContainer classes={metaLinksClasses} {...this.props.MetaLinksContainer}>
               {this.props.ArticleCategory
                   ? <ArticleCategory name={this.props.ArticleCategory.name} classes={this.props.ArticleCategory.classes} url={this.props.ArticleCategory.url}/>
               : ''}
