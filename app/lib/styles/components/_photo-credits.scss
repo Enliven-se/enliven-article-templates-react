@@ -1,3 +1,5 @@
+$credits_padding: 30px;
+
 .credit-container {
     .particle-text,
     .photo-credits {
@@ -21,24 +23,24 @@
     }
 
     .text-top-left {
-        left: 40px;
-        top : 40px;
+        left: $credits_padding;
+        top : $credits_padding;
     }
 
     .text-bottom-left {
-        left  : 40px;
-        bottom: 40px;
+        left  : $credits_padding;
+        bottom: $credits_padding;
     }
 
     .text-top-right {
-        right     : 40px;
-        top       : 40px;
+        right     : $credits_padding;
+        top       : $credits_padding;
         text-align: right;
     }
 
     .text-bottom-right {
-        right     : 40px;
-        bottom    : 40px;
+        right     : $credits_padding;
+        bottom    : $credits_padding;
         text-align: right;
     }
 }
