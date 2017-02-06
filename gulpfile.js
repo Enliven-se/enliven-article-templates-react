@@ -1,24 +1,23 @@
 'use strict'
 
-var gulp = require('gulp')
-var del = require('del')
+const gulp = require('gulp')
+const del = require('del')
 const fs = require('fs')
-
-var path = require('path')
+const path = require('path')
 
 // Load plugins
-var $ = require('gulp-load-plugins')()
-var browserify = require('browserify')
-var watchify = require('watchify')
-var source = require('vinyl-source-stream'),
+const $ = require('gulp-load-plugins')()
+const browserify = require('browserify')
+const watchify = require('watchify')
+const source = require('vinyl-source-stream')
+const sourceFile = './app/scripts/app.js'
+const destFolder = './dist/scripts'
+const destFileName = 'app.js'
+const browserSync = require('browser-sync')
+const reload = browserSync.reload
 
-  sourceFile = './app/scripts/app.js',
-
-  destFolder = './dist/scripts',
-  destFileName = 'app.js'
-
-var browserSync = require('browser-sync')
-var reload = browserSync.reload
+// globals
+let development = true
 
 // Styles
 gulp.task('styles', ['moveCss'])
@@ -29,13 +28,18 @@ gulp.task('moveCss', ['sass'], function() {
   gulp.src(['.tmp/styles/**/*.css'], {
     base: '.tmp/styles/'
   })
-    .pipe(gulp.dest('dist/styles'))
+   // minify CSS
+  .pipe($.if(!development, $.cssnano({
+    safe: true,
+    autoprefixer: false
+  })))
+  .pipe(gulp.dest('dist/styles'))
 })
 
 gulp.task('sass', () => {
   return gulp.src('app/lib/styles/**/*.scss')
     .pipe($.plumber())
-    .pipe($.sourcemaps.init())
+    .pipe($.if(development, $.sourcemaps.init()))
     .pipe($.sass.sync({
       outputStyle: 'expanded',
       precision: 10,
@@ -44,14 +48,14 @@ gulp.task('sass', () => {
     .pipe($.autoprefixer({
       browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
     }))
-    .pipe($.sourcemaps.write())
+    .pipe($.if(development, $.sourcemaps.write()))
     .pipe(gulp.dest('.tmp/styles'))
-    .pipe(reload({
+    .pipe($.if(development, reload({
       stream: true
-    }))
+    })))
 })
 
-var bundler = watchify(browserify({
+const bundler = watchify(browserify({
   entries: [sourceFile],
   debug: true,
   insertGlobals: true,
@@ -229,6 +233,8 @@ gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], functio
 
 // deploy to Github pages
 gulp.task('deploy', ['build', 'cname'], () => {
+  development = false
+
   return gulp.src('dist')
     .pipe($.subtree({
       remote: 'github',
