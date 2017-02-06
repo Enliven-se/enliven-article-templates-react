@@ -49,11 +49,11 @@ class LayoutFront extends React.Component {
                   <Col sm={6}>
                       <ArticleTeaser classes="wrapper lg-img first-center-img" >
                           <ParticleImage {...this.props.data.list[2]}/>
-                          <div className="article-meta-large-centered">
+                          <div className="article-meta-large article-meta-large-centered">
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[3].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[3].ParticleH2}/>
-                                  { /* <ContributorList {...this.props.data.list[3].field_contributors}/>   */ }
+                                  <ContributorList data={this.props.data.list[3].field_contributors}/>
                               </div>
                           </div>
                       </ArticleTeaser>
@@ -72,7 +72,7 @@ class LayoutFront extends React.Component {
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[5].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[5].ParticleH2}/>
-                                  { /* <ContributorList {...this.props.data.list[5].field_contributors}/>   */ }
+                                  <ContributorList data={this.props.data.list[5].field_contributors}/>
                               </div>
                           </div>
                       </ArticleTeaser>
@@ -84,7 +84,7 @@ class LayoutFront extends React.Component {
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[27].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[27].ParticleH2}/>
-                                  { /* <ContributorList {...this.props.data.list[27].field_contributors}/>   */ }
+                                  <ContributorList data={this.props.data.list[27].field_contributors}/>
                               </div>
                           </div>
                       </ArticleTeaser>
@@ -207,7 +207,7 @@ class LayoutFront extends React.Component {
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[33].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[33].ParticleH2}/>
-                                  { /* <ContributorList {...this.props.data.list[33].field_contributors}/>   */ }
+                                  <ContributorList data={this.props.data.list[33].field_contributors}/>
                               </div>
                           </div>
                       </ArticleTeaser>
@@ -219,7 +219,7 @@ class LayoutFront extends React.Component {
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[35].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[35].ParticleH2}/>
-                                  { /* <ContributorList {...this.props.data.list[35].field_contributors}/>   */ }
+                                  <ContributorList data={this.props.data.list[35].field_contributors}/>
                               </div>
                           </div>
                       </ArticleTeaser>
@@ -228,11 +228,11 @@ class LayoutFront extends React.Component {
                       <WideImgContainer>
                           <div className="wrapper">
                               <ParticleImage {...this.props.data.list[36]}/>
-                              <div className="article-meta-large-left">
+                              <div className="article-meta-large article-meta-large-left">
                                   <div className="wrapper">
                                       <ArticleCategory {...this.props.data.list[37].field_main_topics[0]}/>
                                       <ParticleH2 {...this.props.data.list[37].ParticleH2}/>
-                                      { /* <ContributorList {...this.props.data.list[37].field_contributors}/>   */ }
+                                      <ContributorList data={this.props.data.list[37].field_contributors}/>
                                   </div>
                               </div>
                           </div>
@@ -245,15 +245,15 @@ class LayoutFront extends React.Component {
                               <div className="wrapper">
                                   <ArticleCategory {...this.props.data.list[39].field_main_topics[0]}/>
                                   <ParticleH2 {...this.props.data.list[39].ParticleH2}/>
-                                  { /* <ContributorList {...this.props.data.list[39].field_contributors}/>   */ }
+                                  <ContributorList data={this.props.data.list[39].field_contributors}/>
                               </div>
                           </div>
                       </ArticleTeaser>
                   </Col>
 
-                  </Row>
-                  </Container>
-              </div>
+              </Row>
+          </Container>
+      </div>
     )
   }
 }
