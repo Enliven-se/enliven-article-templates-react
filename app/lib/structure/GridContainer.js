@@ -170,7 +170,7 @@ class GridContainer extends React.Component {
             return <Widget data={this.state.data}/>
         }
 
-        return <div>Loading data…</div>
+        return null
     }
 }
 
