@@ -58,18 +58,21 @@ class GridContainer extends React.Component {
     componentDidMount() {
         if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined') {
             const node_url = this.getDataURL()
-            jQuery.ajax({
-                url: node_url,
-                dataType: 'json',
-                success: function(data) {
-                    this.setState({data: data});
-                }.bind(this)
-            }).done(function(response, textStatus, jqXHR) {
-                // console.log("response:", response);
-                // console.log("textStatus:", textStatus);
-            }).fail(function(jqXHR, textStatus, errorThrown) {
-                console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
-            });
+
+            if (node_url) {
+                jQuery.ajax({
+                    url: node_url,
+                    dataType: 'json',
+                    success: function(data) {
+                        this.setState({data: data});
+                    }.bind(this)
+                }).done(function(response, textStatus, jqXHR) {
+                    // console.log("response:", response);
+                    // console.log("textStatus:", textStatus);
+                }).fail(function(jqXHR, textStatus, errorThrown) {
+                    console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
+                });
+            }
         } else {
             this.setState({
                 data: this.getData(this.props.layout)
@@ -80,10 +83,11 @@ class GridContainer extends React.Component {
     getDataURL() {
         switch (Drupal.settings.currentPath) {
             case 'front':
-            case 'admin/workbench':
+            case 'frontpage':
                 return `/node.json?type=article&load-entity-refs`
             default:
-                return `/${Drupal.settings.currentPath}.json?load-entity-refs`
+                return null;
+                // return `/${Drupal.settings.currentPath}.json?load-entity-refs`
         }
     }
 
