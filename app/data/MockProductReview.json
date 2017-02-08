@@ -8,11 +8,19 @@
     },
     {
         "bundle": "media",
-        "url": "/images/mock/product-2.jpg"
+        "url": "/images/mock/product-2.jpg",
+        "credits": {
+            "classes": "text-bottom-right",
+            "value": "Photographer: Anna Sidorova"
+}
     },
     {
         "bundle": "media",
-        "url": "/images/mock/product-3.jpg"
+        "url": "/images/mock/product-3.jpg",
+        "credits": {
+            "classes": "text-bottom-right",
+            "value": "Photographer: Anna Sidorova"
+}
     },
   ],
   "field_particles_pullquote": [
