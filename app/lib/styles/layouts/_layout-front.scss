@@ -91,8 +91,10 @@
 
     .lg-img,
     .sm-img {
-        position      : relative;
-        padding-bottom: 197px;
+        @media screen and (min-width: $screen-sm) {
+            position      : relative;
+            padding-bottom: 197px;
+        }
     }
 
     .lg-img {
@@ -216,17 +218,18 @@
     .article-meta-large-left,
     .article-meta-small,
     .article-meta-xtr-sm {
-        background-color: #ffffff;
-        border          : 1px solid $golden-retriever;
-        bottom          : $vertical-padding;
-        height          : 237px;
-        line-height     : 20px;
-        padding         : 22px 24px;
-        position        : absolute;
-        z-index         : 5;
-        display         : flex;
-        flex-direction  : column;
-        justify-content : space-around;
+        @media screen and (min-width: $screen-sm) {
+            border          : 1px solid $golden-retriever;
+            background-color: #ffffff;
+            position        : absolute;
+            z-index         : 5;
+        }
+        bottom         : $vertical-padding;
+        line-height    : 20px;
+        padding        : 22px 24px;
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-around;
 
         h2 {
             color      : $blackish;
@@ -240,7 +243,7 @@
         .article-category {
             border         : none;
             font-size      : 16px;
-            padding        : 0;
+            padding        : 10px 0 0;
             color          : $golden-retriever;
             text-transform : uppercase;
             text-decoration: underline;
@@ -249,7 +252,6 @@
         .article-category:hover {
             background-color: #ffffff;
         }
-        @include small-screen-dimensions(13px)
     }
 
     .has-intro-text {
@@ -270,11 +272,6 @@
 
         .contributor-list {
             margin-top: 23px;
-        }
-        @media screen and (max-width: $screen-md) {
-            .particle-text {
-                display: none;
-            }
         }
         @media screen and (max-width: $screen-sm) {
             max-width    : 100%;

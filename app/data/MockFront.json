@@ -147,7 +147,7 @@
         },
         28: {
             "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-4.jpg",
+            "url": "//qa.enliven.co/images/mock/hp-7.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
                 "value": "Photographer: Anna Sidorova"
@@ -158,10 +158,6 @@
                 "bundle": "h2",
                 "value": "Traveling to the Heart of Stockholm"
             },
-            "ParticleText": {
-                "bundle": "text",
-                "value": "At the start of a project, we usually need to make wireframes in some form or another."
-            },
             "field_contributors": [{
                 "ContributorCredit": "Photographer & Contributor",
                 "ContributorLink": {
@@ -171,7 +167,7 @@
         },
         30: {
             "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-4.jpg",
+            "url": "//qa.enliven.co/images/mock/hp-7.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
                 "value": "Photographer: Anna Sidorova"
@@ -182,9 +178,25 @@
                 "bundle": "h2",
                 "value": "Traveling to the Heart of Stockholm"
             },
-            "ParticleText": {
-                "bundle": "text",
-                "value": "At the start of a project, we usually need to make wireframes in some form or another."
+            "field_contributors": [{
+                "ContributorCredit": "Photographer & Contributor",
+                "ContributorLink": {
+                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                }
+            }]
+        },
+        40: {
+            "type": "image",
+            "url": "//qa.enliven.co/images/mock/hp-7.jpg",
+            "credits": {
+                "classes": "text-top-left text-color-white",
+                "value": "Photographer: Anna Sidorova"
+            }
+        },
+        41: {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
             },
             "field_contributors": [{
                 "ContributorCredit": "Photographer & Contributor",
