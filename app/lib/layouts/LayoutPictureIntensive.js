@@ -21,15 +21,14 @@ class PictureIntensive extends React.Component {
       <div className='layout layout-picture-intensive'>
           <Container fluid classes='panel-1'>
               <Row>
-
                   <Col className='article-category-container'>
                       <ArticleCategory name={this.props.data.field_main_topics[0].name} url={this.props.data.field_main_topics[0].url}/>
                   </Col>
               </Row>
               <Row>
-                  <Col md={10} className='header-image'>
+                  <div className='header-image'>
                       <Container fluid classes='panel-2' backgroundImage={this.props.data.field_particles_image[0]}></Container>
-                  </Col>
+                  </div>
                   <Col md={4} className='article-meta-col'>
                       <div className='article-meta'>
                           <ArticleTitle {...this.props.data.field_headline}/>
