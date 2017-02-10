@@ -31,21 +31,19 @@
                 line-height: 61px;
                 margin     : 0 0 0 60px;
             }
-            //
-            // hr {
-            //     max-width: 100px;
-            //     border   : 1.5px solid $golden-retriever;
-            // }
+
             .particle-text {
-                line-height: 35px;
-                margin-left: 65px;
+                line-height  : 35px;
+                margin-left  : 65px;
+                padding-left : 13px;
+                padding-right: 13px;
             }
 
             .contributor-list {
                 margin: 0 0 0 27px;
             }
             @media screen and (min-width: $screen-md) {
-                height: 110vh;
+                height: 100vh;
             }
             @media screen and (max-width: $screen-sm) {
                 h1 {

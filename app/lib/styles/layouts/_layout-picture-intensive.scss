@@ -1,9 +1,11 @@
 .layout-picture-intensive {
-    h4 {
-        font-family   : $font-family-sans-serif;
-        color         : $golden-retriever;
-        text-transform: uppercase;
-        font-size     : 18px;
+    h2 {
+        font-family: $font-family-sans-serif;
+        font-size  : 18px;
+    }
+
+    hr {
+        border-color: $golden-retriever;
     }
 
     .header-image {
@@ -11,13 +13,11 @@
         width   : 100vw;
     }
 
+    .big-image-div,
     .header-image,
     .panel-1,
     .row {
-        margin-left  : 0;
-        margin-right : 0;
-        padding-left : 0;
-        padding-right: 0;
+        @include small-screen-dimensions(0);
     }
 
     .panel-2 {
@@ -63,8 +63,7 @@
         }
 
         hr {
-            border-color: $greyish;
-            margin      : 25px 0 47px;
+            margin: 25px 0 47px;
         }
 
         .particle-text {
@@ -94,10 +93,6 @@
                 box-sizing: none !important;
                 font-size : 12px;
             }
-
-            hr {
-                margin: 10px 0;
-            }
         }
     }
 
@@ -126,13 +121,6 @@
 
     .big-image {
         margin: 90px 0 55px;
-
-        .col-sm-12 {
-            padding: 0;
-        }
-        @media screen and (max-width: $screen-sm) {
-            margin: 10px 0;
-        }
     }
 
     .small-image {
@@ -146,12 +134,6 @@
         }
     }
 
-    .panel-3 {
-        @media screen and (min-width: $screen-md) {
-            padding-right: 80px;
-        }
-    }
-
     .text-field-in-img {
         background-color: #ffffff;
         float           : right;
@@ -160,22 +142,19 @@
         border          : solid 1px $golden-retriever;
         line-height     : 30px;
 
-        h4 {
-            font-size: 16px;
-            margin   : 31px 0 34px;
-        }
-
         strong {
-            color          : $golden-retriever;
-            text-transform : uppercase;
-            text-decoration: underline;
-            margin-left    : -25px;
-            font-size      : 13px;
+            color         : $golden-retriever;
+            text-transform: uppercase;
+            margin-left   : -25px;
+            font-size     : 13px;
         }
 
         .particle-text {
-            margin-left: 50px;
-            font-size  : 13px;
+            margin   : 20px 0 0 50px;
+            font-size: 13px;
+        }
+        @media screen and (min-width: $screen-sm) {
+            width: 25%;
         }
         @media screen and (max-width: $screen-sm) {
             margin: 50px 0;
@@ -183,22 +162,13 @@
         }
     }
 
-    .particle-text {
-        text-align: justify;
-
-        hr {
-            border-color: $golden-retriever;
-            max-width   : 300px;
-            margin-left : -20px;
-        }
-    }
-
     .photo-credits {
         @media screen and (max-width: $screen-sm) {
-            position: absolute;
-            z-index : 10;
-            bottom  : 40px;
-            left    : 40px;
+            position : absolute;
+            z-index  : 10;
+            bottom   : 40px;
+            left     : 40px;
+            max-width: 75%;
         }
     }
 }

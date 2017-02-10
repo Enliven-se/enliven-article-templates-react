@@ -50,9 +50,9 @@ class LayoutLookbook extends React.Component {
                   </Col>
                   <Col md={6}>
                       <ParticleImage {...this.props.data.field_particles_image[4]}/>
-                        </Col>
-                    </Row>
-                </Container>
+                  </Col>
+              </Row>
+          </Container>
             </div>
     )
   }

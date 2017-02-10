@@ -1,5 +1,14 @@
 {
   "field_particles_h2": [
+      {
+          "bundle": "text",
+          "value": "Boxes make the design",
+          "classes": "text-color-gold text-uppercase"
+      },
+      {
+          "bundle": "text",
+          "value": "Seasonal leaf & salmon salad"
+      }
   ],
   "field_particles_image": [
     {
@@ -54,15 +63,11 @@
     },
     {
         "bundle": "text",
-        "value": "<h4>Boxes make the design</h4><hr>Boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. <br/><br/> This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally ."
+        "value": "Boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally stand out. <br/><br/> This design agency uses a flexible JavaScript-based layout which updates its size depending on the browser window size. The content is “packed” in boxes is usual for such a grid-based design; however, the alignment of the boxes makes the design literally ."
     },
     {
         "bundle": "text",
         "value": "<strong>Ingredients</strong><br/>50g Rocket Leaves <br/>500g Salmon <br/>5 Cherry Tomatoes <br/>Pine Nuts <br/>Olive Oil Parsley<br/><br/> <strong>Ingredients</strong><br/>50g Rocket Leaves <br/>500g Salmon <br/>5 Cherry Tomatoes <br/>Pine Nuts <br/>Olive Oil Parsley<br/><br/>"
-    },
-    {
-        "bundle": "text",
-        "value": "<h4>Seasonal leaf & salmon salad</h4>"
     },
     {
         "bundle": "text",
