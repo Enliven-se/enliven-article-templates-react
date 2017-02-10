@@ -52,12 +52,10 @@
         flex-direction : column;
         justify-content: center;
 
-        .left-small {
-            .text-bottom-left,
-            .text-bottom-right {
-                bottom: 0;
-                top   : 30vw;
-            }
+        .text-bottom-left,
+        .text-bottom-right {
+            bottom: 0;
+            top   : 27vw;
         }
     }
 
