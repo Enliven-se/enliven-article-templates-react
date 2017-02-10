@@ -16,6 +16,13 @@
         @include small-screen-dimensions(0);
     }
 
+    .container-fluid {
+        @media screen and (min-width: $screen-md) {
+            margin-left : 20px;
+            margin-right: 20px;
+        }
+    }
+
     .article-category-wrapper {
         margin-left: -30px;
     }
