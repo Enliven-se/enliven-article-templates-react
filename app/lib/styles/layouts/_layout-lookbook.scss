@@ -47,17 +47,16 @@
         margin-bottom: 69px;
     }
 
-    .img-small {
-        @media screen and (min-width: $screen-sm ) {
-            display: flex;
+    .verticle-aligned {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
 
-            .particle-image {
-                height    : 84%;
-                align-self: center;
-            }
-
-            .img-responsive {
-                max-height: 100%;
+        .left-small {
+            .text-bottom-left,
+            .text-bottom-right {
+                bottom: 0;
+                top   : 30vw;
             }
         }
     }
