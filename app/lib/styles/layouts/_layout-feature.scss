@@ -9,13 +9,17 @@
         }
     }
 
-    .container-fluid {
-        margin-left : 20px;
-        margin-right: 20px;
+    .col-sm-6,
+    .container-fluid,
+    .has-hero,
+    .row {
+        @include small-screen-dimensions(0);
+    }
 
-        &.has-hero {
-            margin-left : 0;
-            margin-right: 0;
+    .container-fluid {
+        @media screen and (min-width: $screen-md) {
+            margin-left : 20px;
+            margin-right: 20px;
         }
     }
 
@@ -37,7 +41,9 @@
     }
 
     .one-column-by-picture {
-        padding: 0 112px 0 69px;
+        @media screen and (min-width: $screen-md) {
+            padding: 0 112px 0 69px;
+        }
     }
 
     .particle-text {
@@ -47,6 +53,10 @@
 
         strong {
             font-family: $font-family-sans-serif-demi, Sans-Serif;
+        }
+        @media screen and (max-width: $screen-md) {
+            padding-left : 13px;
+            padding-right: 13px;
         }
     }
 
