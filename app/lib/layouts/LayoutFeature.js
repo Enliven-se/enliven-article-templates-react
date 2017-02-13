@@ -35,51 +35,77 @@ class LayoutFeature extends React.Component {
                   <Col>
                       <ParticleImage {...this.props.data.field_particles_image[1]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.field_particles_text[1]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col>
                       <ParticleImage {...this.props.data.field_particles_image[2]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col>
                       <ParticleImage {...this.props.data.field_particles_image[3]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.field_particles_text[3]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col>
                       <ParticleImage {...this.props.data.field_particles_image[4]}/>
                   </Col>
-                  <Col sm={6}>
+              </Row>
+              <Row>
+                  <Col sm={6} className='half-width-picture'>
                       <ParticleImage {...this.props.data.field_particles_image[5]}/>
                   </Col>
                   <Col sm={6} className='one-column-by-picture'>
                       <ParticleText {...this.props.data.field_particles_text[4]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col>
                       <ParticleImage {...this.props.data.field_particles_image[6]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col>
                       <ParticleImage {...this.props.data.field_particles_image[7]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col sm={6} className='col-right'>
                       <ParticleText {...this.props.data.field_particles_text[5]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col>
                       <ParticleImage {...this.props.data.field_particles_image[8]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col className='text-with-columns'>
                       <ParticleText {...this.props.data.field_particles_text[6]}/>
                       <HR/>
                       <ParticleText {...this.props.data.field_particles_text[7]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col>
                       <ParticleImage {...this.props.data.field_particles_image[9]}/>
                   </Col>
+              </Row>
+              <Row>
                   <Col sm={6} className='col-left'>
                       <ParticleText {...this.props.data.field_particles_text[8]}/>
                   </Col>
-                  <Col sm={6}>
+                  <Col sm={6} className='half-width-picture col-right'>
                       <ParticleImage {...this.props.data.field_particles_image[10]}/>
                   </Col>
               </Row>

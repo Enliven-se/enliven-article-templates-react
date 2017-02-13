@@ -33,7 +33,7 @@ class LayoutLookbook extends React.Component {
                   </Col>
               </Row>
               <Row className='big-row row-flex'>
-                  <Col md={6}>
+                  <Col md={6} className='big-image-1'>
                       <ParticleImage {...this.props.data.field_particles_image[1]}/>
                   </Col>
                   <Col md={5} className='verticle-aligned'>
@@ -48,7 +48,7 @@ class LayoutLookbook extends React.Component {
                           <ParticleImage {...this.props.data.field_particles_image[3]}/>
                       </div>
                   </Col>
-                  <Col md={6}>
+                  <Col md={6} className='big-image-2'>
                       <ParticleImage {...this.props.data.field_particles_image[4]}/>
                   </Col>
               </Row>

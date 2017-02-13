@@ -9,6 +9,11 @@
         }
     }
 
+    .half-width-picture {
+        padding-left : 0;
+        padding-right: 0;
+    }
+
     .col-sm-6,
     .container-fluid,
     .has-hero,
@@ -38,6 +43,10 @@
 
     .col-right {
         float: right;
+
+        .img-responsive {
+            float: right;
+        }
     }
 
     .one-column-by-picture {
