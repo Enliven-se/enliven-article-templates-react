@@ -27,7 +27,8 @@
             "classes":"sm-img",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         1: {
@@ -51,7 +52,8 @@
             "url": "//qa.enliven.co/images/mock/hp-2.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         3: {
@@ -79,7 +81,8 @@
             "url": "//qa.enliven.co/images/mock/hp-3.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         5: {
@@ -107,7 +110,8 @@
             "url": "//qa.enliven.co/images/mock/hp-4.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         27: {
@@ -150,7 +154,8 @@
             "url": "//qa.enliven.co/images/mock/hp-7.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         29: {
@@ -170,7 +175,8 @@
             "url": "//qa.enliven.co/images/mock/hp-7.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         31: {
@@ -190,7 +196,8 @@
             "url": "//qa.enliven.co/images/mock/hp-7.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         41: {
@@ -230,7 +237,8 @@
             "url": "//qa.enliven.co/images/mock/hp-7.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         9: {
@@ -272,7 +280,8 @@
             "url": "//qa.enliven.co/images/mock/hp-3.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         33: {
@@ -300,7 +309,8 @@
             "url": "//qa.enliven.co/images/mock/hp-4.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         35: {
@@ -329,7 +339,8 @@
             "classes":"sm-img",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         37: {
@@ -353,7 +364,8 @@
             "url": "//qa.enliven.co/images/mock/hp-6.jpg",
             "credits": {
                 "classes": "text-top-left text-color-white",
-                "value": "Photographer: Anna Sidorova"
+                "value": "Photographer: <a>Anna Sidorova</a>",
+                "url":"#"
             }
         },
         39: {

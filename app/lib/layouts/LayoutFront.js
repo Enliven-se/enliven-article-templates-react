@@ -42,23 +42,23 @@ class LayoutFront extends React.Component {
                   </Col>
                   <Col sm={3}>
                       <ArticleTeaser
-      classes="wrapper"
-      metaLinksClasses="article-meta-small"
-      ParticleImage={this.props.data.list[0]}
-      ArticleCategory={this.props.data.list[1].field_main_topics[0]}
-      ParticleH2={this.props.data.list[1].ParticleH2}
-      ContributorList={this.props.data.list[1].field_contributors}
-      />
+                          classes="wrapper"
+                          metaLinksClasses="article-meta-small"
+                          ParticleImage={this.props.data.list[0]}
+                          ArticleCategory={this.props.data.list[1].field_main_topics[0]}
+                          ParticleH2={this.props.data.list[1].ParticleH2}
+                          ContributorList={this.props.data.list[1].field_contributors}
+                      />
                   </Col>
                   <Col sm={6}>
                       <ArticleTeaser
-      classes="wrapper lg-img first-center-img"
-      metaLinksClasses="article-meta-large-centered article-meta-large-centered"
-      ParticleImage={this.props.data.list[2]}
-      ArticleCategory={this.props.data.list[3].field_main_topics[0]}
-      ParticleH2={this.props.data.list[3].ParticleH2}
-      ContributorList={this.props.data.list[3].field_contributors}
-      />
+                          classes="wrapper lg-img first-center-img"
+                          metaLinksClasses="article-meta-large-centered article-meta-large-centered"
+                          ParticleImage={this.props.data.list[2]}
+                          ArticleCategory={this.props.data.list[3].field_main_topics[0]}
+                          ParticleH2={this.props.data.list[3].ParticleH2}
+                          ContributorList={this.props.data.list[3].field_contributors}
+                      />
                   </Col>
                   <Col sm={3}>
               <ParticleH2 className='heading-text' {...this.props.data.list[16]}/>

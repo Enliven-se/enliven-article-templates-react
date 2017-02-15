@@ -12,6 +12,10 @@ $credits_padding: 30px;
         div:first-child {
             margin-bottom: 1rem;
         }
+
+        a {
+            text-decoration: underline;
+        }
     }
 }
 @media screen and (min-width: $screen-sm) {

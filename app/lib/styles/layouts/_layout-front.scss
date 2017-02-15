@@ -149,10 +149,6 @@
                 color: $blackish;
             }
         }
-
-        a {
-            text-transform: uppercase;
-        }
         @media screen and (min-width: $screen-md) {
             margin-bottom: 180px;
         }
@@ -305,14 +301,25 @@
         }
 
         .article-meta-small {
-            bottom: $vertical-padding;
-            width : 83%;
+            bottom      : $vertical-padding;
+            margin-right: 13px;
+            @media screen and (max-width: $screen-lg -1) {
+                margin-right: 0;
+            }
+            @media screen and (min-width: $screen-lg) {
+                margin-right: 40px;
+            }
         }
 
         .article-meta-xtr-sm {
-            width        : 83%;
-            margin-left  : 9.5%;
             padding-right: 0;
+            margin-right : 13px;
+            @media screen and (max-width: $screen-lg -1) {
+                margin-left: 0;
+            }
+            @media screen and (min-width: $screen-lg) {
+                margin-left: 40px;
+            }
         }
     }
     @media screen and (max-width: $screen-md) {
