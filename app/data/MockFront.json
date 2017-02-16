@@ -1,388 +1,357 @@
 {
     "color_variant": "gold",
-    "is_front": true,
-
-
     "created": 1478258637,
-    "field_contributors": [{
-        "ContributorCredit": "Photographer & Contributor",
-        "ContributorLink": {
-            "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-        }
-    }, {
-        "ContributorCredit": "Tod Vanderwolve",
-        "ContributorLink": {
-            "url": "//cms.enliven.co/en/people/tod-vanderwolve"
-        }
-    }],
-    "list": {
-        17: {
-            "type": "text",
-            "value": "Women's Health",
-            "classes": "text-color-gold"
-        },
-        0: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-1.jpg",
-            "classes":"sm-img",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
+    "field_contributors": [
+        {
+            "ContributorCredit": "Photographer & Contributor",
+            "ContributorLink": {
+                "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
             }
         },
-        1: {
-            "field_main_topics": [{
-                "name": "Women's Fashion",
-                "classes": "text-color-gold text-uppercase"
-            }],
+        {
+            "ContributorCredit": "Tod Vanderwolve",
+            "ContributorLink": {
+                "url": "//cms.enliven.co/en/people/tod-vanderwolve"
+            }
+        }
+    ],
+    "is_front": true,
+    "list": {
+        "0": {
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "London Fashion Week 2016"
             },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
                 }
-            }]
-        },
-        2: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-2.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        3: {
-            "field_main_topics": [{
-                "name": "Outdoor & Health",
-                "classes": "text-color-gold text-uppercase"
-            }],
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "Traveling to the Heart of Stockholm"
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+            ],
+            "field_main_topics": [
+                {
+                    "classes": "text-color-gold text-uppercase",
+                    "name": "Women's Fashion"
                 }
-            }]
-        },
-        16: {
-            "type": "text",
-            "value": "Ad Space"
-        },
-        4: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-3.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        5: {
-            "field_main_topics": [{
-                "name": "Outdoor & Health",
-                "classes": "text-color-gold text-uppercase"
-            }],
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "Traveling to the Heart of Stockholm"
-            },
-            "ParticleText": {
-                "bundle": "text",
-                "value": "At the start of a project, we usually need to make wireframes in some form or another."
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }]
-        },
-        6: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-4.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        27: {
-            "field_main_topics": [{
-                "name": "Outdoor & Health",
-                "classes": "text-color-gold text-uppercase"
-            }],
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "Traveling to the Heart of Stockholm"
-            },
-            "ParticleText": {
-                "bundle": "text",
-                "value": "At the start of a project, we usually need to make wireframes in some form or another."
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }]
-        },
-        15: {
-            "type": "text",
-            "value": "Women's Health",
-            "classes": "text-color-gold"
-        },
-        18: {
-            "type": "text",
-            "value": "Top Articles",
-            "classes": "text-color-gold"
-        },
-        19: {
-            "type": "text",
-            "value": "Interior Design",
-            "classes": "text-color-gold"
-        },
-        28: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-7.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        29: {
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "Traveling to the Heart of Stockholm"
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }]
-        },
-        30: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-7.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        31: {
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "Traveling to the Heart of Stockholm"
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }]
-        },
-        40: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-7.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        41: {
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "Traveling to the Heart of Stockholm"
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }]
-        },
-        8: {
-            "type": "text",
-            "value": "<strong class=\"bold-bits\">Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.</strong>"
-        },
-        23: {
-            "type": "text",
-            "value": "Take a Tip From Ashley and Mary-Kate Olsen and Stock Up on Chic Basics for Under $500"
-        },
-        24: {
-            "type": "text",
-            "value": "Hailey Baldwin Takes Red Carpet Denim Dressing to the Streets"
-        },
-        25: {
-            "type": "text",
-            "value": "Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos"
-        },
-        26: {
-            "type": "text",
-            "value": "At the start of a project, we usually need to make wireframes in some form or another."
-        },
-        7: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-7.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        9: {
-            "type": "text",
-            "value": "More",
-            "url": "#"
-        },
-        21: {
-            "type": "text",
-            "value": "Our Contributors",
-            "classes": "text-uppercase"
-        },
-        10: {
+            ],
             "ParticleImage": {
-                "bundle": "media",
-                "url": "//qa.enliven.co/images/mock/dummy-contributor.png"
+                "classes": "sm-img",
+                "credits": {
+                    "classes": "text-top-left text-color-white",
+                    "url": "#",
+                    "value": "Photographer: <a>Anna Sidorova</a>"
+                },
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-1.jpg"
+            }
+        },
+        "1": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
             },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ],
+            "field_main_topics": [
+                {
+                    "classes": "text-color-gold text-uppercase",
+                    "name": "Outdoor & Health"
+                }
+            ],
+            "ParticleImage": {
+                "credits": {
+                    "classes": "text-top-left text-color-white",
+                    "url": "#",
+                    "value": "Photographer: <a>Anna Sidorova</a>"
+                },
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-2.jpg"
+            }
+        },
+        "2": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
+            },
+            "ParticleText": {
+                "bundle": "text",
+                "value": "At the start of a project, we usually need to make wireframes in some form or another."
+            },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ],
+            "field_main_topics": [
+                {
+                    "classes": "text-color-gold text-uppercase",
+                    "name": "Outdoor & Health"
+                }
+            ],
+            "ParticleImage": {
+                "credits": {
+                    "classes": "text-top-left text-color-white",
+                    "url": "#",
+                    "value": "Photographer: <a>Anna Sidorova</a>"
+                },
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-3.jpg"
+            }
+        },
+        "3": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
+            },
+            "ParticleText": {
+                "bundle": "text",
+                "value": "At the start of a project, we usually need to make wireframes in some form or another."
+            },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ],
+            "field_main_topics": [
+                {
+                    "classes": "text-color-gold text-uppercase",
+                    "name": "Outdoor & Health"
+                }
+            ],
+            "ParticleImage": {
+                "credits": {
+                    "classes": "text-top-left text-color-white",
+                    "url": "#",
+                    "value": "Photographer: <a>Anna Sidorova</a>"
+                },
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-4.jpg"
+            }
+        },
+        "4": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
+            },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ],
+            "ParticleImage": {
+                "credits": {
+                    "classes": "text-top-left text-color-white",
+                    "url": "#",
+                    "value": "Photographer: <a>Anna Sidorova</a>"
+                },
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-7.jpg"
+            }
+        },
+        "5": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
+            },
+            "ParticleImage": {
+                "credits": {
+                    "classes": "text-top-left text-color-white",
+                    "url": "#",
+                    "value": "Photographer: <a>Anna Sidorova</a>"
+                },
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-7.jpg"
+            },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ]
+        },
+        "6": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
+            },
+            "ParticleImage": {
+                "credits": {
+                    "classes": "text-top-left text-color-white",
+                    "url": "#",
+                    "value": "Photographer: <a>Anna Sidorova</a>"
+                },
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-7.jpg"
+            },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ]
+        },
+        "7": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
+            },
+            "ParticleText": {
+                "bundle": "text",
+                "value": "At the start of a project, we usually need to make wireframes in some form or another."
+            },
+            "credits": {
+                "classes": "text-top-left text-color-white",
+                "url": "#",
+                "value": "Photographer: <a>Anna Sidorova</a>"
+            },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ],
+            "field_main_topics": [
+                {
+                    "classes": "text-color-gold text-uppercase",
+                    "name": "Outdoor & Health"
+                }
+            ],
+            "type": "image",
+            "url": "//qa.enliven.co/images/mock/hp-3.jpg"
+        },
+        "8": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
+            },
+            "ParticleText": {
+                "bundle": "text",
+                "value": "At the start of a project, we usually need to make wireframes in some form or another."
+            },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ],
+            "field_main_topics": [
+                {
+                    "classes": "text-color-gold text-uppercase",
+                    "name": "Outdoor & Health"
+                }
+            ],
+            "ParticleImage": {
+                "credits": {
+                    "classes": "text-top-left text-color-white",
+                    "url": "#",
+                    "value": "Photographer: <a>Anna Sidorova</a>"
+                },
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-4.jpg"
+            }
+        },
+        "9": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "London Fashion Week 2016"
+            },
+            "ParticleImage": {
+                "classes": "sm-img",
+                "credits": {
+                    "classes": "text-top-left text-color-white",
+                    "url": "#",
+                    "value": "Photographer: <a>Anna Sidorova</a>"
+                },
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-5.jpg"
+            },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ],
+            "field_main_topics": [
+                {
+                    "classes": "text-color-gold text-uppercase",
+                    "name": "Women's Fashion"
+                }
+            ]
+        },
+        "10": {
+            "ParticleH2": {
+                "bundle": "h2",
+                "value": "Traveling to the Heart of Stockholm"
+            },
+            "ParticleImage": {
+                "type": "image",
+                "url": "//qa.enliven.co/images/mock/hp-6.jpg"
+            },
+            "credits": {
+                "classes": "text-top-left text-color-white",
+                "url": "#",
+                "value": "Photographer: <a>Anna Sidorova</a>"
+            },
+            "field_contributors": [
+                {
+                    "ContributorCredit": "Photographer & Contributor",
+                    "ContributorLink": {
+                        "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
+                    }
+                }
+            ],
+            "field_main_topics": [
+                {
+                    "classes": "text-color-gold text-uppercase",
+                    "name": "Outdoor & Health"
+                }
+            ]
+        },
+        "11": {
             "ParticleH2": {
                 "bundle": "h2",
                 "value": "Peter Larsen"
             },
             "ParticleH3": {
                 "bundle": "h3",
-                "value": "Popular Contributions",
-                "classes": "text-color-gold text-uppercase"
+                "classes": "text-color-gold text-uppercase",
+                "value": "Popular Contributions"
+            },
+            "ParticleImage": {
+                "bundle": "media",
+                "url": "//qa.enliven.co/images/mock/dummy-contributor.png"
             },
             "ParticleText": {
                 "bundle": "text",
                 "value": "At the start of a project, we usually need to make wireframes in some form or another."
             }
-        },
-        22: {
-            "type": "text",
-            "value": "We Recommend",
-            "classes": "text-uppercase"
-        },
-        32: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-3.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        33: {
-            "field_main_topics": [{
-                "name": "Outdoor & Health",
-                "classes": "text-color-gold text-uppercase"
-            }],
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "Traveling to the Heart of Stockholm"
-            },
-            "ParticleText": {
-                "bundle": "text",
-                "value": "At the start of a project, we usually need to make wireframes in some form or another."
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }]
-        },
-        34: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-4.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        35: {
-            "field_main_topics": [{
-                "name": "Outdoor & Health",
-                "classes": "text-color-gold text-uppercase"
-            }],
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "Traveling to the Heart of Stockholm"
-            },
-            "ParticleText": {
-                "bundle": "text",
-                "value": "At the start of a project, we usually need to make wireframes in some form or another."
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }]
-        },
-        36: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-5.jpg",
-            "classes":"sm-img",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        37: {
-            "field_main_topics": [{
-                "name": "Women's Fashion",
-                "classes": "text-color-gold text-uppercase"
-            }],
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "London Fashion Week 2016"
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }]
-        },
-        38: {
-            "type": "image",
-            "url": "//qa.enliven.co/images/mock/hp-6.jpg",
-            "credits": {
-                "classes": "text-top-left text-color-white",
-                "value": "Photographer: <a>Anna Sidorova</a>",
-                "url":"#"
-            }
-        },
-        39: {
-            "field_main_topics": [{
-                "name": "Outdoor & Health",
-                "classes": "text-color-gold text-uppercase"
-            }],
-            "ParticleH2": {
-                "bundle": "h2",
-                "value": "Traveling to the Heart of Stockholm"
-            },
-            "field_contributors": [{
-                "ContributorCredit": "Photographer & Contributor",
-                "ContributorLink": {
-                    "url": "//cms.enliven.co/en/groups/photographer-and-contributor"
-                }
-            }]
         }
     }
 }

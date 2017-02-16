@@ -60,6 +60,8 @@ class GridContainer extends React.Component {
             const node_url = this.getDataURL()
 
             if (node_url) {
+                console.log('loading data from url', node_url)
+
                 jQuery.ajax({
                     url: node_url,
                     dataType: 'json',
@@ -72,6 +74,12 @@ class GridContainer extends React.Component {
                 }).fail(function(jqXHR, textStatus, errorThrown) {
                     console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
                 });
+            } else if (typeof Drupal.settings.react_content != 'undefined'){
+
+                console.log('loading data from page', Drupal.settings.react_content)
+
+                this.setState({data: Drupal.settings.react_content});
+
             }
         } else {
             this.setState({
@@ -83,8 +91,7 @@ class GridContainer extends React.Component {
     getDataURL() {
         switch (Drupal.settings.currentPath) {
             case 'front':
-            case 'frontpage':
-                return `/node.json?type=article&load-entity-refs`
+//                return `/node.json?type=article&load-entity-refs`
             default:
                 return null;
                 // return `/${Drupal.settings.currentPath}.json?load-entity-refs`
@@ -98,7 +105,7 @@ class GridContainer extends React.Component {
         if (!layout && this.state.data.field_layout) {
             layout = this.state.data.field_layout.uuid
         } else if (typeof Drupal != 'undefined') {
-            layout = 'ArticleTeasers'
+            // layout = 'ArticleTeasers'
         }
 
         let Widget = {}
