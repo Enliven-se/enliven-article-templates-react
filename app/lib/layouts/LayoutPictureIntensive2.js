@@ -30,16 +30,16 @@ class PictureIntensive2 extends React.Component {
                       <ContributorList data={this.props.data.field_contributors} separator=', '/>
                   </Col>
                   <Col md={6} className='right-panel'>
-                      <ParticleImage {...this.props.data.field_particles_image[0]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[0]}/>
                   </Col>
               </Row>
               <Row>
                   <Col md={6} className="removed-padding-col">
                       <div className='round-image'>
-                          <ParticleImage {...this.props.data.field_particles_image[1]}/>
+                          <ParticleImage {...this.props.data.field_particles_media[1]}/>
                       </div>
                       <div md={6} className='behind-image'>
-                          <ParticleImage {...this.props.data.field_particles_image[2]}/>
+                          <ParticleImage {...this.props.data.field_particles_media[2]}/>
                       </div>
                       <div className=''>
                           <div className='text-with-borderbox responsive-text-2'>
@@ -53,12 +53,12 @@ class PictureIntensive2 extends React.Component {
                           <ParticleH2 {...this.props.data.field_particles_h2[1]}/>
                           <ParticleText {...this.props.data.field_particles_text[1]}/>
                       </div>
-                      <ParticleImage {...this.props.data.field_particles_image[3]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[3]}/>
                   </Col>
               </Row>
               <Row>
                   <Col md={6} className='centered-picture'>
-                      <ParticleImage {...this.props.data.field_particles_image[4]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[4]}/>
                   </Col>
                   <Col md={6} className='text-with-borderbox responsive-text-3'>
                       <ParticleH2 {...this.props.data.field_particles_h2[2]}/>
