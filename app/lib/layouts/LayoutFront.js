@@ -35,11 +35,13 @@ class LayoutFront extends React.Component {
     return (
       <div className='layout layout-front'>
           <Container fluid classes='panel-1'>
-              <Row className='articles row-flex'>
+              <Row>
                   <Col sm={12}>
                       <ParticleH2 className='text-color-gold header-top' classes="text-color-gold" type="text" value="Women's Health"/>
                       <HR/>
                   </Col>
+              </Row>
+              <Row className='articles row-flex'>
                   <Col sm={3}>
                       <ArticleTeaser
                           classes="wrapper"
