@@ -19,7 +19,8 @@
   "list": {
     "0": {
       "headline": {
-        "value": "London Fashion Week 2016"
+        "value": "London Fashion Week 2016",
+        "url": "#"
       },
       "field_contributors": [
         {
@@ -50,7 +51,8 @@
     },
     "1": {
       "headline": {
-        "value": "Traveling to the Heart of Stockholm"
+        "value": "Traveling to the Heart of Stockholm",
+        "url": "#"
       },
       "field_contributors": [
         {
@@ -80,7 +82,8 @@
     },
     "2": {
       "headline": {
-        "value": "Traveling to the Heart of Stockholm"
+        "value": "Traveling to the Heart of Stockholm",
+        "url": "#"
       },
       "field_particles_text": [
         {
@@ -116,7 +119,8 @@
     },
     "3": {
       "headline": {
-        "value": "Traveling to the Heart of Stockholm"
+        "value": "Traveling to the Heart of Stockholm",
+        "url": "#"
       },
       "field_particles_text": [
         {
@@ -152,7 +156,8 @@
     },
     "4": {
       "headline": {
-        "value": "Traveling to the Heart of Stockholm"
+        "value": "Traveling to the Heart of Stockholm",
+        "url": "#"
       },
       "field_contributors": [
         {
@@ -176,7 +181,8 @@
     },
     "5": {
       "headline": {
-        "value": "Traveling to the Heart of Stockholm"
+        "value": "Traveling to the Heart of Stockholm",
+        "url": "#"
       },
       "field_particles_media": [
         {
@@ -200,7 +206,8 @@
     },
     "6": {
       "headline": {
-        "value": "Traveling to the Heart of Stockholm"
+        "value": "Traveling to the Heart of Stockholm",
+        "url": "#"
       },
       "field_particles_media": [
         {
@@ -224,7 +231,8 @@
     },
     "7": {
       "headline": {
-        "value": "Traveling to the Heart of Stockholm"
+        "value": "Traveling to the Heart of Stockholm",
+        "url": "#"
       },
       "field_particles_text": [
         {
@@ -260,7 +268,8 @@
     },
     "8": {
       "headline": {
-        "value": "Traveling to the Heart of Stockholm"
+        "value": "Traveling to the Heart of Stockholm",
+        "url": "#"
       },
       "field_particles_text": [
         {
@@ -296,7 +305,8 @@
     },
     "9": {
       "headline": {
-        "value": "London Fashion Week 2016"
+        "value": "London Fashion Week 2016",
+        "url": "#"
       },
       "field_particles_media": [
         {
@@ -327,7 +337,8 @@
     },
     "10": {
       "headline": {
-        "value": "Traveling to the Heart of Stockholm"
+        "value": "Traveling to the Heart of Stockholm",
+        "url": "#"
       },
       "field_particles_media": [
         {
@@ -357,7 +368,8 @@
     },
     "11": {
       "headline": {
-        "value": "Peter Larsen"
+        "value": "Peter Larsen",
+        "url": "#"
       },
       "field_particles_h3": [
         {

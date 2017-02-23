@@ -59,7 +59,12 @@ class GridContainer extends React.Component {
         if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined') {
             const node_url = this.getDataURL()
 
-            if (node_url) {
+            if (typeof Drupal.settings.react_content != 'undefined'){
+                console.log('loading data from page', Drupal.settings.react_content)
+
+                this.setState({data: Drupal.settings.react_content});
+
+            } else if (node_url) {
                 console.log('loading data from url', node_url)
 
                 jQuery.ajax({
@@ -74,12 +79,7 @@ class GridContainer extends React.Component {
                 }).fail(function(jqXHR, textStatus, errorThrown) {
                     console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
                 });
-            } else if (typeof Drupal.settings.react_content != 'undefined'){
-
-                console.log('loading data from page', Drupal.settings.react_content)
-
-                this.setState({data: Drupal.settings.react_content});
-
+            } else {
             }
         } else {
             this.setState({
@@ -89,12 +89,13 @@ class GridContainer extends React.Component {
     }
 
     getDataURL() {
-        switch (Drupal.settings.currentPath) {
+        switch (Drupal.settings.currentPath.split('/').shift()) {
             case 'front':
-//                return `/node.json?type=article&load-entity-refs`
+                return `/node.json?type=article&load-entity-refs`
+            case 'node':
+                return `/${Drupal.settings.currentPath}.json?load-entity-refs`
             default:
-                return null;
-                // return `/${Drupal.settings.currentPath}.json?load-entity-refs`
+                null
         }
     }
 
