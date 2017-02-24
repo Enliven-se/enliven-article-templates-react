@@ -25,7 +25,7 @@ class LayoutFeature extends React.Component {
                   <Col sm={6}>
                       <ContributorList data={this.props.data.field_contributors}/>
                   </Col>
-                  <Col sm={6} className='col-right'>
+                  <Col sm={6} className='col-right text-without-columns'>
                       <ParticleText {...this.props.data.field_particles_text[0]}/>
                   </Col>
               </Row>
@@ -52,7 +52,7 @@ class LayoutFeature extends React.Component {
                   </Col>
               </Row>
               <Row>
-                  <Col className='text-with-columns'>
+                  <Col className='text-with-columns text-without-columns'>
                       <ParticleText {...this.props.data.field_particles_text[3]}/>
                   </Col>
               </Row>
@@ -65,7 +65,7 @@ class LayoutFeature extends React.Component {
                   <Col sm={6} className='half-width-picture'>
                       <ParticleImage {...this.props.data.field_particles_media[5]}/>
                   </Col>
-                  <Col sm={6} className='one-column-by-picture'>
+                  <Col sm={6} className='one-column-by-picture text-without-columns'>
                       <ParticleText {...this.props.data.field_particles_text[4]}/>
                   </Col>
               </Row>
@@ -80,7 +80,7 @@ class LayoutFeature extends React.Component {
                   </Col>
               </Row>
               <Row>
-                  <Col sm={6} className='col-right'>
+                  <Col sm={6} className='col-right text-without-columns'>
                       <ParticleText {...this.props.data.field_particles_text[5]}/>
                   </Col>
               </Row>
@@ -102,7 +102,7 @@ class LayoutFeature extends React.Component {
                   </Col>
               </Row>
               <Row>
-                  <Col sm={6} className='col-left'>
+                  <Col sm={6} className='col-left text-without-columns'>
                       <ParticleText {...this.props.data.field_particles_text[8]}/>
                   </Col>
                   <Col sm={6} className='half-width-picture col-right'>

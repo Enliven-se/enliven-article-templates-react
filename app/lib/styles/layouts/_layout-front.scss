@@ -74,21 +74,6 @@
         }
     }
 
-    .first-center-img {
-        .icon-i {
-            position: absolute;
-            display : none;
-
-            img {
-                margin : 0 auto;
-                z-index: 500;
-            }
-            @media screen and (max-width: $screen-sm) {
-                display: none;
-            }
-        }
-    }
-
     .lg-img,
     .sm-img {
         @media screen and (min-width: $screen-sm) {
@@ -243,6 +228,11 @@
             color          : $golden-retriever;
             text-transform : uppercase;
             text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color          : $greyish;
         }
 
         .article-category:hover {

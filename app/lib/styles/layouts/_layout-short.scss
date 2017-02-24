@@ -23,6 +23,13 @@
             font-family: $font-family-sans-serif-demi, Sans-Serif;
         }
     }
+    @media screen and (max-width: $screen-md) {
+        .particle-text,
+        .text-with-columns {
+            padding-left : 10px;
+            padding-right: 10px;
+        }
+    }
 
     .article-meta {
         margin-top: 145px;

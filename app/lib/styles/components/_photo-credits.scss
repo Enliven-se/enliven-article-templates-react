@@ -18,33 +18,32 @@ $credits_padding: 30px;
         }
     }
 }
-@media screen and (min-width: $screen-sm) {
-    .text-bottom-left,
-    .text-bottom-right,
-    .text-top-left,
-    .text-top-right {
-        position: absolute;
-    }
 
-    .text-top-left {
-        left: $credits_padding;
-        top : $credits_padding;
-    }
+.text-bottom-left,
+.text-bottom-right,
+.text-top-left,
+.text-top-right {
+    position: absolute;
+}
 
-    .text-bottom-left {
-        left  : $credits_padding;
-        bottom: $credits_padding;
-    }
+.text-top-left {
+    left: $credits_padding;
+    top : $credits_padding;
+}
 
-    .text-top-right {
-        right     : $credits_padding;
-        top       : $credits_padding;
-        text-align: right;
-    }
+.text-bottom-left {
+    left  : $credits_padding;
+    bottom: $credits_padding;
+}
 
-    .text-bottom-right {
-        right     : $credits_padding;
-        bottom    : $credits_padding;
-        text-align: right;
-    }
+.text-top-right {
+    right     : $credits_padding;
+    top       : $credits_padding;
+    text-align: right;
+}
+
+.text-bottom-right {
+    right     : $credits_padding;
+    bottom    : $credits_padding;
+    text-align: right;
 }

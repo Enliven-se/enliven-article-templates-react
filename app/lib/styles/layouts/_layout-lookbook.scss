@@ -72,6 +72,15 @@
         .big-row {
             margin-bottom: 0;
         }
+
+        .photo-credits {
+            max-width: 300px;
+        }
+    }
+    @media screen and (max-width: $screen-md) {
+        .particle-image {
+            margin-bottom: 25px;
+        }
     }
     @media screen and (min-width: $screen-sm) {
         .contributor-list .list-item {

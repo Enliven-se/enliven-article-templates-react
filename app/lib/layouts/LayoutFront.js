@@ -37,30 +37,30 @@ class LayoutFront extends React.Component {
           <Container fluid classes='panel-1'>
               <Row>
                   <Col sm={12}>
-                      <ParticleH2 className='text-color-gold header-top' classes="text-color-gold" type="text" value="Women's Health"/>
+                      <ParticleH2 className='text-color-gold header-top' classes="text-color-gold" type="text" value="New On Enliven"/>
                       <HR/>
                   </Col>
               </Row>
               <Row className='articles row-flex'>
                   <Col sm={3}>
                       <ArticleTeaser
-                          classes="wrapper"
-                          metaLinksClasses="article-meta-small"
-                          ParticleImage={this.props.data.list[0].field_particles_media[0]}
-                          ArticleCategory={this.props.data.list[0].field_main_topics[0]}
-                          ParticleH2={this.props.data.list[0].headline}
-                          ContributorList={this.props.data.list[0].field_contributors}
-                      />
+      classes="wrapper"
+      metaLinksClasses="article-meta-small"
+      ParticleImage={this.props.data.list[0].field_particles_media[0]}
+      ArticleCategory={this.props.data.list[0].field_main_topics[0]}
+      ParticleH2={this.props.data.list[0].headline}
+      ContributorList={this.props.data.list[0].field_contributors}
+      />
                   </Col>
                   <Col sm={6}>
                       <ArticleTeaser
-                          classes="wrapper lg-img first-center-img"
-                          metaLinksClasses="article-meta-large-centered article-meta-large-centered"
-                          ParticleImage={this.props.data.list[1].field_particles_media[0]}
-                          ArticleCategory={this.props.data.list[1].field_main_topics[0]}
-                          ParticleH2={this.props.data.list[1].headline}
-                          ContributorList={this.props.data.list[1].field_contributors}
-                      />
+      classes="wrapper lg-img first-center-img"
+      metaLinksClasses="article-meta-large-centered article-meta-large-centered"
+      ParticleImage={this.props.data.list[1].field_particles_media[0]}
+      ArticleCategory={this.props.data.list[1].field_main_topics[0]}
+      ParticleH2={this.props.data.list[1].headline}
+      ContributorList={this.props.data.list[1].field_contributors}
+      />
                   </Col>
                   <Col sm={3}>
                       <ParticleH2 className='heading-text' type="text" value="Ad Space" />
@@ -69,21 +69,21 @@ class LayoutFront extends React.Component {
               <Row>
                   <Col sm={6}>
                       <ArticleTeaser classes="wrapper lg-img" metaLinksClasses="article-meta-large has-intro-text"
-                          ParticleImage={this.props.data.list[2].field_particles_media[0]}
-                          ArticleCategory={this.props.data.list[2].field_main_topics[0]}
-                          ParticleH2={this.props.data.list[2].headline}
-                          ParticleText={this.props.data.list[2].field_particles_text[0]}
-                          ContributorList={this.props.data.list[2].field_contributors}
-                      />
+      ParticleImage={this.props.data.list[2].field_particles_media[0]}
+      ArticleCategory={this.props.data.list[2].field_main_topics[0]}
+      ParticleH2={this.props.data.list[2].headline}
+      ParticleText={this.props.data.list[2].field_particles_text[0]}
+      ContributorList={this.props.data.list[2].field_contributors}
+      />
                   </Col>
                   <Col sm={6}>
                       <ArticleTeaser classes="wrapper lg-img" metaLinksClasses="article-meta-large has-intro-text"
-                          ParticleImage={this.props.data.list[3].field_particles_media[0]}
-                          ArticleCategory={this.props.data.list[3].field_main_topics[0]}
-                          ParticleH2={this.props.data.list[3].headline}
-                          ParticleText={this.props.data.list[3].field_particles_text[0]}
-                          ContributorList={this.props.data.list[3].field_contributors}
-                      />
+      ParticleImage={this.props.data.list[3].field_particles_media[0]}
+      ArticleCategory={this.props.data.list[3].field_main_topics[0]}
+      ParticleH2={this.props.data.list[3].headline}
+      ParticleText={this.props.data.list[3].field_particles_text[0]}
+      ContributorList={this.props.data.list[3].field_contributors}
+      />
                   </Col>
               </Row>
               <Row className='articles-grid row-flex'>
@@ -93,10 +93,10 @@ class LayoutFront extends React.Component {
                           <HR/>
                           <ParticleImage {...this.props.data.list[4].field_particles_media[0]}/>
                           <ArticleTeaser classes="wrapper"
-                              ParticleH2={this.props.data.list[4].headline}
-                              //   ParticleText={this.props.data.list[4].field_particles_text[0]}
-                              ContributorList={this.props.data.list[4].field_contributors}
-                          />
+      ParticleH2={this.props.data.list[4].headline}
+      //   ParticleText={this.props.data.list[4].field_particles_text[0]}
+      ContributorList={this.props.data.list[4].field_contributors}
+      />
                       </SquareArticleContainer>
                   </Col>
                   <Col xs={12} sm={6} md={4}>
@@ -116,14 +116,14 @@ class LayoutFront extends React.Component {
                   </Col>
                   <Col xs={12} sm={6} md={4}>
                       <SquareArticleContainer>
-                          <ParticleH2 className='text-color-gold' classes="text-color-gold" type="text" value="Top Articles"/>
+                          <ParticleH2 className='text-color-gold' classes="text-color-gold" type="text" value="Women's Health"/>
                           <HR/>
                           <ParticleImage {...this.props.data.list[5].field_particles_media[0]}/>
                           <ArticleTeaser classes="wrapper"
-                              ParticleH2={this.props.data.list[5].headline}
-                              //   ParticleText={this.props.data.list[5].field_particles_text[0]}
-                              ContributorList={this.props.data.list[5].field_contributors}
-                          />
+      ParticleH2={this.props.data.list[5].headline}
+      //   ParticleText={this.props.data.list[5].field_particles_text[0]}
+      ContributorList={this.props.data.list[5].field_contributors}
+      />
                       </SquareArticleContainer>
                   </Col>
                   <Col sm={6} md={4}>
@@ -147,10 +147,10 @@ class LayoutFront extends React.Component {
                           <HR/>
                           <ParticleImage {...this.props.data.list[6].field_particles_media[0]}/>
                           <ArticleTeaser classes="wrapper"
-                              ParticleH2={this.props.data.list[6].headline}
-                              //   ParticleText={this.props.data.list[6].field_particles_text[0]}
-                              ContributorList={this.props.data.list[6].field_contributors}
-                          />
+      ParticleH2={this.props.data.list[6].headline}
+      //   ParticleText={this.props.data.list[6].field_particles_text[0]}
+      ContributorList={this.props.data.list[6].field_contributors}
+      />
                       </SquareArticleContainer>
                   </Col>
                   <Col xs={12} sm={6} md={4}>
@@ -169,7 +169,7 @@ class LayoutFront extends React.Component {
                       </ArticlesListContainer>
                   </Col>
               </Row>
-              {/* <Row className='row-flex'>
+              { /* <Row className='row-flex'>
                   <Col sm={12} className='contributors-headline'>
                       <SectionHeader classes="text-uppercase" type="text" value="Our Contributors"/>
                   </Col>
@@ -244,7 +244,7 @@ class LayoutFront extends React.Component {
                           ContributorList={this.props.data.list[10].field_contributors}
                       />
                   </Col>
-              </Row> */}
+              </Row> */ }
           </Container>
       </div>
     )
