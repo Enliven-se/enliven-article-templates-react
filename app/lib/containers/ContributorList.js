@@ -5,27 +5,31 @@ import Contributor from '../components/contributors/Contributor'
 class ContributorList extends React.Component {
   render() {
     const props = this.props,
-      num_items = props.data.length
+      num_items = props.data && props.data.length ? props.length : 0
 
     let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'contributor-list'
     classes += props.inline ? ' list-inline' : ' list-unstyled'
 
-    let items = props.data.map(function(item, i) {
-      let item_class = 'list-item'
-      item_class += ' item-' + i
+    if (num_items > 0) {
+        let items = props.data.map(function(item, i) {
+          let item_class = 'list-item'
+          item_class += ' item-' + i
 
-      if (i === num_items - 1) {
-        item_class += ' last'
-      } else if (i === 0) {
-        item_class += ' first'
-      }
-      return (
-        <li className={item_class} key={'c' + i}><Contributor {...item} className={props.classes} /></li>
-      )
-    })
+          if (i === num_items - 1) {
+            item_class += ' last'
+          } else if (i === 0) {
+            item_class += ' first'
+          }
+          return (
+            <li className={item_class} key={'c' + i}><Contributor {...item} className={props.classes} /></li>
+          )
+        })
 
-    return <ul className={classes}>{items}</ul>
+        return <ul className={classes}>{items}</ul>
+    }
+
+    return null
   }
 
 

@@ -1,7 +1,7 @@
 {
     "list": {
         0: {
-            "field_particles_image": [{
+            "field_particles_media": [{
                 "bundle": "media",
                 "url": "/images/mock/teaser-1.png"
             }],
@@ -39,7 +39,7 @@
                 }
             }],
             "field_main_topics": {},
-            "field_particles_image": {},
+            "field_particles_media": {},
             "field_particles_text": {}
         },
         2: {
@@ -54,11 +54,11 @@
                 }
             }],
             "field_main_topics": {},
-            "field_particles_image": {},
+            "field_particles_media": {},
             "field_particles_text": {}
         },
         3: {
-            "field_particles_image": [{
+            "field_particles_media": [{
                 "bundle": "media",
                 "url": "/images/mock/teaser-2.png"
             }],
@@ -82,7 +82,7 @@
             }]
         },
         4: {
-            "field_particles_image": [{
+            "field_particles_media": [{
                 "bundle": "media",
                 "url": "/images/mock/teaser-2.png"
             }],

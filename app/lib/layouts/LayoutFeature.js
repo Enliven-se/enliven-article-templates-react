@@ -13,7 +13,7 @@ class LayoutFeature extends React.Component {
   render() {
     return (
       <div className='layout layout-feature'>
-          <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles_image[0]}>
+          <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles_media[0]}>
               <Row>
                   <Col sm={6} smOffset={6}>
                       <ArticleHeader ArticleCategory={this.props.data.field_main_topics[0]} ArticleTitle={this.props.data.field_headline}/>
@@ -33,7 +33,7 @@ class LayoutFeature extends React.Component {
           <Container fluid>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_image[1]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[1]}/>
                   </Col>
               </Row>
               <Row>
@@ -43,12 +43,12 @@ class LayoutFeature extends React.Component {
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_image[2]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[2]}/>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_image[3]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[3]}/>
                   </Col>
               </Row>
               <Row>
@@ -58,12 +58,12 @@ class LayoutFeature extends React.Component {
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_image[4]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[4]}/>
                   </Col>
               </Row>
               <Row>
                   <Col sm={6} className='half-width-picture'>
-                      <ParticleImage {...this.props.data.field_particles_image[5]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[5]}/>
                   </Col>
                   <Col sm={6} className='one-column-by-picture'>
                       <ParticleText {...this.props.data.field_particles_text[4]}/>
@@ -71,12 +71,12 @@ class LayoutFeature extends React.Component {
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_image[6]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[6]}/>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_image[7]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[7]}/>
                   </Col>
               </Row>
               <Row>
@@ -86,7 +86,7 @@ class LayoutFeature extends React.Component {
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_image[8]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[8]}/>
                   </Col>
               </Row>
               <Row>
@@ -98,7 +98,7 @@ class LayoutFeature extends React.Component {
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_image[9]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[9]}/>
                   </Col>
               </Row>
               <Row>
@@ -106,7 +106,7 @@ class LayoutFeature extends React.Component {
                       <ParticleText {...this.props.data.field_particles_text[8]}/>
                   </Col>
                   <Col sm={6} className='half-width-picture col-right'>
-                      <ParticleImage {...this.props.data.field_particles_image[10]}/>
+                      <ParticleImage {...this.props.data.field_particles_media[10]}/>
                   </Col>
               </Row>
           </Container>

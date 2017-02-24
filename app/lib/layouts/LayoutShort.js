@@ -17,7 +17,7 @@ class LayoutShort extends React.Component {
     // console.log(this.props.data)
     return (
       <div className='layout layout-short'>
-          <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles_image[0]}>
+          <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles_media[0]}>
               <Container>
                   <Row>
                       <Col sm={6} className='article-meta'>

@@ -6,7 +6,6 @@ import { Row, Col } from 'react-bootstrap'
 
 import Container from '../containers/Container'
 import ArticleHeader from '../containers/ArticleHeader'
-import ContributorList from '../containers/ContributorList'
 
 import DatePublished from '../components/base/DatePublished'
 import HR from '../components/base/HR'
@@ -27,7 +26,7 @@ class LayoutColumnist extends React.Component {
                   </Col>
                   <Col md={6} className='right-panel'>
                       <Col md={5}>
-                          <ParticleImage {...this.props.data.field_particles_image[0]}/>
+                          <ParticleImage {...this.props.data.field_particles_media[0]}/>
                       </Col>
                       <Col md={7} className='about-columnist'>
                           <div className='follow-button'>
