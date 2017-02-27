@@ -89,13 +89,12 @@ class GridContainer extends React.Component {
     }
 
     getDataURL() {
-        switch (Drupal.settings.currentPath.split('/').shift()) {
-            case 'front':
-                return `/node.json?type=article&load-entity-refs`
-            case 'node':
-                return `/${Drupal.settings.currentPath}.json?load-entity-refs`
-            default:
-                null
+        if (Drupal.settings.currentPath === 'front') {
+            return `/node.json?type=article&load-entity-refs`
+        } else if ((/^node\/\d+$/g).test(Drupal.settings.currentPath)) {
+            return `/${Drupal.settings.currentPath}.json?load-entity-refs`
+        } else {
+            return null
         }
     }
 
