@@ -80,6 +80,7 @@ class GridContainer extends React.Component {
 
     componentDidMount() {
         if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined') {
+            console.log('got settings')
             const data_url = this.getDataURL()
 
             if (typeof Drupal.settings.react_content != 'undefined'){
