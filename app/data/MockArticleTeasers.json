@@ -1,6 +1,6 @@
 {
     "list": {
-        0: {
+        "0": {
             "field_particles_media": [{
                 "bundle": "media",
                 "url": "/images/mock/teaser-1.png"
@@ -27,7 +27,7 @@
             }],
             "field_particles_text": {}
         },
-        1: {
+        "1": {
             "field_particles_h2": [{
                 "bundle": "h2",
                 "value": "Chocolate Swirl Meringes with Nutella Whipped Cream"
@@ -42,7 +42,7 @@
             "field_particles_media": {},
             "field_particles_text": {}
         },
-        2: {
+        "2": {
             "field_particles_h2": [{
                 "bundle": "h2",
                 "value": "Winter Recipes - Salted Carmel Candies + Kale Chips + a Sweet Potato Salad"
@@ -57,7 +57,7 @@
             "field_particles_media": {},
             "field_particles_text": {}
         },
-        3: {
+        "3": {
             "field_particles_media": [{
                 "bundle": "media",
                 "url": "/images/mock/teaser-2.png"
@@ -81,7 +81,7 @@
                 }
             }]
         },
-        4: {
+        "4": {
             "field_particles_media": [{
                 "bundle": "media",
                 "url": "/images/mock/teaser-2.png"

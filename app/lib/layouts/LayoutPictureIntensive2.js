@@ -38,10 +38,10 @@ class PictureIntensive2 extends React.Component {
                       <div className='round-image'>
                           <ParticleImage {...this.props.data.field_particles_media[1]}/>
                       </div>
-                      <div md={6} className='behind-image'>
+                      <div className='behind-image'>
                           <ParticleImage {...this.props.data.field_particles_media[2]}/>
                       </div>
-                      <div className=''>
+                      <div>
                           <div className='text-with-borderbox responsive-text-2'>
                               <ParticleH2 {...this.props.data.field_particles_h2[0]}/>
                               <ParticleText {...this.props.data.field_particles_text[2]}/>

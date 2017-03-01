@@ -1,49 +1,44 @@
 {
-  "field_particles_h2": [
-  ],
-  "field_particles_media": [
-    {
-        "bundle": "media",
-        "url": "/images/mock/lookbook-1.jpg",
-        "credits": {
-            "classes": "text-bottom-right",
-            "value": "<div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>,<br/>Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara,<br/><a>zara.com</a>, in Zara Tops, Boots, Zara,<br/><a>zara.com</a>, in Zara Boots</div>"
+    "field_particles_h2": [],
+    "field_particles_media": [{
+            "bundle": "media",
+            "url": "/images/mock/lookbook-1.jpg",
+            "credits": {
+                "classes": "text-bottom-right",
+                "value": "<div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>,<br/>Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara,<br/><a>zara.com</a>, in Zara Tops, Boots, Zara,<br/><a>zara.com</a>, in Zara Boots</div>"
+            }
+        },
+        {
+            "bundle": "media",
+            "url": "/images/mock/lookbook-1.jpg"
+        },
+        {
+            "bundle": "media",
+            "url": "/images/mock/lookbook-2.jpg",
+            "credits": {
+                "classes": "text-bottom-right",
+                "value": "<div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots<br/></div><div class=\"text-color-gold\">Right:</div><div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>, Jeans,<br/>Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots</div>"
+            }
+        },
+        {
+            "bundle": "media",
+            "url": "/images/mock/lookbook-2.jpg",
+            "classes": "small-left-image",
+            "credits": {
+                "classes": "text-bottom-left",
+                "value": "<div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots<br/></div><div class=\"text-color-gold\">Right:</div><div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>, Jeans,<br/>Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots</div>"
+            }
+        },
+        {
+            "bundle": "media",
+            "url": "/images/mock/lookbook-1.jpg"
         }
-    },
-    {
-        "bundle": "media",
-        "url": "/images/mock/lookbook-1.jpg"
-    },
-    {
-        "bundle": "media",
-        "url": "/images/mock/lookbook-2.jpg",
-        "credits": {
-            "classes": "text-bottom-right",
-            "value": "<div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots<br/></div><div class=\"text-color-gold\">Right:</div><div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>, Jeans,<br/>Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots</div>"
-        }
-    },
-    {
-        "bundle": "media",
-        "url": "/images/mock/lookbook-2.jpg",
-        "classes": "small-left-image",
-        "credits": {
-            "classes": "text-bottom-left",
-            "value": "<div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>, Jeans, Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots<br/></div><div class=\"text-color-gold\">Right:</div><div class=\"text-color-gray\">Jacket, Bershka, <a>bershka.com</a>, Jeans,<br/>Calvin Klein, <a>calvinklein.com</a>,<br/>in Calvin Klein Jeans, T shirt, Zara, zara.com, in Zara Tops, Boots, Zara, zara.com, in Zara Boots</div>"
-        }
-    },
-    {
-        "bundle": "media",
-        "url": "/images/mock/lookbook-1.jpg"
-    }
-  ],
-  "field_particles_pullquote": [
-  ],
-  "field_particles_text": [
-    {
-      "value": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.",
-      "classes": "border-color-gold"
-  },
-  ],
+    ],
+    "field_particles_pullquote": [],
+    "field_particles_text": [{
+        "value": "Created by a group of friends who preserve 55 acres of hidden forest in Upstate New York began as a scrapbook to collect inspiration for their building projects. Created by a group of friends who preserve 55 acres of hidden forest in Upstate.",
+        "classes": "border-color-gold"
+    }],
     "color_variant": "gold",
     "field_main_topics": [{
         "name": "Fashion & Womens Lifestyle",
@@ -81,6 +76,5 @@
             "url": "//cms.enliven.co/en/people/anna"
         }
     }],
-    "field_particles": [
-  ]
+    "field_particles": []
 }

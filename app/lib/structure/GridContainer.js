@@ -17,28 +17,51 @@ import LayoutArticleTeasers from '../layouts/LayoutArticleTeasers'
 
 class GridContainer extends React.Component {
     getData(layout) {
+        let data_url = ''
         switch (layout) {
             case 'ProductReview':
-                return require('../../data/MockProductReview.json');
+                data_url = '../../data/MockProductReview.json';
+                break;
             case 'PictureIntensive':
-                return require('../../data/MockPictureIntensive.json');
+                data_url = '../../data/MockPictureIntensive.json';
+                break;
             case 'Columnist':
-                return require('../../data/MockColumnist.json');
+                data_url = '../../data/MockColumnist.json';
+                break;
             case 'PictureIntensive2':
-                return require('../../data/MockPictureIntensive2.json');
+                data_url = '../../data/MockPictureIntensive2.json';
+                break;
             case 'Lookbook':
-                return require('../../data/MockLookbook.json');
+                data_url = '../../data/MockLookbook.json';
+                break;
             case 'Feature':
-                return require('../../data/MockFeature.json');
+                data_url = '../../data/MockFeature.json';
+                break;
             case 'Short':
-                return require('../../data/MockShort.json');
+                data_url = '../../data/MockShort.json';
+                break;
             case 'ArticleTeasers':
-                return require('../../data/MockArticleTeasers.json');
+                data_url = '../../data/MockArticleTeasers.json';
+                break;
             case 'Grid':
-                return require('../../data/MockFront.json');
             default:
-                return require('../../data/MockFront.json')
+                data_url = '../../data/MockFront.json';
+                break;
         }
+
+        jQuery.ajax({
+            url: data_url,
+            dataType: 'json',
+            success: function(data) {
+                // console.log(layout, data_url, data);
+                this.setState({data: data});
+            }.bind(this)
+        }).done(function(response, textStatus, jqXHR) {
+            // console.log("response:", response);
+            // console.log("textStatus:", textStatus);
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
+        });
     }
 
     constructor(props) {
@@ -57,18 +80,18 @@ class GridContainer extends React.Component {
 
     componentDidMount() {
         if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined') {
-            const node_url = this.getDataURL()
+            const data_url = this.getDataURL()
 
             if (typeof Drupal.settings.react_content != 'undefined'){
                 console.log('loading data from page', Drupal.settings.react_content)
 
                 this.setState({data: Drupal.settings.react_content});
 
-            } else if (node_url) {
-                console.log('loading data from url', node_url)
+            } else if (data_url) {
+                console.log('loading data from url', data_url)
 
                 jQuery.ajax({
-                    url: node_url,
+                    url: data_url,
                     dataType: 'json',
                     success: function(data) {
                         this.setState({data: data});
@@ -82,9 +105,7 @@ class GridContainer extends React.Component {
             } else {
             }
         } else {
-            this.setState({
-                data: this.getData(this.props.layout)
-            });
+            this.getData(this.props.layout)
         }
     }
 
