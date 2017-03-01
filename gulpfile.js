@@ -105,7 +105,6 @@ gulp.task('jade', function() {
 gulp.task('html', function() {
   return gulp.src('app/*.html')
     .pipe($.useref())
-    // .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.rev()))
     .pipe($.if('*.js', $.rev()))
     .on('end', function() {
@@ -155,7 +154,7 @@ gulp.task('bundle', ['styles', 'scripts', 'bower'], function() {
     .pipe(gulp.dest('dist'))
 })
 
-gulp.task('buildBundle', ['styles', 'buildScripts', 'moveLibraries', 'bower', 'jade'], function() {
+gulp.task('buildBundle', ['styles', 'buildScripts', 'json', 'bower', 'jade'], function() {
   return gulp.src('./app/*.html')
     .pipe($.useref.assets())
     .pipe($.useref.restore())
@@ -163,15 +162,15 @@ gulp.task('buildBundle', ['styles', 'buildScripts', 'moveLibraries', 'bower', 'j
     .pipe(gulp.dest('dist'))
 })
 
-// Move JS Files and Libraries
-gulp.task('moveLibraries', ['clean'], function() {
-  // the base option sets the relative root for the set of files,
-  // preserving the folder structure
-  gulp.src(['./app/scripts/**/*.js'], {
-    base: './app/scripts/'
-  })
-    .pipe(gulp.dest('dist/scripts'))
-})
+// // Move JS Files and Libraries
+// gulp.task('moveLibraries', ['clean'], function() {
+//   // the base option sets the relative root for the set of files,
+//   // preserving the folder structure
+//   gulp.src(['./app/scripts/**/*.js'], {
+//       base: './app/scripts/'
+//   })
+//   .pipe(gulp.dest('dist/scripts'))
+// })
 
 // Bower helper
 gulp.task('bower', function() {
@@ -182,10 +181,10 @@ gulp.task('bower', function() {
 })
 
 gulp.task('json', function() {
-  gulp.src('app/scripts/json/**/*.json', {
-    base: 'app/scripts'
+  gulp.src('app/data/**/*.json', {
+    base: 'app/data'
   })
-    .pipe(gulp.dest('dist/scripts/'))
+    .pipe(gulp.dest('dist/data/'))
 })
 
 // Robots.txt and favicon.ico
@@ -208,7 +207,7 @@ gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
   })
 
   // Watch .json files
-  gulp.watch('app/scripts/**/*.json', ['json'])
+  gulp.watch('app/data/**/*.json', ['json'])
 
   // Watch .html files
   gulp.watch('app/*.html', ['html'])

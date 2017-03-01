@@ -20,32 +20,32 @@ class GridContainer extends React.Component {
         let data_url = ''
         switch (layout) {
             case 'ProductReview':
-                data_url = '../../data/MockProductReview.json';
+                data_url = '/data/MockProductReview.json';
                 break;
             case 'PictureIntensive':
-                data_url = '../../data/MockPictureIntensive.json';
+                data_url = '/data/MockPictureIntensive.json';
                 break;
             case 'Columnist':
-                data_url = '../../data/MockColumnist.json';
+                data_url = '/data/MockColumnist.json';
                 break;
             case 'PictureIntensive2':
-                data_url = '../../data/MockPictureIntensive2.json';
+                data_url = '/data/MockPictureIntensive2.json';
                 break;
             case 'Lookbook':
-                data_url = '../../data/MockLookbook.json';
+                data_url = '/data/MockLookbook.json';
                 break;
             case 'Feature':
-                data_url = '../../data/MockFeature.json';
+                data_url = '/data/MockFeature.json';
                 break;
             case 'Short':
-                data_url = '../../data/MockShort.json';
+                data_url = '/data/MockShort.json';
                 break;
             case 'ArticleTeasers':
-                data_url = '../../data/MockArticleTeasers.json';
+                data_url = '/data/MockArticleTeasers.json';
                 break;
             case 'Grid':
             default:
-                data_url = '../../data/MockFront.json';
+                data_url = '/data/MockFront.json';
                 break;
         }
 
