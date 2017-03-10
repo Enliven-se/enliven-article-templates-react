@@ -4,19 +4,12 @@ import React from 'react'
 // containers
 import GridContainer from '../lib/structure/GridContainer';
 
-function config({
-    chrome = true
-}) {
-    const url = require('url')
-    const urlParams = url.parse(location.href, true)
-    const layout = urlParams.query['layout']
-    let navbar_items = {}
-
-    if (chrome) {
-        navbar_items = require('./../includes/data.json').navbar_items
+class Config extends React.Component {
+    render() {
+        return (
+            <GridContainer layout={this.props.layout} navbar_items={this.props.navbar_items} chrome={this.props.chrome} />
+        )
     }
-
-    return (<GridContainer layout={layout} navbar_items={navbar_items} chrome={chrome} />)
 }
 
-export default config
+export default Config

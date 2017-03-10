@@ -1,7 +1,12 @@
 import React from 'react'
 
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
+
+import jQuery from 'jquery'
+
 // containers
-import LayoutContainer from '../structure/LayoutContainer';
+import LayoutContainer from '../structure/LayoutContainer'
 import GridLayout from '../containers/GridLayout'
 
 // layouts
@@ -16,6 +21,14 @@ import LayoutProductReview from '../layouts/LayoutProductReview'
 import LayoutArticleTeasers from '../layouts/LayoutArticleTeasers'
 
 class GridContainer extends React.Component {
+    static propTypes = {
+      data: React.PropTypes.shape({
+        loading: React.PropTypes.bool,
+        error: React.PropTypes.object,
+        // Trainer: React.PropTypes.object,
+      }).isRequired,
+    }
+
     getData(layout) {
         let data_url = ''
         switch (layout) {
@@ -79,7 +92,9 @@ class GridContainer extends React.Component {
     // }
 
     componentDidMount() {
-        if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined') {
+        console.log('mounted')
+        if (typeof init_drupal_core_settings === 'function') {
+            init_drupal_core_settings()
             console.log('got settings')
             const data_url = this.getDataURL()
 
@@ -103,7 +118,6 @@ class GridContainer extends React.Component {
                 }).fail(function(jqXHR, textStatus, errorThrown) {
                     console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
                 });
-            } else {
             }
         } else {
             this.getData(this.props.layout)
@@ -203,4 +217,51 @@ class GridContainer extends React.Component {
     }
 }
 
-export default GridContainer
+// queries
+const queryNodeArticle = gql`query queryNodeArticle {
+  node_article(promote: true) {
+    field_contributors {
+      field_person_name {
+        url
+        field_profile_image {
+          url
+        }
+        changed
+        created
+        field_about_you {
+          value
+        }
+        field_cover_photo {
+          url
+        }
+        field_expertise {
+          name
+          uuid
+        }
+        field_favorite_topics
+        field_main_topics {
+          name
+          url
+        }
+        field_recommended_colleagues
+        field_top_cover_photo {
+          url
+        }
+        label
+        url
+        user {
+          name
+          url
+        }
+      }
+      field_contributor_role {
+        uuid
+        name
+      }
+    }
+  }
+}`
+
+const GridContainerWithData = graphql(queryNodeArticle)(GridContainer)
+
+export default GridContainerWithData
