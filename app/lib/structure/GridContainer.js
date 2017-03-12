@@ -29,7 +29,7 @@ class GridContainer extends React.Component {
       data: React.PropTypes.shape({
         loading: React.PropTypes.bool,
         error: React.PropTypes.object,
-        // Trainer: React.PropTypes.object,
+        nodelist: React.PropTypes.array,
       }).isRequired,
     }
 
@@ -96,7 +96,6 @@ class GridContainer extends React.Component {
     // }
 
     componentDidMount() {
-        console.log('mounted')
         if (typeof init_drupal_core_settings === 'function') {
             init_drupal_core_settings()
             console.log('got settings')
@@ -139,18 +138,19 @@ class GridContainer extends React.Component {
     }
 
     render() {
-        const has_data = this.state.data.field_particles || this.state.data.list
+        const nodelist = this.props.data.articles
+
         let layout = this.props.layout
 
-        if (!layout && this.state.data.field_layout) {
-            layout = this.state.data.field_layout.uuid
+        if (!layout && nodelist && nodelist.field_layout) {
+            layout = nodelist.field_layout.uuid
         } else if (typeof Drupal != 'undefined') {
             // layout = 'ArticleTeasers'
         }
 
         let Widget = {}
 
-        console.log('layout', layout)
+        console.log('render layout', layout, nodelist)
 
         switch (layout) {
 
@@ -203,29 +203,32 @@ class GridContainer extends React.Component {
 
         // render with or without nav & footer
         // console.log('rendering', this.state)
-        if (this.props.chrome) {
-            return (
-                <LayoutContainer layout={layout} navbar_items={this.props.navbar_items} color_variant={this.state.data.color_variant} is_front={!!this.state.data.is_front} sticky={!this.state.data.is_front}>
-                    { has_data
-                        ? <Widget data={this.state.data}/>
-                    : ''}
-                </LayoutContainer>
-            )
+        if (nodelist) {
+            if (this.props.chrome) {
+                return (
+                    <LayoutContainer layout={layout} navbar_items={this.props.navbar_items} color_variant={nodelist.color_variant} is_front={!!nodelist.is_front} sticky={!nodelist.is_front}>
+                        <Widget data={nodelist}/>
+                    </LayoutContainer>
+                )
+            }
+
+            return <Widget data={nodelist}/>
+
         }
 
-        if ( has_data ) {
-            return <Widget data={this.state.data}/>
-        }
-
-        return null
+        // not initialized
+        return (
+            <LayoutContainer layout={layout} navbar_items={this.props.navbar_items}
+                is_front={true} sticky={false}/>
+        )
     }
 }
 
 // load query stored in GraphQL include file
 // @FIXME - GQL should be compiled before runtime
-let queryNodeArticle = fs.readFileSync(path.join(__dirname, "app/lib/queries/queryNodeArticle.graphql"), "utf8");
-queryNodeArticle = gql`${queryNodeArticle}`;
+let queryFrontPageArticles = fs.readFileSync(path.join(__dirname, "app/lib/queries/queryFrontPageArticles.graphql"), "utf8");
+queryFrontPageArticles = gql`${queryFrontPageArticles}`;
 
-const GridContainerWithData = graphql(queryNodeArticle)(GridContainer)
+const GridContainerWithData = graphql(queryFrontPageArticles)(GridContainer)
 
 export default GridContainerWithData

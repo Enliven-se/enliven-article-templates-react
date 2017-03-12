@@ -15,9 +15,9 @@ class AboutContributorContainer extends React.Component {
     return (
       <div className={classes}>
           <ParticleImage {...this.props.ParticleImage}/>
-          <ParticleH2 className='heading-text' {...this.props.ParticleH2}/>
-          <ParticleH3 {...this.props.ParticleH3}/>
-          <ParticleText {...this.props.ParticleText}/>
+          <ParticleH2 className='heading-text' value={this.props.ParticleH2}/>
+          <ParticleH3 value={this.props.ParticleH3}/>
+          <ParticleText value={this.props.ParticleText}/>
       </div>
     )
   }

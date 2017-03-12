@@ -35,7 +35,7 @@ class ArticleTeaser extends React.Component {
                   ? <ArticleCategory name={this.props.ArticleCategory.name} classes={this.props.ArticleCategory.classes} url={this.props.ArticleCategory.url}/>
               : ''}
               {this.props.ParticleH2
-                  ? <ParticleH2 value={this.props.ParticleH2.value}/>
+                  ? <ParticleH2 value={this.props.ParticleH2}/>
               : ''}
               {this.props.ParticleText
                   ? <ParticleText value={this.props.ParticleText.value}/>

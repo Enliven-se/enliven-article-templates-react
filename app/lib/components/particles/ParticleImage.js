@@ -6,7 +6,7 @@ import PhotoCredits from '../../containers/PhotoCredits'
 class ParticleImage extends React.Component {
   render() {
       const url = this.props.field_assets && this.props.field_assets.length > 0
-        ? this.props.field_assets[0].url
+        ? this.props.field_assets[0].file.url
         : this.props.url
 
     let classes = this.props.classes ? this.props.classes + ' ' : ''

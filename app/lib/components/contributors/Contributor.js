@@ -18,10 +18,10 @@ class Contributor extends React.Component {
             ? (<Avatar url={this.props.Avatar}/>)
             : ''
 
-        const ifContributorRole = this.props.ContributorRole
+        const ifContributorRole = this.props.field_contributor_role
             ? (
                 <span>
-                    <ContributorRole data={this.props.ContributorRole}/>
+                    <ContributorRole data={this.props.field_contributor_role}/>
                     <Separator separatorType=' '/>
                 </span>
             )

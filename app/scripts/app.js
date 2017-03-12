@@ -11,7 +11,12 @@ import GridContainer from '../lib/structure/GridContainer';
 const GRAPHQL_ENDPOINT = 'https://cms.enliven.co/en/graphql'
 
 const client = new ApolloClient({
-  networkInterface: createNetworkInterface({ uri: GRAPHQL_ENDPOINT}),
+  networkInterface: createNetworkInterface({
+    uri: GRAPHQL_ENDPOINT,
+    opts: {
+        credentials: 'include',
+    },
+    }),
 })
 
 // React root
