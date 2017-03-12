@@ -48,6 +48,8 @@ class LayoutFront extends React.Component {
         )
     }
 
+    if (!this.props.data) return null
+
     return (
       <div className='layout layout-front'>
           <Container fluid classes='panel-1'>
