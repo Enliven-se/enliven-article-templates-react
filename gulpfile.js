@@ -86,6 +86,7 @@ gulp.task('buildScripts', function() {
   return browserify(sourceFile)
     .bundle()
     .pipe(source(destFileName))
+    .pipe($.brfs())
     .pipe(gulp.dest('dist/scripts'))
 })
 
@@ -138,7 +139,6 @@ gulp.task('fonts', function() {
     .pipe($.flatten())
     .pipe(gulp.dest('dist/fonts'))
 })
-
 
 // Clean
 gulp.task('clean', function(cb) {
