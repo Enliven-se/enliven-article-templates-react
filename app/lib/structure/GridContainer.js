@@ -20,6 +20,10 @@ import LayoutPictureIntensive2 from '../layouts/LayoutPictureIntensive2'
 import LayoutProductReview from '../layouts/LayoutProductReview'
 import LayoutArticleTeasers from '../layouts/LayoutArticleTeasers'
 
+const fs = require('fs');
+const path = require('path');
+
+
 class GridContainer extends React.Component {
     static propTypes = {
       data: React.PropTypes.shape({
@@ -217,50 +221,10 @@ class GridContainer extends React.Component {
     }
 }
 
-// queries
-const queryNodeArticle = gql`query queryNodeArticle {
-  node_article(promote: true) {
-    field_contributors {
-      field_person_name {
-        url
-        field_profile_image {
-          url
-        }
-        changed
-        created
-        field_about_you {
-          value
-        }
-        field_cover_photo {
-          url
-        }
-        field_expertise {
-          name
-          uuid
-        }
-        field_favorite_topics
-        field_main_topics {
-          name
-          url
-        }
-        field_recommended_colleagues
-        field_top_cover_photo {
-          url
-        }
-        label
-        url
-        user {
-          name
-          url
-        }
-      }
-      field_contributor_role {
-        uuid
-        name
-      }
-    }
-  }
-}`
+// load query stored in GraphQL include file
+// @FIXME - GQL should be compiled before runtime
+let queryNodeArticle = fs.readFileSync(path.join(__dirname, "app/lib/queries/queryNodeArticle.graphql"), "utf8");
+queryNodeArticle = gql`${queryNodeArticle}`;
 
 const GridContainerWithData = graphql(queryNodeArticle)(GridContainer)
 

@@ -72,6 +72,7 @@ function rebundle() {
     // log errors if they happen
     .on('error', $.util.log.bind($.util, 'Browserify Error'))
     .pipe(source(destFileName))
+    .pipe($.brfs())
     .pipe(gulp.dest(destFolder))
     .on('end', function() {
       reload()

@@ -25,6 +25,7 @@
     "gulp": ">=3.8.8",
     "gulp-autoprefixer": "^1.0.1",
     "gulp-bower": "0.0.6",
+    "gulp-brfs": "^0.1.0",
     "gulp-cache": "~0.2.4",
     "gulp-cssnano": "^2.1.2",
     "gulp-data": "^1.2.1",
