@@ -1,16 +1,17 @@
-###################
-# get articles
-###################
 {
-  articles: node_article(promote: true, language:"en") {
+  articles: node_article(promote: true, language: "en") {
     ...nodeFields
-    field_headline
     field_contributors {
       field_person_name {
         ...contributorFields
       }
       field_contributor_role {
         ...termFields
+      }
+    }
+    field_headline {
+      field_longtext {
+        value
       }
     }
     field_main_topics {
@@ -68,9 +69,6 @@
   }
 }
 
-###################
-# fragments
-###################
 fragment nodeFields on node {
   nid
   vid
@@ -84,36 +82,22 @@ fragment nodeFields on node {
   changed
   comment_count
   uuid
+  url
+  edit_url
 }
 
 fragment contributorFields on profile2_contributor {
-    field_full_name
-    url
-    field_about_you {
-      value
-    }
-#    field_cover_photo {
-#      ...imageFields
-#    }
-#    field_expertise {
-#    ...termFields
-#    }
-#    field_favorite_topics
-    field_main_topics {
+  field_full_name
+  url
+  field_about_you {
+    value
+  }
+  field_main_topics {
     ...termFields
-    }
-#    field_recommended_colleagues
-#    field_top_cover_photo {
-#      ...imageFields
-#    }
-#    label
-#    user {
-#      name
-#      url
-#    }
-    field_profile_image {
+  }
+  field_profile_image {
     ...imageFields
-    }
+  }
 }
 
 fragment fileFields on file {
