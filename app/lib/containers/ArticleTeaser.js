@@ -25,13 +25,9 @@ class ArticleTeaser extends React.Component {
             ? this.props.url
             : null
 
-        // metaLinksClasses += 'article-meta-small'
-        // metaLinksClasses += 'has-intro-text'
-        // metaLinksClasses += 'padding-left:3col;padding-right:1col'
-
         return (
             <div className={classes}>
-                <Link url={this.props.url}>
+                <Link url={url}>
                     {this.props.ParticleImage
                         ? <ParticleImage {...this.props.ParticleImage}/>
                     : ''}
