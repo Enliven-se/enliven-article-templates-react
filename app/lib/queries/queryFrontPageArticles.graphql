@@ -40,7 +40,6 @@
       field_attribution {
         value
       }
-      field_corner_option
       field_files {
         file {
           ...fileFields
@@ -48,13 +47,11 @@
         description
       }
       field_imageset {
+        ...imageFields
         file {
           ...fileFields
         }
         description
-      }
-      field_image_caption {
-        value
       }
       field_media {
         file {
@@ -102,20 +99,26 @@ fragment contributorFields on profile2_contributor {
 
 fragment fileFields on file {
   url
-  field_file_image_alt_text
-  field_file_image_title_text
   field_text_color
 }
 
 fragment imageFields on field_item_image {
-  alt
-  description
   file {
-    ...fileFields
+    url
+    field_corner_option
+    field_image_caption {
+      value
+    }
+    field_text_align
+    field_text_color
+    field_text_transform
   }
   height
   title
   width
+  style_tall
+  style_wide
+  style_square
 }
 
 fragment termFields on taxonomy_term {

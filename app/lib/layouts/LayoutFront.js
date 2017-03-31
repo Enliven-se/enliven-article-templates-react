@@ -71,6 +71,7 @@ class LayoutFront extends React.Component {
                                   ParticleH2={this.props.data[0].field_headline.field_longtext}
                                   ContributorList={this.props.data[0].field_contributors}
                                   url={this.props.data[0].url} edit_url={this.props.data[0].edit_url}
+                                  teaserFormat='tall'
                               />
                           </Col>
                       : null
@@ -288,7 +289,7 @@ class LayoutFront extends React.Component {
                                   ArticleCategory={this.props.data[10].field_main_topics[0]}
                                   ParticleH2={this.props.data[10].field_headline.field_longtext}
                                   ContributorList={this.props.data[10].field_contributors}
-                                  url={this.props.data[10].url} edit_url={this.props.data[10].edit_url}
+                                  url={this.props.data[0].url} edit_url={this.props.data[0].edit_url}
                               />
                           </Col>
                       : null

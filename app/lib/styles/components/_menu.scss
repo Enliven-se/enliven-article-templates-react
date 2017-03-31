@@ -66,9 +66,14 @@
 }
 
 .navbar-sticky {
-    position: absolute !important;
-    width   : 100%;
-    z-index : 10000;
+    width  : 100%;
+    z-index: 10000;
+}
+
+.front {
+    .navbar-sticky {
+        position: absolute !important;
+    }
 }
 
 .hamburger-gold {

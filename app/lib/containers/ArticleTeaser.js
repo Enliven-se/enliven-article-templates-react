@@ -29,7 +29,7 @@ class ArticleTeaser extends React.Component {
             <div className={classes}>
                 <Link url={url}>
                     {this.props.ParticleImage
-                        ? <ParticleImage {...this.props.ParticleImage}/>
+                        ? <ParticleImage {...this.props.ParticleImage} imageStyle={this.props.teaserFormat}/>
                     : ''}
                 </Link>
                 <MetaLinksContainer classes={metaLinksClasses} {...this.props.MetaLinksContainer}>
