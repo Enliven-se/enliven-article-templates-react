@@ -6,7 +6,7 @@ import ArticleCategory from '../components/base/ArticleCategory'
 import Link from '../components/base/Link'
 
 import ParticleImage from '../components/particles/ParticleImage'
-import ParticleH2 from '../components/particles/ParticleH2'
+import ParticleSubheader from '../components/particles/ParticleSubheader'
 import ParticleText from '../components/particles/ParticleText'
 
 import ContributorList from '../containers/ContributorList'
@@ -36,8 +36,8 @@ class ArticleTeaser extends React.Component {
                     {this.props.ArticleCategory
                         ? <ArticleCategory name={this.props.ArticleCategory.name} classes={this.props.ArticleCategory.classes} url={this.props.ArticleCategory.url}/>
                     : ''}
-                    {this.props.ParticleH2
-                        ? <ParticleH2 value={this.props.ParticleH2.value} url={url}/>
+                    {this.props.ParticleSubheader
+                        ? <ParticleSubheader value={this.props.ParticleSubheader.value} url={url}/>
                     : ''}
                     {this.props.ParticleText
                         ? <ParticleText value={this.props.ParticleText.value}/>

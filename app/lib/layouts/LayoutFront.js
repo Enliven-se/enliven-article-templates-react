@@ -17,8 +17,7 @@ import Link from '../components/base/Link'
 
 import ParticleImage from '../components/particles/ParticleImage'
 import ParticleText from '../components/particles/ParticleText'
-import ParticleH2 from '../components/particles/ParticleH2'
-import ParticleH3 from '../components/particles/ParticleH3'
+import ParticleSubheader from '../components/particles/ParticleSubheader'
 
 class LayoutFront extends React.Component {
   render() {
@@ -31,10 +30,10 @@ class LayoutFront extends React.Component {
             item.field_contributors[0].field_person_name ?
             <Col sm={3} key={'c' + i}>
                 <AboutContributorContainer
-                    ParticleImage={item.field_contributors[0].field_person_name.field_profile_image.file}
-                    ParticleH2={item.field_contributors[0].field_person_name.field_full_name}
-                    ParticleH3={item.field_contributors[0].field_person_name.field_main_topics[0].name}
-                    ParticleText={item.field_contributors[0].field_person_name.field_about_you.value}
+                    profile_image={item.field_contributors[0].field_person_name.field_profile_image.file}
+                    full_name={item.field_contributors[0].field_person_name.field_full_name}
+                    main_topics={item.field_contributors[0].field_person_name.field_main_topics[0].name}
+                    about_you={item.field_contributors[0].field_person_name.field_about_you.value}
                 />
             </Col>
             : null
@@ -55,7 +54,7 @@ class LayoutFront extends React.Component {
           <Container fluid classes='panel-1'>
               <Row>
                   <Col sm={12}>
-                      <ParticleH2 className='text-color-gold header-top' classes="text-color-gold" type="text" value="New On Enliven"/>
+                      <ParticleSubheader className='text-color-gold header-top' classes="text-color-gold" type="text" value="New On Enliven"/>
                       <HR/>
                   </Col>
               </Row>
@@ -68,7 +67,7 @@ class LayoutFront extends React.Component {
                                   metaLinksClasses="article-meta-small"
                                   ParticleImage={this.props.data[0].field_particles[0]}
                                   ArticleCategory={this.props.data[0].field_main_topics[0]}
-                                  ParticleH2={this.props.data[0].field_headline.field_longtext}
+                                  ParticleSubheader={this.props.data[0].field_headline.field_longtext}
                                   ContributorList={this.props.data[0].field_contributors}
                                   url={this.props.data[0].url} edit_url={this.props.data[0].edit_url}
                                   teaserFormat='tall'
@@ -84,7 +83,7 @@ class LayoutFront extends React.Component {
                                   metaLinksClasses="article-meta-large-centered article-meta-large-centered"
                                   ParticleImage={this.props.data[1].field_particles[0]}
                                   ArticleCategory={this.props.data[1].field_main_topics[0]}
-                                  ParticleH2={this.props.data[1].field_headline.field_longtext}
+                                  ParticleSubheader={this.props.data[1].field_headline.field_longtext}
                                   ContributorList={this.props.data[1].field_contributors}
                                   url={this.props.data[1].url} edit_url={this.props.data[1].edit_url}
                               />
@@ -92,7 +91,7 @@ class LayoutFront extends React.Component {
                       : null
                   }
                   <Col sm={3}>
-                      <ParticleH2 className='heading-text' type="text" value="Ad Space" />
+                      <ParticleSubheader className='heading-text' type="text" value="Ad Space" />
                   </Col>
               </Row>
               <Row>
@@ -102,7 +101,7 @@ class LayoutFront extends React.Component {
                               <ArticleTeaser classes="wrapper lg-img" metaLinksClasses="article-meta-large has-intro-text"
                                   ParticleImage={this.props.data[2].field_particles[0]}
                                   ArticleCategory={this.props.data[2].field_main_topics[0]}
-                                  ParticleH2={this.props.data[2].field_headline.field_longtext}
+                                  ParticleSubheader={this.props.data[2].field_headline.field_longtext}
                                   ParticleText={this.props.data[2].field_particles[1]}
                                   ContributorList={this.props.data[2].field_contributors}
                                   url={this.props.data[2].url} edit_url={this.props.data[2].edit_url}
@@ -116,7 +115,7 @@ class LayoutFront extends React.Component {
                               <ArticleTeaser classes="wrapper lg-img" metaLinksClasses="article-meta-large has-intro-text"
                                   ParticleImage={this.props.data[3].field_particles[0]}
                                   ArticleCategory={this.props.data[3].field_main_topics[0]}
-                                  ParticleH2={this.props.data[3].field_headline.field_longtext}
+                                  ParticleSubheader={this.props.data[3].field_headline.field_longtext}
                                   ParticleText={this.props.data[3].field_particles[1]}
                                   ContributorList={this.props.data[3].field_contributors}
                                   url={this.props.data[3].url} edit_url={this.props.data[3].edit_url}
@@ -130,11 +129,11 @@ class LayoutFront extends React.Component {
                       this.props.data[4] ?
                           <Col xs={12} sm={6} md={4}>
                               <SquareArticleContainer>
-                                  <ParticleH2 className='text-color-gold' classes="text-color-gold" type="text" value="Interior Design"/>
+                                  <ParticleSubheader className='text-color-gold' classes="text-color-gold" type="text" value="Interior Design"/>
                                   <HR/>
                                   <ParticleImage {...this.props.data[4].field_particles[0]}/>
                                   <ArticleTeaser classes="wrapper"
-                                      ParticleH2={this.props.data[4].field_headline.field_longtext}
+                                      ParticleSubheader={this.props.data[4].field_headline.field_longtext}
                                       //   ParticleText={this.props.data[4].field_particles[1]}
                                       ContributorList={this.props.data[4].field_contributors}
                                       url={this.props.data[4].url} edit_url={this.props.data[4].edit_url}
@@ -145,7 +144,7 @@ class LayoutFront extends React.Component {
                   }
                   <Col xs={12} sm={6} md={4}>
                       <ArticlesListContainer>
-                          <ParticleH2 className='text-color-gold' classes="text-color-gold" type="text" value="Top Articles"/>
+                          <ParticleSubheader className='text-color-gold' classes="text-color-gold" type="text" value="Top Articles"/>
                           <HR/>
                           <div className='articles-list-text'>
                               <ParticleText type="text" value='<strong class="bold-bits">Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.</strong>'/>
@@ -162,11 +161,11 @@ class LayoutFront extends React.Component {
                       this.props.data[5] ?
                           <Col xs={12} sm={6} md={4}>
                               <SquareArticleContainer>
-                                  <ParticleH2 className='text-color-gold' classes="text-color-gold" type="text" value="Women's Health"/>
+                                  <ParticleSubheader className='text-color-gold' classes="text-color-gold" type="text" value="Women's Health"/>
                                   <HR/>
                                   <ParticleImage {...this.props.data[5].field_particles[0]}/>
                                   <ArticleTeaser classes="wrapper"
-                                      ParticleH2={this.props.data[5].field_headline.field_longtext}
+                                      ParticleSubheader={this.props.data[5].field_headline.field_longtext}
                                       //   ParticleText={this.props.data[5].field_particles[1]}
                                       ContributorList={this.props.data[5].field_contributors}
                                       url={this.props.data[5].url} edit_url={this.props.data[5].edit_url}
@@ -177,7 +176,7 @@ class LayoutFront extends React.Component {
                   }
                   <Col sm={6} md={4}>
                       <ArticlesListContainer>
-                          <ParticleH2 className='text-color-gold' classes="text-color-gold" type="text" value="Women's Health"/>
+                          <ParticleSubheader className='text-color-gold' classes="text-color-gold" type="text" value="Women's Health"/>
                           <HR/>
                           <div className='articles-list-text'>
                               <ParticleText type="text" value='<strong class="bold-bits">Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.</strong>'/>
@@ -194,11 +193,11 @@ class LayoutFront extends React.Component {
                       this.props.data[6] ?
                           <Col xs={12} sm={6} md={4}>
                               <SquareArticleContainer>
-                                  <ParticleH2 className='text-color-gold' classes="text-color-gold" type="text" value="Top Articles"/>
+                                  <ParticleSubheader className='text-color-gold' classes="text-color-gold" type="text" value="Top Articles"/>
                                   <HR/>
                                   <ParticleImage {...this.props.data[6].field_particles[0]}/>
                                   <ArticleTeaser classes="wrapper"
-                                      ParticleH2={this.props.data[6].field_headline.field_longtext}
+                                      ParticleSubheader={this.props.data[6].field_headline.field_longtext}
                                       //   ParticleText={this.props.data[6].field_particles[1]}
                                       ContributorList={this.props.data[6].field_contributors}
                                       url={this.props.data[6].url} edit_url={this.props.data[6].edit_url}
@@ -209,7 +208,7 @@ class LayoutFront extends React.Component {
                   }
                   <Col xs={12} sm={6} md={4}>
                       <ArticlesListContainer>
-                          <ParticleH2 className='text-color-gold' classes="text-color-gold" type="text" value="Interior Design"/>
+                          <ParticleSubheader className='text-color-gold' classes="text-color-gold" type="text" value="Interior Design"/>
                           <HR/>
                           <div className='articles-list-text'>
                               <ParticleText type="text" value='<strong class="bold-bits">Solange Knowles on Why Creating Regal Images of Black Women Matters Most in Her New Videos.</strong>'/>
@@ -242,7 +241,7 @@ class LayoutFront extends React.Component {
                                   ParticleImage={this.props.data[7].field_particles[0]}
                                   ArticleCategory={this.props.data[7].field_main_topics[0]}
                                   ParticleText={this.props.data[7].field_particles[1]}
-                                  ParticleH2={this.props.data[7].field_headline.field_longtext}
+                                  ParticleSubheader={this.props.data[7].field_headline.field_longtext}
                                   ContributorList={this.props.data[7].field_contributors}
                                   url={this.props.data[7].url} edit_url={this.props.data[7].edit_url}
                               />
@@ -256,7 +255,7 @@ class LayoutFront extends React.Component {
                                   ParticleImage={this.props.data[8].field_particles[0]}
                                   ParticleText={this.props.data[8].field_particles[1]}
                                   ArticleCategory={this.props.data[8].field_main_topics[0]}
-                                  ParticleH2={this.props.data[8].field_headline.field_longtext}
+                                  ParticleSubheader={this.props.data[8].field_headline.field_longtext}
                                   ContributorList={this.props.data[8].field_contributors}
                                   url={this.props.data[8].url} edit_url={this.props.data[8].edit_url}
                               />
@@ -271,7 +270,7 @@ class LayoutFront extends React.Component {
                                       <ParticleImage {...this.props.data[9].field_particles[0]}/>
                                       <div className="article-meta-large article-meta-large-left">
                                           <ArticleCategory {...this.props.data[9].field_main_topics[0]}/>
-                                          <ParticleH2 {...this.props.data[9].field_headline.field_longtext}/>
+                                          <ParticleSubheader {...this.props.data[9].field_headline.field_longtext}/>
                                           <ContributorList data={this.props.data[9].field_contributors}/>
                                           <ParticleText data={this.props.data[9].field_particles[1]} />
                                           url={this.props.data[9].url} edit_url={this.props.data[9].edit_url}
@@ -287,7 +286,7 @@ class LayoutFront extends React.Component {
                               <ArticleTeaser classes="wrapper xtr-sm-img" metaLinksClasses="article-meta-xtr-sm"
                                   ParticleImage={this.props.data[10].field_particles[0]}
                                   ArticleCategory={this.props.data[10].field_main_topics[0]}
-                                  ParticleH2={this.props.data[10].field_headline.field_longtext}
+                                  ParticleSubheader={this.props.data[10].field_headline.field_longtext}
                                   ContributorList={this.props.data[10].field_contributors}
                                   url={this.props.data[0].url} edit_url={this.props.data[0].edit_url}
                               />

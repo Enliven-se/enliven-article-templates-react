@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ParticleH1 from '../particles/ParticleH1'
+import ParticleHeader from '../particles/ParticleHeader'
 
 class ArticleTitle extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class ArticleTitle extends React.Component {
 
     return (
       <div className='article-title-wrapper'>
-          <ParticleH1 {...this.props} classes={classes} />
+          <ParticleHeader {...this.props} classes={classes} />
       </div>
     )
   }

@@ -14,7 +14,7 @@ import ParticleImage from '../components/particles/ParticleImage'
 import ParticlePullquote from '../components/particles/ParticlePullquote'
 import ParticleText from '../components/particles/ParticleText'
 import ArticleIntro from '../components/base/ArticleIntro'
-import ParticleH2 from '../components/particles/ParticleH2'
+import ParticleSubheader from '../components/particles/ParticleSubheader'
 
 class PictureIntensive2 extends React.Component {
   render() {
@@ -43,14 +43,14 @@ class PictureIntensive2 extends React.Component {
                       </div>
                       <div>
                           <div className='text-with-borderbox responsive-text-2'>
-                              <ParticleH2 {...this.props.data.field_particles_h2[0]}/>
+                              <ParticleSubheader {...this.props.data.field_particles_h2[0]}/>
                               <ParticleText {...this.props.data.field_particles_text[2]}/>
                           </div>
                       </div>
                   </Col>
                   <Col md={6} className='right-side right-aligned-picture'>
                       <div className='text-with-borderbox responsive-text-1'>
-                          <ParticleH2 {...this.props.data.field_particles_h2[1]}/>
+                          <ParticleSubheader {...this.props.data.field_particles_h2[1]}/>
                           <ParticleText {...this.props.data.field_particles_text[1]}/>
                       </div>
                       <ParticleImage {...this.props.data.field_particles_media[3]}/>
@@ -61,7 +61,7 @@ class PictureIntensive2 extends React.Component {
                       <ParticleImage {...this.props.data.field_particles_media[4]}/>
                   </Col>
                   <Col md={6} className='text-with-borderbox responsive-text-3'>
-                      <ParticleH2 {...this.props.data.field_particles_h2[2]}/>
+                      <ParticleSubheader {...this.props.data.field_particles_h2[2]}/>
                       <ParticleText {...this.props.data.field_particles_text[3]}/>
                   </Col>
               </Row>

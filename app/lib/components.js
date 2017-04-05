@@ -52,12 +52,8 @@ Telescope.components.ContributorRole = ContributorRole
 
 // particles
 import ParticleAttachment from "./components/particles/ParticleAttachment.js"
-import ParticleH1 from "./components/particles/ParticleH1.js"
-import ParticleH2 from "./components/particles/ParticleH2.js"
-import ParticleH3 from "./components/particles/ParticleH3.js"
-import ParticleH4 from "./components/particles/ParticleH4.js"
-import ParticleH5 from "./components/particles/ParticleH5.js"
-import ParticleH6 from "./components/particles/ParticleH6.js"
+import ParticleHeader from "./components/particles/ParticleHeader.js"
+import ParticleSubheader from "./components/particles/ParticleSubheader.js"
 import ParticleHeroImage from "./components/particles/ParticleHeroImage.js"
 import ParticleImag from "./components/particles/ParticleImag.js"
 import ParticleImage from "./components/particles/ParticleImage.js"
@@ -66,12 +62,8 @@ import ParticlePullquote from "./components/particles/ParticlePullquote.js"
 import ParticleText from "./components/particles/ParticleText.js"
 import ParticleVideo from "./components/particles/ParticleVideo.js"
 Telescope.components.ParticleAttachment = ParticleAttachment
-Telescope.components.ParticleH1 = ParticleH1
-Telescope.components.ParticleH2 = ParticleH2
-Telescope.components.ParticleH3 = ParticleH3
-Telescope.components.ParticleH4 = ParticleH4
-Telescope.components.ParticleH5 = ParticleH5
-Telescope.components.ParticleH6 = ParticleH6
+Telescope.components.ParticleHeader = ParticleHeader
+Telescope.components.ParticleSubheader = ParticleSubheader
 Telescope.components.ParticleHeroImage = ParticleHeroImage
 Telescope.components.ParticleImag = ParticleImag
 Telescope.components.ParticleImage = ParticleImage

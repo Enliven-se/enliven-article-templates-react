@@ -11,7 +11,7 @@ import ArticleCategory from '../components/base/ArticleCategory'
 import ArticleTitle from '../components/base/ArticleTitle'
 import HR from '../components/base/HR'
 import ParticleImage from '../components/particles/ParticleImage'
-import ParticleH2 from '../components/particles/ParticleH2'
+import ParticleSubheader from '../components/particles/ParticleSubheader'
 import ParticlePullquote from '../components/particles/ParticlePullquote'
 import ParticleText from '../components/particles/ParticleText'
 
@@ -57,7 +57,7 @@ class PictureIntensive extends React.Component {
               </Row>
               <Row className='big-row'>
                   <Col sm={6} smOffset={2}>
-                      <ParticleH2 {...this.props.data.field_particles_h2[0]}/>
+                      <ParticleSubheader {...this.props.data.field_particles_h2[0]}/>
                       <HR/>
                       <ParticleText {...this.props.data.field_particles_text[2]}/>
                   </Col>

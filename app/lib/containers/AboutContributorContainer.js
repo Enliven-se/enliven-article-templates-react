@@ -2,8 +2,7 @@ import React from 'react'
 
 import ParticleImage from '../components/particles/ParticleImage'
 import ParticleText from '../components/particles/ParticleText'
-import ParticleH2 from '../components/particles/ParticleH2'
-import ParticleH3 from '../components/particles/ParticleH3'
+import ParticleSubheader from '../components/particles/ParticleSubheader'
 
 class AboutContributorContainer extends React.Component {
   render() {
@@ -14,10 +13,10 @@ class AboutContributorContainer extends React.Component {
 
     return (
       <div className={classes}>
-          <ParticleImage {...this.props.ParticleImage}/>
-          <ParticleH2 className='heading-text' value={this.props.ParticleH2}/>
-          <ParticleH3 value={this.props.ParticleH3}/>
-          <ParticleText value={this.props.ParticleText}/>
+          <ParticleImage {...this.props.profile_image}/>
+          <ParticleSubheader headerLevel='2' className='heading-text' value={this.props.full_name}/>
+          <ParticleSubheader headerLevel='3' value={this.props.main_topics}/>
+          <ParticleText value={this.props.about_you}/>
       </div>
     )
   }
