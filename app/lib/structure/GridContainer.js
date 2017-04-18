@@ -19,6 +19,10 @@ import LayoutArticleTeasers from '../layouts/LayoutArticleTeasers'
 
 const fs = require('fs');
 const path = require('path');
+const url = require('url')
+const urlParams = url.parse(location.href, true)
+
+let layout = urlParams.query['layout']
 
 class GridContainer extends React.Component {
     static propTypes = {
@@ -93,42 +97,70 @@ class GridContainer extends React.Component {
 
     render() {
         const nodelist = this.props.data.articles
-        // console.log('render:nodelist', nodelist)
+        let data = nodelist
+        let particles = {images: [], pullquote: [], text: [], h2: [], intro: []}
 
-        let layout = this.props.layout
-        if (!layout && nodelist && nodelist.field_layout) {
-            layout = nodelist.field_layout.uuid
+        if (data && data.length == 1) {
+            // individual article
+            data = data[0]
+
+            // filter particle data into convenience variables
+            particles.images = data.field_particles.filter(particle => particle.bundle == 'image');
+            particles.pullquote = data.field_particles.filter(particle => particle.bundle == 'pullquote');
+            particles.h2 = data.field_particles.filter(particle => particle.bundle == 'h2')
+            particles.text = data.field_particles.filter(particle => particle.bundle == 'text')
+            particles.intro = particles.text.shift()
+            console.log('GridContainer.render:article', layout, data, particles)
+
+            // if layout not defined in URL and we have one result, use it for rendering
+            if (!layout && data.field_layout) {
+                layout = data.field_layout.uuid
+            }
+        } else {
+            console.log('GridContainer.render:front', layout, data)
         }
 
-        console.log('render:layout', layout)
         const Widget = this.switchLayout(layout)
 
         // render with or without nav & footer
         if (this.props.chrome) {
-            if (nodelist) {
-                return (
-                    <LayoutContainer layout={layout} navbar_items={this.props.navbar_items} color_variant={nodelist.color_variant} is_front={!!nodelist.is_front} sticky={!nodelist.is_front}>
-                        <Widget data={nodelist}/>
-                    </LayoutContainer>
-                )
-            }
-
-            // not initialized
-            return (
+            return data ? (
+                // initialized
+                <LayoutContainer layout={layout} navbar_items={this.props.navbar_items} color_variant={nodelist.color_variant} is_front={!!nodelist.is_front} sticky={!nodelist.is_front}>
+                    <Widget data={data} particles={particles}/>
+                </LayoutContainer>
+            ) : (
+                // not initialized
                 <LayoutContainer layout={layout} navbar_items={this.props.navbar_items}
                     is_front={true} sticky={false}/>
             )
         }
 
-        return <Widget data={nodelist}/>
+        return <Widget data={data} particles={particles}/>
     }
 }
 
-// load query stored in GraphQL include file
-// @FIXME - GQL should be compiled before runtime
-let queryFrontPageArticles = fs.readFileSync(path.join(__dirname, "app/lib/queries/queryFrontPageArticles.graphql"), "utf8");
-queryFrontPageArticles = gql`${queryFrontPageArticles}`;
+/**
+ * load query stored in GraphQL include file
+ * @FIXME - GQL should be compiled before runtime - requires Webpack?
+ */
+let params = {}
+let gqlQuery = '';
+if (layout) {
+    // @FIXME
+    const nids = [21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,63,64,65,66,67,68,69,70,71,72,73];
+    gqlQuery = fs.readFileSync(path.join(__dirname, 'app/lib/queries/querySingleArticle.graphql'), 'utf8');
+    params = {
+      options: (props) => ({
+        variables: {
+          nid: nids[Math.floor(Math.random() * nids.length)],
+        },
+      }),
+    }
 
-const GridContainerWithData = graphql(queryFrontPageArticles)(GridContainer)
+} else {
+    gqlQuery = fs.readFileSync(path.join(__dirname, 'app/lib/queries/queryFrontPageArticles.graphql'), 'utf8');
+}
 
+const GridContainerWithData = graphql(gql`${gqlQuery}`, params)(GridContainer)
 export default GridContainerWithData

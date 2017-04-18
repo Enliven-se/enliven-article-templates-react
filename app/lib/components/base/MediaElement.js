@@ -1,14 +1,12 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
 
-class ParticleHeroImage extends React.Component {
+class MediaElement extends React.Component {
   render() {
-    return <div className={this.props.classes}>
+    return <div className='particle-imag'>
       <Image src={this.props.url} responsive />
     </div>
   }
-
-
 }
 
-export default ParticleHeroImage
+export default MediaElement

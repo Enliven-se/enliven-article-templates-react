@@ -1,52 +1,86 @@
 import React from 'react'
-import {Image} from 'react-bootstrap'
+
+// import {Image} from 'react-bootstrap'
+import {Image} from 'cloudinary-react';
 
 import PhotoCredits from '../../containers/PhotoCredits'
 
 class ParticleImage extends React.Component {
-    chooseAspect(width, height) {
-        // choose image style based on aspect ratio
-        let aspect = width / height
-        if (aspect > 1.4) {
-            style = 'wide'
-        } else {
-            style = 'tall'
-        }
+    /**
+    * set Cloudinary transformation options
+     */
+    getTransformation(props) {
+        const getImageAspect = function(props) {
+            // console.log('getImageAspect',props)
 
-        return style
-    }
-
-    formatURLImageStyle(url, style) {
-        // hack - simulate image style
-        url = url.replace(/\/files\/(?:styles\/\w+\/)?/, '/files/styles/' + style + '/public/')
-        return url
-    }
-
-    setURL() {
-        let url = ''
-        let style = this.props.imageStyle
-            ? this.props.imageStyle
-            : 'wide'
-
-        if (this.props.field_imageset && this.props.field_imageset.length > 0) {
-            if (!style) {
-                style = this.chooseAspect(this.props.field_imageset[0].width, this.props.field_imageset[0].height)
+            // choose image style based on aspect ratio
+            if ( props.width && props.height ) {
+                if (props.width == props.height) {
+                    return 'square'
+                } else if (props.width / props.height > 1.4) {
+                    return 'wide'
+                } else {
+                    return 'tall'
+                }
             }
-            url = this.props.field_imageset[0]['style_' + style]
-        } else if (this.props.field_assets && this.props.field_assets.length > 0) {
-            url = this.props.field_assets[0].file.url
-            // url = this.formatURLImageStyle(url, style)
-        } else {
-            url = this.props.url
-            // url = this.formatURLImageStyle(url, style)
+
+            return undefined
         }
 
-        return url
+        let options = { cloudName: 'enliven' }
+        // console.log('getTransformation',props)
+
+        if (props.field_imageset && props.field_imageset.length > 0) {
+
+            // @HACK - determine Cloudinary publicId from the URL
+            // it should come from the GraphQL endpoint
+            options.publicId = props.field_imageset[0].file.url.replace(/^https?.+\/v\d+\/(.+)\.\w+$/, '$1')
+
+            // console.log('options.publicId', options.publicId)
+
+            // return null
+
+            switch (getImageAspect(props.field_imageset[0])) {
+                case 'tall':
+                    options.width = 578
+                    options.height = 770
+                    options.crop = 'fill'
+                    options.gravity = 'faces'
+                    break
+
+                case 'wide':
+                    options.width = 1440
+                    options.height = 810
+                    options.crop = 'fill'
+                    options.gravity = 'faces'
+                    break
+
+                case 'square':
+                    options.width = 690
+                    options.height = 690
+                    options.crop = 'fill'
+                    options.gravity = 'faces'
+                    break
+            }
+
+        } else if (props.field_assets && props.field_assets.length > 0) {
+            options.publicId = props.field_assets[0].file.name
+            return null
+
+        } else {
+            // options.publicId = props.url
+            // console.log('getTransformation', props.url)
+            return null
+        }
+
+        // console.log('getTransformation', options)
+        // return null
+        return (
+            <Image {...options} className="img-responsive" />
+        )
     }
 
     render() {
-        let url = this.setURL()
-
         let classes = this.props.classes
             ? this.props.classes + ' '
             : ''
@@ -61,10 +95,10 @@ class ParticleImage extends React.Component {
 
         return (
             <div className={classes}>
-                <Image src={url} responsive/>
+                <this.getTransformation {...this.props} />
                 <PhotoCredits {...this.props} classes={classes_credits}/>
             </div>
-        )
+                    )
     }
 
 }

@@ -1,5 +1,5 @@
-query node_article {
-  articles: node_article(promote: true, language: "en") {
+query node_article($nid: String) {
+  articles: node_article(nid: $nid) {
     ...nodeFields
     field_contributors {
       field_person_name {

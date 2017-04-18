@@ -13,10 +13,10 @@ class LayoutFeature extends React.Component {
   render() {
     return (
       <div className='layout layout-feature'>
-          <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles_media[0]}>
+          <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles[0]}>
               <Row>
                   <Col sm={6} smOffset={6}>
-                      <ArticleHeader ArticleCategory={this.props.data.field_main_topics[0]} ArticleTitle={this.props.data.field_headline}/>
+                      <ArticleHeader ArticleCategory={this.props.data.field_main_topics[0]} ArticleTitle={this.props.data.field_headline.field_longtext}/>
                   </Col>
               </Row>
           </Container>
@@ -26,87 +26,87 @@ class LayoutFeature extends React.Component {
                       <ContributorList data={this.props.data.field_contributors}/>
                   </Col>
                   <Col sm={6} className='col-right text-without-columns'>
-                      <ParticleText {...this.props.data.field_particles_text[0]}/>
+                      <ParticleText {...this.props.particles.text[0]}/>
                   </Col>
               </Row>
           </Container>
           <Container fluid>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_media[1]}/>
+                      <ParticleImage {...this.props.data.field_particles[1]}/>
                   </Col>
               </Row>
               <Row>
                   <Col className='text-with-columns'>
-                      <ParticleText {...this.props.data.field_particles_text[1]}/>
+                      <ParticleText {...this.props.particles.text[1]}/>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_media[2]}/>
+                      <ParticleImage {...this.props.data.field_particles[2]}/>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_media[3]}/>
+                      <ParticleImage {...this.props.data.field_particles[3]}/>
                   </Col>
               </Row>
               <Row>
                   <Col className='text-with-columns text-without-columns'>
-                      <ParticleText {...this.props.data.field_particles_text[3]}/>
+                      <ParticleText {...this.props.particles.text[3]}/>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_media[4]}/>
+                      <ParticleImage {...this.props.data.field_particles[4]}/>
                   </Col>
               </Row>
               <Row>
                   <Col sm={6} className='half-width-picture'>
-                      <ParticleImage {...this.props.data.field_particles_media[5]}/>
+                      <ParticleImage {...this.props.data.field_particles[5]}/>
                   </Col>
                   <Col sm={6} className='one-column-by-picture text-without-columns'>
-                      <ParticleText {...this.props.data.field_particles_text[4]}/>
+                      <ParticleText {...this.props.particles.text[4]}/>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_media[6]}/>
+                      <ParticleImage {...this.props.data.field_particles[6]}/>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_media[7]}/>
+                      <ParticleImage {...this.props.data.field_particles[7]}/>
                   </Col>
               </Row>
               <Row>
                   <Col sm={6} className='col-right text-without-columns'>
-                      <ParticleText {...this.props.data.field_particles_text[5]}/>
+                      <ParticleText {...this.props.particles.text[5]}/>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_media[8]}/>
+                      <ParticleImage {...this.props.data.field_particles[8]}/>
                   </Col>
               </Row>
               <Row>
                   <Col className='text-with-columns'>
-                      <ParticleText {...this.props.data.field_particles_text[6]}/>
+                      <ParticleText {...this.props.particles.text[6]}/>
                       <HR/>
-                      <ParticleText {...this.props.data.field_particles_text[7]}/>
+                      <ParticleText {...this.props.particles.text[7]}/>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <ParticleImage {...this.props.data.field_particles_media[9]}/>
+                      <ParticleImage {...this.props.data.field_particles[9]}/>
                   </Col>
               </Row>
               <Row>
                   <Col sm={6} className='col-left text-without-columns'>
-                      <ParticleText {...this.props.data.field_particles_text[8]}/>
+                      <ParticleText {...this.props.particles.text[8]}/>
                   </Col>
                   <Col sm={6} className='half-width-picture col-right'>
-                      <ParticleImage {...this.props.data.field_particles_media[10]}/>
+                      <ParticleImage {...this.props.data.field_particles[10]}/>
                   </Col>
               </Row>
           </Container>

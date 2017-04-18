@@ -14,15 +14,15 @@ import ParticleText from '../components/particles/ParticleText'
 
 class LayoutShort extends React.Component {
   render() {
-    // console.log(this.props.data)
+    console.log(this.props.data)
     return (
       <div className='layout layout-short'>
-          <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles_media[0]}>
+          <Container fluid classes='panel-1' backgroundImage={this.props.data.field_particles[0]}>
               <Container>
                   <Row>
                       <Col sm={6} className='article-meta'>
-                          <ArticleHeader ArticleCategory={this.props.data.field_main_topics[0]} ArticleTitle={this.props.data.field_headline}/>
-                          <ArticleIntro {...this.props.data.field_particles_text[0]} bordered/>
+                          <ArticleHeader ArticleCategory={this.props.data.field_main_topics[0]} ArticleTitle={this.props.data.field_headline.field_longtext}/>
+                          <ArticleIntro {...this.props.particles.text[0]} bordered/>
                       </Col>
                   </Row>
               </Container>
@@ -40,9 +40,9 @@ class LayoutShort extends React.Component {
           <Container classes='article'>
               <Row>
                   <Col className='text-with-columns'>
-                      <ParticleText {...this.props.data.field_particles_text[1]}/>
-                      <ParticlePullquote {...this.props.data.field_particles_pullquote[0]}/>
-                      <ParticleText {...this.props.data.field_particles_text[2]}/>
+                      <ParticleText {...this.props.particles.text[1]}/>
+                      <ParticlePullquote {...this.props.particles.pullquote[0]}/>
+                      <ParticleText {...this.props.particles.text[2]}/>
                   </Col>
               </Row>
           </Container>

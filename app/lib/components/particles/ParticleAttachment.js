@@ -1,11 +1,11 @@
 import React from 'react';
+import MediaElement from "./components/base/MediaElement.js"
 
 class ParticleAttachment extends React.Component {
   render() {
-    return <div className={this.props.classes}>{this.props.particleName}</div>
-  }
-
-
+      render() {
+          return <MediaElement {...this.props} />
+      }
 }
 
 export default ParticleAttachment

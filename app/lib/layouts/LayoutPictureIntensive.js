@@ -27,12 +27,12 @@ class PictureIntensive extends React.Component {
               </Row>
               <Row>
                   <div className='header-image'>
-                      <Container fluid classes='panel-2' backgroundImage={this.props.data.field_particles_media[0]}></Container>
+                      <Container fluid classes='panel-2' backgroundImage={this.props.data.field_particles[0]}></Container>
                   </div>
                   <Col md={4} className='article-meta-col'>
                       <div className='article-meta'>
-                          <ArticleTitle {...this.props.data.field_headline}/>
-                          <ParticleText {...this.props.data.field_particles_text[0]}/>
+                          <ArticleTitle {...this.props.data.field_headline.field_longtext}/>
+                          <ParticleText {...this.props.particles.text[0]}/>
                           <HR/>
                           <ContributorList data={this.props.data.field_contributors} inline separator=', '/>
                       </div>
@@ -40,42 +40,42 @@ class PictureIntensive extends React.Component {
               </Row>
               <Row className='big-row first-text row-flex'>
                   <Col sm={6} smOffset={3} mdOffset={2}>
-                      <ParticleText {...this.props.data.field_particles_text[1]}/>
+                      <ParticleText {...this.props.particles.text[1]}/>
                   </Col>
                   <Col sm={4} md={3} className="pullquote-container">
-                      <ParticlePullquote {...this.props.data.field_particles_pullquote[0]}/>
+                      <ParticlePullquote {...this.props.particles.pullquote[0]}/>
                   </Col>
               </Row>
               <Row className='big-row big-image'>
                   <div className='big-image-div'>
-                      <Container fluid classes='panel-3' backgroundImage={this.props.data.field_particles_media[1]}>
+                      <Container fluid classes='panel-3' backgroundImage={this.props.data.field_particles[1]}>
                           <div className='text-field-in-img'>
-                              <ParticleText {...this.props.data.field_particles_text[3]}/>
+                              <ParticleText {...this.props.particles.text[3]}/>
                           </div>
                       </Container>
                   </div>
               </Row>
               <Row className='big-row'>
                   <Col sm={6} smOffset={2}>
-                      <ParticleSubheader {...this.props.data.field_particles_h2[0]}/>
+                      <ParticleSubheader {...this.props.particles.h2[0]}/>
                       <HR/>
-                      <ParticleText {...this.props.data.field_particles_text[2]}/>
+                      <ParticleText {...this.props.particles.text[2]}/>
                   </Col>
               </Row>
               <Row className='big-row small-image'>
                   <Col sm={6}>
-                      <ParticleImage {...this.props.data.field_particles_media[2]}/>
+                      <ParticleImage {...this.props.data.field_particles[2]}/>
                   </Col>
                   <Col sm={6}>
-                      <ParticleImage {...this.props.data.field_particles_media[3]}/>
+                      <ParticleImage {...this.props.data.field_particles[3]}/>
                   </Col>
               </Row>
               <Row className='big-row row-flex'>
                   <Col sm={6} smOffset={3} mdOffset={2}>
-                      <ParticleText {...this.props.data.field_particles_text[4]}/>
+                      <ParticleText {...this.props.particles.text[4]}/>
                   </Col>
                   <Col sm={4} md={3} className="pullquote-container">
-                      <ParticlePullquote {...this.props.data.field_particles_pullquote[1]}/>
+                      <ParticlePullquote {...this.props.particles.pullquote[1]}/>
                         </Col>
                     </Row>
                 </Container>

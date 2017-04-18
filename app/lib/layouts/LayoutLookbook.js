@@ -21,35 +21,35 @@ class LayoutLookbook extends React.Component {
                       <ArticleCategory name={this.props.data.field_main_topics[0].name} url={this.props.data.field_main_topics[0].url}/>
                       <Row>
                           <Col md={10} mdOffset={2}>
-                              <ArticleHeader ArticleTitle={this.props.data.field_headline}/>
-                              <ArticleIntro {...this.props.data.field_particles[0]} bordered/>
+                              <ArticleHeader ArticleTitle={this.props.data.field_headline.field_longtext}/>
+                              <ArticleIntro {...this.props.data.field_longtext} bordered/>
                               <ContributorList data={this.props.data.field_contributors} separator=', '/>
                               <DatePublished value={this.props.data.created} date_format='MMMM D, YYYY'/>
                           </Col>
                       </Row>
                   </Col>
                   <Col md={6}>
-                      <ParticleImage {...this.props.data.field_particles_media[0]}/>
+                      <ParticleImage {...this.props.data.images[0]}/>
                   </Col>
               </Row>
               <Row className='big-row row-flex'>
                   <Col md={6} className='big-image-1'>
-                      <ParticleImage {...this.props.data.field_particles_media[1]}/>
+                      <ParticleImage {...this.props.data.images[1]}/>
                   </Col>
                   <Col md={5} className='verticle-aligned'>
                       <div className='img-small'>
-                          <ParticleImage {...this.props.data.field_particles_media[2]}/>
+                          <ParticleImage {...this.props.data.images[2]}/>
                       </div>
                   </Col>
               </Row>
               <Row className='big-row row-flex'>
                   <Col md={5} mdOffset={1} className='verticle-aligned'>
                       <div className='img-small left-small'>
-                          <ParticleImage {...this.props.data.field_particles_media[3]}/>
+                          <ParticleImage {...this.props.data.images[3]}/>
                       </div>
                   </Col>
                   <Col md={6} className='big-image-2'>
-                      <ParticleImage {...this.props.data.field_particles_media[4]}/>
+                      <ParticleImage {...this.props.data.images[4]}/>
                   </Col>
               </Row>
           </Container>
