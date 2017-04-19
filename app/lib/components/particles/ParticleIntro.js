@@ -6,6 +6,7 @@ class ParticleIntro extends React.Component {
   render() {
     let classes = this.props.classes ? this.props.classes + ' ' : ''
     classes += 'particle-intro'
+
     return <ParticleText {...this.props} classes={classes} />
   }
 

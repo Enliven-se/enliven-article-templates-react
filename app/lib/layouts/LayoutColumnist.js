@@ -25,17 +25,30 @@ class LayoutColumnist extends React.Component {
                       <DatePublished value={this.props.data.created} date_format='Do MMMM YYYY'/>
                   </Col>
                   <Col md={6} className='right-panel'>
-                      <Col md={5}>
-                          <ParticleImage {...this.props.data.field_particles[0]}/>
-                      </Col>
-                      {/* <Col md={7} className='about-columnist'>
+                      <Row>
+                          <Col md={5}>
+                              <ParticleImage {...this.props.data.field_particles[0]}/>
+                          </Col>
+                      </Row>
+                      <Row>
+                      </Row>
+                      <Col md={7} className='about-columnist'>
                           <div className='follow-button'>
-                              <Link text={this.props.particles.text[4].value} url={this.props.particles.text[4].url} classes={this.props.particles.text[4].classes}/>
+                              { this.props.particles.text[4] ?
+                                  <Link text={this.props.particles.text[4].value} url={this.props.particles.text[4].url} classes={this.props.particles.text[4].classes}/>
+                                  : null
+                              }
                           </div>
-                          <Link text={this.props.particles.text[3].value} url={this.props.particles.text[3].url} classes={this.props.particles.text[3].classes}/>
+                          { this.props.particles.text[3] ?
+                              <Link text={this.props.particles.text[3].value} url={this.props.particles.text[3].url} classes={this.props.particles.text[3].classes}/>
+                              : null
+                          }
                           <ParticleText {...this.props.particles.text[0]}/>
-                          <Link text={this.props.particles.text[5].value} url={this.props.particles.text[5].url} classes={this.props.particles.text[5].classes}/>
-                      </Col> */}
+                          { this.props.particles.text[5] ?
+                              <Link text={this.props.particles.text[5].value} url={this.props.particles.text[5].url} classes={this.props.particles.text[5].classes}/>
+                              : null
+                          }
+                      </Col>
                   </Col>
               </Row>
               <Row>
@@ -48,7 +61,10 @@ class LayoutColumnist extends React.Component {
                       <div className='first-text'>
                           <ParticleText {...this.props.particles.text[1]}/>
                       </div>
-                      <ParticlePullquote {...this.props.particles.pullquote[0]}/>
+                      { this.props.particles.pullquote[0] ?
+                          <ParticlePullquote {...this.props.particles.pullquote[0]}/>
+                          : null
+                      }
                       <ParticleText {...this.props.particles.text[2]}/>
                   </Col>
               </Row>

@@ -9,10 +9,10 @@ class Container extends React.Component {
 
     let classes = this.props.classes ? this.props.classes + ' ' : ''
 
-    if (this.props.backgroundImage && this.props.backgroundImage.url) {
+    if (this.props.backgroundImage) {
       classes += 'has-hero'
 
-      elStyle.backgroundImage = 'url(' + this.props.backgroundImage.url + ')'
+      elStyle.backgroundImage = 'url(' + this.props.backgroundImage.field_imageset[0].file.url + ')'
     }
 
     return <Grid fluid={this.props.fluid} style={elStyle} className={classes}>{this.props.children}</Grid>

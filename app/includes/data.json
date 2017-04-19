@@ -13,7 +13,7 @@
       "title": "Front",
       "className": "front",
       "extra_classes": [""],
-      "url": "/?layout=Front"
+      "url": "/"
     },{
       "title": "Lookbook",
       "className": "lookbook",

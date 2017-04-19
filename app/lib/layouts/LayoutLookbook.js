@@ -22,34 +22,34 @@ class LayoutLookbook extends React.Component {
                       <Row>
                           <Col md={10} mdOffset={2}>
                               <ArticleHeader ArticleTitle={this.props.data.field_headline.field_longtext}/>
-                              <ArticleIntro {...this.props.data.field_longtext} bordered/>
+                              <ArticleIntro {...this.props.particles.text[0]} bordered/>
                               <ContributorList data={this.props.data.field_contributors} separator=', '/>
                               <DatePublished value={this.props.data.created} date_format='MMMM D, YYYY'/>
                           </Col>
                       </Row>
                   </Col>
                   <Col md={6}>
-                      <ParticleImage {...this.props.data.images[0]}/>
+                      <ParticleImage {...this.props.particles.images[0]}/>
                   </Col>
               </Row>
               <Row className='big-row row-flex'>
                   <Col md={6} className='big-image-1'>
-                      <ParticleImage {...this.props.data.images[1]}/>
+                      <ParticleImage {...this.props.particles.images[1]}/>
                   </Col>
                   <Col md={5} className='verticle-aligned'>
                       <div className='img-small'>
-                          <ParticleImage {...this.props.data.images[2]}/>
+                          <ParticleImage {...this.props.particles.images[2]}/>
                       </div>
                   </Col>
               </Row>
               <Row className='big-row row-flex'>
                   <Col md={5} mdOffset={1} className='verticle-aligned'>
                       <div className='img-small left-small'>
-                          <ParticleImage {...this.props.data.images[3]}/>
+                          <ParticleImage {...this.props.particles.images[3]}/>
                       </div>
                   </Col>
                   <Col md={6} className='big-image-2'>
-                      <ParticleImage {...this.props.data.images[4]}/>
+                      <ParticleImage {...this.props.particles.images[4]}/>
                   </Col>
               </Row>
           </Container>

@@ -24,6 +24,8 @@ class LayoutFront extends React.Component {
 
     // iterate over a list of articles, render contributors
     const ContributorListFront = function(props) {
+        console.log(props.data)
+
         const items = props.data.slice(0, 8).map(function(item, i) {
         // console.log('contrib #'+i, item)
           return (

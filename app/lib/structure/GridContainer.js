@@ -102,6 +102,7 @@ class GridContainer extends React.Component {
 
         if (data && data.length == 1) {
             // individual article
+            this.state.data.is_front = false
             data = data[0]
 
             // filter particle data into convenience variables
@@ -109,7 +110,7 @@ class GridContainer extends React.Component {
             particles.pullquote = data.field_particles.filter(particle => particle.bundle == 'pullquote');
             particles.h2 = data.field_particles.filter(particle => particle.bundle == 'h2')
             particles.text = data.field_particles.filter(particle => particle.bundle == 'text')
-            particles.intro = particles.text.shift()
+            // particles.intro = particles.text.shift()
             console.log('GridContainer.render:article', layout, data, particles)
 
             // if layout not defined in URL and we have one result, use it for rendering
@@ -118,6 +119,7 @@ class GridContainer extends React.Component {
             }
         } else {
             console.log('GridContainer.render:front', layout, data)
+            this.state.data.is_front = true
         }
 
         const Widget = this.switchLayout(layout)
@@ -126,13 +128,13 @@ class GridContainer extends React.Component {
         if (this.props.chrome) {
             return data ? (
                 // initialized
-                <LayoutContainer layout={layout} navbar_items={this.props.navbar_items} color_variant={nodelist.color_variant} is_front={!!nodelist.is_front} sticky={!nodelist.is_front}>
+                <LayoutContainer layout={layout} navbar_items={this.props.navbar_items} color_variant={nodelist.color_variant} is_front={this.state.data.is_front} sticky={!this.state.data.is_front}>
                     <Widget data={data} particles={particles}/>
                 </LayoutContainer>
             ) : (
                 // not initialized
                 <LayoutContainer layout={layout} navbar_items={this.props.navbar_items}
-                    is_front={true} sticky={false}/>
+                    is_front={this.state.data.is_front} sticky={false}/>
             )
         }
 
